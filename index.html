@@ -1,0 +1,342 @@
+<html>
+  <head>
+    <link href='http://zhhomestuck.blogspot.tw/favicon.ico' rel='icon' type='image/x-icon'/>
+    <style id='zhhomestuckcss' type='text/css'>
+    <style id='zhhomestuckcss' type='text/css'>
+      body {
+        font-family: Verdana, Arial, Helvetica, &#39;微軟正黑體&#39;, &#39;Microsoft JhengHei&#39;;
+        font-size: 15px;
+        color: #000000;
+        margin: 0px;
+        padding: 0 10px;
+        background-color: #535353;
+      }
+      div, .pagebody div img, table, td {
+        margin: 0; padding: 0;
+        border: none;
+        border-spacing: 0;
+        text-align: -webkit-center; text-align: center;
+      }
+      b {font-weight:bold;}
+      /* nav */
+      .mspanav {
+        width: 950px;
+        margin: 0 auto;
+        background-color: #5a5a5a; 
+      }
+      .mspanavMobile {
+        padding: 5px 0;
+        margin: -10px auto 15px auto;
+        background: #535353;
+        font-size: 14px;
+      }
+      .mspanavMobile a {
+        color: #ffffff;
+        padding: 3px 3%;
+        margin: 0 -2px;
+      }
+      .mspanav {
+        font-family: Arial, Helvetica, 微軟正黑體;, &#39;Microsoft JhengHei&#39;, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 13px;
+        height: 18px;
+      }
+      .mspanav a {
+        color: inherit;
+        margin: 0 3px;
+      }
+      .mspanav img {
+        vertical-align: middle;
+        border: 0;
+      }
+      #contribute, #contribute a {
+        width: 100vw; max-width: 650px;
+      }
+      /* mspa content */
+      .content {
+        width: 950px;
+        padding: 0;
+        margin: 0 auto;
+        background: #c6c6c6;
+        height: auto;
+      }
+      .content-inner {
+        color: #000000;
+        margin: 0 auto;
+        width: 650px;
+        background: #c6c6c6;
+        text-align: -webkit-center; text-align: center;
+      }
+      /* PH */
+      .pagehead {
+        padding-top: 14px;
+        font-weight: bold;
+        font-size: 32px;
+        font-family: Courier, Verdana, Arial, monospace;
+      }
+      /* PB */
+      .pagebody {
+        margin-top: -8px;
+        border-spacing: 0;
+        font-family: Courier, Verdana, Arial, monospace;
+      }
+      .pagebody div {
+        vertical-align: middle;
+        padding: 15px 25px 0 25px;
+        background-color: #eeeeee;
+      }
+      /* PF */
+      .pagefoot {
+        padding: 20px 20px 15px 25px;
+        text-align: left;
+        font-size: 24px;
+        font-family: Verdana, Arial, Helvetica, 微軟正黑體, &#39;Microsoft JhengHei&#39;, monospace;
+      }
+      .pagefoot a.newer-page-link, html a.blog-pager-newer-link {
+        line-height: 30px !important;
+      }
+      .mobile .pagefoot a.blog-pager-newer-link {
+        height: auto;
+        width: 100%;
+        display: block;
+        font-size: 1em;
+        text-align: -webkit-center; text-align: center;
+      }
+      /* PFF */
+      .pagefooter-footer {
+        text-align: left;
+        font-weight: bold;
+        font-size: 13px;
+        padding-top: 35px;
+      }
+	  .mobile .pagefooter-footer {
+		font-size: 12px;
+      }
+      #pagefooter-footer-url {
+        font-size: 12px;
+      }
+      /* note and log */
+      div#note {
+        padding-top: 30px;
+        margin-bottom: -5px;
+      }
+      #note {
+        color: #000000;
+        font-size: 0.7em;
+        vertical-align: text-top;
+        position: relative;
+        top: -2px;
+        text-align: left;
+      }
+      div.log-outer {
+        width: 600px;
+        border: 1px dashed gray;
+        padding: 1px 0;
+        box-sizing: border-box;
+      }
+      div#log-outer-outer {
+        padding: 0;
+        text-align: left;
+      }
+      div.log-outer div {
+        padding: 0;
+      }
+      div.log-outer button {
+        margin: 0 auto; 
+      }
+      .pagebody div.log-inner img {
+        margin-left: -56px; /* 使log內的圖片對齊外邊線 */
+        border: 0;
+      }
+      .pagebody div.log-inner span img {
+        width: auto !important;
+        margin: 0; /* 若要讓使log內的圖片變回正常則要把img包在span裡面 */
+      }
+      .log-inner {
+        width: 90%;
+        border: none;
+        text-align: left;
+        margin: auto; margin-bottom: 5px;
+        font-size: 1em;
+        font-family: Courier, Verdana, monospace;
+        line-height: 1.1;
+      }
+      .mobile .log-outer,
+      .mobile .pagebody div.log-inner img,
+      .mobile .pagebody div.log-outer,
+      .mobile .pagebody div.log-outer div {
+        width: 100%; max-width: 600px;
+        margin: 0 auto; padding: 0;
+      }
+      .div-scroll {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0; padding: 0;
+        height: 150px;
+        border: dashed 1px gray;
+        text-align: -webkit-center; text-align: center;
+      }
+      /* Gamzees Quirk */
+      #gamzee b {
+        font-weight: normal;
+        font-size: 66%;
+        vertical-align: -2px;
+      }
+      /* footer */
+      #contribute, #contribute a {
+        text-align: -webkit-center; text-align: center;
+        text-decoration: none;
+        width: 100vw; max-width: 650px;
+      }
+      footer {
+        background-color: #535353;
+        margin: 0; 
+      }
+      .footer-outer {
+        width: 950px;
+        margin: 0 auto;
+      }
+      .mobile .footer-outer { width: auto;}
+      /* widget (NEWS and LATEST UPDATE) */
+      .columns-cell {
+        vertical-align: middle;
+        width: 255px;
+        background: #efefef;
+        font-family: Courier;
+      }
+      .widget { margin: 0;}
+      .mobile .widget {
+        background-color: #c6c6c6;
+        margin: 0 auto;
+      }
+      .mobile .widget-content { margin: 15px 0;}
+      #latest-update {
+        width: 280px;
+        margin-right: -300px;
+        border-right: solid 11px #535353;
+      }
+      #news {
+        min-height: 550px; width: 650px;
+        border: solid #c6c6c6;
+        border-width: 7px 0 0 7px;
+      }
+      .mobile #latest-update,
+      .mobile #news {
+        width: 100vw; max-width: 650px;
+        min-height: 550px;
+        padding: 0px;
+        text-align: center; text-align: -webkit-center;
+      }
+      .latest-update-inner {
+        min-height: 550px;
+        font-weight: bold;
+        padding-left: 4px;
+        font-size: 13px;
+        background-color: #c6c6c6;
+        line-height: 1.4;
+        text-align: left;
+        border: solid #eeeeee;
+        border-width: 7px 7px 0 0;
+      }
+      .mobile .latest-update-inner {
+        font-size: 15px;
+        border: none;
+      }
+      /* Bannerframe */
+      .footer-bannerframe {
+        background-image: url(&#39;http://cdn.mspaintadventures.com/images/bannerframe.png&#39;);
+        height: 110px;
+        vertical-align: bottom;
+        font-family: Courier, Verdana, monospace;
+        font-weight: bold;
+        color: #000000;
+      }
+      .footer-bannerframe div {
+        padding-top: 10px;
+        font-size: 36px;
+      }
+      .mobile footer div.footer-bannerframe { background-image: none !important;}
+      .mobile .footer-bannerframe div { font-size: 20px;}
+      .mobile .footer-bannerframe {
+        background-repeat: no-repeat;
+        height: auto;
+        padding-bottom: 7px;
+      }
+      .footer-pay {
+        margin: 15px auto;
+        font-size: 13px;
+        font-family: &#39;Times New Roman&#39;, Courier;
+        max-width: 950px;
+        background-color: #eeeeee
+      }
+	  /* INDEX PAGES */
+	  .index-page {
+		text-align: left;
+		margin-bottom: 15px;
+      }
+	  .index-page .pagehead {
+		width: 650px;
+		font-size: 20px;
+		text-align: left;
+		padding: 10px 0;
+      }
+	  .index-page a.pagefooter-footer {
+		font-weight: bold;
+		float: right;
+		position: relative;
+		top: -55px;
+      }
+	  .index-page .pagebody {
+		display: none;
+		max-height: 650px;
+		width: 650px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		z-index: 100;
+		position: relative;
+		top: -52px;
+		margin-bottom: -35px;
+      }
+	  .index-page .pagebody img, .index-page .pagebody object {
+		display: none;
+      }
+	  .index-page .pagebody img:after {
+		content: &quot;[images are hidden]&quot;;
+      }
+	  .mobile .mobile-index-title {
+		width: 80%;
+		text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='header'>
+      <span class='mspanav'>
+        <a href='http://zhhomestuck.blogspot.com/' style='color: #ffffff;'>Homestuck繁體中文翻譯站</a>
+        <img src='http://cdn.mspaintadventures.com/images/candycorn.gif'/>
+        <a href='http://www.mspaintadventures.com/' style='color: #29ff4a;'>MSPA官方</a> |
+                  <a href='http://zhhomestuck.blogspot.com/p/whatishomestuck.html' style='color: #29ff4a;'>Homestuck是什麼</a>
+        <img src='http://cdn.mspaintadventures.com/images/candycorn.gif'/>
+        <a href='http://zhhomestuck.blogspot.com/p/source.html' style='color:#39d5f6;'>資源</a> |
+                  <a href='http://zhhomestuck.blogspot.tw/p/about.html' style='color:#39d5f6;'>關於</a>
+        <img src='http://cdn.mspaintadventures.com/images/candycorn.gif'/>
+        <a href='http://zhhomestuck.blogspot.tw/p/all-pages.html' style='color: #f7f72a;'>所有頁</a> |
+                  <a href='http://zhhomestuck.blogspot.tw/p/map.html' style='color: #f7f72a;'>目錄</a> |
+                  <a href='http://zhhomestuck.blogspot.tw/p/search.html' style='color: #f7f72a;'>搜尋</a>
+        <img src='http://cdn.mspaintadventures.com/images/candycorn.gif'/>
+        <a href='http://zhhomestuck.blogspot.tw/p/comment.html' style='color: #ffb529;'>留言</a> |
+                  <a href='http://zhhomestuck.blogspot.tw/p/join.html' style='color: #ffb529;'>加入或幫助</a> |
+                  <a href='http://zhhomestuck.blogspot.tw/p/translators.html' style='color: #ffb529;'>翻譯組</a>
+      </span>
+    </div>
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead"></div>
+          <div id="pagebody"></div>
+          <div id="pagefoot"></div>
+        </div>
+      </div>
+    </div>
+  </body>
