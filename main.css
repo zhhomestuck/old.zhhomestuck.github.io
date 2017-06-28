@@ -1,5 +1,5 @@
       body {
-        font-family: Verdana, Arial, Helvetica, &#39;微軟正黑體&#39;, &#39;Microsoft JhengHei&#39;;
+        font-family: Verdana, Arial, Helvetica, Microsoft JhengHei;
         font-size: 15px;
         color: #000000;
         margin: 0px;
@@ -31,7 +31,7 @@
         margin: 0 -2px;
       }
       .mspanav {
-        font-family: Arial, Helvetica, 微軟正黑體;, &#39;Microsoft JhengHei&#39;, sans-serif;
+        font-family: Arial, Helvetica, Microsoft JhengHei, sans-serif;
         font-weight: bold;
         color: #ffffff;
         font-size: 13px;
@@ -83,7 +83,7 @@
         padding: 20px 20px 15px 25px;
         text-align: left;
         font-size: 24px;
-        font-family: Verdana, Arial, Helvetica, 微軟正黑體, &#39;Microsoft JhengHei&#39;, monospace;
+        font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
       }
       .pagefoot a.newer-page-link, html a.blog-pager-newer-link {
         line-height: 30px !important;
