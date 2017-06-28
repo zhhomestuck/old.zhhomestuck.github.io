@@ -66,17 +66,18 @@
         font-weight: bold;
         font-size: 32px;
         font-family: Courier, Verdana, Arial, monospace;
+        background-color: #eeeeee;
       }
       /* PB */
       .pagebody {
         margin-top: -8px;
         border-spacing: 0;
         font-family: Courier, Verdana, Arial, monospace;
+        background-color: #eeeeee;
       }
       .pagebody div {
         vertical-align: middle;
         padding: 15px 25px 0 25px;
-        background-color: #eeeeee;
       }
       /* PF */
       .pagefoot {
@@ -84,6 +85,7 @@
         text-align: left;
         font-size: 24px;
         font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
+        background-color: #eeeeee;
       }
       .pagefoot a.newer-page-link, html a.blog-pager-newer-link {
         line-height: 30px !important;
