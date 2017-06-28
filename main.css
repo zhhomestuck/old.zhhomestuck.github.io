@@ -111,7 +111,8 @@ b {font-weight:bold;}
   font-family: Courier, Verdana, monospace;
   font-weight: bold;
   color: #000000;
-  width: 100vw; max-width: 650px;
+  background-color: #535353;
+  width: 100vw; max-width: 950px;
 }
 .footer-bannerframe div {
   padding-top: 10px;
