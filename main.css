@@ -17,7 +17,7 @@
       .mspanav {
         width: 950px;
         margin: 0 auto;
-        background-color: #5a5a5a; 
+        background-color: #5a5a5a;
       }
       .mspanavMobile {
         padding: 5px 0;
@@ -56,13 +56,14 @@
       .content-inner {
         color: #000000;
         margin: 0 auto;
+        padding-top: 7px;
         width: 650px;
         background: #c6c6c6;
         text-align: -webkit-center; text-align: center;
       }
       /* PH */
       .pagehead {
-        padding-top: 14px;
+        padding: 14px 0px;
         font-weight: bold;
         font-size: 32px;
         font-family: Courier, Verdana, Arial, monospace;
@@ -86,6 +87,12 @@
         font-size: 24px;
         font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
         background-color: #eeeeee;
+      }
+      .pagefooter-footer {
+        text-align: left;
+        font-weight: bold;
+        font-size: 13px;
+        padding-top: 35px;
       }
       .pagefoot a.newer-page-link, html a.blog-pager-newer-link {
         line-height: 30px !important;
