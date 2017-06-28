@@ -95,7 +95,7 @@
       }
       /* Bannerframe */
       .footer-bannerframe {
-        background-image: url(&#39;http://cdn.mspaintadventures.com/images/bannerframe.png&#39;);
+        background-image: url('http://cdn.mspaintadventures.com/images/bannerframe.png');
         height: 110px;
         vertical-align: bottom;
         font-family: Courier, Verdana, monospace;
