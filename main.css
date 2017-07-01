@@ -106,6 +106,7 @@ b {font-weight:bold;}
 /* Bannerframe */
 .footer-bannerframe {
   background-image: url('http://cdn.mspaintadventures.com/images/bannerframe.png');
+  background-color: #535353;
   height: 110px;
   vertical-align: bottom;
   font-family: Courier, Verdana, monospace;
