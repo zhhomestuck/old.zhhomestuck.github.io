@@ -1,0 +1,6 @@
+plugins:       [jekyll-paginate]
+destination:   ./p
+markdown_ext:  "markdown,mkdown,mkdn,mkd,md"
+safe:          true
+permalink:     /:title.html
+paginate:      1
