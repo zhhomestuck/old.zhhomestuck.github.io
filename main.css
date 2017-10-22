@@ -65,13 +65,15 @@ b {font-weight:bold;}
   font-family: Courier, Verdana, Arial, monospace;
   background-color: #eeeeee;
 }
-.pagebody div {
-  vertical-align: middle;
-  padding: 15px 25px 0 25px;
+.pagebody img, .pagebody embed, .pagebody object {
+  margin: 0 0 15px -25px;
 }
 .pagebody p {
+  vertical-align: middle;
+  padding: 0 25px;
   margin: 0;
 }
+
 /* PF */
 .pagefoot {
   padding: 20px 20px 15px 25px;
