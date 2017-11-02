@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 
 *.md
+div_remover.cpp
+div_remover.exe
