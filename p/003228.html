@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] DD：看看週刊上的私人廣告。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01328_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01328_2.gif" /><!-- 圖 --><!--內文開始--><br />這不是真的報紙。它只是你私人的小黃書的包裝紙而已，沒人會看到的。<br /><br />噢不，它滑出來了一點。你對<b>黑白女性</b>的愛好幾乎要展露在外了。快保住這個秘密！特別是當<span style="color: #2ed73a">四葉草</span>在附近的時候。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01328_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01328_2.gif" /><!-- 圖 --><div><!--內文開始--><br />這不是真的報紙。它只是你私人的小黃書的包裝紙而已，沒人會看到的。<br /><br />噢不，它滑出來了一點。你對<b>黑白女性</b>的愛好幾乎要展露在外了。快保住這個秘密！特別是當<span style="color: #2ed73a">四葉草</span>在附近的時候。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003229.html"> [I] ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003229.html"> [I] ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

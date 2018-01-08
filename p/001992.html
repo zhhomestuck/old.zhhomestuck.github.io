@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：裝上偽裝以防禦
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00092.gif" /><!-- 圖 --> <!--內文開始--><br />(小獵犬神盾)<br /><br /><b>小獵犬神盾</b><span id="note">※1</span>首當其衝地吸收了主要的衝擊。看來老爸會享受這次攻擊帶來的「惡作劇者的開局」<span id="note">※2</span>，像往常一樣。<br /><!--內文結束--> &lt;div id="note"&gt;※1譯註： “BEAGLE AEGIS”，是「獵犬臉」的防禦功能。<br />※2譯註：「惡作劇者的開局」或可譯「惡作劇指數」，類似HP，用交換方式來加減指數。是用來比玩家誰更勝一籌的量度單位。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00092.gif" /><!-- 圖 --> <div><!--內文開始--><br />(小獵犬神盾)<br /><br /><b>小獵犬神盾</b>首當其衝地吸收了主要的衝擊。看來老爸會享受這次攻擊帶來的「惡作劇者的開局」，像往常一樣。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./001993.html"> John：索引化餡餅盤。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./001993.html"> John：索引化餡餅盤。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

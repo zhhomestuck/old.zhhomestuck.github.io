@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00789.gif" /><!-- 圖 --><!--內文開始--><br />你是<b>懷舊卡通</b>的狂熱粉絲。你非常熱衷於<b>動物擬人生物</b>。你對<b>核子物理學</b>有著不可思議的精通，並且掌握著高科技技術。你享受著不時發作的<b>嗜睡症</b>；你喜愛<b>園藝</b>，你的<b>溫室</b>就是最好的證明；你偶爾能<b>預知未來</b>。<br /> <br />你短暫地思考了一下：你要做什麼？<br /> <br />但是你很快意識到這只是你房間的一半，因此也只有一半你感<b>興趣</b>的東西。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00789.gif" /><!-- 圖 --><div><!--內文開始--><br />你是<b>懷舊卡通</b>的狂熱粉絲。你非常熱衷於<b>動物擬人生物</b>。你對<b>核子物理學</b>有著不可思議的精通，並且掌握著高科技技術。你享受著不時發作的<b>嗜睡症</b>；你喜愛<b>園藝</b>，你的<b>溫室</b>就是最好的證明；你偶爾能<b>預知未來</b>。<br /> <br />你短暫地思考了一下：你要做什麼？<br /> <br />但是你很快意識到這只是你房間的一半，因此也只有一半你感<b>興趣</b>的東西。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002690.html"> Jade：探索房間的另一半！</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002690.html"> Jade：探索房間的另一半！</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04603.gif" /><!-- 圖 --><!--內文開始--><br />這裡就是這實驗室的酷炫顯現器，你拿它複製了這裡所有的貓。你用你的另一台顯現器從貓兒們取得悖論鬼影，並將黏液收集進這台機器裡混合，然後產出幾隻突變小貓。你沒辦法用複製機自帶的顯現器製造貓咪，因為它的目標被鎖定在你媽身上了。令你遺憾的是，螢幕大多數時間都是黑掉的，因此你也從沒能夠好好地查看你媽在過去的事蹟，或是若真要說的話，她悲慘的死相。現在這目標被鎖定在她童年時的一個時刻上。<br /><br />還好你在這裡稍作停留了，它提醒了你之後還要來蒐集DNA樣本，好讓你能起動這場很明顯將必然發生的lalonde三代大團圓。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04603.gif" /><!-- 圖 --><div><!--內文開始--><br />這裡就是這實驗室的酷炫顯現器，你拿它複製了這裡所有的貓。你用你的另一台顯現器從貓兒們取得悖論鬼影，並將黏液收集進這台機器裡混合，然後產出幾隻突變小貓。你沒辦法用複製機自帶的顯現器製造貓咪，因為它的目標被鎖定在你媽身上了。令你遺憾的是，螢幕大多數時間都是黑掉的，因此你也從沒能夠好好地查看你媽在過去的事蹟，或是若真要說的話，她悲慘的死相。現在這目標被鎖定在她童年時的一個時刻上。<br /><br />還好你在這裡稍作停留了，它提醒了你之後還要來蒐集DNA樣本，好讓你能起動這場很明顯將必然發生的lalonde三代大團圓。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006507.html"> Roxy：顯現。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006507.html"> Roxy：顯現。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

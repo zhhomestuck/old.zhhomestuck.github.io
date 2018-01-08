@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Terezi：打開其它箱子。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03733_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03733_2.gif" /><br /><!-- 圖 --><!--內文開始--><br />你得到了你的<b>鋁榴石毛絨玩偶</b>！<br /><br />鋁榴石是陪伴你參與那些戰役的死黨。他是忠誠、友情和正直審判的楷模。是任何人都比不上的正義夥伴。<br /><br />現在再也無需懷疑了。她很明白地要把你捲入一場對抗。<br /><br />你是說扒你捲入。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03733_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03733_2.gif" /><br /><!-- 圖 --><div><!--內文開始--><br />你得到了你的<b>鋁榴石毛絨玩偶</b>！<br /><br />鋁榴石是陪伴你參與那些戰役的死黨。他是忠誠、友情和正直審判的楷模。是任何人都比不上的正義夥伴。<br /><br />現在再也無需懷疑了。她很明白地要把你捲入一場對抗。<br /><br />你是說扒你捲入。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005637.html"> Terezi：擁抱鋁榴石。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005637.html"> Terezi：擁抱鋁榴石。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [o] 請原諒我要調整一下狹窄的視景窗，
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03853_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03853_2.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div id="log-outer-outer"&gt;<!-- LOG COMMENCE --><br /><span style="color: #005682;"><br />AG: 說老實話,我對於這個戰鬥很緊張. <br /><br />AG: 但是我仍要渡過它,因為很多理由.<br /><br />AG: 為了拯救我的朋友,至少那些還活著的. 噢,我猜還有為了拯救現實本身,使它免於完全搞砸,這也很重要.<br /><br />AG: 但是我覺得,讓我想贏得這場戰鬥的最大動機是……<br /><br />AG: 當這一切都結束時能見到你的可能性!<br /><br />AG: 或許我終於能夠把這一切破事都拋到腦後.<br /><br />AG: 我再也八用擔心要當第一,或是證明我能當個多麼無情的殺手.<br /><br />AG: 或許我能試著當個普通的人類,不管那到底應該是要怎樣.誰知道呢,或許沒有聽起來那麼無趣!<br /><br />AG: 或許<br /><br />AG: 如果你沒有被我做過的那些壞事嚇壞的話……..<br /><br />AG: 而且八怕我是個外星人<br /><br />AG: 我們能約個會嗎? ::::O</span><br /><!-- LOG END --><br /><!--內文結束--> <img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room61.gif" /></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03853_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03853_2.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><span style="color: #005682;"><br />AG: 說老實話,我對於這個戰鬥很緊張. <br /><br />AG: 但是我仍要渡過它,因為很多理由.<br /><br />AG: 為了拯救我的朋友,至少那些還活著的. 噢,我猜還有為了拯救現實本身,使它免於完全搞砸,這也很重要.<br /><br />AG: 但是我覺得,讓我想贏得這場戰鬥的最大動機是……<br /><br />AG: 當這一切都結束時能見到你的可能性!<br /><br />AG: 或許我終於能夠把這一切破事都拋到腦後.<br /><br />AG: 我再也八用擔心要當第一,或是證明我能當個多麼無情的殺手.<br /><br />AG: 或許我能試著當個普通的人類,不管那到底應該是要怎樣.誰知道呢,或許沒有聽起來那麼無趣!<br /><br />AG: 或許<br /><br />AG: 如果你沒有被我做過的那些壞事嚇壞的話……..<br /><br />AG: 而且八怕我是個外星人<br /><br />AG: 我們能約個會嗎? ::::O</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room61.gif" /></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005757.html"> [o] 來把視角從這個不得體的行為上移開。噢天哪。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005757.html"> [o] 來把視角從這個不得體的行為上移開。噢天哪。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

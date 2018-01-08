@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dirk：察看玩偶/帽子堆。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04525.gif" /><!-- 圖 --><!--內文開始--><br />你床腳下的物品堆，組成有帽子、幾個零散的機器部件，還有<b>扑偶仔</b>。扑偶仔是你自己設計的可愛毛絨玩偶。你愛玩偶的一切。你總是想著自己的生產工藝、它們的操作、酷炫嶄新的設計，諸如此類的。如果宇宙對你沒有更重要的安排，還有如果這世界不是如此操蛋，你會以玩偶企業名利雙收，就像你<b>哥</b>用他那些詭異狗屎爛蛋做的一樣。<br /><br />你也喜歡收集一堆帽子到處擺，即使你從來不戴。你愛<b>帽子</b>。因為只要是哥都愛<b>帽子</b>，而你正好就是。一個哥。<br /><br />你不時地考慮找個一頂戴上，但他們其實還不適合你頭的尺寸。而且反正，弄亂你完美的頭髮可是罪過啊。因此，你選擇次好的選項，就是把圖案放在你的衣服上。而你說次好的選項，你的意思是根本好太多了的選項。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04525.gif" /><!-- 圖 --><div><!--內文開始--><br />你床腳下的物品堆，組成有帽子、幾個零散的機器部件，還有<b>扑偶仔</b>。扑偶仔是你自己設計的可愛毛絨玩偶。你愛玩偶的一切。你總是想著自己的生產工藝、它們的操作、酷炫嶄新的設計，諸如此類的。如果宇宙對你沒有更重要的安排，還有如果這世界不是如此操蛋，你會以玩偶企業名利雙收，就像你<b>哥</b>用他那些詭異狗屎爛蛋做的一樣。<br /><br />你也喜歡收集一堆帽子到處擺，即使你從來不戴。你愛<b>帽子</b>。因為只要是哥都愛<b>帽子</b>，而你正好就是。一個哥。<br /><br />你不時地考慮找個一頂戴上，但他們其實還不適合你頭的尺寸。而且反正，弄亂你完美的頭髮可是罪過啊。因此，你選擇次好的選項，就是把圖案放在你的衣服上。而你說次好的選項，你的意思是根本好太多了的選項。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006429.html"> Dirk：瞧瞧大電視。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006429.html"> Dirk：瞧瞧大電視。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

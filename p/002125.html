@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Rose：看窗外。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00225_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00225_2.gif" /><!-- 圖 --><!--內文開始--><br />你的全景窗讓你能俯瞰下方的院子，以及放著你去世的貓咪Jaspers(雅斯佩斯)<span id="note">※</span>的陵墓，牠在你年輕時死了。你<b>母親</b>蓋了這個陵墓以輕蔑<b>諷刺</b>你那年輕天真的去為動物辦個喪禮的要求。至少，對此回顧你是這樣想的。<br /><br />你也可以看到隔壁<b>實驗室</b>的輪廓，這設施可能有廣播強烈的<b>無線網路訊號</b>。你應該能在房子的其他地方連上這訊號。也許你該找個高一點的地方？<br /><!--內文結束--> &lt;div id="note"&gt;※譯註: 這貓咪的名字可能是取自哲學家<a href="http://zh.wikipedia.org/wiki/%E5%8D%A1%E5%B0%94%C2%B7%E9%9B%85%E6%96%AF%E8%B4%9D%E5%B0%94%E6%96%AF">Karl Theodor Jaspers</a></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00225_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00225_2.gif" /><!-- 圖 --><div><!--內文開始--><br />你的全景窗讓你能俯瞰下方的院子，以及放著你去世的貓咪Jaspers(雅斯佩斯)<span id="note">※</span>的陵墓，牠在你年輕時死了。你<b>母親</b>蓋了這個陵墓以輕蔑<b>諷刺</b>你那年輕天真的去為動物辦個喪禮的要求。至少，對此回顧你是這樣想的。<br /><br />你也可以看到隔壁<b>實驗室</b>的輪廓，這設施可能有廣播強烈的<b>無線網路訊號</b>。你應該能在房子的其他地方連上這訊號。也許你該找個高一點的地方？<br /><!--內文結束--> </div><div id="note">※譯註: 這貓咪的名字可能是取自哲學家<a href="http://zh.wikipedia.org/wiki/%E5%8D%A1%E5%B0%94%C2%B7%E9%9B%85%E6%96%AF%E8%B4%9D%E5%B0%94%E6%96%AF">Karl Theodor Jaspers</a></div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002126.html"> Rose：拿起筆記型電腦。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002126.html"> Rose：拿起筆記型電腦。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] DD：縫好人偶的右眼。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01300.gif" /><!-- 圖 --><!--內文開始--><br /><b>他媽的。</b><br /><br />你翻錯面了。<br /><br />你用無線電聯繫方塊，叫他把你的眼睛鬆開，然後等你轉過身來。他說是右眼，對吧？你剛才面向左面還是右面？你說當我面向左邊的時候才是對的。面向右邊的時候它就變成左眼了。<br /><br />他說，原來如此，所以那隻就是左邊的右眼咯。你說，對，但等一下你會轉過身所以它是右邊的左眼。好吧，他說，他會等你的。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01300.gif" /><!-- 圖 --><div><!--內文開始--><br /><b>他媽的。</b><br /><br />你翻錯面了。<br /><br />你用無線電聯繫方塊，叫他把你的眼睛鬆開，然後等你轉過身來。他說是右眼，對吧？你剛才面向左面還是右面？你說當我面向左邊的時候才是對的。面向右邊的時候它就變成左眼了。<br /><br />他說，原來如此，所以那隻就是左邊的右眼咯。你說，對，但等一下你會轉過身所以它是右邊的左眼。好吧，他說，他會等你的。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003201.html"> [I] ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003201.html"> [I] ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

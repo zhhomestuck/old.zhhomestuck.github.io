@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dirk：和機器朋友打招呼。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04520.gif" /><!-- 圖 --><!--內文開始--><br />你對這傢伙說了聲唷安怎，接著交換了一系列獨創的握手儀式和碰拳。<br /><br />他的名字是<b>方波</b>。你為了能夠時不時就來個rap大戰而建造了他。他是一個熱情的說唱歌手，不管你何時挑戰他都全力以赴，但你很輕易就能打敗他。你一場比賽都沒輸過。<br /><br />除了他之外你還造了另一台rap機器人。他的名字叫<b>鋸齒</b>。你將他在rap上設計得無與倫比，他的確是。你一場比賽都沒贏過。你希望有一天能贏，但你可不敢篤定。他的流動就是這麼瘋狂。<br /><br />你把他一顆空餘的頭擺在那邊桌上，但除此之外你很少見到他。自從你上次遇到他已經過了幾個月。他大概在花時間環遊世界，消滅那些傻到去挑戰他的說唱歌手。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04520.gif" /><!-- 圖 --><div><!--內文開始--><br />你對這傢伙說了聲唷安怎，接著交換了一系列獨創的握手儀式和碰拳。<br /><br />他的名字是<b>方波</b>。你為了能夠時不時就來個rap大戰而建造了他。他是一個熱情的說唱歌手，不管你何時挑戰他都全力以赴，但你很輕易就能打敗他。你一場比賽都沒輸過。<br /><br />除了他之外你還造了另一台rap機器人。他的名字叫<b>鋸齒</b>。你將他在rap上設計得無與倫比，他的確是。你一場比賽都沒贏過。你希望有一天能贏，但你可不敢篤定。他的流動就是這麼瘋狂。<br /><br />你把他一顆空餘的頭擺在那邊桌上，但除此之外你很少見到他。自從你上次遇到他已經過了幾個月。他大概在花時間環遊世界，消滅那些傻到去挑戰他的說唱歌手。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006424.html"> Dirk：察看衣櫃。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006424.html"> Dirk：察看衣櫃。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

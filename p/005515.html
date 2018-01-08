@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             o
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03612.gif" /><!-- 圖 --><!--內文開始--><br />[<span style="color:#ffffff;">我會這麼做也是因為我預期有位訪客很快將會抵達。如此一來我能夠對他釋出一些他應得的親切招待，同時對你也是一樣。<br /><br />我的房間並沒有門鈴。為什麼一個無所不知的傢伙會需要被警示訪客的出席呢？我知道他會準時到達。也就是說，提早到。而我若是有個門鈴，你將會見證它的響起。<br /><br />他已經在這裡了。</span>]<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03612.gif" /><!-- 圖 --><div><!--內文開始--><br />[<span style="color:#ffffff;">我會這麼做也是因為我預期有位訪客很快將會抵達。如此一來我能夠對他釋出一些他應得的親切招待，同時對你也是一樣。<br /><br />我的房間並沒有門鈴。為什麼一個無所不知的傢伙會需要被警示訪客的出席呢？我知道他會準時到達。也就是說，提早到。而我若是有個門鈴，你將會見證它的響起。<br /><br />他已經在這裡了。</span>]<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005516.html"> o</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005516.html"> o</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

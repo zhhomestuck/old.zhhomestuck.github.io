@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jane：插入帽子卡片。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04148_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04148_2.gif" /><!-- 圖 --><!--內文開始--><br />好吧，你會拿自己最廉價的財產示範一次來證明這機器到底有多沒用，反正你也沒多喜歡這頂帽子，它老是讓你看起來像個哥布林，而基本上這一點都不好笑。<br /><br />你把卡片塞進去，<b>原素碾磨工具</b>隨即顯示將要花費10布恩幣把此物件轉化成原素。也不算糟嘛，你猜，反正這貨也不值多少錢。這是某種<b>貝蒂公司娛樂產品</b>，特別生產給青少年們來衡量一些商品和其他玩意在線上的價值，實在是種了不起的商售策略，真的。作為帝國未來的繼承人，你一出生就自然是個億萬富翁，並以自己慷慨的名聲受世人所知。你有考慮過用自己的部分財產設立一筆獎學金，資助那些想去布恩大學深造的貧困孩童。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04148_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04148_2.gif" /><!-- 圖 --><div><!--內文開始--><br />好吧，你會拿自己最廉價的財產示範一次來證明這機器到底有多沒用，反正你也沒多喜歡這頂帽子，它老是讓你看起來像個哥布林，而基本上這一點都不好笑。<br /><br />你把卡片塞進去，<b>原素碾磨工具</b>隨即顯示將要花費10布恩幣把此物件轉化成原素。也不算糟嘛，你猜，反正這貨也不值多少錢。這是某種<b>貝蒂公司娛樂產品</b>，特別生產給青少年們來衡量一些商品和其他玩意在線上的價值，實在是種了不起的商售策略，真的。作為帝國未來的繼承人，你一出生就自然是個億萬富翁，並以自己慷慨的名聲受世人所知。你有考慮過用自己的部分財產設立一筆獎學金，資助那些想去布恩大學深造的貧困孩童。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006052.html"> Jane：啟動。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006052.html"> Jane：啟動。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

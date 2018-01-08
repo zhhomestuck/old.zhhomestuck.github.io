@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：偷看廚房。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00086.gif" /><!-- 圖 --> <!--內文開始--><br />你嘗試從<b>窗戶</b>偷窺廚房，但能見度不高！看來是因為你<b>爸</b>烘焙得太久導致窗戶都給蒸汽覆上了。<br /><br />天啊他實在太詭異了。<br /><br />但是你看得見靠窗的桌子上有些什麼。看來郵件到了！包含在內有一個<b>紅色包裹</b>，一些<b>賬單</b>，老爸的<b>掌上電腦</b>，還有一個信封可疑地標著<b>SBURB的標誌</b>。會是那個嗎？？？<br /><br />不幸地，窗是鎖著的。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00086.gif" /><!-- 圖 --> <div><!--內文開始--><br />你嘗試從<b>窗戶</b>偷窺廚房，但能見度不高！看來是因為你<b>爸</b>烘焙得太久導致窗戶都給蒸汽覆上了。<br /><br />天啊他實在太詭異了。<br /><br />但是你看得見靠窗的桌子上有些什麼。看來郵件到了！包含在內有一個<b>紅色包裹</b>，一些<b>賬單</b>，老爸的<b>掌上電腦</b>，還有一個信封可疑地標著<b>SBURB的標誌</b>。會是那個嗎？？？<br /><br />不幸地，窗是鎖著的。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./001987.html"> John：返回廚房</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./001987.html"> John：返回廚房</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             當未來的傑克諾爾。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03560.gif" /><!-- 圖 --><!--內文開始--><br />你現在是未來的傑克諾爾。<br /><br />此刻，你被困在一個時刻中，且感覺越來越像永恆。唯一勝過你的煩悶的，只有強烈的憤怒及對存在本身的蔑視。<br /><br />幾小時前，你進入了一個不尋常的進程。你殺了幾千臺機器人攻擊者。你易如反掌地摧毀了十二顆星球，循序且有條不紊地，如同髒手在一只破鐘上玷污每個它經過的數字。你將繁華國度及蠻荒國度破壞殆盡，並且殺掉了一堆身著黃色與紫色睡袍的外星孩子。你的毀滅之路正要開始發光發熱；還有該死的數千哩路要挺進呢。但是當蠻荒國度的塵埃落定，這個氣死人的仙子從稀薄的大氣中突如其來地將你凍結在時間中。但是她是無法永遠使你維持這樣的。當她最終讓你離開時，你會準備好。<br /><br />你想做什麼呢 ？<br /><br />除了無事可做以外，是說。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03560.gif" /><!-- 圖 --><div><!--內文開始--><br />你現在是未來的傑克諾爾。<br /><br />此刻，你被困在一個時刻中，且感覺越來越像永恆。唯一勝過你的煩悶的，只有強烈的憤怒及對存在本身的蔑視。<br /><br />幾小時前，你進入了一個不尋常的進程。你殺了幾千臺機器人攻擊者。你易如反掌地摧毀了十二顆星球，循序且有條不紊地，如同髒手在一只破鐘上玷污每個它經過的數字。你將繁華國度及蠻荒國度破壞殆盡，並且殺掉了一堆身著黃色與紫色睡袍的外星孩子。你的毀滅之路正要開始發光發熱；還有該死的數千哩路要挺進呢。但是當蠻荒國度的塵埃落定，這個氣死人的仙子從稀薄的大氣中突如其來地將你凍結在時間中。但是她是無法永遠使你維持這樣的。當她最終讓你離開時，你會準備好。<br /><br />你想做什麼呢 ？<br /><br />除了無事可做以外，是說。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005464.html"> 傑克：等待。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005464.html"> 傑克：等待。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

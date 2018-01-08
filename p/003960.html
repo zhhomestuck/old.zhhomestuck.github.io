@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ======>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02060.gif" /><!-- 圖 --><!--內文開始--><br />你快速地鍛造了新武器：<b>老荷再聞了</b>。並又搞了些其它的酷東西。<br /><!--內文結束--> &lt;div id="note"&gt;※譯註: 在《新鮮王子妙事多》的主題曲中，結尾有一句歌詞是”yo homes smell ya later”，翻譯成中文就是「呦老荷，再聞了」，「再聞」意思是「再見」。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02060.gif" /><!-- 圖 --><div><!--內文開始--><br />你快速地鍛造了新武器：<b>老荷再聞了</b>。並又搞了些其它的酷東西。<br /><!--內文結束--> </div><div id="note">※譯註: 在《新鮮王子妙事多》的主題曲中，結尾有一句歌詞是”yo homes smell ya later”，翻譯成中文就是「呦老荷，再聞了」，「再聞」意思是「再見」。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003961.html"> Karkat：和Terezi交涉。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003961.html"> Karkat：和Terezi交涉。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Terezi：宣判罪犯。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02042_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02042_2.gif" /><!-- 圖 --><!--內文開始--><br />身為檢方，做出最終裁決和宣讀罪犯的刑罰是你的職責，庭上在沉默中瞪視且將冷酷地批准。<br /><br />但你對這個可悲的官僚感到憐憫。你感覺慈悲為懷。你會給他一個抗爭的機會。<br /><br />你會擲出一枚<b>有兩個TROLL頭的硬幣</b>來決定他的命運。你在做出重要決策時經常這麼做。有點像蝙蝠俠的剋星，雙面人。或者是《險路勿近》裡的那傢伙。原來有很多狠角色都會擲硬幣這套。但那些都是地球的玩意兒你可聽都沒聽過他們。就說你是從許多Troll的犯罪故事中那些擲硬幣來做重大決策的老兄其中一個身上學到這個花招的吧。你承襲了這聞起來最邪惡的習慣。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02042_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02042_2.gif" /><!-- 圖 --><div><!--內文開始--><br />身為檢方，做出最終裁決和宣讀罪犯的刑罰是你的職責，庭上在沉默中瞪視且將冷酷地批准。<br /><br />但你對這個可悲的官僚感到憐憫。你感覺慈悲為懷。你會給他一個抗爭的機會。<br /><br />你會擲出一枚<b>有兩個TROLL頭的硬幣</b>來決定他的命運。你在做出重要決策時經常這麼做。有點像蝙蝠俠的剋星，雙面人。或者是《險路勿近》裡的那傢伙。原來有很多狠角色都會擲硬幣這套。但那些都是地球的玩意兒你可聽都沒聽過他們。就說你是從許多Troll的犯罪故事中那些擲硬幣來做重大決策的老兄其中一個身上學到這個花招的吧。你承襲了這聞起來最邪惡的習慣。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003943.html"> Terezi：拋轉。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003943.html"> Terezi：拋轉。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

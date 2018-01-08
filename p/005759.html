@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [o] 我是一位完美的伴護，也是一位絕佳的東道主。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03856_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03856_2.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div id="log-outer-outer"&gt;<!-- LOG COMMENCE --><br /><span style="color: #005682;"><br />AG: 噢老天.<br /><br />AG: 她穿著她的角色扮演服裝!這見鬼的是想幹麻?<br /><br />AG: 天哪,她把她的蠢龍娃娃和所有東西都帶上了.看來她這趟是認真的.<br /><br />AG: 該死,現在我得去應付這事了.<br /><br />AG: 總之,如果你真能聽到任何我說的話,謝謝你的聆聽,John.<br /><br />AG: 如果我無與倫比的好運能發揮作用的話,我們很快就能見面了!<br /><br />AG: 就請考慮一下我說的叭.<br /><br />AG: 好了…….. <br /><br />AG: 待會見! &lt;33333333</span><br /><!-- LOG END --><br /><!--內文結束--> <img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room64.gif" /></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03856_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03856_2.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><span style="color: #005682;"><br />AG: 噢老天.<br /><br />AG: 她穿著她的角色扮演服裝!這見鬼的是想幹麻?<br /><br />AG: 天哪,她把她的蠢龍娃娃和所有東西都帶上了.看來她這趟是認真的.<br /><br />AG: 該死,現在我得去應付這事了.<br /><br />AG: 總之,如果你真能聽到任何我說的話,謝謝你的聆聽,John.<br /><br />AG: 如果我無與倫比的好運能發揮作用的話,我們很快就能見面了!<br /><br />AG: 就請考慮一下我說的叭.<br /><br />AG: 好了…….. <br /><br />AG: 待會見! <33333333</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room64.gif" /></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005760.html"> [S][o] 滴。答。滴...</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005760.html"> [S][o] 滴。答。滴...</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

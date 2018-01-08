@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             這太荒謬了。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02493.gif" /><!-- 圖 --><!--內文開始--><br /><b>不</b>，我們現在談的就是我的<b>人生</b>，充滿惡霸、野狼、發霉的閣樓還有巨型蜘蛛，我剛剛有提過蜘蛛嗎?那讓我告訴你，這上面簡直有<b>他媽一海量</b>…<br /><br />幹，這根角又掉下來了，該死的垃圾。搞不好我能在附近找到些膠水…啊算了去他的。<br /><br />你們可有些許的概念知道我花了多少精力在你們身上？？想試試我可以把這被你加入書籤然後用那雙乾乾淨淨的假日拖鞋又踩又踏然後該死的日復一日不斷F5的這坨狗屎摧毀到什麼程度嗎？？？你是否具備微粒般渺小的認知能力好明白我甚至可以畫一隻缺毛發抖的黃鼠狼作為精神圖騰來代表你那害這網站在令人心碎的悔恨中發出尖叫的猥瑣癡戀嗎？？？？<br /><br />那會有多輕鬆啊! 我<b>現在</b>就可以<b>拗斷自己的灰色手指</b>，然後強迫你們不斷重讀關於troll羅曼史的背景設定然後<b>再重讀再重讀再重讀再重讀再重讀再重讀</b>。<br /><br />喔，你以為我不敢真的這麼做嗎？？？？？？？？<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02493.gif" /><!-- 圖 --><div><!--內文開始--><br /><b>不</b>，我們現在談的就是我的<b>人生</b>，充滿惡霸、野狼、發霉的閣樓還有巨型蜘蛛，我剛剛有提過蜘蛛嗎?那讓我告訴你，這上面簡直有<b>他媽一海量</b>…<br /><br />幹，這根角又掉下來了，該死的垃圾。搞不好我能在附近找到些膠水…啊算了去他的。<br /><br />你們可有些許的概念知道我花了多少精力在你們身上？？想試試我可以把這被你加入書籤然後用那雙乾乾淨淨的假日拖鞋又踩又踏然後該死的日復一日不斷F5的這坨狗屎摧毀到什麼程度嗎？？？你是否具備微粒般渺小的認知能力好明白我甚至可以畫一隻缺毛發抖的黃鼠狼作為精神圖騰來代表你那害這網站在令人心碎的悔恨中發出尖叫的猥瑣癡戀嗎？？？？<br /><br />那會有多輕鬆啊! 我<b>現在</b>就可以<b>拗斷自己的灰色手指</b>，然後強迫你們不斷重讀關於troll羅曼史的背景設定然後<b>再重讀再重讀再重讀再重讀再重讀再重讀</b>。<br /><br />喔，你以為我不敢真的這麼做嗎？？？？？？？？<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004395.html"> 喔我的天啊</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004395.html"> 喔我的天啊</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

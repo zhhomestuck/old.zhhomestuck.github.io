@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jade：看看窗外。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00801_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00801_2.gif" /><!-- 圖 --><!--內文開始--><br />這地方又是美妙的一天，一如既往的寧靜和平。一座沉睡了好幾世紀的火山龐然在側。<br /><br />雖然火山表面上是靜止的，但是它活躍的內核提供地熱為你的房子供電。你不知道爺爺為什麼在有無窮的核能可以使用時還選擇去用地熱發電，但是你有記憶以來就是這麼做的。<br /><br />你把這總結為你家族中歷時甚長不拘一格的毛絨裝(fursuits)不對是癖好(pursuits)<span id="note">※</span>。<br /><!--內文結束--> &lt;div id="note"&gt;※註: 「毛絨裝」與「癖好」兩者的英文字只差一個字母。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00801_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00801_2.gif" /><!-- 圖 --><div><!--內文開始--><br />這地方又是美妙的一天，一如既往的寧靜和平。一座沉睡了好幾世紀的火山龐然在側。<br /><br />雖然火山表面上是靜止的，但是它活躍的內核提供地熱為你的房子供電。你不知道爺爺為什麼在有無窮的核能可以使用時還選擇去用地熱發電，但是你有記憶以來就是這麼做的。<br /><br />你把這總結為你家族中歷時甚長不拘一格的毛絨裝(fursuits)不對是癖好(pursuits)<span id="note">※</span>。<br /><!--內文結束--> </div><div id="note">※註: 「毛絨裝」與「癖好」兩者的英文字只差一個字母。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002702.html"> Jade：從魔術箱中拿出毛絨裝。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002702.html"> Jade：從魔術箱中拿出毛絨裝。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

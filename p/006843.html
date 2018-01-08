@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04940.gif" /><!-- 圖 --><!--內文開始--><br />你感覺不對。這小盤子真的太過自以為了。你甚至感覺得到它會在下一秒爆開，然後接著你放眼望去所有人的腳都會在擺蹈著，一整個傻樣。不是交際舞會啊這兒。<br /><br />為什麼一切都得那麼地閃爍與激狂？是在趕什麼呢，到底？<br /><br />當然，你會把戒指戴上，但那要是在你感覺對了而且一切都天殺的準備好了的時候。或許該先來讀點小報、抽點小煙，喝完你的咖啡，聽點<b>真的</b>音樂。<br /><br />大家都必須他媽的冷靜點。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04940.gif" /><!-- 圖 --><div><!--內文開始--><br />你感覺不對。這小盤子真的太過自以為了。你甚至感覺得到它會在下一秒爆開，然後接著你放眼望去所有人的腳都會在擺蹈著，一整個傻樣。不是交際舞會啊這兒。<br /><br />為什麼一切都得那麼地閃爍與激狂？是在趕什麼呢，到底？<br /><br />當然，你會把戒指戴上，但那要是在你感覺對了而且一切都天殺的準備好了的時候。或許該先來讀點小報、抽點小煙，喝完你的咖啡，聽點<b>真的</b>音樂。<br /><br />大家都必須他媽的冷靜點。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006844.html"> [S] DD：更隨興地上昇。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006844.html"> [S] DD：更隨興地上昇。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

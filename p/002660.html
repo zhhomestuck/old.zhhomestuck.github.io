@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ACT 3 ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00760.gif" /><!-- 圖 --><!--內文開始--><br />一個傻呼呼的女孩正在她的花圃旁睡午覺，她很有可能因為一些愚蠢又滑稽的動作累壞了，就像傻呼呼的女孩平常會做的事。她大概也有個傻名字，或者沒有，在沒問她前很難確定。<br /><br />但基於她現在正在平靜的熟睡中，叫她起來有點不好意思，你也可以乾脆現在先為她取個名字。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00760.gif" /><!-- 圖 --><div><!--內文開始--><br />一個傻呼呼的女孩正在她的花圃旁睡午覺，她很有可能因為一些愚蠢又滑稽的動作累壞了，就像傻呼呼的女孩平常會做的事。她大概也有個傻名字，或者沒有，在沒問她前很難確定。<br /><br />但基於她現在正在平靜的熟睡中，叫她起來有點不好意思，你也可以乾脆現在先為她取個名字。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002661.html"> 輸入名字。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002661.html"> 輸入名字。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

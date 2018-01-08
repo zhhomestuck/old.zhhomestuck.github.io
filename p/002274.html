@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Rose：索引化天鵝絨枕頭。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00374.gif" /><!-- 圖 --><!--內文開始--><br />你決定要把<b>天鵝絨枕頭</b>(Velvet pillow)拿走，再以感恩的心在上面繡一首頌讚她的<b>母愛</b>的詩。但願你能在她注意到枕頭不見之前就把它放回去。<br /><br />Ve &gt; L. Ve &lt; Vi. Ve &gt; U.<br /><br />可是它害你的樹變的超級不穩。等一下一定會重新<b>自動平衡</b>。<br /><!--內文結束--> &lt;div id="note"&gt;Ve: velvet pillow: 天鵝絨枕頭<br />L: lap top: 筆記型電腦<br />Vi: violin: 小提琴<br />U: umbrella: 雨傘<br /></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00374.gif" /><!-- 圖 --><div><!--內文開始--><br />你決定要把<b>天鵝絨枕頭</b>(Velvet pillow)拿走，再以感恩的心在上面繡一首頌讚她的<b>母愛</b>的詩。但願你能在她注意到枕頭不見之前就把它放回去。<br /><br />Ve > L. Ve < Vi. Ve > U.<br /><br />可是它害你的樹變的超級不穩。等一下一定會重新<b>自動平衡</b>。<br /><!--內文結束--> </div><div id="note">Ve: velvet pillow: 天鵝絨枕頭<br />L: lap top: 筆記型電腦<br />Vi: violin: 小提琴<br />U: umbrella: 雨傘<br /></div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002275.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002275.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：結合眼鏡和PDA。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01056_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01056_2.gif" /><!-- 圖 --><!--內文開始--><br />你做出了<b>嚴肅生意人護目鏡</b>。<br /><br />這真的是很棒的可以空出雙手來的溝通方式，而且這樣你看起來更潮了，像從電影”Spy Kids”<span id="note">※</span>之類的地方裡跑出來的小孩一樣。<br /><br />天哪那部電影真是讚。<br /><br /><i><b>貨真價實的間諜</b>…只是比較小</i>。<br /><!--內文結束--> &lt;div id="note"&gt;※譯註: “Spy Kids”是一部2001年上映的美國科幻間諜喜劇電影。片名被譯作「小鬼大間諜」或「非常小特務」或「特務小子」。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01056_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01056_2.gif" /><!-- 圖 --><div><!--內文開始--><br />你做出了<b>嚴肅生意人護目鏡</b>。<br /><br />這真的是很棒的可以空出雙手來的溝通方式，而且這樣你看起來更潮了，像從電影”Spy Kids”<span id="note">※</span>之類的地方裡跑出來的小孩一樣。<br /><br />天哪那部電影真是讚。<br /><br /><i><b>貨真價實的間諜</b>…只是比較小</i>。<br /><!--內文結束--> </div><div id="note">※譯註: “Spy Kids”是一部2001年上映的美國科幻間諜喜劇電影。片名被譯作「小鬼大間諜」或「非常小特務」或「特務小子」。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002957.html"> John：結合大鎚、天文望遠鏡還有沙士卡上校文集。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002957.html"> John：結合大鎚、天文望遠鏡還有沙士卡上校文集。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

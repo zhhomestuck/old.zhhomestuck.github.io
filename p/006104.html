@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04201_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04201_2.gif" /><!-- 圖 --><!--內文開始--><br /><i><b>沒錯</b>，我就要帶著這本書！不，我才不要那本未經刪節的複印版！不，我不要用你的書！我甚至根本就抬不動那玩意！喔，這太荒謬了，聽聽你自己在說什麼。我沒問題的！這本書很完美，而且包含著很多好笑到難以置信的笑話！噢，拜託你可以別再說了嗎，我現在就要走了，再會！！！<br /><br /><span style="color: #00d5f2;">&gt;:B!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></i><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04201_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04201_2.gif" /><!-- 圖 --><div><!--內文開始--><br /><i><b>沒錯</b>，我就要帶著這本書！不，我才不要那本未經刪節的複印版！不，我不要用你的書！我甚至根本就抬不動那玩意！喔，這太荒謬了，聽聽你自己在說什麼。我沒問題的！這本書很完美，而且包含著很多好笑到難以置信的笑話！噢，拜託你可以別再說了嗎，我現在就要走了，再會！！！<br /><br /><span style="color: #00d5f2;">>:B!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></i><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006105.html"> Jane：不過再想想，還是帶走他的書吧。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006105.html"> Jane：不過再想想，還是帶走他的書吧。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

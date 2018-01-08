@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01283.gif" /><!-- 圖 --><!--內文開始--><br />你也迴避了下一槍。<br /><br />似乎這條時間線上的<span style="color: #2ed73a;">交叉</span>(也就是「真的」<span style="color: #2ed73a;">交叉</span>)在這個時間點時正在這間房間裡。他和<span style="color: #2ed73a;">鐵橇</span>交換了一些子彈，然後消失了。毫無疑問在這條時間線上的他們兩個只能把剩下的子彈都撒對方身上，把現在與拔針前之間的那些鐘都毀個遍。你猜這解釋了你來到時的那一團亂。幸好你想明白了，不然你一定會為此而失眠。<br /><br /><b>再度摧毀的鐘:20/107，以現在來說。至少…你知道嗎，管他的。</b><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01283.gif" /><!-- 圖 --><div><!--內文開始--><br />你也迴避了下一槍。<br /><br />似乎這條時間線上的<span style="color: #2ed73a;">交叉</span>(也就是「真的」<span style="color: #2ed73a;">交叉</span>)在這個時間點時正在這間房間裡。他和<span style="color: #2ed73a;">鐵橇</span>交換了一些子彈，然後消失了。毫無疑問在這條時間線上的他們兩個只能把剩下的子彈都撒對方身上，把現在與拔針前之間的那些鐘都毀個遍。你猜這解釋了你來到時的那一團亂。幸好你想明白了，不然你一定會為此而失眠。<br /><br /><b>再度摧毀的鐘:20/107，以現在來說。至少…你知道嗎，管他的。</b><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003184.html"> [I] SS：想想關於時間的笑話。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003184.html"> [I] SS：想想關於時間的笑話。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

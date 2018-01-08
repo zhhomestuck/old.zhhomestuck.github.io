@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/05023.gif" /><!-- 圖 --><!--內文開始--><br />泰瑞準備好要走了。你親切請兔子自己回到箱子裡。他高興地執行，世界上找不到任何理由能反問為什麼他要把自己放回箱子裡。<br /><br />你將他放置在<b>傳質器</b>的台座上，然後準備最後一次按下<b>傳送</b>鈕。你不敢相信這計劃終於要結束了，不會再有和你外婆之間的有趣信件。你猜下次跟她說話，就會是親身見面的時候了。難以置信啊！但是，對於像你這樣的男孩來說，沒有東西是完全無法相信的。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/05023.gif" /><!-- 圖 --><div><!--內文開始--><br />泰瑞準備好要走了。你親切請兔子自己回到箱子裡。他高興地執行，世界上找不到任何理由能反問為什麼他要把自己放回箱子裡。<br /><br />你將他放置在<b>傳質器</b>的台座上，然後準備最後一次按下<b>傳送</b>鈕。你不敢相信這計劃終於要結束了，不會再有和你外婆之間的有趣信件。你猜下次跟她說話，就會是親身見面的時候了。難以置信啊！但是，對於像你這樣的男孩來說，沒有東西是完全無法相信的。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006927.html"> [S] 泰瑞：快轉成為麗芺。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006927.html"> [S] 泰瑞：快轉成為麗芺。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

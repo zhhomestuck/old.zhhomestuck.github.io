@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jane：調查畫像。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04193.gif" /><!-- 圖 --><!--內文開始--><br />這只是你老爸其中一張無趣的<b>走廊白目</b>，再次證明他的興趣有多老掉牙，讓你看得只能聳肩翻白眼。不過再怎麼說，這都比以前好多了。<br /><br />好幾年前他曾經致力於模仿你的興趣，並把整個家塞滿類似的物品。那時的牆上全掛滿著超俗的經典情境喜劇畫像，而且滿地都是亂七八糟的噁心偵探雕像。在你看來他現在這樣擁抱自己的興趣總好過繼續試著褻瀆你的。當時你們的關係很緊張，也因此使你早年的青少年時期總是日復一日在家庭<b>決鬥</b>中度過。這種事已經不太常發生了，現在每當你們之間出現父女問題時，就會坐下來以大人的方式坦言相見解決，或靠著愚蠢的偽裝偷溜出家門達成目的。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04193.gif" /><!-- 圖 --><div><!--內文開始--><br />這只是你老爸其中一張無趣的<b>走廊白目</b>，再次證明他的興趣有多老掉牙，讓你看得只能聳肩翻白眼。不過再怎麼說，這都比以前好多了。<br /><br />好幾年前他曾經致力於模仿你的興趣，並把整個家塞滿類似的物品。那時的牆上全掛滿著超俗的經典情境喜劇畫像，而且滿地都是亂七八糟的噁心偵探雕像。在你看來他現在這樣擁抱自己的興趣總好過繼續試著褻瀆你的。當時你們的關係很緊張，也因此使你早年的青少年時期總是日復一日在家庭<b>決鬥</b>中度過。這種事已經不太常發生了，現在每當你們之間出現父女問題時，就會坐下來以大人的方式坦言相見解決，或靠著愚蠢的偽裝偷溜出家門達成目的。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006097.html"> Jane：偷瞄一眼客廳。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006097.html"> Jane：偷瞄一眼客廳。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

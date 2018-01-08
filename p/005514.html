@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             當刻痕博士。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03611.gif" /><!-- 圖 --><!--內文開始--><br />你再次試圖要當<span style="color: #2ed73a;">刻痕<span style="color: #ffffff;">o</span>博士</span>，並且壯烈地失敗了。不管你怎麼努力嘗試都當不成他。這是不可能的事。<br /><br />[<span style="color: #ffffff;">事實上，我認為接下來讓我強制征用內文敘述會是較好的作法。我相信你不會介意我使用白色來發言。這事實上並沒有協商空間，但是出於禮貌我會用一對可供視聽的括弧包裝起我的文字。<br /><br />我這麼做是因為我能夠。</span>]<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03611.gif" /><!-- 圖 --><div><!--內文開始--><br />你再次試圖要當<span style="color: #2ed73a;">刻痕<span style="color: #ffffff;">o</span>博士</span>，並且壯烈地失敗了。不管你怎麼努力嘗試都當不成他。這是不可能的事。<br /><br />[<span style="color: #ffffff;">事實上，我認為接下來讓我強制征用內文敘述會是較好的作法。我相信你不會介意我使用白色來發言。這事實上並沒有協商空間，但是出於禮貌我會用一對可供視聽的括弧包裝起我的文字。<br /><br />我這麼做是因為我能夠。</span>]<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005515.html"> o</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005515.html"> o</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

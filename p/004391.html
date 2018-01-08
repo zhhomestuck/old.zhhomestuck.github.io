@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ====================>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02490_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02490_2.gif" /><!-- 圖 --><!--內文開始--><br /><span style="font-family: STFangsong, FangSong, PMingLiU; font-size: 22px;">樹樁與沮喪之地</span><br /><br />AH大膽地趁自己不注意時施放了一個<b>作者技能-&gt;放縱亂入之梯</b>。這一直發生。<br /><br />所有MSPA讀者們<span id="note">(包括那些看繁中翻譯的)</span>現在都嚴正地發誓如果再不停止這種把戲他們就要做一個他媽的特技腳尖旋轉踹翻那鬼樹樁再一槍轟掉自己的腦袋。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02490_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02490_2.gif" /><!-- 圖 --><div><!--內文開始--><br /><span style="font-family: STFangsong, FangSong, PMingLiU; font-size: 22px;">樹樁與沮喪之地</span><br /><br />AH大膽地趁自己不注意時施放了一個<b>作者技能->放縱亂入之梯</b>。這一直發生。<br /><br />所有MSPA讀者們<span id="note">(包括那些看繁中翻譯的)</span>現在都嚴正地發誓如果再不停止這種把戲他們就要做一個他媽的特技腳尖旋轉踹翻那鬼樹樁再一槍轟掉自己的腦袋。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004392.html"> AH：好吧，哈哈，讓我們回到故事吧小傻蛋。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004392.html"> AH：好吧，哈哈，讓我們回到故事吧小傻蛋。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

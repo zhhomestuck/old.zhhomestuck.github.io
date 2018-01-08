@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Karkat：跟傑克合謀。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02306.gif" /><!-- 圖 --><!--內文開始--><br />你和你同血色的共犯很快會將<b>篡權行動</b>付諸實踐，首席代理人已經便利地事先規劃好，並為這個應變計劃取好了名了。如果這是由正統的應變事務所所起草的計劃，它顯然會有一個更好的名字。<br /><br />你的整個團隊一路來一直在進行著各種計畫，雇傭諜報活動、心靈控制戰術、政治上的防礙、惡毒的審問和冷血的暗殺。每個人各司其職而你全然瞭解團隊合作的真諦，正如同這個被稱為友情的Troll疾病。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02306.gif" /><!-- 圖 --><div><!--內文開始--><br />你和你同血色的共犯很快會將<b>篡權行動</b>付諸實踐，首席代理人已經便利地事先規劃好，並為這個應變計劃取好了名了。如果這是由正統的應變事務所所起草的計劃，它顯然會有一個更好的名字。<br /><br />你的整個團隊一路來一直在進行著各種計畫，雇傭諜報活動、心靈控制戰術、政治上的防礙、惡毒的審問和冷血的暗殺。每個人各司其職而你全然瞭解團隊合作的真諦，正如同這個被稱為友情的Troll疾病。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004207.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004207.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [A6I2] ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04682_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04682_2.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div id="log-outer-outer"&gt;<!-- LOG COMMENCE --><br /><br /><span style="color: #626262;"><b>當下的</b> 癌遺傳學家carcinoGeneticist [CCG]</span> 在現在 於留言版 喧囂水果混蛋工廠：穿越死後世界的無聊旅途版本 開啟了備忘錄<br /><br /><span style="color: #626262;">CCG: 真不敢相信我又開始用這狗屎備忘錄了。</span><br /><br /><span style="color: #626262;">CCG: 我猜大概自己也不知道還有什麼事好做了吧。</span><br /><br /><span style="color: #626262;">CCG: 我只是真的很需要找個地方跟誰講些屁話，但這裡的每個人都像個混帳一樣，把頭翹得比他們的洩殖管以前更讓我想尖叫的高。</span><br /><br /><span style="color: #626262;">CCG: 不管是TROLL洩殖管<em>還是</em>人類洩殖管，無論人類的那玩意到底<em>長怎樣</em>。</span><br /><br /><span style="color: #626262;">CCG: 你同意嗎？</span><br /><!-- LOG END --><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04682_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04682_2.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><br /><span style="color: #626262;"><b>當下的</b> 癌遺傳學家carcinoGeneticist [CCG]</span> 在現在 於留言版 喧囂水果混蛋工廠：穿越死後世界的無聊旅途版本 開啟了備忘錄<br /><br /><span style="color: #626262;">CCG: 真不敢相信我又開始用這狗屎備忘錄了。</span><br /><br /><span style="color: #626262;">CCG: 我猜大概自己也不知道還有什麼事好做了吧。</span><br /><br /><span style="color: #626262;">CCG: 我只是真的很需要找個地方跟誰講些屁話，但這裡的每個人都像個混帳一樣，把頭翹得比他們的洩殖管以前更讓我想尖叫的高。</span><br /><br /><span style="color: #626262;">CCG: 不管是TROLL洩殖管<em>還是</em>人類洩殖管，無論人類的那玩意到底<em>長怎樣</em>。</span><br /><br /><span style="color: #626262;">CCG: 你同意嗎？</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006586.html"> [A6I2] ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006586.html"> [A6I2] ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

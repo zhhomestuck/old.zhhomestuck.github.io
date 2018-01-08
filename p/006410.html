@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04507.gif" /><!-- 圖 --><!--內文開始--><br />對於任何從外部觀察這兩個窗口的人都會認為，這傳輸是立即性的。但對於旅行者來說，在兩者間必會有個虛無的間隔。在你的經驗看來，平面間的旅程越遠，間隔也越大。目前這個要說已經小到可以忽略了。大概是因為它只是指向你房子中的某處而已。你在你房子周圍，以及一些附近的地點如實驗室，設置了許許多多這樣的點做為捷徑。這樣是很方便，但也不是沒有風險。你仍不確定如果窗牆在旅程中斷電會發生什麼事，至少你能預見，斷電若是發生在當物體穿越到一半時，那物體八成會被切成兩半。你還沒有想出一個好方法來讓你身在其中時去調查後果，可不想拿自己當實驗用吐玻數。而且你也忙得不可開交根本沒空找出土撥鼠的正確拼法，因為說真的，誰在乎那些鬼老鼠。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04507.gif" /><!-- 圖 --><div><!--內文開始--><br />對於任何從外部觀察這兩個窗口的人都會認為，這傳輸是立即性的。但對於旅行者來說，在兩者間必會有個虛無的間隔。在你的經驗看來，平面間的旅程越遠，間隔也越大。目前這個要說已經小到可以忽略了。大概是因為它只是指向你房子中的某處而已。你在你房子周圍，以及一些附近的地點如實驗室，設置了許許多多這樣的點做為捷徑。這樣是很方便，但也不是沒有風險。你仍不確定如果窗牆在旅程中斷電會發生什麼事，至少你能預見，斷電若是發生在當物體穿越到一半時，那物體八成會被切成兩半。你還沒有想出一個好方法來讓你身在其中時去調查後果，可不想拿自己當實驗用吐玻數。而且你也忙得不可開交根本沒空找出土撥鼠的正確拼法，因為說真的，誰在乎那些鬼老鼠。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006411.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006411.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

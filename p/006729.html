@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Gamzee：從異想之箱中取回走私貨。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04826.gif" /><!-- 圖 --><!--內文開始--><br />小丑說操他媽的遵命。他並不想要操他媽的冒犯任何人。但他說如果他不能當你的嚮導，你至少也該有個<b>別的</b>嚮導，來導領你探索奇蹟之任務。<br /><br />他叫你準備好你的狗屎因為他要從他的<b>異想之箱</b>裡取出某個東西了。你說，你是指冰箱嗎？但他裝得好像他根本聽不見你一樣。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04826.gif" /><!-- 圖 --><div><!--內文開始--><br />小丑說操他媽的遵命。他並不想要操他媽的冒犯任何人。但他說如果他不能當你的嚮導，你至少也該有個<b>別的</b>嚮導，來導領你探索奇蹟之任務。<br /><br />他叫你準備好你的狗屎因為他要從他的<b>異想之箱</b>裡取出某個東西了。你說，你是指冰箱嗎？但他裝得好像他根本聽不見你一樣。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006730.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006730.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

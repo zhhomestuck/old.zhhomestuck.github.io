@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -24,19 +24,19 @@
           </div>
           <div class="pagebody" markdown="0">
            
-  >
+  
     
-      <img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01838_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01838_2.gif" /><!-- 圖 --><!--內文開始--><br />秉持著科學精神，你除了用&amp;&amp;結合以外還用
+      <img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01838_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01838_2.gif" /><!-- 圖 --><div><!--內文開始--><br />秉持著科學精神，你除了用&amp;&amp;結合以外還用
        
-      結合了一次。<br /> <br />你做出了<b>琥珀突變扑公仔噁心生物</b>。<br /><br />真酷，這就是你幹屁事的步驟，Egbert和Lalonde該作筆記了。<br /><!--內文結束--> 
+      結合了一次。<br /> <br />你做出了<b>琥珀突變扑公仔噁心生物</b>。<br /><br />真酷，這就是你幹屁事的步驟，Egbert和Lalonde該作筆記了。<br /><!--內文結束--> </div>
     
-  >
+  
 
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003739.html"> Dave：結合密封罐裡的胚胎和T先生玩偶。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003739.html"> Dave：結合密封罐裡的胚胎和T先生玩偶。</a>
             
             <div class="pagefooter-footer">
               
@@ -60,5 +60,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

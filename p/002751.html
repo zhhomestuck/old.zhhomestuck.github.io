@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jade：傳送到你能去到的最底層。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00851_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00851_2.gif" /><!-- 圖 --><br /><!--內文開始--><br />這是你能去到的最底層。<br /><br />距離<b>大廳</b>還有幾層樓，但到那層的<b>傳送器</b>被<b>爺爺</b>令人驚艷的<b>狩獵戰利品</b>們擋住了，而且你不認為他會喜歡有人移走它。<br /><br />說到這個，這裏就有些<b>戰利品</b>。他有成千上萬的這些恐怖玩意兒。你真的不喜歡。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00851_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00851_2.gif" /><!-- 圖 --><br /><div><!--內文開始--><br />這是你能去到的最底層。<br /><br />距離<b>大廳</b>還有幾層樓，但到那層的<b>傳送器</b>被<b>爺爺</b>令人驚艷的<b>狩獵戰利品</b>們擋住了，而且你不認為他會喜歡有人移走它。<br /><br />說到這個，這裏就有些<b>戰利品</b>。他有成千上萬的這些恐怖玩意兒。你真的不喜歡。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002752.html"> Jade：繼續前進。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002752.html"> Jade：繼續前進。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

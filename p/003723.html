@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dave：結合布偶禮服+扑公仔。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01823_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01823_2.gif" /><!-- 圖 --><!--內文開始--><br />你升級了未來Dave做的<b>布偶禮服</b>。他這大概是用你<b>哥</b>的酷炫木偶套裝結合你的襯衫做出來的，還縮放過它到適合你的大小。至少這八成是你會做的事。<br /><br />你加入了<b>扑公仔</b>在成分裡來讓它變成更鬆軟、時尚的<b>紅毛偶禮服</b>。這就像走路時穿著的舒適睡衣<br /><br /><b>行動睡衣</b>。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01823_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01823_2.gif" /><!-- 圖 --><div><!--內文開始--><br />你升級了未來Dave做的<b>布偶禮服</b>。他這大概是用你<b>哥</b>的酷炫木偶套裝結合你的襯衫做出來的，還縮放過它到適合你的大小。至少這八成是你會做的事。<br /><br />你加入了<b>扑公仔</b>在成分裡來讓它變成更鬆軟、時尚的<b>紅毛偶禮服</b>。這就像走路時穿著的舒適睡衣<br /><br /><b>行動睡衣</b>。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003724.html"> Dave：結合斷掉的鋼痕劍和紅寶石走私物。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003724.html"> Dave：結合斷掉的鋼痕劍和紅寶石走私物。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

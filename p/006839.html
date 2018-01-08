@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04936.gif" /><!-- 圖 --><!--內文開始--><br />拒絕一名美麗而致命的女人的慷慨並不是沒有好處的。你對她的好意表示感謝，並且婉轉地提出一份替代方案。<br /><br />瞧，你告訴老闆說這是他的問題。他太坦率地放任自己的野心了。別會錯意，讓一個人眼睛望著獎賞行事是好的，但他也不需要每次都要先踏過成千具屍體然後再游過一片血海才領取它。你常提醒他做事都有更滑頭的方式，尤其是當有女人涉及其中的時候。說到這個你突然想到，「滑頭(Slick)」會是一個非常適合他的諷刺綽號。或許會讓你發笑，這樣叫他，如果你有笑過的話。<br /><br />重點是，你知道該怎麼應付她。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04936.gif" /><!-- 圖 --><div><!--內文開始--><br />拒絕一名美麗而致命的女人的慷慨並不是沒有好處的。你對她的好意表示感謝，並且婉轉地提出一份替代方案。<br /><br />瞧，你告訴老闆說這是他的問題。他太坦率地放任自己的野心了。別會錯意，讓一個人眼睛望著獎賞行事是好的，但他也不需要每次都要先踏過成千具屍體然後再游過一片血海才領取它。你常提醒他做事都有更滑頭的方式，尤其是當有女人涉及其中的時候。說到這個你突然想到，「滑頭(Slick)」會是一個非常適合他的諷刺綽號。或許會讓你發笑，這樣叫他，如果你有笑過的話。<br /><br />重點是，你知道該怎麼應付她。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006840.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006840.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

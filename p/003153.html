@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01253.gif" /><!-- 圖 --><!--內文開始--><br />縫線在他自己的店裡念念叨叨。他猜<span style="color: #2ed73a;">蛋蛋們</span>和<span style="color: #2ed73a;">餅乾們</span>又在打架了，因為時空結構正在<span style="color: #2ed73a;">英格蘭領主</span>的<b>開羅大衣</b>上撕開了一條大痕。這就是為什麼他總是會準備<b>備用的大衣</b>，讓縫線去保管其中一件。<br /><br />任何幫派都會準備一名內部的醫生。但如果你要對付時間跳躍你最好還要有一個好得不行的裁縫。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01253.gif" /><!-- 圖 --><div><!--內文開始--><br />縫線在他自己的店裡念念叨叨。他猜<span style="color: #2ed73a;">蛋蛋們</span>和<span style="color: #2ed73a;">餅乾們</span>又在打架了，因為時空結構正在<span style="color: #2ed73a;">英格蘭領主</span>的<b>開羅大衣</b>上撕開了一條大痕。這就是為什麼他總是會準備<b>備用的大衣</b>，讓縫線去保管其中一件。<br /><br />任何幫派都會準備一名內部的醫生。但如果你要對付時間跳躍你最好還要有一個好得不行的裁縫。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003154.html"> [I] HB：聯絡黑桃取得支援。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003154.html"> [I] HB：聯絡黑桃取得支援。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

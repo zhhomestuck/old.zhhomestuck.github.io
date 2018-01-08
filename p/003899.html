@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Karkat：索引化鐮刀。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01999.gif" /><!-- 圖 --><!--內文開始--><br />你用<b>加密模式</b>拿起你信賴的<b>鐮刀</b>。為了取回它，你會需要駭進代碼才能打開<b>卡片金庫</b>。<br /><br />這顯然被證實是完全荒謬又難以使用的管理庫存方式，並且導致許多愚行。等會兒，你會和你的駭客朋友交換你用的存取模式，不像你，他碰巧是一個稱職的程式設計者。這才像話。<br /><br />但在那之前你的生活可真是場惡夢。因為這套模式發生過許多蠢事。太多了，你就是對這沒辦法。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01999.gif" /><!-- 圖 --><div><!--內文開始--><br />你用<b>加密模式</b>拿起你信賴的<b>鐮刀</b>。為了取回它，你會需要駭進代碼才能打開<b>卡片金庫</b>。<br /><br />這顯然被證實是完全荒謬又難以使用的管理庫存方式，並且導致許多愚行。等會兒，你會和你的駭客朋友交換你用的存取模式，不像你，他碰巧是一個稱職的程式設計者。這才像話。<br /><br />但在那之前你的生活可真是場惡夢。因為這套模式發生過許多蠢事。太多了，你就是對這沒辦法。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003900.html"> Karkat：拿起卡片金庫。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003900.html"> Karkat：拿起卡片金庫。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

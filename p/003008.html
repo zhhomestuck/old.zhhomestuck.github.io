@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01108.gif" /><!-- 圖 --><!--內文開始--><br />他們都犯下了滔天大罪，在你調查犯罪現場時侵入好幾個你煞費苦心標示好禁止入內的區域。調查這個<b>違法的紀念碑</b>和進入這<b>違禁的兩棲偶像崇拜</b>是你的職責。只要想想到他們在沙上留下的泥濘腳印都會把你的殼氣炸了。<br /><br />法律就是你在這不可原諒的風塵地帶中所堅持的一切。你不能承受鬆開你的黑爪讓正義從指間溜走。法律是美麗。秩序是和平。審判就是純粹的基礎和…<br /><br />暫停一下。<br /><br />你必須先花時間穿上一些荒謬的服裝才能繼續高談闊論…<br /><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01108.gif" /><!-- 圖 --><div><!--內文開始--><br />他們都犯下了滔天大罪，在你調查犯罪現場時侵入好幾個你煞費苦心標示好禁止入內的區域。調查這個<b>違法的紀念碑</b>和進入這<b>違禁的兩棲偶像崇拜</b>是你的職責。只要想想到他們在沙上留下的泥濘腳印都會把你的殼氣炸了。<br /><br />法律就是你在這不可原諒的風塵地帶中所堅持的一切。你不能承受鬆開你的黑爪讓正義從指間溜走。法律是美麗。秩序是和平。審判就是純粹的基礎和…<br /><br />暫停一下。<br /><br />你必須先花時間穿上一些荒謬的服裝才能繼續高談闊論…<br /><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003009.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003009.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

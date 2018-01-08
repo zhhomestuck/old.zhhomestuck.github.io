@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ======>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02544.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div class="div04445" style="padding:5px;text-align: left; color: #0599ff;"&gt;這沒4的&lt;div style="padding:5px;margin: 0 0 0 15px;text-align: left;"&gt;因為&lt;div style="padding:5px;margin: 0 0 0 30px;text-align: left;"&gt;我不想把&lt;div style="padding:5px;margin: 0 0 0 30px;text-align: left;"&gt;紅色用掉 &gt;:[&lt;div style="padding:5px;margin: 0 0 0 30px;text-align: left;"&gt;因為!!!&lt;div style="padding:5px;margin: 0 0 0 30px;text-align: left;"&gt;紅色最棒了<br />而且嚐起來&lt;div style="padding:5px;margin: 0 0 0 30px;text-align: left;"&gt;最美味了!!!&lt;div style="padding:5px;margin: 0 0 0 60px;text-align: left; color: #ee0000"&gt;<b>&lt;3</b><!--內文結束--> <style>.div04445 {margin: -20px 0 0 10%;} .mobile .div04445 {margin: 0;} </style></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02544.gif" /><!-- 圖 --><div><!--內文開始--><br /><div class="div04445" style="padding:5px;text-align: left; color: #0599ff;">這沒4的<div style="padding:5px;margin: 0 0 0 15px;text-align: left;">因為<div style="padding:5px;margin: 0 0 0 30px;text-align: left;">我不想把<div style="padding:5px;margin: 0 0 0 30px;text-align: left;">紅色用掉 >:[<div style="padding:5px;margin: 0 0 0 30px;text-align: left;">因為!!!<div style="padding:5px;margin: 0 0 0 30px;text-align: left;">紅色最棒了<br />而且嚐起來<div style="padding:5px;margin: 0 0 0 30px;text-align: left;">最美味了!!!<div style="padding:5px;margin: 0 0 0 60px;text-align: left; color: #ee0000"><b><3</b></div></div></div></div></div></div></div></div><!--內文結束--> </div><style>.div04445 {margin: -20px 0 0 10%;} .mobile .div04445 {margin: 0;} </style></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004446.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004446.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

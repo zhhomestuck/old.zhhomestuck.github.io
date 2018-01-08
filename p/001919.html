@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：把海報釘到牆上。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00019_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00019_2.gif" /><!-- 圖 --> <!--內文開始--><br />你對牆壁上的空位使用<b>槌子</b>、<b>釘子</b>、<b>海報</b>。<br /><br />太順利了。就跟你要的一樣。老頭子這次真的成功了。<span class="note">※</span><br /><!--內文結束--> &lt;div id="note"&gt;※註：「老頭子真的成功了。」(The old man really came through.) 語出自1985年電影「回到未來」。<br />※註：那個海報是1989年的美國奇幻喜劇電影”Little Monsters”。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00019_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00019_2.gif" /><!-- 圖 --> <div><!--內文開始--><br />你對牆壁上的空位使用<b>槌子</b>、<b>釘子</b>、<b>海報</b>。<br /><br />太順利了。就跟你要的一樣。老頭子這次真的成功了。<span class="note">※</span><br /><!--內文結束--> </div><div id="note">※註：「老頭子真的成功了。」(The old man really came through.) 語出自1985年電影「回到未來」。<br />※註：那個海報是1989年的美國奇幻喜劇電影”Little Monsters”。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./001920.html"> John：檢查空中監獄海報。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./001920.html"> John：檢查空中監獄海報。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

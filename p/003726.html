@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dave：結合完整的鋼痕劍和紅寶石走私物。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01826_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01826_2.gif" /><!-- 圖 --><!--內文開始--><br />出於好奇心你用完整的劍又試了一次。<br /><br />你轉動<b>鋼痕劍</b>的小刻度盤，把劍回溯至它還沒斷掉的過去時間點上。然後將它與這個紅蛙東西結合起來看看完整的<b>緋紅半月蛙刀</b>長個啥樣。<br /><br />但你絕對不可能負擔得起要做出它的原素，所需材料現在更多了。<br /><br />或許之後就只結合你房子周圍的東西就好，不要再用來自未來的索引目錄裡的東西了。這樣就不會再令人覺得困惑而且可能也比較不貴。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01826_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01826_2.gif" /><!-- 圖 --><div><!--內文開始--><br />出於好奇心你用完整的劍又試了一次。<br /><br />你轉動<b>鋼痕劍</b>的小刻度盤，把劍回溯至它還沒斷掉的過去時間點上。然後將它與這個紅蛙東西結合起來看看完整的<b>緋紅半月蛙刀</b>長個啥樣。<br /><br />但你絕對不可能負擔得起要做出它的原素，所需材料現在更多了。<br /><br />或許之後就只結合你房子周圍的東西就好，不要再用來自未來的索引目錄裡的東西了。這樣就不會再令人覺得困惑而且可能也比較不貴。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003727.html"> Dave：結合爛劍和勁傑(Hella Jeff)的圖畫。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003727.html"> Dave：結合爛劍和勁傑(Hella Jeff)的圖畫。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

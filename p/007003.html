@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Calliope：稍微整理一下。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/05100.gif" /><!-- 圖 --><!--內文開始--><br />你將這一團美味的混亂收進你的索引目錄裡。你蠻想現在就來吃點，但礙於你的<b>JUJU模組</b>的性質，你沒辦法拿出它們。一旦你索引化了什麼，就只有你兄弟才能使用它，反之亦然。你總是要小心地不要去索引到你重要的東西。你想有時候他就是故意丟東西到你這邊來，引誘你幫他索引化，讓之成為他的庫存。不過你覺得他這次應該不是為了這個才丟的。看起來他就只是在當個在耍脾氣的小混帳。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/05100.gif" /><!-- 圖 --><div><!--內文開始--><br />你將這一團美味的混亂收進你的索引目錄裡。你蠻想現在就來吃點，但礙於你的<b>JUJU模組</b>的性質，你沒辦法拿出它們。一旦你索引化了什麼，就只有你兄弟才能使用它，反之亦然。你總是要小心地不要去索引到你重要的東西。你想有時候他就是故意丟東西到你這邊來，引誘你幫他索引化，讓之成為他的庫存。不過你覺得他這次應該不是為了這個才丟的。看起來他就只是在當個在耍脾氣的小混帳。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./007004.html"> Calliope：查看盒子。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./007004.html"> Calliope：查看盒子。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

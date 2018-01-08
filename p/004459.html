@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             然後，
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02558.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div style="padding:0;margin:0;"&gt;<span style="font-size: 25px; line-height: 1.2;padding:2px 0; outline: solid #ff9c00 4px;border: solid #fffd05 2px; background: black;"><span style="font-size: 15px; color: white; vertical-align: bottom;"> &gt; </span><span class="animationWQCOMMAND"><i>摧毀它。</i> </span></span><!--內文結束--> <style>@keyframes animationWQCOMMANDkeyframe {   from {color: #000000;}   to   {color: #aaaaaa;} } @-webkit-keyframes animationWQCOMMANDkeyframe {   from {color: #000000;}   to   {color: #aaaaaa;} } .animationWQCOMMAND {   font-size: 1.0em;   animation: animationWQCOMMANDkeyframe 10s;   animation-iteration-count: infinite;   -webkit-animation: animationWQCOMMANDkeyframe 10s;   -webkit-animation-iteration-count: infinite; } </style></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02558.gif" /><!-- 圖 --><div><!--內文開始--><br /><div style="padding:0;margin:0;"><span style="font-size: 25px; line-height: 1.2;padding:2px 0; outline: solid #ff9c00 4px;border: solid #fffd05 2px; background: black;"><span style="font-size: 15px; color: white; vertical-align: bottom;"> > </span><span class="animationWQCOMMAND"><i>摧毀它。</i> </span></span></div><!--內文結束--> </div><style>@keyframes animationWQCOMMANDkeyframe {   from {color: #000000;}   to   {color: #aaaaaa;} } @-webkit-keyframes animationWQCOMMANDkeyframe {   from {color: #000000;}   to   {color: #aaaaaa;} } .animationWQCOMMAND {   font-size: 1.0em;   animation: animationWQCOMMANDkeyframe 10s;   animation-iteration-count: infinite;   -webkit-animation: animationWQCOMMANDkeyframe 10s;   -webkit-animation-iteration-count: infinite; } </style></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004460.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004460.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

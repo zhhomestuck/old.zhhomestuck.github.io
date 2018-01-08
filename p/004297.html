@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             檢視灰諧位。 
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02397.gif" /><!-- 圖 --><!--內文開始--><br />這個象限很特別地牽涉到黑色羅曼史本質中的三方關係。因落在諧和的那邊，它不需要忍受生育循環，除了間接的縱橫交錯外。<br /><br />當兩個Troll被困在敵視或者其它爭議關係中時，可以有叧一位介入其中並使他們成為<b>諧仨</b>(Auspistice)。諧仨者擔負調停倆人的責任，做為一個維持和平的角色，必免這段爭吵爆發成昏暗競爭。<br /><br />由於這樣的爭端在Troll中相當常見，故諧仨的存在相當重要。如果沒有他們，太多的灰色敵視會升級為昏暗，並且開始去和其它已存的排外的惡侶關係起衝突，導致太過火的社會複雜問題和情感疲痛（甚至比黑色羅曼史能引起的還要更加厲害）。若沒有諧緣(Auspisticism)，就會導致黑色出軌的泛濫。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02397.gif" /><!-- 圖 --><div><!--內文開始--><br />這個象限很特別地牽涉到黑色羅曼史本質中的三方關係。因落在諧和的那邊，它不需要忍受生育循環，除了間接的縱橫交錯外。<br /><br />當兩個Troll被困在敵視或者其它爭議關係中時，可以有叧一位介入其中並使他們成為<b>諧仨</b>(Auspistice)。諧仨者擔負調停倆人的責任，做為一個維持和平的角色，必免這段爭吵爆發成昏暗競爭。<br /><br />由於這樣的爭端在Troll中相當常見，故諧仨的存在相當重要。如果沒有他們，太多的灰色敵視會升級為昏暗，並且開始去和其它已存的排外的惡侶關係起衝突，導致太過火的社會複雜問題和情感疲痛（甚至比黑色羅曼史能引起的還要更加厲害）。若沒有諧緣(Auspisticism)，就會導致黑色出軌的泛濫。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004298.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004298.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

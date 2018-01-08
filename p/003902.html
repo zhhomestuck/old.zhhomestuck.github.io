@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ======>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02002_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02002_2.gif" /><!-- 圖 --><!--內文開始--><br />(圖片翻譯下收)<br /><!-- LOG COMMENCE -->&lt;div class="log-outer"&gt;<button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示">Show Image</button>&lt;div class="spoiler" style="display: none;"&gt;<button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏">Hide Image</button>&lt;div class="log-inner"&gt;<!-- LOG COMMENCE --><br /><img src="https://docs.google.com/uc?id=0B5MH0O6SwRMSMmtMREFOTHE4R3M" /><br /><br /><!-- LOG END --> <br /><!-- LOG END --><br />這是一本很厚的程式設計手冊，叫「<b>~ATH - 急著投胎的指南</b>」<br /><br />~ATH是一種令人很難忍受的語言。它的邏輯完全是由無窮盡的迴圈組成，或者要說好聽點的話，可運作的無窮盡迴圈組成。<br /><br />在簡介中最前面的頁數包含了最簡要的~ATH代碼架構。任何從基本架構上脫軌的代碼都無法編譯。<br /><br />你的電腦上有一大堆你已經研究了老半天的範例代碼。說好聽點是很挫折，說難聽點就是在折磨你的機器。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02002_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02002_2.gif" /><!-- 圖 --><div><!--內文開始--><br />(圖片翻譯下收)<br /><!-- LOG COMMENCE --><div class="log-outer"><div><button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示">Show Image</button></div><div class="spoiler" style="display: none;"><div><button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏">Hide Image</button></div><div class="log-inner"><!-- LOG COMMENCE --><br /><img src="https://docs.google.com/uc?id=0B5MH0O6SwRMSMmtMREFOTHE4R3M" /><br /><br /><!-- LOG END --> <br /></div></div></div><!-- LOG END --><br />這是一本很厚的程式設計手冊，叫「<b>~ATH - 急著投胎的指南</b>」<br /><br />~ATH是一種令人很難忍受的語言。它的邏輯完全是由無窮盡的迴圈組成，或者要說好聽點的話，可運作的無窮盡迴圈組成。<br /><br />在簡介中最前面的頁數包含了最簡要的~ATH代碼架構。任何從基本架構上脫軌的代碼都無法編譯。<br /><br />你的電腦上有一大堆你已經研究了老半天的範例代碼。說好聽點是很挫折，說難聽點就是在折磨你的機器。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003903.html"> Karkat：離開你的房間。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003903.html"> Karkat：離開你的房間。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

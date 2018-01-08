@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：把兔子交給親愛的Casey小甜心。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01601_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01601_2.gif" /><!-- 圖 --><!--內文開始--><br /><a href="https://www.youtube.com/watch?v=9KvUWMh8eZQ" target="_blank">我有個禮物要給你，Casey。<br /><br />它有一點髒。<br /><br /><b>在邊緣還有一點破<br /><br />就像你親愛的被囚的前老爸<br /><br /><i>有著一顆黃金之心</i></b></a><br /><!--內文結束--> &lt;div id="note"&gt;譯註: 連結是一個Youtube影片，是《空中監獄》的最後一幕，在其中主角將兔子玩偶送給他的女兒並說出這些台詞。<br /></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01601_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01601_2.gif" /><!-- 圖 --><div><!--內文開始--><br /><a href="https://www.youtube.com/watch?v=9KvUWMh8eZQ" target="_blank">我有個禮物要給你，Casey。<br /><br />它有一點髒。<br /><br /><b>在邊緣還有一點破<br /><br />就像你親愛的被囚的前老爸<br /><br /><i>有著一顆黃金之心</i></b></a><br /><!--內文結束--> </div><div id="note">譯註: 連結是一個Youtube影片，是《空中監獄》的最後一幕，在其中主角將兔子玩偶送給他的女兒並說出這些台詞。<br /></div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003502.html"> John：被排山倒海的情緒包圍。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003502.html"> John：被排山倒海的情緒包圍。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

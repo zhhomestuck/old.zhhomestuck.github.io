@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] SS：把代表鐵橇的針再一次插回原處。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01280_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01280_2.gif" /><!-- 圖 --><!--內文開始--><br />你回來了你原來的時間線。<br /><br />但是呢，你的箱子裡塞著來自另一時間線上活着的<span style="color: #2ed73a;">鐵橇</span>。你把他帶到了他應該已死去的時間線<br /><br />…所以，你猜他在這條時間線上是又生又死的狀態？好吧，隨便他，反正你大概只要再殺他一次就好了。<br /><br />來自另一條時間線<span style="color: #2ed73a;">交叉</span>也在這。所以這裡就有了兩個<span style="color: #2ed73a;">交叉</span>？這事變得越來越蠢了。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01280_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01280_2.gif" /><!-- 圖 --><div><!--內文開始--><br />你回來了你原來的時間線。<br /><br />但是呢，你的箱子裡塞著來自另一時間線上活着的<span style="color: #2ed73a;">鐵橇</span>。你把他帶到了他應該已死去的時間線<br /><br />…所以，你猜他在這條時間線上是又生又死的狀態？好吧，隨便他，反正你大概只要再殺他一次就好了。<br /><br />來自另一條時間線<span style="color: #2ed73a;">交叉</span>也在這。所以這裡就有了兩個<span style="color: #2ed73a;">交叉</span>？這事變得越來越蠢了。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003181.html"> [I] ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003181.html"> [I] ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

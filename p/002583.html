@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             WV：找找附近尖的物體。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00683.gif" /><!-- 圖 --><!--內文開始--><br />你拿出了愛刀（Trusty Knife）。<br /><br />這其實是……<br /><br />你不太確定它們叫做什麼。它是那些郵箱上可轉動的紅色把手玩意，已經老得生鏽了，它可以讓你知道在郵箱裡面有郵件，或者通知郵差這裡面有郵件等着收。你真的不知道這叫什麼。你撕下一塊衣服包裹它好讓你來握着。<br /><br />但這打不開罐頭。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00683.gif" /><!-- 圖 --><div><!--內文開始--><br />你拿出了愛刀（Trusty Knife）。<br /><br />這其實是……<br /><br />你不太確定它們叫做什麼。它是那些郵箱上可轉動的紅色把手玩意，已經老得生鏽了，它可以讓你知道在郵箱裡面有郵件，或者通知郵差這裡面有郵件等着收。你真的不知道這叫什麼。你撕下一塊衣服包裹它好讓你來握着。<br /><br />但這打不開罐頭。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002584.html"> WV：成為魔精。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002584.html"> WV：成為魔精。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

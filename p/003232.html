@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01332_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01332_2.gif" /><!-- 圖 --><!--內文開始--><br />他把你撞到了下個星期。<br /><br />你發現你正在做一個星期後要做的事。看上去你正在採購雜貨。<br /><br />你對於你沒有之前一個星期的記憶感到困惑。你也不知道在你的購物清單上寫了什麼東西。你用完牛奶了嗎？要先購買什麼作為儲備嗎？？疑問幾乎要把你壓倒。<br /><br />而且更糟的是，<br /><br /><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=011.jpg"><img border="0" src="http://www.mspaintadventures.com/storyfiles/hs2/scraps/pricesandvaules.gif" /></a><br /><br /><center><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=011.jpg" style="text-decoration:none;">&lt;div style="background-color:#fefe00;width:235px;height:105px;font-family:標楷體;color:#fedd02;padding:0px;"&gt;<span style="font-size:16px;">架上的東西太多<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;........</span><br /><span style="font-size:24px;text-decoration:none;"><b>價格</b>和<b><br />種類</b>了</span></a><br /></center><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01332_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01332_2.gif" /><!-- 圖 --><div><!--內文開始--><br />他把你撞到了下個星期。<br /><br />你發現你正在做一個星期後要做的事。看上去你正在採購雜貨。<br /><br />你對於你沒有之前一個星期的記憶感到困惑。你也不知道在你的購物清單上寫了什麼東西。你用完牛奶了嗎？要先購買什麼作為儲備嗎？？疑問幾乎要把你壓倒。<br /><br />而且更糟的是，<br /><br /><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=011.jpg"><img border="0" src="http://www.mspaintadventures.com/storyfiles/hs2/scraps/pricesandvaules.gif" /></a><br /><br /><center><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=011.jpg" style="text-decoration:none;"><div style="background-color:#fefe00;width:235px;height:105px;font-family:標楷體;color:#fedd02;padding:0px;"><span style="font-size:16px;">架上的東西太多<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;........</span><br /><span style="font-size:24px;text-decoration:none;"><b>價格</b>和<b><br />種類</b>了</span></div></a><br /></center><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003233.html"> [I] HB：用蛋蛋們的屍體引誘罐頭。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003233.html"> [I] HB：用蛋蛋們的屍體引誘罐頭。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

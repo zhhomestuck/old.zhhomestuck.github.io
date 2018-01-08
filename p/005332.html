@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Terezi：回到電腦實驗室。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03429.gif" /><!-- 圖 --><!--內文開始--><br />你愚蠢地在你英雄般的復活嘗試後丟失了眼鏡，讓你無法用它來警告其它人了。這就是為什麼你應該要隨時攜帶五臺以上的電腦，像個明智的人一樣。<br /><br />但是這裡一臺也沒有。只有某位在喇叭堆上打盹的人。<br /><br />而且有個什麼大水坑挨著傳送平臺。可能是醬汁？你希望是蛆蟲醬汁。拜訪是蛆蟲醬汁。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03429.gif" /><!-- 圖 --><div><!--內文開始--><br />你愚蠢地在你英雄般的復活嘗試後丟失了眼鏡，讓你無法用它來警告其它人了。這就是為什麼你應該要隨時攜帶五臺以上的電腦，像個明智的人一樣。<br /><br />但是這裡一臺也沒有。只有某位在喇叭堆上打盹的人。<br /><br />而且有個什麼大水坑挨著傳送平臺。可能是醬汁？你希望是蛆蟲醬汁。拜訪是蛆蟲醬汁。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005333.html"> Terezi：嚐嚐醬汁。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005333.html"> Terezi：嚐嚐醬汁。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

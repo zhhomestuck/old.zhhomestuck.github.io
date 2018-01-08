@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00538.gif" /><!-- 圖 --><!--內文開始--><br /><!-- LOG COMMENCE -->&lt;div class="log-outer"&gt;<button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字">Show Pesterlog</button>&lt;div class="spoiler" style="display: none;"&gt;<button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字">Hide Pesterlog</button>&lt;div class="log-inner"&gt;<!-- LOG COMMENCE --><br /><br /><span style="color: #0715cd">EB: 哇嗚，這真不必要！</span><br /><br /><span style="color: #b536da">TT: 我做了個捷徑到樓上。我覺得上到那兒然後盡快試用卡片是個不錯的主意。</span><br /><br /><span style="color: #b536da">TT: 還有，你對訊息並不過度回應。</span><br /><br /><span style="color: #0715cd">EB: 你是指那些樓梯嗎？</span><br /><br /><span style="color: #0715cd">EB: 天吶，看看這亂來的樓梯…</span><br /><br /><span style="color: #0715cd">EB: 這太狹窄了！我一定要爬它嗎？</span><br /><br /><span style="color: #b536da">TT: 它絕對能行走。</span><br /><br /><span style="color: #b536da">TT: 我要開始節省原素了。</span><br /><br /><span style="color: #b536da">TT: 如果你繼續殺怪，收集原素，擴增緩存上限，未來我們可以不需要這麼節儉我們的資源。</span><br /><!-- LOG END --><br /><!-- LOG END --><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00538.gif" /><!-- 圖 --><div><!--內文開始--><br /><!-- LOG COMMENCE --><div class="log-outer"><div><button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字">Show Pesterlog</button></div><div class="spoiler" style="display: none;"><div><button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字">Hide Pesterlog</button></div><div class="log-inner"><!-- LOG COMMENCE --><br /><br /><span style="color: #0715cd">EB: 哇嗚，這真不必要！</span><br /><br /><span style="color: #b536da">TT: 我做了個捷徑到樓上。我覺得上到那兒然後盡快試用卡片是個不錯的主意。</span><br /><br /><span style="color: #b536da">TT: 還有，你對訊息並不過度回應。</span><br /><br /><span style="color: #0715cd">EB: 你是指那些樓梯嗎？</span><br /><br /><span style="color: #0715cd">EB: 天吶，看看這亂來的樓梯…</span><br /><br /><span style="color: #0715cd">EB: 這太狹窄了！我一定要爬它嗎？</span><br /><br /><span style="color: #b536da">TT: 它絕對能行走。</span><br /><br /><span style="color: #b536da">TT: 我要開始節省原素了。</span><br /><br /><span style="color: #b536da">TT: 如果你繼續殺怪，收集原素，擴增緩存上限，未來我們可以不需要這麼節儉我們的資源。</span><br /><!-- LOG END --><br /></div></div></div><!-- LOG END --><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002439.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002439.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [o] ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04065_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04065_2.gif" /><!-- 圖 --><!--內文開始--><br />我扶養這位女孩，為她的召喚而準備。我的教導強調的是服從、對齒輪majyyks的精熟，和被鎖在房間裡。<br /><br />現在正如你應已得知的，我的雇主不久將進入這個宇宙。然後，我將放棄我的撫養權並授之予他，她將被指定要永遠地成為他的使女。正如你想必也已經得知的，她已經這樣做了。雖然她這種最常見的血色應該讓她的大限距今只剩一二十個恆星周，他的詛咒使她得以生龍活虎的很。<br /><br />但她不想繼續保持下去。<br /><!--內文結束--> <img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room104.gif" /><script>document.getElementById("tooltipimg").title = "啊啦啊啊啊啦啊啦呃啊啊啊呃呃呃啊啊呃嘔呃嘔嘔嘔嘔嘔嘔嘔嘔嘔! *翻桌*"</script></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04065_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04065_2.gif" /><!-- 圖 --><div><!--內文開始--><br />我扶養這位女孩，為她的召喚而準備。我的教導強調的是服從、對齒輪majyyks的精熟，和被鎖在房間裡。<br /><br />現在正如你應已得知的，我的雇主不久將進入這個宇宙。然後，我將放棄我的撫養權並授之予他，她將被指定要永遠地成為他的使女。正如你想必也已經得知的，她已經這樣做了。雖然她這種最常見的血色應該讓她的大限距今只剩一二十個恆星周，他的詛咒使她得以生龍活虎的很。<br /><br />但她不想繼續保持下去。<br /><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room104.gif" /><script>document.getElementById("tooltipimg").title = "啊啦啊啊啊啦啊啦呃啊啊啊呃呃呃啊啊呃嘔呃嘔嘔嘔嘔嘔嘔嘔嘔嘔! *翻桌*"</script></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005969.html"> [o] ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005969.html"> [o] ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

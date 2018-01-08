@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             傑克：戴上滑稽帽子。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00956.gif" /><!-- 圖 --><!--內文開始--><br />這輕佻的頭飾讓你的胃翻絞。你寧願把你的頭插在火爐裡也不想把它誘騙進這畸形的令人憎惡的彩色鳥胃裡去。<br /><br />你<b>高貴的統治者</b>命令每個人都必須穿戴這些可怕的破布已經夠糟了，現在又來了這棘手的人類和他的孩子。<br /><br />但你對帽子的忍耐是有限度的。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00956.gif" /><!-- 圖 --><div><!--內文開始--><br />這輕佻的頭飾讓你的胃翻絞。你寧願把你的頭插在火爐裡也不想把它誘騙進這畸形的令人憎惡的彩色鳥胃裡去。<br /><br />你<b>高貴的統治者</b>命令每個人都必須穿戴這些可怕的破布已經夠糟了，現在又來了這棘手的人類和他的孩子。<br /><br />但你對帽子的忍耐是有限度的。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002857.html"> 傑克：叫一個小兵來。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002857.html"> 傑克：叫一個小兵來。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

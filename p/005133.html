@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             AH：去看看卡爾。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03230.gif" /><!-- 圖 --><!--內文開始--><br />Ms. Paint真是一名有格調的繁華之國淑女，簡直就像是優雅及美麗的典範。每次在她面前我都會覺得有點不知所措，尤其是當她拿著那小水桶出現時。<br /><br />但<b>這個</b>廢物懶骨頭卻老是讓我反胃到不行。<br /><br />老天啊，卡爾，我們必須要穿成這個樣子，但我做給你那件上好的套裝你看起來甚至連碰都沒碰，更別提把你的眼睛改成撞球然後快速替換的主意了。<br /><br />你這叛逆的舉動實在讓我很不悅，剛剛我被迫要把得了狂犬病的祥龍福哥兒<span id="note">※</span>帶到柴房後面給牠爆頭的時候心情就已經夠糟了。<br /><!--內文結束--> &lt;div id="note"&gt;※譯註: 「祥龍福哥兒」是小說《說不完的故事》中的角色。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03230.gif" /><!-- 圖 --><div><!--內文開始--><br />Ms. Paint真是一名有格調的繁華之國淑女，簡直就像是優雅及美麗的典範。每次在她面前我都會覺得有點不知所措，尤其是當她拿著那小水桶出現時。<br /><br />但<b>這個</b>廢物懶骨頭卻老是讓我反胃到不行。<br /><br />老天啊，卡爾，我們必須要穿成這個樣子，但我做給你那件上好的套裝你看起來甚至連碰都沒碰，更別提把你的眼睛改成撞球然後快速替換的主意了。<br /><br />你這叛逆的舉動實在讓我很不悅，剛剛我被迫要把得了狂犬病的祥龍福哥兒<span id="note">※</span>帶到柴房後面給牠爆頭的時候心情就已經夠糟了。<br /><!--內文結束--> </div><div id="note">※譯註: 「祥龍福哥兒」是小說《說不完的故事》中的角色。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005134.html"> AH：搬出你的老underwood牌打字機。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005134.html"> AH：搬出你的老underwood牌打字機。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

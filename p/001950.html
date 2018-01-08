@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：檢查壁爐。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00050.gif" /><!-- 圖 --> <!--內文開始--><br />明亮橘色的火焰在壁爐裡閃動。現在是四月且外頭不怎麼寒冷，但這不重要。在家裡，壁爐需要火焰，這就是壁爐存在的原因。火焰屬於壁爐，絕對，永遠，該死，總之沒有例外。<br /><br />根據家族裡那些不知來源的神話說，家借走了火的靈魂以溫暖客人的心，就像月亮拿走了日光的自由一樣。<br /><br />「月亮是個徹底的小偷，她那蒼白之火偷自太陽。」 － 馬克‧吐溫<span id="note">※</span><br /><br />你蠻確定是馬克‧吐溫說過這句話。<br /><!--內文結束--> &lt;div id="note"&gt;※譯註：實際上是出自莎士比亞「雅典的泰門」(Act IV, scene 3)。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00050.gif" /><!-- 圖 --> <div><!--內文開始--><br />明亮橘色的火焰在壁爐裡閃動。現在是四月且外頭不怎麼寒冷，但這不重要。在家裡，壁爐需要火焰，這就是壁爐存在的原因。火焰屬於壁爐，絕對，永遠，該死，總之沒有例外。<br /><br />根據家族裡那些不知來源的神話說，家借走了火的靈魂以溫暖客人的心，就像月亮拿走了日光的自由一樣。<br /><br />「月亮是個徹底的小偷，她那蒼白之火偷自太陽。」 － 馬克‧吐溫<span id="note">※</span><br /><br />你蠻確定是馬克‧吐溫說過這句話。<br /><!--內文結束--> </div><div id="note">※譯註：實際上是出自莎士比亞「雅典的泰門」(Act IV, scene 3)。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./001951.html"> John：把GAMEBRO扔進火堆</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./001951.html"> John：把GAMEBRO扔進火堆</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

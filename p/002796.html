@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00896.gif" /><!-- 圖 --><!--內文開始--><br />這份郵件是拯救這顆垂死星球免於變成灰燼的最後希望，郵件傳遞人是被上帝中選為正義而戰的勇敢戰士。他們是知識之光、言論自由和信息交換的守護者。他們是所有承載自由的小紙片之無懼搬運者，白色郵戳的天使向信紙們欲解脫的渴望細聲低語著承諾：「還有希望。」<br /><br />自由。真理。正義。文明。教化。完美。<br /><br /><span style="text-decoration: underline;">郵件</span><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00896.gif" /><!-- 圖 --><div><!--內文開始--><br />這份郵件是拯救這顆垂死星球免於變成灰燼的最後希望，郵件傳遞人是被上帝中選為正義而戰的勇敢戰士。他們是知識之光、言論自由和信息交換的守護者。他們是所有承載自由的小紙片之無懼搬運者，白色郵戳的天使向信紙們欲解脫的渴望細聲低語著承諾：「還有希望。」<br /><br />自由。真理。正義。文明。教化。完美。<br /><br /><span style="text-decoration: underline;">郵件</span><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002797.html"> PM：檢查鍵盤和螢幕。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002797.html"> PM：檢查鍵盤和螢幕。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

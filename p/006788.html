@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             傑克：搜索雕刻設備。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04885.gif" /><!-- 圖 --><!--內文開始--><br />等一下。你還記得剛剛在窗外看到尖尖的東西。<br /><br />幸運的是兩個王國都完全被尖尖的東西包覆著。隨便揮一隻死貓都會被刺到。&lt;span id”note”&gt;※&lt;/span&gt;<br /><!--內文結束--> &lt;div id="note"&gt;※譯註: “Can’t swing a dead cat without hitting something”，諺語，形容世界很小走到那裡都會遇見某些東西。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04885.gif" /><!-- 圖 --><div><!--內文開始--><br />等一下。你還記得剛剛在窗外看到尖尖的東西。<br /><br />幸運的是兩個王國都完全被尖尖的東西包覆著。隨便揮一隻死貓都會被刺到。<span id”note”>※</span><br /><!--內文結束--> </div><div id="note">※譯註: “Can’t swing a dead cat without hitting something”，諺語，形容世界很小走到那裡都會遇見某些東西。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006789.html"> 傑克：取得尖東西。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006789.html"> 傑克：取得尖東西。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

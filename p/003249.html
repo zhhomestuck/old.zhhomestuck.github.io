@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] SS：翻轉你的身體。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01349.gif" /><!-- 圖 --><!--內文開始--><br />(換個方向身體翻轉！)<br /><br /><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=010.jpg"><img src="http://www.mspaintadventures.com/storyfiles/hs2/scraps/turnways.gif" border="0" /></a><br /><br /><center><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=010.jpg" style="text-decoration:none;">&lt;div style="width:140px;"&gt;<span style="color:#4efe00;font-size:18px;">你必須要<br /><b>翻轉</b></span><br /><span style="color:#4efe00;font-size:22px;"><b>換個方向</b></span></a></center><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01349.gif" /><!-- 圖 --><div><!--內文開始--><br />(換個方向身體翻轉！)<br /><br /><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=010.jpg"><img src="http://www.mspaintadventures.com/storyfiles/hs2/scraps/turnways.gif" border="0" /></a><br /><br /><center><a href="http://www.mspaintadventures.com/sweetbroandhellajeff/?cid=010.jpg" style="text-decoration:none;"><div style="width:140px;"><span style="color:#4efe00;font-size:18px;">你必須要<br /><b>翻轉</b></span><br /><span style="color:#4efe00;font-size:22px;"><b>換個方向</b></span></div></a></center><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003250.html"> [I] SS：掃描條碼。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003250.html"> [I] SS：掃描條碼。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

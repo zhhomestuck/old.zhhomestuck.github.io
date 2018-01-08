@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             成為那個神秘的蜘蛛女孩。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02145.gif" /><!-- 圖 --><!--內文開始--><br />你試著要成為神秘的蜘蛛女孩但是失敗了。<br /><br />對你來說她還太神秘了！說真的，那副眼鏡是怎麼了？又怎麼有那副機械手？她到底是怎樣！<br /><br />她認為你想當她是一種恭維。她想她不介意。這會很酷。<br /><br />我們等等再來認識她。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02145.gif" /><!-- 圖 --><div><!--內文開始--><br />你試著要成為神秘的蜘蛛女孩但是失敗了。<br /><br />對你來說她還太神秘了！說真的，那副眼鏡是怎麼了？又怎麼有那副機械手？她到底是怎樣！<br /><br />她認為你想當她是一種恭維。她想她不介意。這會很酷。<br /><br />我們等等再來認識她。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004046.html"> Sollux：回去找Aradia。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004046.html"> Sollux：回去找Aradia。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

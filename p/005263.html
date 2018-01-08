@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03360.gif" /><!-- 圖 --><!--內文開始--><br />這個令人難過的傷心發現很快地轉變成沮喪和悲傷。訣別了，親愛的鬥牛士小子。<br /><br />你屈服於情緒。眼淚已經準備好了，大概。你試圖吸吸鼻子。也動了動嘴唇。<br /><br />唉，眼淚不會來了。那爛透的蠢注死Dave還有你讓他死去的爛透蠢串通計劃。都已經讓你哭乾了。<br /><br />噢好吧，不管怎樣。你手邊還有很多比你藍綠色眼睛的排水更重要的事情要關心。一起罪行已被犯下。<br /><br />而罪行犯下之處，正義必得伸張。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03360.gif" /><!-- 圖 --><div><!--內文開始--><br />這個令人難過的傷心發現很快地轉變成沮喪和悲傷。訣別了，親愛的鬥牛士小子。<br /><br />你屈服於情緒。眼淚已經準備好了，大概。你試圖吸吸鼻子。也動了動嘴唇。<br /><br />唉，眼淚不會來了。那爛透的蠢注死Dave還有你讓他死去的爛透蠢串通計劃。都已經讓你哭乾了。<br /><br />噢好吧，不管怎樣。你手邊還有很多比你藍綠色眼睛的排水更重要的事情要關心。一起罪行已被犯下。<br /><br />而罪行犯下之處，正義必得伸張。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005264.html"> Terezi：調查。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005264.html"> Terezi：調查。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

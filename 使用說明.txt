@@ -1,0 +1,7 @@
+必須載有Ruby環境，然後有它的bundler套件
+
+_posts裡的.md檔裡不得有"\r"
+中文編碼必須是UTF-8
+
+在主目錄裡輸入指令:
+> jekyll build

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dirk：走出臥室的門。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04564.gif" /><!-- 圖 --><!--內文開始--><br />你從來沒有從實際的出口離開過你的房間。你哥多年前用了一尊有夠炫炮的半身石像堵住了門。每次你走過它要進到浴室時，你都會向<b>史奴比艦長</b>點一個贊同的點頭，你喜歡幻想它會向你以非常緩慢、非常細微的方式回點，實際上他根本就不會動。<br /><br />這東西重得難以搬開，而且無論如何你也不想搬它。你一直都從另一個出口離開房間。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04564.gif" /><!-- 圖 --><div><!--內文開始--><br />你從來沒有從實際的出口離開過你的房間。你哥多年前用了一尊有夠炫炮的半身石像堵住了門。每次你走過它要進到浴室時，你都會向<b>史奴比艦長</b>點一個贊同的點頭，你喜歡幻想它會向你以非常緩慢、非常細微的方式回點，實際上他根本就不會動。<br /><br />這東西重得難以搬開，而且無論如何你也不想搬它。你一直都從另一個出口離開房間。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006468.html"> Dirk：離開。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006468.html"> Dirk：離開。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

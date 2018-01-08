@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [I] SS：回去當紅心巴克斯卡。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01242_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01242_2.gif" /><!-- 圖 --><!--內文開始-->&lt;div id="mislocated" style="background:transparent;border:0;padding:0;margin:0 0 -5px 0;position:relative;color:white;top:-900px;font-size:20px;"&gt;<b>在現在</b>黑桃史力克不能回去當紅心巴克斯卡，因為顯然方塊德魯格正忙著當梅花杜斯。<br /><br />你剛看到<span style="color: #2ed73a;">追蹤</span>不知為啥一拳打在空氣上。那傢伙簡直蠢得沒邊！<br /><br />然後他又走了。<br /><br />你不知道他正跟踪德魯格的<b>過去軌跡</b>穿過大廈，直到他走到它與你軌跡的交叉點，而在那時起他開始跟踪你。<br /><br />但我們都知道，因為這實在是再明顯不過了。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01242_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/01242_2.gif" /><!-- 圖 --><div><!--內文開始--><div id="mislocated" style="background:transparent;border:0;padding:0;margin:0 0 -5px 0;position:relative;color:white;top:-900px;font-size:20px;"><b>在現在</b></div>黑桃史力克不能回去當紅心巴克斯卡，因為顯然方塊德魯格正忙著當梅花杜斯。<br /><br />你剛看到<span style="color: #2ed73a;">追蹤</span>不知為啥一拳打在空氣上。那傢伙簡直蠢得沒邊！<br /><br />然後他又走了。<br /><br />你不知道他正跟踪德魯格的<b>過去軌跡</b>穿過大廈，直到他走到它與你軌跡的交叉點，而在那時起他開始跟踪你。<br /><br />但我們都知道，因為這實在是再明顯不過了。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./003143.html"> [I] CD：開始那個邪惡的計劃。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./003143.html"> [I] CD：開始那個邪惡的計劃。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

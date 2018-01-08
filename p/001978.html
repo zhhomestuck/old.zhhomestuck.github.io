@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：玩52撿卡片。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00078_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00078_2.gif" /><!-- 圖 --> <!--內文開始--><br />你在玩整人專家最喜歡的卡片游戲<span id="note">※1</span>，但只有你獨自在房間裡，這使得這紙牌遊戲看起來更加的蠢。<br /><br /><b>太蠢了</b>。看看這爛攤子。<br /><br />在一旁袖手旁觀的花生友<span id="note">※2</span>已經開始取笑你了，你對他們的輕蔑感到過敏。<br /><!--內文結束--> &lt;div id="note"&gt;※1譯註：52撿卡片，一種惡作劇遊戲，把52張撲克牌散落一地，然後叫事先不知「52撿卡片」是什麼意思的受害者全部撿起來。<br />※2譯註：原文是”peanut gallery”，指<u>歌舞雜耍通俗喜劇劇院</u>裡很座位很後面通常喜歡把花生丟向舞台的市井小民們。</p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00078_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00078_2.gif" /><!-- 圖 --> <div><!--內文開始--><br />你在玩整人專家最喜歡的卡片游戲<span id="note">※1</span>，但只有你獨自在房間裡，這使得這紙牌遊戲看起來更加的蠢。<br /><br /><b>太蠢了</b>。看看這爛攤子。<br /><br />在一旁袖手旁觀的花生友<span id="note">※2</span>已經開始取笑你了，你對他們的輕蔑感到過敏。<br /><!--內文結束--> </div><div id="note">※1譯註：52撿卡片，一種惡作劇遊戲，把52張撲克牌散落一地，然後叫事先不知「52撿卡片」是什麼意思的受害者全部撿起來。<br />※2譯註：原文是”peanut gallery”，指<u>歌舞雜耍通俗喜劇劇院</u>裡很座位很後面通常喜歡把花生丟向舞台的市井小民們。</div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./001979.html"> John：嘗試離開屋子。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./001979.html"> John：嘗試離開屋子。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

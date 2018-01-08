@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jade：打開箱子。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00803_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00803_2.gif" /><!-- 圖 --><!--內文開始--><br />在<b>算命玩意兒</b>中有這些：一個附帶了<b>天鵝絨枕的水晶球</b>、一組<b>塔羅牌</b>、一顆<b>魔法8號球</b>、一顆<b>魔法撞球母球</b>，還有一本你最喜歡的書－《<b>問題解決者</b>》<br /><br /><b>有用工具</b>則包含：你的<b>電腦</b>當然，為了方便攜帶被你放在一個<b>有趣的午餐盒</b>裡、還有一些小工具讓你不用老是跑去廚房。這有用來準備美味食物的<b>煮食爐</b>、一個<b>冰箱</b>有個對普通家電來說很奇怪的名字－<b>製冷爐</b>。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00803_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00803_2.gif" /><!-- 圖 --><div><!--內文開始--><br />在<b>算命玩意兒</b>中有這些：一個附帶了<b>天鵝絨枕的水晶球</b>、一組<b>塔羅牌</b>、一顆<b>魔法8號球</b>、一顆<b>魔法撞球母球</b>，還有一本你最喜歡的書－《<b>問題解決者</b>》<br /><br /><b>有用工具</b>則包含：你的<b>電腦</b>當然，為了方便攜帶被你放在一個<b>有趣的午餐盒</b>裡、還有一些小工具讓你不用老是跑去廚房。這有用來準備美味食物的<b>煮食爐</b>、一個<b>冰箱</b>有個對普通家電來說很奇怪的名字－<b>製冷爐</b>。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002704.html"> Jade：檢查魔法8號球和白球。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002704.html"> Jade：檢查魔法8號球和白球。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

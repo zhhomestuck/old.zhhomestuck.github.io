@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02800.gif" /><!-- 圖 --><!--內文開始--><br /><!-- LOG COMMENCE -->&lt;div class="log-outer"&gt;<button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字">Show Spritelog</button>&lt;div class="spoiler" style="display: none;"&gt;<button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字">Hide Spritelog</button>&lt;div class="log-inner"&gt;<!-- LOG COMMENCE --><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 那真是太令人無法接受了。</span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 你就在你的幽靈床上放鬆然後救你姐姐吧，我會幫你準備一些家常大餐。</span><br /><br /><span style="color: #0715cd;">JOHN: 喔天。 </span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 你想吃什麼？說出你內心的渴望。我會用我可怕的幽靈之力來做好。</span><br /><br /><span style="color: #0715cd;">JOHN: 哇，嗯… </span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 噢，John！你有聽到那聲音嗎？ </span><br /><br /><span style="color: #0715cd;">JOHN: 呃…沒？</span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 聽起來像是你的大餐已經要好了！</span><br /><br /><span style="color: #0715cd;">JOHN: 真的假的？已經好了？</span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 嘶嘶嘶嘶嘶！</span><br /><!-- LOG END --><br /><!-- LOG END --><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02800.gif" /><!-- 圖 --><div><!--內文開始--><br /><!-- LOG COMMENCE --><div class="log-outer"><div><button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字">Show Spritelog</button></div><div class="spoiler" style="display: none;"><div><button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字">Hide Spritelog</button></div><div class="log-inner"><!-- LOG COMMENCE --><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 那真是太令人無法接受了。</span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 你就在你的幽靈床上放鬆然後救你姐姐吧，我會幫你準備一些家常大餐。</span><br /><br /><span style="color: #0715cd;">JOHN: 喔天。 </span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 你想吃什麼？說出你內心的渴望。我會用我可怕的幽靈之力來做好。</span><br /><br /><span style="color: #0715cd;">JOHN: 哇，嗯… </span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 噢，John！你有聽到那聲音嗎？ </span><br /><br /><span style="color: #0715cd;">JOHN: 呃…沒？</span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 聽起來像是你的大餐已經要好了！</span><br /><br /><span style="color: #0715cd;">JOHN: 真的假的？已經好了？</span><br /><br /><span style="color: #00d5f2;">NANNASPRITE: 嘶嘶嘶嘶嘶！</span><br /><!-- LOG END --><br /></div></div></div><!-- LOG END --><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004702.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004702.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

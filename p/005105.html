@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jade：做你該做的事。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03202.gif" /><!-- 圖 --><!--內文開始--><br />你完全不知道該做什麼事!<br /><br />但你肯定是要做點什麼的，你總不能就這樣站著看那怪物整天傳來傳去殺人，而且老實說，Dave提到那個自殺計畫聽起來真的很蠢。一定有什麼更好的辦法。快想想。用你的想像力！<br /><br />你突然想起那個古怪的精靈教母troll似乎說過個提議。或許你之前對他有點太苛刻了，他也只是試著表示善意。而且說實在話，他用你鬼爸爸爺爺小時的燧發手槍害死他本人那事真的算不小心的，也許你應該再給他的計畫一次機會。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03202.gif" /><!-- 圖 --><div><!--內文開始--><br />你完全不知道該做什麼事!<br /><br />但你肯定是要做點什麼的，你總不能就這樣站著看那怪物整天傳來傳去殺人，而且老實說，Dave提到那個自殺計畫聽起來真的很蠢。一定有什麼更好的辦法。快想想。用你的想像力！<br /><br />你突然想起那個古怪的精靈教母troll似乎說過個提議。或許你之前對他有點太苛刻了，他也只是試著表示善意。而且說實在話，他用你鬼爸爸爺爺小時的燧發手槍害死他本人那事真的算不小心的，也許你應該再給他的計畫一次機會。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005106.html"> Jade：敲Tavros。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005106.html"> Jade：敲Tavros。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

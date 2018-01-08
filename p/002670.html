@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00770.gif" /><!-- 圖 --><!--內文開始--><br />哇，你真是爛透了！<br /><br />或許你該換個你真的知道該怎麼演奏的樂器，就像放在你房間的那個。老實說你連這長笛打哪來的都搞不清楚。這裏的東西似乎老是來無影去無蹤，特別是這些到處都是的巨大橘色葫蘆瓜總讓你感到困惑。<br /><br />出於厭惡感你想把長笛給丟了。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00770.gif" /><!-- 圖 --><div><!--內文開始--><br />哇，你真是爛透了！<br /><br />或許你該換個你真的知道該怎麼演奏的樂器，就像放在你房間的那個。老實說你連這長笛打哪來的都搞不清楚。這裏的東西似乎老是來無影去無蹤，特別是這些到處都是的巨大橘色葫蘆瓜總讓你感到困惑。<br /><br />出於厭惡感你想把長笛給丟了。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002671.html"> Jade：索引化長笛。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002671.html"> Jade：索引化長笛。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

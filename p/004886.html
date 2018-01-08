@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02985.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div style="border: solid 1px #000000; width: 80%"&gt;<span style="font-size: 8px;">紐約時報暢銷排行榜第一名</span><br /><span style="font-family: STFangsong, FangSong, PMingLiU; font-size: 48px;">夢之泡沫</span><br />&lt;div style="text-align: left;font-size: 12px;"&gt;＂在他的夢中，<br />他就是先知。[…]<br /><br />就是他。＂<br /><span style="font-family: STFangsong, FangSong, PMingLiU; font-size: 28px;">查爾斯‧杜頓</span><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02985.gif" /><!-- 圖 --><div><!--內文開始--><br /><div style="border: solid 1px #000000; width: 80%"><span style="font-size: 8px;">紐約時報暢銷排行榜第一名</span><br /><span style="font-family: STFangsong, FangSong, PMingLiU; font-size: 48px;">夢之泡沫</span><br /><div style="text-align: left;font-size: 12px;">＂在他的夢中，<br />他就是先知。[…]<br /><br />就是他。＂</div><br /><span style="font-family: STFangsong, FangSong, PMingLiU; font-size: 28px;">查爾斯‧杜頓</span><br /></div><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004887.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004887.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

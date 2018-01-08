@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Terezi：查看箱子。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03730.gif" /><!-- 圖 --><!--內文開始--><br />你花了太多時間在校準你的調查環境，幾乎沒剩什麼時間來調查了。這是一位調查者常陷入的錯誤，除了地板上的陷阱外，你的確是如字面上般地陷入了。<br /><br />這個神秘的房間裡有兩個箱子。沒什麼不尋常的。這個實驗室裡到處是箱子，而且大家似乎都無法抗拒地把他們的私人物品藏到箱子裡。一直到那些好東西被忍不住誘惑而打開的遇見箱子的人拿走，也就是每一個人。<br /><br />或許這個箱子裡有什麼線索？<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03730.gif" /><!-- 圖 --><div><!--內文開始--><br />你花了太多時間在校準你的調查環境，幾乎沒剩什麼時間來調查了。這是一位調查者常陷入的錯誤，除了地板上的陷阱外，你的確是如字面上般地陷入了。<br /><br />這個神秘的房間裡有兩個箱子。沒什麼不尋常的。這個實驗室裡到處是箱子，而且大家似乎都無法抗拒地把他們的私人物品藏到箱子裡。一直到那些好東西被忍不住誘惑而打開的遇見箱子的人拿走，也就是每一個人。<br /><br />或許這個箱子裡有什麼線索？<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005634.html"> Terezi：打開箱子。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005634.html"> Terezi：打開箱子。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

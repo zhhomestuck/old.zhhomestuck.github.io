@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jake：好，試試窮微器。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/05017.gif" /><!-- 圖 --><!--內文開始--><br />你把那個好久以來都塞在你的索引目錄裡的龐大東西放了出來。在你家爆炸的一段時間後，你在叢林裡發現了它，你立刻把它拾起來安全存放著。就算它並沒有太大的紀念價值，你也還是會撿它。圓球超讚的，你愛圓球。球體、甚至任何球狀物，在你的書裡都看起來很酷。<br /><br />可是認真說來，能釋放一些庫存空間你會感覺輕鬆點。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/05017.gif" /><!-- 圖 --><div><!--內文開始--><br />你把那個好久以來都塞在你的索引目錄裡的龐大東西放了出來。在你家爆炸的一段時間後，你在叢林裡發現了它，你立刻把它拾起來安全存放著。就算它並沒有太大的紀念價值，你也還是會撿它。圓球超讚的，你愛圓球。球體、甚至任何球狀物，在你的書裡都看起來很酷。<br /><br />可是認真說來，能釋放一些庫存空間你會感覺輕鬆點。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006921.html"> Jake：縮小它。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006921.html"> Jake：縮小它。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

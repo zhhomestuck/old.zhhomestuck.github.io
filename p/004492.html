@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ======>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02591.gif" /><!-- 圖 --><!--內文開始--><br /><!-- LOG COMMENCE -->&lt;div class="log-outer"&gt;<button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字">Show Pesterlog</button>&lt;div class="spoiler" style="display: none;"&gt;<button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字">Hide Pesterlog</button>&lt;div class="log-inner"&gt;<!-- LOG COMMENCE --><br /><br /><span style="color: #a10000;">FAA: 我們非得動員這麼多的自己才能中和國王的精神攻擊<br /><br />FAA: 我們需要聯合大家的念力好抑制他從glbg0lyb繼承而來的力量<br /><br />FAA: 若非我們的厄命所蓄積而在此時得以所使的能力<br /><br />FAA: 若非我們的機械載體強化了精神與物理承受度<br /><br />FAA: 若非我們在開始遊戲前共同經歷的不幸死亡 <br /><br />FAA: 我們都不可能勝利<br /><br />FAA: 他將僅靠一道致命的聲音便能殺光我們</span><br /><!-- LOG END --><br /><!-- LOG END --><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02591.gif" /><!-- 圖 --><div><!--內文開始--><br /><!-- LOG COMMENCE --><div class="log-outer"><div><button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示文字">Show Pesterlog</button></div><div class="spoiler" style="display: none;"><div><button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏文字">Hide Pesterlog</button></div><div class="log-inner"><!-- LOG COMMENCE --><br /><br /><span style="color: #a10000;">FAA: 我們非得動員這麼多的自己才能中和國王的精神攻擊<br /><br />FAA: 我們需要聯合大家的念力好抑制他從glbg0lyb繼承而來的力量<br /><br />FAA: 若非我們的厄命所蓄積而在此時得以所使的能力<br /><br />FAA: 若非我們的機械載體強化了精神與物理承受度<br /><br />FAA: 若非我們在開始遊戲前共同經歷的不幸死亡 <br /><br />FAA: 我們都不可能勝利<br /><br />FAA: 他將僅靠一道致命的聲音便能殺光我們</span><br /><!-- LOG END --><br /></div></div></div><!-- LOG END --><br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004493.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004493.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

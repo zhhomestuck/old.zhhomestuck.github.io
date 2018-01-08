@@ -1,4 +1,5 @@
 plugins:       [jekyll-paginate]
+exclude:       ["README.md", "LICENSE.md", "tag_remover.*", "*.txt", "copyright.html", "index.html", "translators.html", "*.xml", "Gemfile", "Gemfile.lock", "/source"]
 destination:   ./p
 markdown_ext:  "markdown,mkdown,mkdn,mkd,md"
 safe:          true

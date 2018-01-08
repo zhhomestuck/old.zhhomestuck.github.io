@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Rose：檢查煉金臺附錄。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00645.gif" /><!-- 圖 --><!--內文開始--><br />看起來是一種目錄，記載著所有已知的打孔卡煉金組合。<br /><br />當你要嘗試新組合時這大概會很方便。但是當John開始用打孔卡時，你就在考慮這物品製造系統其它的用途，特別是假如你得到周圍的東西的代碼的話，理論上你就能把它傳給John，讓他自己製造出來了。<br /><br />當然了，如果你能想到值得送給他的東西的話。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00645.gif" /><!-- 圖 --><div><!--內文開始--><br />看起來是一種目錄，記載著所有已知的打孔卡煉金組合。<br /><br />當你要嘗試新組合時這大概會很方便。但是當John開始用打孔卡時，你就在考慮這物品製造系統其它的用途，特別是假如你得到周圍的東西的代碼的話，理論上你就能把它傳給John，讓他自己製造出來了。<br /><br />當然了，如果你能想到值得送給他的東西的話。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002546.html"> Rose：索引化Sburb服務端的光碟。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002546.html"> Rose：索引化Sburb服務端的光碟。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [o] ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04078.gif" /><!-- 圖 --><!--內文開始--><br /><span style="color: #000000;"> ————— <img src="http://www.mspaintadventures.com/storyfiles/hs2/scraps/olliesouty.gif" border="0" /> <a href="https://www.google.com.tw/search?q=%E8%B1%9A%E8%B7%B3&amp;prmd=ivmn&amp;source=lnms&amp;tbm=isch&amp;sa=X" style="color: #000000;"><em>豚跳飛</em></a></span><br /><!--內文結束--> <img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room117.gif" /><style>  #tooltip{position:absolute; z-index: 2000;}</style><br /><script>$(document).ready(function(){ //準備div   $("body").append('&lt;div id="tooltip" style="display: none;" /&gt;');   $("#tooltip").html('<img src="https://1.bp.blogspot.com/-nvsGQtcEprw/WY7N1DQDxlI/AAAAAAAAAkk/AxS7fPTZxUsgrTe24xFjbSXY_7kEdGaIACLcBGAs/s1600/LEtext6_ct.gif" />'); }); $(function () {   $("#tooltipimg").mouseover(function (e) { //當滑鼠指針從元素上移入時      $("#tooltip").css({ "top": (e.pageY + 20) + "px", "left": (e.pageX - 380) + "px", "display": "block"}).show("fast");   }).mouseout(function () { //當滑鼠指針從元素上移開時      $("#tooltip").css({"display": "none"});   }).mousemove(function (e) { //當滑鼠指針從元素上移動時      $("#tooltip").css({ "top": (e.pageY + 20) + "px", "left": (e.pageX - 380) + "px", "display": "block"});   }); }); </script><br /></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04078.gif" /><!-- 圖 --><div><!--內文開始--><br /><span style="color: #000000;"> ————— <img src="http://www.mspaintadventures.com/storyfiles/hs2/scraps/olliesouty.gif" border="0" /> <a href="https://www.google.com.tw/search?q=%E8%B1%9A%E8%B7%B3&amp;prmd=ivmn&amp;source=lnms&amp;tbm=isch&amp;sa=X" style="color: #000000;"><em>豚跳飛</em></a></span><br /><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room117.gif" /><style>  #tooltip{position:absolute; z-index: 2000;}</style><br /><script>$(document).ready(function(){ //準備div   $("body").append('<div id="tooltip" style="display: none;" />');   $("#tooltip").html('<img src="https://1.bp.blogspot.com/-nvsGQtcEprw/WY7N1DQDxlI/AAAAAAAAAkk/AxS7fPTZxUsgrTe24xFjbSXY_7kEdGaIACLcBGAs/s1600/LEtext6_ct.gif" />'); }); $(function () {   $("#tooltipimg").mouseover(function (e) { //當滑鼠指針從元素上移入時      $("#tooltip").css({ "top": (e.pageY + 20) + "px", "left": (e.pageX - 380) + "px", "display": "block"}).show("fast");   }).mouseout(function () { //當滑鼠指針從元素上移開時      $("#tooltip").css({"display": "none"});   }).mousemove(function (e) { //當滑鼠指針從元素上移動時      $("#tooltip").css({ "top": (e.pageY + 20) + "px", "left": (e.pageX - 380) + "px", "display": "block"});   }); }); </script><br /></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005982.html"> 啪喀</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005982.html"> 啪喀</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

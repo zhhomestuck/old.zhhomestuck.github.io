@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Roxy：拿起日誌。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04474.gif" /><!-- 圖 --><!--內文開始--><br />你禮貌地將費格理須從書上趕開。這孩子喔。<br /><br />技術上來說，只有其中一本書是你的，就是手寫的日誌。你偷偷地進行著你的寫作。有時甚至連你自己都讀不下去。你高度警覺著投射在你身上的作家陰影，它是使你對你的作品感到尷尬的重要關鍵。你寫下這些東西的時候到底<b>是有多醉</b>？？？你常常這麼問自己。你想暫時還是不要窺視它吧。或許晚一點。<br /><br />另一本書是另一種難堪，基於完全不同的理由。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04474.gif" /><!-- 圖 --><div><!--內文開始--><br />你禮貌地將費格理須從書上趕開。這孩子喔。<br /><br />技術上來說，只有其中一本書是你的，就是手寫的日誌。你偷偷地進行著你的寫作。有時甚至連你自己都讀不下去。你高度警覺著投射在你身上的作家陰影，它是使你對你的作品感到尷尬的重要關鍵。你寫下這些東西的時候到底<b>是有多醉</b>？？？你常常這麼問自己。你想暫時還是不要窺視它吧。或許晚一點。<br /><br />另一本書是另一種難堪，基於完全不同的理由。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006378.html"> Roxy：讀那本書。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006378.html"> Roxy：讀那本書。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

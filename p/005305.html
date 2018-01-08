@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             John：查看筆電。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03402.gif" /><!-- 圖 --><!--內文開始--><br />萬歲，一臺電腦！你已經迫不及待要和你的朋友們再次說上話了。<br /><br />這台電腦是他在<b>爸爸百貨</b>買的，一間無聊得可怕的店，專門供應各處威嚴的紳士一堆呆笨的父親物品。他每次拖你去的時候都無聊得要命。你完全不知道這白目是誰。「這白目是誰？」是每次你看到他體面的臉時都會問的問題。或許你對這個男人是不太公平。<br /><br />某個叫做平·克勞斯貝(Bing Crosby)的人吧，你猜？誰在乎。他很無聊。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03402.gif" /><!-- 圖 --><div><!--內文開始--><br />萬歲，一臺電腦！你已經迫不及待要和你的朋友們再次說上話了。<br /><br />這台電腦是他在<b>爸爸百貨</b>買的，一間無聊得可怕的店，專門供應各處威嚴的紳士一堆呆笨的父親物品。他每次拖你去的時候都無聊得要命。你完全不知道這白目是誰。「這白目是誰？」是每次你看到他體面的臉時都會問的問題。或許你對這個男人是不太公平。<br /><br />某個叫做平·克勞斯貝(Bing Crosby)的人吧，你猜？誰在乎。他很無聊。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005306.html"> John：清理這團亂。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005306.html"> John：清理這團亂。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

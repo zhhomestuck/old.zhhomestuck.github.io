@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Rose：查看母親的純銅吸塵器雕像。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00362.gif" /><!-- 圖 --><!--內文開始--><br />好吧，但那是青銅，不是純銅！<br /><br />但它也不是一直都是長這樣。前一陣子的母親節妳送妳<b>媽媽</b>這個吸塵器當作用來諷刺她的禮物，你還特地裝了一個飲料架好讓她放那些無所不在的<b>酒精飲料</b>。<br /><br />她是如此的「喜歡」這個禮物，喜歡到把它鍍上了青銅還擺在這個羅馬台柱上展示，她甚至還讓它的插頭隨時插著好能隨時打開，只是沒真的用過而已。它從來沒有離開過這個展示台。<br /><br />偶爾夜晚當你窩在你自己的房間時，你會聽見樓下傳來吸塵器的噪音。她<b>絕對</b>知道你聽的到。她腦袋肯定燒壞了。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00362.gif" /><!-- 圖 --><div><!--內文開始--><br />好吧，但那是青銅，不是純銅！<br /><br />但它也不是一直都是長這樣。前一陣子的母親節妳送妳<b>媽媽</b>這個吸塵器當作用來諷刺她的禮物，你還特地裝了一個飲料架好讓她放那些無所不在的<b>酒精飲料</b>。<br /><br />她是如此的「喜歡」這個禮物，喜歡到把它鍍上了青銅還擺在這個羅馬台柱上展示，她甚至還讓它的插頭隨時插著好能隨時打開，只是沒真的用過而已。它從來沒有離開過這個展示台。<br /><br />偶爾夜晚當你窩在你自己的房間時，你會聽見樓下傳來吸塵器的噪音。她<b>絕對</b>知道你聽的到。她腦袋肯定燒壞了。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002263.html"> Rose：拿起愛德莉琪公主(Eldritch Princess)。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002263.html"> Rose：拿起愛德莉琪公主(Eldritch Princess)。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

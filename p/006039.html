@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Jane：看看四周。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04136_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04136_2.gif" /><!-- 圖 --><!--內文開始--><br />沒錯，這個也變了。要是不搞品牌戰術的話她們就不是貝蒂公司了，你猜這還蠻酷的？雖然就是從湯匙變成了叉子。這不是你見過最驚為天人的商標設計，但你猜自己八成也沒資格評論？先不管自己身為未來公司的掌管者的話。<br /><br />(你在心裏記下等自己滿18歲繼承公司之後一定要把它改回湯匙，你還是比較喜歡湯匙。)<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04136_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04136_2.gif" /><!-- 圖 --><div><!--內文開始--><br />沒錯，這個也變了。要是不搞品牌戰術的話她們就不是貝蒂公司了，你猜這還蠻酷的？雖然就是從湯匙變成了叉子。這不是你見過最驚為天人的商標設計，但你猜自己八成也沒資格評論？先不管自己身為未來公司的掌管者的話。<br /><br />(你在心裏記下等自己滿18歲繼承公司之後一定要把它改回湯匙，你還是比較喜歡湯匙。)<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./006040.html"> Jane：檢查碗瓢毀滅者。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./006040.html"> Jane：檢查碗瓢毀滅者。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

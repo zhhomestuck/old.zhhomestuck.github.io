@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dave：拿起箱子。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00319.gif" /><!-- 圖 --><!--內文開始--><br />你通過<b>雜湊映射存取模式</b>索引化了<b>箱子</b>。<br /><br />你現在的模式的<b>雜湊函數</b>將子音賦值為2，母音為1。將數值加總起來除以卡片總數量，餘數就是索引號。<br /><br /><b>BOX（箱子）</b> = 2 + 1 + 2 = 5<br /><br />5 % 10 = 5<br /><br /><b>箱子</b>索引化到了5號卡片。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00319.gif" /><!-- 圖 --><div><!--內文開始--><br />你通過<b>雜湊映射存取模式</b>索引化了<b>箱子</b>。<br /><br />你現在的模式的<b>雜湊函數</b>將子音賦值為2，母音為1。將數值加總起來除以卡片總數量，餘數就是索引號。<br /><br /><b>BOX（箱子）</b> = 2 + 1 + 2 = 5<br /><br />5 % 10 = 5<br /><br /><b>箱子</b>索引化到了5號卡片。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002220.html"> Dave：檢查衣櫃裡面裝了黃色未知物質的罐子。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002220.html"> Dave：檢查衣櫃裡面裝了黃色未知物質的罐子。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

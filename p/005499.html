@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ==>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03596.gif" /><!-- 圖 --><!--內文開始--><br />&lt;div id="log-outer-outer"&gt;<!-- LOG COMMENCE --><br /><br /><span style="color: #a15000;">AT: 我不記得這個,</span><br /><br /><span style="color: #a15000;">AT: 我是說,</span><br /><br /><span style="color: #a15000;">AT: 我記得的是我用我的腳跳下懸崖,</span><br /><br /><span style="color: #a15000;">AT: 而不是我現在在做的事,</span><br /><br /><span style="color: #a10000;">AA: 你當然不</span><br /><br /><span style="color: #a10000;">AA: 操縱我們的那位把他的蹤跡隱藏得很好</span><br /><br /><span style="color: #a15000;">AT: 我要,</span><br /><br /><span style="color: #a15000;">AT: 像這樣一直躺在地上嗎,</span><br /><br /><span style="color: #a15000;">AT: 那是很重要的事嗎, </span><br /><br /><span style="color: #a10000;">AA: 不用tavros你可以起來</span><br /><br /><span style="color: #a15000;">AT: 還有, </span><br /><br /><span style="color: #a15000;">AT: 我們可不可以,至少我,不要在這段記憶中,</span><br /><br /><span style="color: #a15000;">AT: 因為, </span><br /><br /><span style="color: #a15000;">AT: 這不是一段很好的記憶,</span><br /><br /><span style="color: #a10000;">AA: 我們很快就會離開</span>&lt;/span&gt;<br /><br /><span style="color: #a10000;">AA: 但你在這裡做的事很重要</span><br /><br /><span style="color: #a15000;">AT: 我在做什麼,</span><br /><br /><span style="color: #a10000;">AA: 寫下一部份的暗碼</span><br /><!-- LOG END --><br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03596.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><br /><span style="color: #a15000;">AT: 我不記得這個,</span><br /><br /><span style="color: #a15000;">AT: 我是說,</span><br /><br /><span style="color: #a15000;">AT: 我記得的是我用我的腳跳下懸崖,</span><br /><br /><span style="color: #a15000;">AT: 而不是我現在在做的事,</span><br /><br /><span style="color: #a10000;">AA: 你當然不</span><br /><br /><span style="color: #a10000;">AA: 操縱我們的那位把他的蹤跡隱藏得很好</span><br /><br /><span style="color: #a15000;">AT: 我要,</span><br /><br /><span style="color: #a15000;">AT: 像這樣一直躺在地上嗎,</span><br /><br /><span style="color: #a15000;">AT: 那是很重要的事嗎, </span><br /><br /><span style="color: #a10000;">AA: 不用tavros你可以起來</span><br /><br /><span style="color: #a15000;">AT: 還有, </span><br /><br /><span style="color: #a15000;">AT: 我們可不可以,至少我,不要在這段記憶中,</span><br /><br /><span style="color: #a15000;">AT: 因為, </span><br /><br /><span style="color: #a15000;">AT: 這不是一段很好的記憶,</span><br /><br /><span style="color: #a10000;">AA: 我們很快就會離開</span></span><br /><br /><span style="color: #a10000;">AA: 但你在這裡做的事很重要</span><br /><br /><span style="color: #a15000;">AT: 我在做什麼,</span><br /><br /><span style="color: #a10000;">AA: 寫下一部份的暗碼</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005500.html"> ==></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005500.html"> ==></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

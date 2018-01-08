@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Dave：檢查藍色箱子。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00318_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00318_2.gif" /><!-- 圖 --><!--內文開始--><br />這是你的朋友John Egbert前一陣子送給你的13歲生日禮物。現在這裡面什麼都沒有，除了一張<b>紙條</b>，和一張<b>防偽證書</b>證明箱內裝了好萊塢明星的真品，也就是你為了<b>嘲諷</b>目的戴著的這副，同時也為了<b>在某方面與此種飾品的諷刺性質有無形聯結的酷</b>。<br /><br />箱子裡面也放著一張現正驕傲地掛在衣櫃上，<b>班·史提勒</b>的簽名照。既驕傲又<b>諷刺</b>。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00318_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/00318_2.gif" /><!-- 圖 --><div><!--內文開始--><br />這是你的朋友John Egbert前一陣子送給你的13歲生日禮物。現在這裡面什麼都沒有，除了一張<b>紙條</b>，和一張<b>防偽證書</b>證明箱內裝了好萊塢明星的真品，也就是你為了<b>嘲諷</b>目的戴著的這副，同時也為了<b>在某方面與此種飾品的諷刺性質有無形聯結的酷</b>。<br /><br />箱子裡面也放著一張現正驕傲地掛在衣櫃上，<b>班·史提勒</b>的簽名照。既驕傲又<b>諷刺</b>。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./002219.html"> Dave：拿起箱子。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./002219.html"> Dave：拿起箱子。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

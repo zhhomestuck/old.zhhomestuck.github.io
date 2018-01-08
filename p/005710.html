@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             [o] 當然了。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03807.gif" /><!-- 圖 --><!--內文開始--><br />兩位光明之英雄向同一位傑克諾爾提出了挑戰，橫跨了刻痕以及其自身時軸約二十個小時的他，要同質同時地面對兩場對決。同質同時性是一個比時間上的同時更複雜的概念，且對瞭解悖論宇宙的本質來說極具價值。它是個媒介，負責引發了被滅絕前的艾特尼亞人稱做大滅絕的重大宇宙事件。同一概念也支配著無數的次要事件，皆由這個關鍵時刻催化而成，包括破碎、我的雇主的到來、一顆非常強力的炸彈爆炸、和我自己的死亡。它是一種由其他完全不同的歷程編織成的抽象概念，像是那些被連成一對的獨特進程。這對凡人的頭腦來說不是很容易理解，超過這句話之後我的解釋將不會再對你出現了。<br /><!--內文結束--> <img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room15.gif" /></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03807.gif" /><!-- 圖 --><div><!--內文開始--><br />兩位光明之英雄向同一位傑克諾爾提出了挑戰，橫跨了刻痕以及其自身時軸約二十個小時的他，要同質同時地面對兩場對決。同質同時性是一個比時間上的同時更複雜的概念，且對瞭解悖論宇宙的本質來說極具價值。它是個媒介，負責引發了被滅絕前的艾特尼亞人稱做大滅絕的重大宇宙事件。同一概念也支配著無數的次要事件，皆由這個關鍵時刻催化而成，包括破碎、我的雇主的到來、一顆非常強力的炸彈爆炸、和我自己的死亡。它是一種由其他完全不同的歷程編織成的抽象概念，像是那些被連成一對的獨特進程。這對凡人的頭腦來說不是很容易理解，超過這句話之後我的解釋將不會再對你出現了。<br /><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room15.gif" /></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005711.html"> [o] 但這故事將會。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005711.html"> [o] 但這故事將會。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

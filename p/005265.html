@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             Terezi：揣測嫌疑犯。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03362.gif" /><!-- 圖 --><!--內文開始--><br />在著手全面調查之前，法律獵者永遠都會先有一名心中的主要嫌犯。直到證明清白前都維持有罪，這通常都發生在行刑之後。<br /><br />即使如此，還是要對有其它犯人的可能性保持機警。如大家所說的，在你這一行，絞刑臺上永遠都有多留擺蕩的空間。雖說處決錯人只是法庭區上的一個小小污點，但它仍然是污點。<br /><br />暴君閣下絕對會因為你的警覺性在審判過後親切地忽略要吃掉你的事。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03362.gif" /><!-- 圖 --><div><!--內文開始--><br />在著手全面調查之前，法律獵者永遠都會先有一名心中的主要嫌犯。直到證明清白前都維持有罪，這通常都發生在行刑之後。<br /><br />即使如此，還是要對有其它犯人的可能性保持機警。如大家所說的，在你這一行，絞刑臺上永遠都有多留擺蕩的空間。雖說處決錯人只是法庭區上的一個小小污點，但它仍然是污點。<br /><br />暴君閣下絕對會因為你的警覺性在審判過後親切地忽略要吃掉你的事。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./005266.html"> Terezi：四處嗅嗅線索。</a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005266.html"> Terezi：四處嗅嗅線索。</a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

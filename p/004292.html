@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             試著瞭解。
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02392.gif" /><!-- 圖 --><!--內文開始--><br />問題是每次一提到Troll羅曼史<span id="note">※</span>，我們微薄的人類智力就會立刻思索出投降時最迎合的姿勢。<br /><br />但是無論如何我們會盡力去瞭解的。<br /><br />人類只有一種形式的羅曼史。而就算如此我們已經認為它是一個很複雜的課題，它橫跨了情緒、社會習俗、還有繁衍的意義等廣大範圍，但這些最終只是Troll們所認為羅曼史經驗中淺淺的表面而已。我們對羅曼史的概念，僅管它的能力使我們豐富了藝術作品、文學領域並統領了我們每個個體的命運，它仍還是如此地簡單：一個單一的、線性的概念，一個通常被一個簡單符號代表的概念。<br /><br /><span style="color: red;">&lt;3</span><br /><br />Troll羅曼史遠比那更複雜，他們需要四個符號。<br /><!--內文結束--> &lt;div id="note"&gt;※註: 此處「羅曼史」(Romance)意指任何情感上的親密關係、或者是強烈情感所引發的關係。<!-- <span id="note">※※再註: 英語中的”Romance”一詞源自古法語”romanz”，有「小說」之義，傳到英語變成對於「傳奇英雄愛情小說」的稱呼，後來引申為「愛情」、「情感」、「傳奇」或任何相關事物的代名詞。</span> --></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02392.gif" /><!-- 圖 --><div><!--內文開始--><br />問題是每次一提到Troll羅曼史<span id="note">※</span>，我們微薄的人類智力就會立刻思索出投降時最迎合的姿勢。<br /><br />但是無論如何我們會盡力去瞭解的。<br /><br />人類只有一種形式的羅曼史。而就算如此我們已經認為它是一個很複雜的課題，它橫跨了情緒、社會習俗、還有繁衍的意義等廣大範圍，但這些最終只是Troll們所認為羅曼史經驗中淺淺的表面而已。我們對羅曼史的概念，僅管它的能力使我們豐富了藝術作品、文學領域並統領了我們每個個體的命運，它仍還是如此地簡單：一個單一的、線性的概念，一個通常被一個簡單符號代表的概念。<br /><br /><span style="color: red;"><3</span><br /><br />Troll羅曼史遠比那更複雜，他們需要四個符號。<br /><!--內文結束--> </div><div id="note">※註: 此處「羅曼史」(Romance)意指任何情感上的親密關係、或者是強烈情感所引發的關係。<!-- <span id="note">※※再註: 英語中的”Romance”一詞源自古法語”romanz”，有「小說」之義，傳到英語變成對於「傳奇英雄愛情小說」的稱呼，後來引申為「愛情」、「情感」、「傳奇」或任何相關事物的代名詞。</span> --></div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004293.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004293.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>

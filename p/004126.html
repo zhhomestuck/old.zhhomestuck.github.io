@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="../source/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="../source/main.css">
   </head>
   <body>
     <div id='header'>
@@ -23,12 +23,12 @@
             ======>
           </div>
           <div class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02226.gif" /><!-- 圖 --><!--內文開始--><br />為什麼，Aradia。你眼中的紅色玻璃好似捕捉了相鄰的粉紅與青綠月亮的光輝。甜美的詩篇幾乎要使一個男人忘了一度充滿你血管裡的汙濁，那曾經使他的胃翻轉的色調。這對於禁忌的戀人來說是個好預兆。你能想像這事被任何人發現後的醜聞嗎？不能讓任何人知道。<br /><br />但是不用擔心。你的心不會再為那卑劣的紅色爛泥跳動了。你被賦予一顆新的心。你會被教導你該有的階級禮儀。沒有人是無可挽救的。<br /><br />感激吧，親愛的Aradia。在你無意義的人生中你有幸遇見了一個有著真摯憐憫心的男人。<br /><!--內文結束--> </p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/02226.gif" /><!-- 圖 --><div><!--內文開始--><br />為什麼，Aradia。你眼中的紅色玻璃好似捕捉了相鄰的粉紅與青綠月亮的光輝。甜美的詩篇幾乎要使一個男人忘了一度充滿你血管裡的汙濁，那曾經使他的胃翻轉的色調。這對於禁忌的戀人來說是個好預兆。你能想像這事被任何人發現後的醜聞嗎？不能讓任何人知道。<br /><br />但是不用擔心。你的心不會再為那卑劣的紅色爛泥跳動了。你被賦予一顆新的心。你會被教導你該有的階級禮儀。沒有人是無可挽救的。<br /><br />感激吧，親愛的Aradia。在你無意義的人生中你有幸遇見了一個有著真摯憐憫心的男人。<br /><!--內文結束--> </div></p>
 
           </div>
           <div class="pagefoot">
             
-              <span style="float: left;">&gt;&nbsp;</span><a class="blog-pager-newer-link" href="./004127.html"> ======></a>
+              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./004127.html"> ======></a>
             
             <div class="pagefooter-footer">
               
@@ -52,5 +52,12 @@
         </div>
       </div>
     </div>
+    <!-- Make log -->
+    <script type="text/javascript">
+      var replaceSpoiler = document.getElementById("log-outer-outer");
+      if(replaceSpoiler) {
+        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+      }
+    </script>
   </body>
 </html>
