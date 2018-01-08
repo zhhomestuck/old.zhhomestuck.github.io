@@ -3,7 +3,6 @@ _site
 .jekyll-metadata
 Gemfile
 Gemfile.lock
-*.yml
 *.md
 *.cpp
 *.exe
