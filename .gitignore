@@ -1,7 +1,9 @@
 _site
 .sass-cache
 .jekyll-metadata
-
+Gemfile
+Gamefile.lock
+*.yml
 *.md
 *.cpp
 *.exe
