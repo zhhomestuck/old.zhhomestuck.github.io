@@ -2,7 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile
-Gamfile.lock
+Gemfile.lock
 *.yml
 *.md
 *.cpp
