@@ -113,9 +113,10 @@ b {font-weight:bold;}
 /* note and log */
 div#note {
   padding-top: 50px;
+  font-size: 0.75em;
 }
 span#note {
-  color: #000000;
+  color: inherit;
   font-size: 0.7em;
   vertical-align: text-top;
   position: relative;
