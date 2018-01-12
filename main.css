@@ -113,6 +113,7 @@ b {font-weight:bold;}
 /* note and log */
 div#note {
   padding-top: 50px;
+  text-align: left;
   font-size: 0.75em;
 }
 span#note {
