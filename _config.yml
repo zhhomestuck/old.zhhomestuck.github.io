@@ -1,7 +1,0 @@
-plugins:       [jekyll-paginate]
-exclude:       ["README.md", "LICENSE.md", "tag_remover.*", "*.txt", "*.xml", "Gemfile", "Gemfile.lock"]
-destination:   ./p
-markdown_ext:  "markdown,mkdown,mkdn,mkd,md"
-safe:          true
-permalink:     /:title.html
-paginate:      1
