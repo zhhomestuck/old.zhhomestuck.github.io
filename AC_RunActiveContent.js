@@ -3,7 +3,7 @@ function ControlVersion(){var e,a;try{a=new ActiveXObject("ShockwaveFlash.Shockw
 // Copyright 2018 Viz Media & Homestuck
 function vizFlashContentWrapper(){
 	if(DetectFlashVer(9,0,0)) {
-		arguments.src.replace(/\/flash/, "https://www.homestuck.com/flash")
+		arguments[9].replace(/\/flash/, "https://www.homestuck.com/flash")
 		AC_FL_RunContent.apply(null,arguments);
 	}
 	else{
