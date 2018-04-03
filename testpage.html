@@ -25,7 +25,7 @@ HOMESTUCK繁體中文翻譯: test_page
 <!-- JQuery -->
 <script src='http://code.jquery.com/jquery-1.11.3.min.js' type='text/javascript'></script>
 <!-- Flash and Media control -->
-<script language='javascript' src='./AC_RunActiveContent.js'></script>
+<script language='javascript' src='https://zhhomestuck.github.io/AC_RunActiveContent.js'></script>
 <style id='page-skin-1' type='text/css'><!--
 /*
 -----------------------------------------------
@@ -476,6 +476,7 @@ width: auto;
         border: 0;
         margin: 18px 0 -4px 0;
       }
+      .pagebody embed { min-height: 450px;}
       .mobile .pagebody img { height: auto;}
       .mobile .pagebody div img { width: auto; max-width: 90vw; height: auto;}
       .pagebody div { /* 內文 */
@@ -720,7 +721,7 @@ width: auto;
 		text-align: left;
       }
     </style>
-<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8375877150966622132&amp;zx=569dc97c-f744-4793-8b59-443403b5105d' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8375877150966622132&amp;zx=569dc97c-f744-4793-8b59-443403b5105d' rel='stylesheet'/></noscript>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8375877150966622132&amp;zx=48ca384d-e7e4-432e-8a5b-79fe1bd8ee8f' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8375877150966622132&amp;zx=48ca384d-e7e4-432e-8a5b-79fe1bd8ee8f' rel='stylesheet'/></noscript>
 </head>
 <body class='loading'>
 <!-- Show Note At Post-Footer-Footer -->
@@ -880,6 +881,15 @@ http://zhhomestuck.blogspot.tw/p/testpage.html
 <h4 id='comment-post-message'>
 張貼留言
 </h4>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=8375877150966622132&pageID=4278171894784454825' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<!--Can't find substitution for tag [post.friendConnectJs]-->
+<script src='https://www.blogger.com/static/v1/jsbin/1565398628-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+                              BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+                            </script>
 </div>
 </p>
 <div id='backlinks-container'>
@@ -895,6 +905,24 @@ http://zhhomestuck.blogspot.tw/p/testpage.html
 </div>
 <script type="text/javascript">window.___gcfg = {'lang': 'zh_TW'};</script>
 </div></div>
+<!-- Make log -->
+<script>
+                      var replaceSpoiler = document.getElementById("log-outer-outer");
+                      if(replaceSpoiler) {
+                        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
+                      }
+                    </script>
+<!-- Replace Older and Newer Post Link with Post Title Name -->
+<script async='async' id='new-page-title-script'>
+                      //<![CDATA[
+                      $(document).ready(function(){ 
+                        var newerLink = $("a.blog-pager-newer-link").attr("href"); 
+                        $("a.blog-pager-newer-link").load(newerLink+"?m=1 .pagehead:first", function() { 
+                          var newerLinkTitle = $("a.blog-pager-newer-link").text();
+                          $("a.blog-pager-newer-link").text(" " + newerLinkTitle); 
+                        });  
+                      }); //]]>
+                    </script>
 </div>
 </div>
 <div class='column-left-outer'>
@@ -945,9 +973,6 @@ http://zhhomestuck.blogspot.tw/p/testpage.html
 <td class='first columns-cell' id='latest-update'>
 <div class='foot section' id='footer-2-1'><div class='widget HTML' data-version='1' id='HTML2'>
 <div class='widget-content'>
-<div class="latest-update-inner">
-
-</div>
 </div>
 <div class='clear'></div>
 <span class='widget-item-control'>
@@ -988,6 +1013,30 @@ http://zhhomestuck.blogspot.tw/p/testpage.html
       window.setTimeout(function() {
         document.body.className = document.body.className.replace('loading', '');
                                                                   }, 10);
-</script>
+    </script>
+<div class='mspanav' id='mspanav'>
+<span class='mspanav-foot'>
+<span class='mspanav'>
+</span>
+</span>
+<div style='background: #cdcdcd;'>
+<div class='footer-bannerframe'>
+<div>
+            HOMESTUCK TRADITIONAL CHINESE TRANSLATION
+          </div>
+<br/>
+<span style='vertical-align: 8px; margin-bottom: -20px'>
+            Power By Blogger
+          </span>
+<br/>
+<a href='http://zhhomestuck.tumblr.com/' style='color: #000000;'>
+            Tumblr Archive
+          </a>
+<a href='https://zhhomestuck.github.io/' style='color: #000000;'>
+            Github Archive
+          </a>
+</div>
+</div>
+</div>
 </body>
 </html>

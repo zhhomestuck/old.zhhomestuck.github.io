@@ -5,11 +5,9 @@ function vizFlashContentWrapper(){
 	var an=arguments[9].replace(/\/flash/,"https://www.homestuck.com/flash");
 	arguments[39]=arguments[9]=an;
 	if(DetectFlashVer(9,0,0)) {
-		console.log("9");
 		AC_FL_RunContent.apply(null,arguments);
 	}
 	else{
-		console.log("no 9");
 		var a=AC_GetArgs(arguments,".swf","movie",null,null),
 		t=window.location.pathname.replace(/^\/+/g,""),
 		o='** To see this content as originally intended, view on a <nobr>Flash-enabled</nobr> device. (<a href="/'+t+'?fl=1">Show me anyway</a>)',
