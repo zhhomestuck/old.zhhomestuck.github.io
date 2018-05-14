@@ -45,14 +45,16 @@ function sentence2indexs(sentence) {
       if (WORD_INDEX.i == w) result.push(i);
     }
   }
-  return result;
+  return [result];
 };
 
 async function generate(n)
 {
   const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model.json');
+  document.getElementById("output-div").innerText = "Loading model...";
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
-for (var n = 0; n < 10; n++) {
+  console.log(output_sentence);
+for (var i = 0; i < 10; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     console.log(y_test);
     /*next_word_index = sample(y_test[0, y_test.shape[1] - 1], temperature = 0.5)
