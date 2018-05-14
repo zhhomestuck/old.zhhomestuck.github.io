@@ -50,7 +50,7 @@ function sentence2indexs(sentence) {
 
 async function generate(n)
 {
-  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/rnnstuck_model/rnnstuck_model.json');
+  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model.json');
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
 for (var n = 0; n < 10; n++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
