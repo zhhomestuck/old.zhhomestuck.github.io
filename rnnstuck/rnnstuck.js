@@ -41,7 +41,6 @@ function sample(prediction, temperature = 1.0) {
     item /= sum;
   }
   probas = multinomial(prediction);
-  console.log("prediction:", prediction);
   console.log("probas:", probas);
   return probas;
 };
@@ -75,7 +74,7 @@ async function generate(n)
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
     y_data = await y_test.data();
-    next_word = index2word(sample(y_test, temperature = 0.8));
+    next_word = index2word(sample(y_data, temperature = 0.8));
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
     }
