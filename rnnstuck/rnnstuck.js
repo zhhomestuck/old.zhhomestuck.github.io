@@ -71,7 +71,8 @@ async function generate()
   console.log("output_sentence:", output_sentence);
   for (var i = 0; i < 10; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
-    y_data = await y_test.data()
+    y_data = await y_test.slice([0, 0], [0, vocabSize - 1]).data();
+    y_test.
     next_word = index2word(sample(y_data, temperature = 0.5));
     y_data = [];
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
