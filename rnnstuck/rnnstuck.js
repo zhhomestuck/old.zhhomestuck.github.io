@@ -86,5 +86,5 @@ async function generate(n)
   for (word in output_sentence) {
     output_string += word
   }
-  document.getElementById("gen-div")innerText = output_string;
+  document.getElementById("gen-div").innerText = output_string;
 }
