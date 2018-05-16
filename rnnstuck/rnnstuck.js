@@ -1,6 +1,15 @@
 const vocabNum = WORD_INDEX.length;
 var model_loaded = false;
 
+function load_model() {
+  document.getElementById("gen").disabled = "disabled";
+  document.getElementById("output-div").innerText = "Loading model...\nMay have to wait for minutes";
+  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
+  model_loaded = true;
+}
+
+
+
 function multinomial(n, probs) {
   var l = probs.length, result = [];
   for (var c = 0; c < n; c++) {
@@ -51,10 +60,7 @@ function sentence2indexs(sentence) {
 
 async function generate(n)
 {
-  if (!model_loaded) {
-    document.getElementById("output-div").innerText = "Loading model...\nMay have to wiat for minutes";
-    const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
-  }
+  if (!model_loaded) return;
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
   console.log(output_sentence);
 for (var i = 0; i < 1; i++) {

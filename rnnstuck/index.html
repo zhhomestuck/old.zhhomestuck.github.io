@@ -10,7 +10,7 @@
   <script src="wordindex.js"></script>
 </head>
 
-<body>
+<body onload="load_model();">
   <div id="info-div">
   Model Structure:
   word2index
@@ -19,7 +19,7 @@
   Dense
   <div>
   <div id="output-div"></div>
-  <button onclick="generate(0);">TEST</button>
+  <button id="gen" onclick="generate(0);">TEST</button>
   <script src="rnnstuck.js"></script>
 </body>
 </html>
