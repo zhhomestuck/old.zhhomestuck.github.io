@@ -65,7 +65,7 @@ function generate(n)
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
   console.log(output_sentence);
 for (var i = 0; i < 1; i++) {
-    y_test = model.predict(tf.tensor2d(sentence2indexs(output_sentence)));
+    y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     console.log(y_test);
     /*next_word_index = sample(y_test[0, y_test.shape[1] - 1], temperature = 0.5)
     next_word = word_vector.wv.index2word[next_word_index[0]]
