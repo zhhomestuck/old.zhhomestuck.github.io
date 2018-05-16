@@ -3,12 +3,13 @@ var model_loaded = false;
 model = null;
 
 async function load_model() {
-  document.getElementById("gen").disabled = true;
+  var gen_btn = document.getElementById("gen");
+  gen_btn.disabled = true;
   document.getElementById("output-div").innerText = "正在載入model...\n檔案約10MB，需要等上幾分鐘。";
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
   document.getElementById("output-div").innerText = "model載入完成。";
-  document.getElementById("gen").disabled = false;
+  gen_btn.disabled = false;
 }
 
 function multinomial(n, probs) {
