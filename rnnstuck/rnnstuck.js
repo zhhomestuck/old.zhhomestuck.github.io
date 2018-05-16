@@ -40,7 +40,7 @@ function sample(prediction, temperature = 1.0) {
     prediction[i] /= sum
   }
   probas = multinomial(prediction);
-  console.log("prediction:", prediction);
+  //console.log("prediction:", prediction);
   console.log("probas:", probas);
   return probas;
 };
