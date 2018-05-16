@@ -66,7 +66,7 @@ function sentence2indexs(sentence) {
   return [result];
 };
 
-function generate(n)
+async function generate(n)
 {
   if (!model_loaded) return;
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
@@ -74,8 +74,8 @@ function generate(n)
   for (var i = 0; i < 10; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
-    y_test = await y_test.data();
-    console.log(y_test);
+    y_data = await y_test.data();
+    console.log(y_data);
     next_word = index2word(sample(y_test, temperature = 0.5));
     if next_word == '\n' and output_sentence[output_sentence.length - 1] == '\n' : continue
     output_sentence.append(next_word)
