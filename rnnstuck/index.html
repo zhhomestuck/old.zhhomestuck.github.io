@@ -16,16 +16,23 @@
   <script src="seedindex.js"></script>
 </head>
 
-<body onload="" style="font-size: 14px; text-align: center; text-align: -webkit-center;">
+<body onload="" style="font-size: 16px; text-align: center; text-align: -webkit-center;">
   <div id="info-div">
   <h3>RNNStuck</h3><br />
-  使用Keras / Tensorflowjs<br />
-  架構：<br />
+  RNNStuckis is inspired by Markovstuck.<br />
+  用zhhomestuck的文字資料來訓練類神經網路，因為技術與能力的限制，我只能產生純文字。<br />
+  <br />
+  <hr />
+  訓練類神經網路使用: Keras / Tensorflow
+  網頁使用: Tensorflowjs<br />
+  網路架構：<br />
   Tokenizer<br />
   Embedding(keras)<br />
   LSTM(keras)<br />
   Dense(keras)<br />
   <br />
+  <br />
+  <hr />
   按下Load Model，將會下載並建立訓練好的RNN Model<br />
   有些瀏覽器可能會不支援Tensorflowjs<br />
   依電腦的性能，可能會花上數秒或數分鐘的時間。<br />
@@ -34,6 +41,7 @@
   <div id="output-div" style="font-weight: blod;">
   </div>
   <button id="load-btn" onclick="load_model();">Load Model</button><br/>
+  <br/>
   <button id="gen-btn" onclick="generate();" disabled="disabled">產生隨機文字</button>
   <div id="gen-div">
   </div>
