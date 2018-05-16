@@ -41,7 +41,8 @@ function sample(prediction, temperature = 1.0) {
     prediction[i] /= sum
   }
   probas = multinomial(prediction);
-  //console.log("probas:", probas);
+  console.log("prediction:", prediction);
+  console.log("probas:", probas);
   return probas;
 };
 
@@ -69,7 +70,7 @@ async function generate()
   if (!model_loaded) return;
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
-  for (var i = 0; i < Math.floor(Math.random() * 100); i++) {
+  for (var i = 0; i < 10); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
     y_data = await y_test.data();
