@@ -8,12 +8,13 @@ async function load_model() {
   var gen_btn = document.getElementById("gen-btn"),
       load_btn = document.getElementById("load-btn"),
       out_div = document.getElementById("output-div");
+  load_btn.disabled = true;
   out_div.innerText = "正在載入model........"
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
   out_div.innerText = "model載入完成。";
   gen_btn.disabled = false;
-  load_btn.disabled = true;
+  load_btn.style.display = "none";
 }
 
 function multinomial(probs) {
@@ -68,7 +69,7 @@ function sentence2indexs(sentence) {
 async function generate(n)
 {
   if (!model_loaded) return;
-  var output_sentence = [index2word(SEED_SIZE[Math.floor(Math.random() * seedSize)])];
+  var output_sentence = [index2word(SEED_INDEX[Math.floor(Math.random() * seedSize)])];
   console.log("output_sentence:", output_sentence);
   for (var i = 0; i < 100; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
