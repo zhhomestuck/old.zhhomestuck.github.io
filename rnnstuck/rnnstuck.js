@@ -1,14 +1,18 @@
 const vocabNum = Object.keys(WORD_INDEX).length;
+const flatten = tf.layers.flatten();
 var model_loaded = false;
 model = null;
 
 async function load_model() {
-  var gen_btn = document.getElementById("gen"), out_div = document.getElementById("output-div");
+  var gen_btn = document.getElementById("gen-btn"),
+      load_btn = document.getElementById("load-btn"),
+      out_div = document.getElementById("output-div");
   out_div.innerText = "正在載入model........"
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
   out_div.innerText = "model載入完成。";
   gen_btn.disabled = false;
+  load_btn.disabled = true;
 }
 
 function multinomial(n, probs) {
@@ -27,6 +31,7 @@ function multinomial(n, probs) {
 }; 
 
 function sample(prediction, temperature = 1.0) {
+  // prediction is a array
   if (temperature <= 0) return prediction;
   var sum = 0;
   for (var item in prediction) {
@@ -68,7 +73,10 @@ function generate(n)
   console.log("output_sentence:", output_sentence);
 for (var i = 0; i < 1; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
-    console.log(y_test);
+    flatten.apply(y_test)
+    for (p in y_test.data()) {
+      console.log(p);
+    }
     /*next_word_index = sample(y_test[0, y_test.shape[1] - 1], temperature = 0.5)
     next_word = word_vector.wv.index2word[next_word_index[0]]
     if next_word == '\n' and output_sentence[-1] == '\n' : continue
