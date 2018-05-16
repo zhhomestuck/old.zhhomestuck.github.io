@@ -77,7 +77,9 @@ async function generate(n)
     y_data = await y_test.data();
     console.log(y_data);
     next_word = index2word(sample(y_test, temperature = 0.5));
-    if (next_word == '\n' and output_sentence[output_sentence.length - 1] == '\n') continue;
+    if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
+      continue;
+    }
     output_sentence.append(next_word)
   }
   output_string = ""
