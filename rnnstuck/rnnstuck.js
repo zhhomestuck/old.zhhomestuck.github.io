@@ -52,8 +52,8 @@ function index2word(index) {
 function sentence2indexs(sentence) {
   var result = [];
   for (var w in sentence) {
-    for (var i = 0; i < vocabSize; i++) {
-      if (WORD_INDEX[i] == w) {
+    for (var i in WORD_INDEX) {
+      if (WORD_INDEX[i] == sentence[w]) {
         result.push(i);
       }
     }
@@ -67,10 +67,8 @@ async function generate()
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
   for (var i = 0; i < 10 /*+ Math.floor(Math.random() * 100)*/; i++) {
-    in_list = sentence2indexs(output_sentence);
-    console.log(in_list)
-    y_test = model.predict(tf.tensor(in_list));
-    console.log("y_test.shape", y_test.shape);
+    y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
+    //console.log("y_test.shape", y_test.shape);
     y_test = y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]);
     y_data = await y_test.data();
     next_word = index2word(sample(y_data, temperature = 0.7));
