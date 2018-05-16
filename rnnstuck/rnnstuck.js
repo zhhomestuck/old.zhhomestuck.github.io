@@ -6,8 +6,8 @@ test_index = {1:"ohoh", 2:"ydyyd", 3:"ydyydy"}
 async function load_model() {
   var gen_btn = document.getElementById("gen");
   gen_btn.disabled = true;
-  for (var item in test_index) {
-    console.log(item, test_index[item])
+  for (var key in test_index) {
+    console.log(key, test_index[key])
   }
   document.getElementById("output-div").innerText = "正在載入model........\n檔案約10MB，需要等上幾分鐘。\n過程中網頁會沒有回應";
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
@@ -46,14 +46,11 @@ function sample(prediction, temperature = 1.0) {
 };
 
 function index2word(index) {
-  try {
-    console.log("index", index);
-    console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
-    return WORD_INDEX.index;
-  }
-  catch {
-    console.log("index2word: index out of range.");
-  }
+  index = index.toString();
+  console.log("index", index);
+  console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
+  if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
+  return WORD_INDEX[index];
 };
 
 function sentence2indexs(sentence) {
