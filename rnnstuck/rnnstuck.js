@@ -71,22 +71,18 @@ function generate(n)
   if (!model_loaded) return;
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
   console.log("output_sentence:", output_sentence);
-for (var i = 0; i < 1; i++) {
+  for (var i = 0; i < 10; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
-    console.log(y_test.data());
-    /*next_word_index = sample(y_test[0, y_test.shape[1] - 1], temperature = 0.5)
-    next_word = word_vector.wv.index2word[next_word_index[0]]
-    if next_word == '\n' and output_sentence[-1] == '\n' : continue
+    y_test = await y_test.data();
+    console.log(y_test);
+    next_word = index2word(sample(y_test, temperature = 0.5));
+    if next_word == '\n' and output_sentence[output_sentence.length - 1] == '\n' : continue
     output_sentence.append(next_word)
-        */
-    }
-    /*
-    if out_i % 10 == 0 : print("i:", out_i)
-    output_sentence.append('\n')
-    output_string = ""
-    for word in output_sentence :
-        output_string += word
-    outfile.write(output_string)
-  */
+  }
+  output_string = ""
+  for (word in output_sentence) {
+    output_string += word
+  }
+  document.getElementById("gen-div")innerText = output_string;
 }
