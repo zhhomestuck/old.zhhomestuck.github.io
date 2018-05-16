@@ -69,7 +69,7 @@ async function generate(n)
   if (!model_loaded) return;
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
   console.log("output_sentence:", output_sentence);
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 100; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
     y_data = await y_test.data();
@@ -82,7 +82,8 @@ async function generate(n)
   }
   output_string = "";
   for (word in output_sentence) {
-    output_string += word;
+    console.log(word);
+    output_string = output_string.concat(word);
   }
   document.getElementById("gen-div").innerText = output_string;
 }
