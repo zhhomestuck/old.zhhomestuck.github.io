@@ -1,6 +1,5 @@
 const vocabSize = Object.keys(WORD_INDEX).length;
 const seedSize = Object.keys(SEED_INDEX).length;
-const flatten = tf.layers.flatten();
 var model_loaded = false;
 model = null;
 
@@ -72,9 +71,7 @@ async function generate()
   console.log("output_sentence:", output_sentence);
   for (var i = 0; i < 10); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
-    flatten.apply(y_test);
-    y_data = await y_test.data();
-    next_word = index2word(sample(y_data, temperature = 0.5));
+    next_word = index2word(sample(y_test.data(), temperature = 0.5));
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
     }
