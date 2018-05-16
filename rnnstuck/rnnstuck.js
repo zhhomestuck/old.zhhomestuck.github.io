@@ -42,11 +42,12 @@ function sample(prediction, temperature = 1.0) {
     item /= sum;
   }
   probas = multinomial(1, prediction);
+  console.log("probas", probas);
   return probas;
 };
 
 function index2word(index) {
-  console.log("index:", index, " index.toString()", index.toString());
+  console.log("index:", index, "; index.toString():", index.toString());
   index = index.toString();
   console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
   if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
@@ -58,7 +59,6 @@ function sentence2indexs(sentence) {
   for (var w in sentence) {
     for (var i in WORD_INDEX) {
       if (WORD_INDEX[i] == w) {
-        console.log("WORD_INDEX", i, "=", WORD_INDEX[i]);
         result.push(i);
       }
     }
@@ -75,12 +75,12 @@ async function generate(n)
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
     y_data = await y_test.data();
-    console.log(y_data);
     next_word = index2word(sample(y_test, temperature = 0.5));
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
     }
     output_sentence.push(next_word);
+    console.log("output_sentence:", output_sentence);
   }
   output_string = "";
   for (word in output_sentence) {
