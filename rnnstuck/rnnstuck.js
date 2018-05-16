@@ -50,7 +50,7 @@ function sentence2indexs(sentence) {
 
 async function generate(n)
 {
-  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model.json');
+  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   document.getElementById("output-div").innerText = "Loading model...";
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
   console.log(output_sentence);
