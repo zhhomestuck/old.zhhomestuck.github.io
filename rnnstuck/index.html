@@ -14,17 +14,26 @@
   <script src="wordindex.js"></script>
 </head>
 
-<body onload="load_model();" style="font-size: 24px; text-align: center; text-align: -webkit-center;">
+<body onload="" style="font-size: 24px; text-align: center; text-align: -webkit-center;">
   <div id="info-div">
   <h3>RNNStuck</h3><br />
-  使用Keras-Tensorflowjs model
-  word2index<br />
-  Embedding<br />
-  LSTM<br />
-  Dense<br />
+  使用Keras / Tensorflowjs<br />
+  架構：<br />
+  Tokenizer<br />
+  Embedding(keras)<br />
+  LSTM(keras)<br />
+  Dense(keras)<br />
+  <br />
+  按下Load Model，將下載訓練好的RNN Model<br />
+  檔案約10MB，下載需要幾分鐘。<br />
+  下載過程中網頁會沒有回應<br/>
   </div><br />
-  <div id="output-div" style="font-weight: blod;"></div>
-  <button id="gen" onclick="generate(0);">TEST</button>
+  <div id="output-div" style="font-weight: blod;">
+  </div>
+  <button id="load" onclick="load_model();">Load Model</button><br/>
+  <button id="gen" onclick="generate(0);">產生隨機文字</button>
+  <div id="gen-div">
+  </div>
   <script src="rnnstuck.js"></script>
 </body>
 </html>

@@ -1,18 +1,14 @@
-const vocabNum = WORD_INDEX.length;
+const vocabNum = Object.keys(WORD_INDEX).length;
 var model_loaded = false;
 model = null;
-test_index = {1:"ohoh", 2:"ydyyd", 3:"ydyydy"}
 
 async function load_model() {
-  var gen_btn = document.getElementById("gen");
+  var gen_btn = document.getElementById("gen"), out_div = document.getElementById("output-div");
   gen_btn.disabled = true;
-  for (var key in test_index) {
-    console.log(key, test_index[key])
-  }
-  document.getElementById("output-div").innerText = "正在載入model........\n檔案約10MB，需要等上幾分鐘。\n過程中網頁會沒有回應";
+  out_div.innerText = "正在載入model........"
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
-  document.getElementById("output-div").innerText = "model載入完成。";
+  out_div.innerText = "model載入完成。";
   gen_btn.disabled = false;
 }
 
@@ -46,8 +42,8 @@ function sample(prediction, temperature = 1.0) {
 };
 
 function index2word(index) {
+  console.log("index:", index, " index.toString()", index.toString());
   index = index.toString();
-  console.log("index", index);
   console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
   if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
   return WORD_INDEX[index];
@@ -58,7 +54,7 @@ function sentence2indexs(sentence) {
   for (var w in sentence) {
     for (var i in WORD_INDEX) {
       if (WORD_INDEX[i] == w) {
-        console.log(i, ":", WORD_INDEX[i]);
+        console.log("WORD_INDEX", i, "=", WORD_INDEX[i]);
         result.push(i);
       }
     }
@@ -70,7 +66,7 @@ function generate(n)
 {
   if (!model_loaded) return;
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
-  console.log(output_sentence);
+  console.log("output_sentence:", output_sentence);
 for (var i = 0; i < 1; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     console.log(y_test);
