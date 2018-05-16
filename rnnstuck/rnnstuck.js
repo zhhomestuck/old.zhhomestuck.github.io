@@ -43,7 +43,7 @@ function sample(prediction, temperature = 1.0) {
 
 function index2word(index) {
   try {
-    console.log("WORD_INDEX.index", WORD_INDEX.index);
+    console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
     return WORD_INDEX.index;
   }
   catch {
@@ -55,13 +55,13 @@ function sentence2indexs(sentence) {
   var result = [];
   for (var w in sentence) {
     for (var i = 0; i < vocabNum; i++) {
-      if (WORD_INDEX.i == w) {
-        console.log(i);
+      if (WORD_INDEX[i] == w) {
+        console.log(i, ":", WORD_INDEX[i]);
         result.push(i);
       }
     }
   }
-  return result;
+  return [result];
 };
 
 function generate(n)
