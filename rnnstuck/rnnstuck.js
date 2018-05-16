@@ -69,10 +69,10 @@ async function generate()
   if (!model_loaded) return;
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
-  for (var i = 0; i < Math.floor(Math.random() * 100); i++) {
+  for (var i = 0; i < 20 + Math.floor(Math.random() * 100); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
-    y_data = await y_test.slice([0, 0, 0], [1, 1, vocabSize - 1]).data();
-    next_word = index2word(sample(y_data, temperature = 0.5));
+    y_data = await y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
+    next_word = index2word(sample(y_data, temperature = 0.8));
     y_data = [];
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;

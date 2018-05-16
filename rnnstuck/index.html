@@ -9,6 +9,7 @@
   <style>
     div {
       margin: 0 auto;
+      padding: 0 20%;
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"> </script>
@@ -23,14 +24,13 @@
   用zhhomestuck的文字資料來訓練類神經網路，因為技術與能力的限制，我只能產生純文字。<br />
   <br />
   <hr />
-  訓練類神經網路使用: Keras / Tensorflow
+  類神經網路使用: Keras / Tensorflow<br />
   網頁使用: Tensorflowjs<br />
-  網路架構：<br />
+  架構：<br />
   Tokenizer<br />
   Embedding(keras)<br />
   LSTM(keras)<br />
   Dense(keras)<br />
-  <br />
   <br />
   <hr />
   按下Load Model，將會下載並建立訓練好的RNN Model<br />
@@ -42,7 +42,7 @@
   </div>
   <button id="load-btn" onclick="load_model();">Load Model</button><br/>
   <br/>
-  <button id="gen-btn" onclick="generate();" disabled="disabled">產生隨機文字</button>
+  <button id="gen-btn" onclick="generate();" disabled="disabled">產生文字</button>
   <div id="gen-div">
   </div>
   <script src="rnnstuck.js"></script>
