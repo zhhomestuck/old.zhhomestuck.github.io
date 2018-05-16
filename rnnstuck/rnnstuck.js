@@ -5,7 +5,7 @@ model = null;
 async function load_model() {
   var gen_btn = document.getElementById("gen");
   gen_btn.disabled = true;
-  document.getElementById("output-div").innerText = "正在載入model...\n檔案約10MB，需要等上幾分鐘。";
+  document.getElementById("output-div").innerText = "正在載入model...\n檔案約10MB，需要等上幾分鐘。\n過程中網頁會沒有回應";
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
   document.getElementById("output-div").innerText = "model載入完成。";
@@ -57,7 +57,7 @@ function sentence2indexs(sentence) {
       if (WORD_INDEX.i == w) result.push(i);
     }
   }
-  return [result];
+  return result;
 };
 
 function generate(n)
