@@ -80,11 +80,11 @@ async function generate(n)
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
     }
-    output_sentence.append(next_word)
+    output_sentence.push(next_word);
   }
-  output_string = ""
+  output_string = "";
   for (word in output_sentence) {
-    output_string += word
+    output_string += word;
   }
   document.getElementById("gen-div").innerText = output_string;
 }
