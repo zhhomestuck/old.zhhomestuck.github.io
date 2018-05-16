@@ -69,7 +69,7 @@ function sentence2indexs(sentence) {
 async function generate(n)
 {
   if (!model_loaded) return;
-  var output_sentence = [index2word(SEED_INDEX[Math.floor(Math.random() * seedSize)])];
+  var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
   for (var i = 0; i < 100; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
