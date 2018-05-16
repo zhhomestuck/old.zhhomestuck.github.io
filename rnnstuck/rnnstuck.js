@@ -73,7 +73,7 @@ async function generate(n)
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
     y_data = await y_test.data();
-    next_word = index2word(sample(y_test, temperature = 0.5));
+    next_word = index2word(sample(y_test, temperature = 0.8));
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
     }
@@ -81,9 +81,9 @@ async function generate(n)
     console.log("output_sentence:", output_sentence);
   }
   output_string = "";
-  for (word in output_sentence) {
-    console.log(word);
-    output_string = output_string.concat(word);
+  for (var i = 0; i < output_sentence.length; i++) {
+    console.log(output_sentence[i]);
+    output_string = output_string.concat(output_sentence[i]);
   }
   document.getElementById("gen-div").innerText = output_string;
 }
