@@ -1,11 +1,13 @@
 const vocabNum = WORD_INDEX.length;
 var model_loaded = false;
+model = null;
 
 async function load_model() {
-  document.getElementById("gen").disabled = "disabled";
-  document.getElementById("output-div").innerText = "正在載入model...\n檔案約6MB，需要等上幾分鐘。";
-  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
+  document.getElementById("gen").display = "none";
+  document.getElementById("output-div").innerText = "正在載入model...\n檔案約10MB，需要等上幾分鐘。";
+  model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
+  document.getElementById("gen").display = "block";
 }
 
 function multinomial(n, probs) {
