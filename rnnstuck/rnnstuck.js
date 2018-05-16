@@ -1,5 +1,5 @@
-const vocabSize = Object.keys(WORD_INDEX).length;
-const seedSize = Object.keys(SEED_INDEX).length;
+const vocabSize = WORD_INDEX.length;
+const seedSize = SEED_INDEX.length;
 var model_loaded = false;
 model = null;
 
@@ -17,9 +17,9 @@ async function load_model() {
 };
 
 function multinomial(probs) {
-  var l = probs.length, pmax = 0, result = 0;
+  var l = probs.length, pmax = 0.0;
   for(var i = 0; i < l; i++) pmax += probs[i];
-  var acc_prob = 0, r = Math.random() * pmax;
+  var acc_prob = 0.0, r = Math.random() * pmax;
   for (var i = 0; i < l; i++) {
     acc_prob += probs[i];
     if (r <= acc_prob) {
@@ -44,7 +44,6 @@ function sample(prediction, temperature = 1.0) {
 };
 
 function index2word(index) {
-  index = index.toString();
   //console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
   if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
   return WORD_INDEX[index];
@@ -53,7 +52,7 @@ function index2word(index) {
 function sentence2indexs(sentence) {
   var result = [];
   for (var w in sentence) {
-    for (var i in WORD_INDEX) {
+    for (var i = 0; i < vocabSize; i++) {
       if (WORD_INDEX[i] == w) {
         result.push(i);
       }
