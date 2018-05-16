@@ -73,10 +73,8 @@ function generate(n)
   console.log("output_sentence:", output_sentence);
 for (var i = 0; i < 1; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
-    flatten.apply(y_test)
-    for (p in y_test.data()) {
-      console.log(p);
-    }
+    flatten.apply(y_test);
+    console.log(y_test.data());
     /*next_word_index = sample(y_test[0, y_test.shape[1] - 1], temperature = 0.5)
     next_word = word_vector.wv.index2word[next_word_index[0]]
     if next_word == '\n' and output_sentence[-1] == '\n' : continue
