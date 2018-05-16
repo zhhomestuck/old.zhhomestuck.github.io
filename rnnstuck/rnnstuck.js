@@ -1,4 +1,5 @@
 const vocabNum = WORD_INDEX.length;
+var model_loaded = false;
 
 function multinomial(n, probs) {
   var l = probs.length, result = [];
@@ -50,12 +51,14 @@ function sentence2indexs(sentence) {
 
 async function generate(n)
 {
-  const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
-  document.getElementById("output-div").innerText = "Loading model...";
+  if (!model_loaded) {
+    document.getElementById("output-div").innerText = "Loading model...\nMay have to wiat for minutes";
+    const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
+  }
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
   console.log(output_sentence);
-for (var i = 0; i < 10; i++) {
-    y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
+for (var i = 0; i < 1; i++) {
+    y_test = model.predict(tf.tensor2d(sentence2indexs(output_sentence)));
     console.log(y_test);
     /*next_word_index = sample(y_test[0, y_test.shape[1] - 1], temperature = 0.5)
     next_word = word_vector.wv.index2word[next_word_index[0]]
