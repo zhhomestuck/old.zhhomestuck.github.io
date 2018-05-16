@@ -1,7 +1,7 @@
 const vocabNum = WORD_INDEX.length;
 var model_loaded = false;
 
-function load_model() {
+async function load_model() {
   document.getElementById("gen").disabled = "disabled";
   document.getElementById("output-div").innerText = "正在載入model...\n檔案約6MB，需要等上幾分鐘。";
   const model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
@@ -56,7 +56,7 @@ function sentence2indexs(sentence) {
   return [result];
 };
 
-async function generate(n)
+function generate(n)
 {
   if (!model_loaded) return;
   var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
