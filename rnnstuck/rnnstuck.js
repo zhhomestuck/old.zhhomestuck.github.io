@@ -31,7 +31,7 @@ function multinomial(probs) {
 
 function sample(prediction, temperature = 1.0) {
   // prediction is a array of probability
-  var sum = 0;
+  var sum = 0.0;
   for (var i = 0; i < prediction.length; i++) {
     prediction[i] = Math.exp((Math.log(prediction[i]) / temperature));
     sum += prediction[i];
@@ -40,7 +40,6 @@ function sample(prediction, temperature = 1.0) {
     prediction[i] /= sum
   }
   probas = multinomial(prediction);
-  console.log("prediction.length:", prediction.length);
   console.log("probas:", probas);
   return probas;
 };
@@ -69,10 +68,12 @@ async function generate()
   if (!model_loaded) return;
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
-  for (var i = 0; i < 20 + Math.floor(Math.random() * 100); i++) {
+  for (var i = 0; i < 10 /*+ Math.floor(Math.random() * 100)*/; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
+    console.log("y_test.shape", y_test.shape);
     y_data = await y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
-    next_word = index2word(sample(y_data, temperature = 0.8));
+    console.log("y_data", y_data);
+    next_word = index2word(sample(y_data, temperature = 0.7));
     y_data = [];
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
