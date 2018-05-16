@@ -31,24 +31,23 @@ function multinomial(probs) {
 }; 
 
 function sample(prediction, temperature = 1.0) {
-  // prediction is a array
+  // prediction is a array of probability
   var sum = 0;
-  for (var item in prediction) {
-    item = Math.exp((Math.log(item) / temperature));
-    sum += item;
+  for (var i = 0; i < prediction.length; i++) {
+    prediction[i] = Math.exp((Math.log(prediction[i]) / temperature));
+    sum += prediction[i];
   }
-  for (var item in prediction) {
-    item /= sum;
+  for (var i = 0; i < prediction.length; i++) {
+    prediction[i] /= sum
   }
   probas = multinomial(prediction);
-  console.log("probas:", probas);
+  //console.log("probas:", probas);
   return probas;
 };
 
 function index2word(index) {
-  console.log("index:", index.toString());
   index = index.toString();
-  console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
+  //console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
   if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
   return WORD_INDEX[index];
 };
@@ -65,25 +64,23 @@ function sentence2indexs(sentence) {
   return [result];
 };
 
-async function generate(n)
+async function generate()
 {
   if (!model_loaded) return;
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < Math.floor(Math.random() * 100); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     flatten.apply(y_test);
     y_data = await y_test.data();
-    next_word = index2word(sample(y_data, temperature = 0.8));
+    next_word = index2word(sample(y_data, temperature = 0.5));
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
     }
     output_sentence.push(next_word);
-    console.log("output_sentence:", output_sentence);
   }
   output_string = "";
   for (var i = 0; i < output_sentence.length; i++) {
-    console.log(output_sentence[i]);
     output_string = output_string.concat(output_sentence[i]);
   }
   document.getElementById("gen-div").innerText = output_string;
