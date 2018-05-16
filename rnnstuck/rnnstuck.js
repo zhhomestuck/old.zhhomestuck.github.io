@@ -15,16 +15,14 @@ async function load_model() {
   load_btn.disabled = true;
 }
 
-function multinomial(n, probs) {
-  var l = probs.length, result = [];
-  for (var c = 0; c < n; c++) {
-    var acc_prob = 0, r = Math.random();
-    for (var i = 0; i < l; i++) {
-      acc_prob += probs[i];
-      if (r <= acc_prob) {
-        result.push(i);
-        break;
-      }
+function multinomial(probs) {
+  var l = probs.length, result = 0;
+  var acc_prob = 0, r = Math.random();
+  for (var i = 0; i < l; i++) {
+    acc_prob += probs[i];
+    if (r <= acc_prob) {
+      result = i;
+      break;
     }
   }
   return result;
@@ -32,7 +30,6 @@ function multinomial(n, probs) {
 
 function sample(prediction, temperature = 1.0) {
   // prediction is a array
-  if (temperature <= 0) return prediction;
   var sum = 0;
   for (var item in prediction) {
     item = Math.exp((Math.log(item) / temperature));
@@ -41,8 +38,9 @@ function sample(prediction, temperature = 1.0) {
   for (var item in prediction) {
     item /= sum;
   }
-  probas = multinomial(1, prediction);
-  console.log("probas", probas);
+  probas = multinomial(prediction);
+  console.log("prediction:", prediction);
+  console.log("probas:", probas);
   return probas;
 };
 
