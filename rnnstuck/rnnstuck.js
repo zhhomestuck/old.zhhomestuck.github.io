@@ -4,7 +4,6 @@ model = null;
 
 async function load_model() {
   var gen_btn = document.getElementById("gen"), out_div = document.getElementById("output-div");
-  gen_btn.disabled = true;
   out_div.innerText = "正在載入model........"
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
