@@ -1,4 +1,5 @@
-const vocabNum = Object.keys(WORD_INDEX).length;
+const vocabSize = Object.keys(WORD_INDEX).length;
+const seedSize = Object.keys(SEED_INDEX).length;
 const flatten = tf.layers.flatten();
 var model_loaded = false;
 model = null;
@@ -45,7 +46,7 @@ function sample(prediction, temperature = 1.0) {
 };
 
 function index2word(index) {
-  console.log("index:", index, "; index.toString():", index.toString());
+  console.log("index:", index.toString());
   index = index.toString();
   console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
   if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
@@ -67,7 +68,7 @@ function sentence2indexs(sentence) {
 async function generate(n)
 {
   if (!model_loaded) return;
-  var output_sentence = [index2word(Math.floor(Math.random() * vocabNum))];
+  var output_sentence = [index2word(SEED_SIZE[Math.floor(Math.random() * seedSize]))];
   console.log("output_sentence:", output_sentence);
   for (var i = 0; i < 100; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
