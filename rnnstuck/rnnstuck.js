@@ -1,11 +1,15 @@
 const vocabNum = WORD_INDEX.length;
 var model_loaded = false;
 model = null;
+test_index = {1:"ohoh", 2:"ydyyd", 3:"ydyydy"}
 
 async function load_model() {
   var gen_btn = document.getElementById("gen");
   gen_btn.disabled = true;
-  document.getElementById("output-div").innerText = "正在載入model...\n檔案約10MB，需要等上幾分鐘。\n過程中網頁會沒有回應";
+  for (var item in test_index) {
+    console.log(item, test_index[item])
+  }
+  document.getElementById("output-div").innerText = "正在載入model........\n檔案約10MB，需要等上幾分鐘。\n過程中網頁會沒有回應";
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
   document.getElementById("output-div").innerText = "model載入完成。";
@@ -43,6 +47,7 @@ function sample(prediction, temperature = 1.0) {
 
 function index2word(index) {
   try {
+    console.log("index", index);
     console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
     return WORD_INDEX.index;
   }
@@ -54,7 +59,7 @@ function index2word(index) {
 function sentence2indexs(sentence) {
   var result = [];
   for (var w in sentence) {
-    for (var i = 0; i < vocabNum; i++) {
+    for (var i in WORD_INDEX) {
       if (WORD_INDEX[i] == w) {
         console.log(i, ":", WORD_INDEX[i]);
         result.push(i);
