@@ -64,9 +64,11 @@ function sentence2indexs(sentence) {
 async function generate()
 {
   if (!model_loaded) return;
+  document.getElementById("gen-div").innerText = "";
+  
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   console.log("output_sentence:", output_sentence);
-  for (var i = 0; i < 10 /*+ Math.floor(Math.random() * 100)*/; i++) {
+  for (var i = 0; i < 10 + Math.floor(Math.random() * 100); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     //console.log("y_test.shape", y_test.shape);
     y_test = y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]);

@@ -9,7 +9,7 @@
   <style>
     div {
       margin: 0 auto;
-      padding: 0 20%;
+      padding: 0 25%;
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"> </script>
@@ -38,12 +38,14 @@
   依電腦的性能，可能會花上數秒鐘到數分鐘的時間<br />
   下載過程中，網頁會沒有回應<br/>
   </div><br />
-  <div id="output-div" style="font-weight: blod;">
+  <div id="output-div" style="font-weight: bold;">
   </div>
   <button id="load-btn" onclick="load_model();">Load Model</button><br/>
   <br/>
   <button id="gen-btn" onclick="generate();" disabled="disabled">產生文字</button>
-  <div id="gen-div">
+  <div style="margin: 20px 25%; padding: 10px 8%; background-color: #eeeeee;">
+    <div id="gen-div" style="margin: 0 25px; padding: 0;">
+    </div>
   </div>
   <script src="rnnstuck.js"></script>
 </body>
