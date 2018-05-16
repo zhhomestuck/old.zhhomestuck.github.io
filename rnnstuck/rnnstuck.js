@@ -14,19 +14,18 @@ async function load_model() {
   out_div.innerText = "model載入完成。";
   gen_btn.disabled = false;
   load_btn.style.display = "none";
-}
+};
 
 function multinomial(probs) {
-  var l = probs.length, result = 0;
-  var acc_prob = 0, r = Math.random();
+  var l = probs.length, pmax = 0, result = 0;
+  for(var i = 0; i < l; i++) pmax += probs[i];
+  var acc_prob = 0, r = Math.random() * pmax;
   for (var i = 0; i < l; i++) {
     acc_prob += probs[i];
     if (r <= acc_prob) {
-      result = i;
-      break;
+      return i;
     }
   }
-  return result;
 }; 
 
 function sample(prediction, temperature = 1.0) {
@@ -71,8 +70,8 @@ async function generate()
   for (var i = 0; i < 10 /*+ Math.floor(Math.random() * 100)*/; i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     console.log("y_test.shape", y_test.shape);
-    y_data = await y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
-    console.log("y_data", y_data);
+    y_test = y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]);
+    y_data = await y_test.data();
     next_word = index2word(sample(y_data, temperature = 0.7));
     y_data = [];
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
