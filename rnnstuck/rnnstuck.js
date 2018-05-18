@@ -64,11 +64,16 @@ function sentence2indexs(sentence) {
 async function generate()
 {
   if (!model_loaded) return;
-  document.getElementById("gen-div").innerText = "";
-  document.getElementById("gen-status").innerText = "正在產生文字........";
+  
+   var gen_btn = document.getElementById("gen-btn"),
+       gen_div = document.getElementById("gen-div").innerText,
+       gen_st = document.getElementById("gen-status");
+  gen_div.innerText = "";
+  gen_st.innerText = "正在產生文字........";
+  gen_btn.disabled = true;
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
-  for (var i = 0; i < 10 + Math.floor(Math.random() * 100); i++) {
+  for (var i = 0; i < 80 + Math.floor(Math.random() * 120); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     y_data = await y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
     next_word = index2word(sample(y_data, temperature = 0.7));
@@ -82,7 +87,7 @@ async function generate()
   for (var i = 0; i < output_sentence.length; i++) {
     output_string = output_string.concat(output_sentence[i]);
   }
-  
-  document.getElementById("gen-div").innerText = output_string;
-  document.getElementById("gen-status").innerText = "";
+  gen_btn.disabled = false;
+  gen_div.innerText = output_string;
+  gen_st.innerText = "";
 }
