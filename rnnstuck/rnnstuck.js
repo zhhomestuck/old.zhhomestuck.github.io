@@ -17,36 +17,28 @@ async function load_model() {
 };
 
 function multinomial(probs) {
-  var l = probs.length, pmax = 0.0;
-  for(var i = 0; i < l; i++) pmax += probs[i];
-  var acc_prob = 0.0, r = Math.random() * pmax;
-  for (var i = 0; i < l; i++) {
-    acc_prob += probs[i];
-    if (r <= acc_prob) {
+  var l = probs.length, pmax = 0.0, acc_prob = [];
+  for(var i in probs) {
+    pmax += probs[i];
+    acc_prob.push(pmax);
+  }
+  var r = Math.random() * pmax;
+  for (var i in acc_prob) {
+    if (r <= acc_prob[i])
       return i;
-    }
   }
 }; 
 
 function sample(prediction, temperature = 1.0) {
   // prediction is a array of probability
   var sum = 0.0;
-  for (var i = 0; i < prediction.length; i++) {
+  for (var i in prediction) {
     prediction[i] = Math.exp((Math.log(prediction[i]) / temperature));
     sum += prediction[i];
   }
-  for (var i = 0; i < prediction.length; i++) {
+  for (var i in prediction)
     prediction[i] /= sum;
-  }
-  probas = multinomial(prediction);
-  //console.log("probas:", probas);
-  return probas;
-};
-
-function index2word(index) {
-  //console.log("WORD_INDEX[index]:", WORD_INDEX[index]);
-  if (WORD_INDEX[index] === undefined) console.log("index2word: index out of range.");
-  return WORD_INDEX[index];
+  return multinomial(prediction);
 };
 
 function sentence2indexs(sentence) {
@@ -76,7 +68,7 @@ async function generate()
   for (var i = 0; i < 80 + Math.floor(Math.random() * 120); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     y_data = await y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
-    next_word = index2word(sample(y_data, temperature = 0.7));
+    next_word = WORD_INDEX[sample(y_data, temperature = 0.7)];
     y_data = [];
     if (next_word == '\n' && output_sentence[output_sentence.length - 1] == '\n') {
       continue;
