@@ -58,7 +58,7 @@ async function generate()
   if (!model_loaded) return;
   
    var gen_btn = document.getElementById("gen-btn"),
-       gen_div = document.getElementById("gen-div").innerText,
+       gen_div = document.getElementById("gen-div"),
        gen_st = document.getElementById("gen-status");
   gen_div.innerText = "";
   gen_st.innerText = "正在產生文字........";
