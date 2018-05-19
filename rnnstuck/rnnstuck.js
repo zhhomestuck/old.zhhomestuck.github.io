@@ -65,7 +65,7 @@ async function generate()
   gen_btn.disabled = true;
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
-  for (var i = 0; i < 80 + Math.floor(Math.random() * 120); i++) {
+  for (var i = 0; i < 100 + Math.floor(Math.random() * 60); i++) {
     y_test = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     y_data = await y_test.slice([0, y_test.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
     next_word = WORD_INDEX[sample(y_data, temperature = 0.7)];
