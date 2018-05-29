@@ -1,7 +1,7 @@
 const vocabSize = WORD_INDEX.length;
 const seedSize = SEED_INDEX.length;
 var model_loaded = false;
-const model;
+model = null;
 
 async function load_model() {
   var gen_btn = document.getElementById("gen-btn"),
@@ -67,16 +67,15 @@ async function generate()
   gen_btn.disabled = true;
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 40; i++) {
     const y = model.predict(tf.tensor(sentence2indexs(output_sentence)));
     y_data = await y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
-    next_word = WORD_INDEX[sample(y_data, temperature = 0.7)];
+    output_sentence.push(WORD_INDEX[sample(y_data, temperature = 0.7)]);
     y.dispose();
-    output_sentence.push(next_word);
+    y_data = [];
   }
-  tf.tidy();
   output_string = "";
-  for (var i = 0; i < output_sentence.length; i++) {
+  for (var i in output_sentence) {
     output_string = output_string.concat(output_sentence[i]);
   }
   gen_btn.disabled = false;
