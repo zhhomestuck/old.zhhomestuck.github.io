@@ -14,6 +14,7 @@
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"> </script>
   <script src="wordindex.js"></script>
+  <script src="seedindex.js"></script>
   <script src="vectorindex.js"></script>
 </head>
 
@@ -23,22 +24,22 @@
   <br />
   <div id="info-div">
   用zhhomestuck的文字資料來訓練類神經網路。因為技術與能力的限制，我只能產生純文字。<br />
+  最後更新: 2018/06/20<br />
   <br />
   <hr />
   類神經網路使用Keras / Tensorflow建構<br />
   並使用Tensorflowjs來在瀏覽器上執行<br />
   架構：<br />
-  Tokenizer<br />
-  Embedding (keras)<br />
+  W2V<br />
   LSTM (keras)<br />
-  Dense(size of tokens) (keras)<br />
+  Dense (keras)<br />
   <br />
   <hr />
   按下Load Model，將會載入並建立訓練好的遞迴式類神經網路(Recursive Neuron Network)<br />
   大約會占用1~2GB左右的空間<br />
   可能會花上數秒鐘到數分鐘的時間<br />
   下載過程中，網頁會沒有回應<br/>
-  ※注意：有些舊系統或瀏覽器可能不支援Tensorflowjs<br />
+  ※注意：有些系統可能不支援Tensorflowjs<br />
   </div><br />
   <div id="output-div" style="font-weight: bold;">
   </div>

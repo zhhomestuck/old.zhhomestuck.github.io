@@ -68,7 +68,7 @@ async function generate()
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   for (var i = 0; i < 100; i++) {
-    const y = model.predict(tf.tensor(generate_sentences(output_sentence)));
+    const y = model.predict(tf.tensor(sentence2vecs(output_sentence)));
     y_data = await y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
     y.dispose();
     y_data = [];
