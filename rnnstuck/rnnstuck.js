@@ -42,12 +42,12 @@ function sample(prediction, temperature = 1.0) {
   return multinomial(prediction);
 };
 
-function sentence2indexs(sentence) {
+function sentence2vecs(sentence) {
   var result = [];
   for (var w in sentence) {
     for (var i in WORD_INDEX) {
       if (WORD_INDEX[i] == sentence[w]) {
-        result.push(i);
+        result.push(VECTOR_INDEX[i]);
         break;
       }
     }
@@ -68,7 +68,7 @@ async function generate()
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   for (var i = 0; i < 40; i++) {
-    const y = model.predict(tf.tensor(sentence2indexs(output_sentence)));
+    const y = model.predict(tf.tensor(generate_sentences(output_sentence)));
     y_data = await y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
     output_sentence.push(WORD_INDEX[sample(y_data, temperature = 0.7)]);
     y.dispose();
