@@ -67,12 +67,15 @@ async function generate()
   gen_btn.disabled = true;
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
-  for (var i = 0; i < 40; i++) {
+  for (var i = 0; i < 100; i++) {
     const y = model.predict(tf.tensor(generate_sentences(output_sentence)));
     y_data = await y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
-    output_sentence.push(WORD_INDEX[sample(y_data, temperature = 0.7)]);
     y.dispose();
     y_data = [];
+    next_word = WORD_INDEX[sample(y_data, 0.7)];
+    if (next_word == "<eos>")
+        break;
+    output_sentence.push(next_word);
   }
   output_string = "";
   for (var i in output_sentence) {
