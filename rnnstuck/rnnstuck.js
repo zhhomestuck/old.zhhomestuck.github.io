@@ -67,15 +67,17 @@ async function generate()
   gen_btn.disabled = true;
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
-  for (var i = 0; i < 40; i++) {
+  var next_word = "", last_word = "";
+  for (var i = 0; i < 60; i++) {
     const y = model.predict(tf.tensor(sentence2vecs(output_sentence)));
     y_data = await y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
     next_word = WORD_INDEX[sample(y_data, 0.9)];
     y.dispose();
     y_data = [];
-    if (next_word == "<e>")
-        break;
+    if (next_word == "<e>") break;
+    if (last_word == "\n" && next_word == "\n") continue;
     output_sentence.push(next_word);
+    last_word = next_word;
   }
   var output_string = "";
   for (var i in output_sentence) {
