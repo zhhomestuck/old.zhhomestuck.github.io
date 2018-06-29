@@ -8,7 +8,7 @@ async function load_model() {
       load_btn = document.getElementById("load-btn"),
       out_div = document.getElementById("output-div");
   load_btn.disabled = true;
-  out_div.innerText = "正在載入model........"
+  out_div.innerText = "........正在載入model........"
   model = await tf.loadModel('https://zhhomestuck.github.io/rnnstuck/model/model.json');
   model_loaded = true;
   out_div.innerText = "model載入完成。";
@@ -63,21 +63,21 @@ async function generate()
        gen_div = document.getElementById("gen-div"),
        gen_st = document.getElementById("gen-status");
   gen_div.innerText = "";
-  gen_st.innerText = "正在產生文字........";
+  gen_st.innerText = "........正在產生文字........";
   gen_btn.disabled = true;
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 60; i++) {
     const y = model.predict(tf.tensor(sentence2vecs(output_sentence)));
     y_data = await y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).data();
     y.dispose();
     y_data = [];
-    next_word = WORD_INDEX[sample(y_data, 0.7)];
-    if (next_word == "<eos>")
+    next_word = WORD_INDEX[sample(y_data, 0.9)];
+    if (next_word == "<e>")
         break;
     output_sentence.push(next_word);
   }
-  output_string = "";
+  var output_string = "";
   for (var i in output_sentence) {
     output_string = output_string.concat(output_sentence[i]);
   }
