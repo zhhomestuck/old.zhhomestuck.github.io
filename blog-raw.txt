@@ -54353,9 +54353,7 @@ p=00xxxx 標題，標題。 (空一行) 內文內文內文，內文內文內文�
 04/22/16: 刪除幾則已經完成修正的錯誤告知
 11/23/16: 又刪除了幾則已經完成修正的錯誤告知
 06/03/17: 同上old search page archive
-Loading, please wait.../g, "object -->");             r = r.replace(/src/g, "src-data");             r = r.replace(/' + postTitle[a] + '' + postBody[a] + '' + '' + '');         --a;     } while(a > 0);     // Clean Array     postTitle = [];     postBody = [];     postUrl = []; } 
--- COMMENT END --> 
--- COMMENT END --> 搜尋
+搜尋
 嗨！我們之前的那些超酷低科技搜尋頁作廢了！
 取而代之的是這個Blogger內建搜尋引擎。
 Google自訂搜尋沒有因此消失！它還在這裡：
