@@ -14,7 +14,7 @@ div, .pagebody div img, table, td, p {
 }
 b {font-weight:bold;}
 /* nav */
-.mspanav {
+.header {
   width: 950px;
   margin: 0 auto;
   background-color: #5a5a5a;

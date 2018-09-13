@@ -5,10 +5,23 @@
       <!-- imports -->
       <link href="../favicon.ico" rel="icon" type="image/x-icon" />
       <link rel="stylesheet" href="../main.css">
+      <style>
+        a:active, a:hover, a:link, a:visited {color: #2cff4b;}
+        body, .header, .mspanav a, .pagebody div.log-outer { background-color: #000; color: #fff;}
+        #s_header_src {display: none;}
+        #s_header {margin: 0 5px; background-repeat: no-repeat!important; height: 175px;}
+        .content-inner, .page, .pagehead, .pagebody, .pagefoot, .pagefooter-footer {background-color: #0e4603; color: #fff}
+        .content, #contribute, .footer-bannerframe {background-color: #082a00; color: #fff}
+      </style>
   </head>
   <body>
-    <div id='header'>
-      <span class="mspanav">
+    <div class='header'>
+
+      <span class="mspanav" style="background-color: #000;">
+        <a id="tooltipimg" rel="" title="" style="display: block;">
+          <div id="s_header">
+          </div>
+        </a><br/>
         <a href="http://zhhomestuck.github.io" style="color: #ffffff;">備份站首頁</a> |
         <a href="http://zhhomestuck.blogspot.com" style="color: #ffffff;">Blogger主站</a> |
         <a href="http://www.mspaintadventures.com/">MSPA官方</a> |
@@ -58,6 +71,10 @@
       if(replaceSpoiler) {
         replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
       }
+    </script>
+    <!-- Make scratch head banner -->
+    <script type="text/javascript">
+      document.getElementById("s_header").style.background = "url('" + document.getElementById('s_header_src').src + "')";
     </script>
   </body>
 </html>
