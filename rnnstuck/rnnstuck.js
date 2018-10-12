@@ -72,7 +72,7 @@ async function generate()
     tf.tidy(() => {
         const y = model.predict(tf.tensor(sentence2vecs(output_sentence)));
         var y_data = Array.from(y.slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).dataSync());
-        next_word = WORD_INDEX[sample(y_data, 0.9)];
+        next_word = WORD_INDEX[sample(y_data, 0.75)];
         y_data = [];
     });
     if (next_word == "<e>") break;
