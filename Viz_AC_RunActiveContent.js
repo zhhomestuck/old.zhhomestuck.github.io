@@ -5,13 +5,13 @@ function vizFlashContentWrapper(){
     if(arguments[9].indexOf("http")==-1){
         arguments[39]=arguments[9]=arguments[9].replace(/\/flash/,"https://www.homestuck.com/flash");
     }
-	if(DetectFlashVer(9,0,0)) AC_FL_RunContent.apply(null,arguments);
+    var e="1"==getUrlParameterByName("fl");
+	if(DetectFlashVer(9,0,0)||e) AC_FL_RunContent.apply(null,arguments);
 	else{
-		var a=AC_GetArgs(arguments,".swf","movie",null,null),t=window.location.pathname.replace(/^\/+/g,""),o='** 若要查看原始互動內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+t+'?fl=1">Show me anyway</a>)',n="type-hs-bottom pad-y-0";
-		if(a.params.youtubeid) document.write('<iframe class="ar-inner" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe>');
-		else if(a.params.altimgsrc){var i='<img src="'+a.params.altimgsrc+'" class="mar-x-auto disp-bl">';a.params.altimghref&&(i='<a href="'+a.params.altimghref+'">'+i+"</a>"),document.write(i)}
-		else a.params.staticfb?window.location=window.location+"/1":(o="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。",n="type-sm pad-y-xl pad-y-xxl--md",$("#o_flash-container").hide());
-		setTimeout(function(){$("#o_no-flash").html(o).addClass(n),$("#o_no-flash, #o_no-flash-next").fadeIn()},500)
+	    var a=AC_GetArgs(arguments,".swf","movie",null,null),t=window.location.pathname.replace(/^\/+/g,""),o='** 若要查看原始互動內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+t+'?fl=1">Show me anyway</a>)',n="type-hs-bottom pad-y-0";
+	    if(a.params.youtubeid) document.write('<iframe class="ar-inner" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe>');
+	    else if(a.params.altimgsrc){var i='<img src="'+a.params.altimgsrc+'" class="mar-x-auto disp-bl">';a.params.altimghref&&(i='<a href="'+a.params.altimghref+'">'+i+"</a>"),document.write(i)}
+	    else a.params.staticfb?window.location=window.location+"/1":(o="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。",n="type-sm pad-y-xl pad-y-xxl--md");
 	}
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
