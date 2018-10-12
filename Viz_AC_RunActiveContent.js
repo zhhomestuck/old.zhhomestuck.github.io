@@ -13,9 +13,9 @@ function vizFlashContentWrapper(){
             t='** 若要查看原始互動內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示原始內容</a>)',
             o="type-hs-bottom pad-y-0";
         if(a.params.youtubeid)
-            document.write('<iframe class="ar-inner" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe>');
+            document.write('<div id="o_flash-container"><iframe src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         else if(a.params.altimgsrc){
-            var n='<img src="'+a.params.altimgsrc+'" class="mar-x-auto disp-bl">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
+            var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
             a.params.staticfb?window.location=window.location+"/1":(t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。");
         setTimeout(function(){$("#o_no-flash").show(),$("#o_no-flash").html(t).addClass("note")},500);
