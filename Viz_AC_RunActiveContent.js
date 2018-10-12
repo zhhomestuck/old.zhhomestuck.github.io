@@ -6,14 +6,20 @@ function vizFlashContentWrapper(){
         arguments[39]=arguments[9]=arguments[9].replace(/\/flash/,"https://www.homestuck.com/flash");
     }
     var e="1"==getUrlParameterByName("fl");
-	if(DetectFlashVer(9,0,0)||e) AC_FL_RunContent.apply(null,arguments);
-	else{
-	    var a=AC_GetArgs(arguments,".swf","movie",null,null),t=window.location.pathname.replace(/^\/+/g,""),o='** 若要查看原始互動內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+t+'?fl=1">Show me anyway</a>)',n="type-hs-bottom pad-y-0";
-	    if(a.params.youtubeid) document.write('<iframe class="ar-inner" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe>');
-	    else if(a.params.altimgsrc){var i='<img src="'+a.params.altimgsrc+'" class="mar-x-auto disp-bl">';a.params.altimghref&&(i='<a href="'+a.params.altimghref+'">'+i+"</a>"),document.write(i)}
-	    else a.params.staticfb?window.location=window.location+"/1":(o="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。",n="type-sm pad-y-xl pad-y-xxl--md");
-        setTimeout(function(){$("#pagefoot").html(t).addClass(o)},1000)
-	}
+    if(DetectFlashVer(9,0,0)||e)
+        AC_FL_RunContent.apply(null,arguments);
+    else{
+        var a=AC_GetArgs(arguments,".swf","movie",null,null),
+            t='** 若要查看原始互動內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示原始內容</a>)',
+            o="type-hs-bottom pad-y-0";
+        if(a.params.youtubeid)
+            document.write('<iframe class="ar-inner" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe>');
+        else if(a.params.altimgsrc){
+            var n='<img src="'+a.params.altimgsrc+'" class="mar-x-auto disp-bl">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
+        else 
+            a.params.staticfb?window.location=window.location+"/1":(t="Adobe Flash Player is required to display this content.<br><br>Please view on a <nobr>Flash-enabled</nobr> device.");
+        setTimeout(function(){$("#o_no-flash").show(),$("#o_no-flash").html(t).addClass("note")},500);
+    }
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
 $(document).ready(
