@@ -18,7 +18,10 @@ function vizFlashContentWrapper(){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
             a.params.staticfb?window.location=window.location+"/1":(t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。");
-        setTimeout(function(){$("#o_no-flash").show(),$("#o_no-flash").html(t).addId("notes")},500);
+        o_no_flash = document.createElement("span");
+        o_no_flash.innerHTML = t;
+        o_no_flash.id = "note";
+        setTimeout(function(){$(".pagebody").prepend(o_no_flash)},500);
     }
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
