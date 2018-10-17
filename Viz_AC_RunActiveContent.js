@@ -10,14 +10,14 @@ function vizFlashContentWrapper(){
         AC_FL_RunContent.apply(null,arguments);
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null),
-            t='** 若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)',
-            o="type-hs-bottom pad-y-0";
+            t='** 若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
         if(a.params.youtubeid)
             document.write('<div id="o_flash-container" style="position:relative;width:100%;height:0;padding:69.23076923076923% 0 0 0;"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
-            a.params.staticfb?window.location=window.location+"/1":(t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。");
+            //a.params.staticfb?window.location=window.location+"/1":t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。";
+            t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。";
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.id = "note";
