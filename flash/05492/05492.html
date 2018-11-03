@@ -8,6 +8,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <meta charset="UTF-8">
     <title>Homestuck</title>
+    <script src="/Viz_AC_RunActiveContent.js"></script>
     <link rel="stylesheet" href="https://www.homestuck.com/assets/manifest-ui-bf2ed11e7fc0b10b402d3d7b7dd59b19d01aad73bfe52a19a01fd651927f4af0.css" />
     <script src="./createjs.min.js"></script>
     <script src="./glowfilter.min.js"></script>
@@ -44,6 +45,11 @@ $(document).ready(function() {
   $_preload_div_.width(iw*psRatio+'px');
   $_preload_div_.height(ih*psRatio+'px');
   $_preload_div_.css('left', ((iw-(iw*psRatio))/2)+'px');
+  
+  if ($.browser.mobile === true || iw < 750) {
+  } else {
+    //$header_container.hide();
+  }
 
 });
 
