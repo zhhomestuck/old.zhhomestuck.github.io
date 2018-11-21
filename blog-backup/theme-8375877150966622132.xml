@@ -17,6 +17,11 @@
       <data:blog.pageTitle/>
     </title>
     <!-- Viz Homestuck Flash and HTM5/JS Media control -->
+    <script>
+	  //<![CDATA[
+	  AC_FL_RunContent = 0;
+	  //]]>
+	</script>
 	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/><!-- code edited to link as absolute url to homestuck.com -->
     <b:skin><![CDATA[
       
@@ -364,18 +369,18 @@ width: auto;
 }
 ]]>
     </b:template-skin>
-    <style id='zhhomestuckcss' type='text/css'>
+    <style id='zhhomestuck-style' type='text/css'>
       body {
         font-family: Verdana, Arial, Helvetica, &#39;微軟正黑體&#39;, &#39;Microsoft JhengHei&#39;;
         font-size: 15px;
         color: #000000;
         margin: 0px;
-        padding: 0 10px;
+        padding: 0px;
         background-color: #535353;
       }
       body.mobile {
         width: auto; min-width: 300px;
-        font-size: 15px;
+        font-size: 1.05em;
       }
       /* FOR MOBILE WIDTH SETTING */
       .mobile .mspanav, .mobile .widget,
@@ -414,7 +419,7 @@ width: auto;
         font-weight: bold;
         color: #ffffff;
         font-size: 13px;
-        height: 18px;
+        height: 20px;
       }
       .mspanav a {
         color: inherit;
@@ -428,6 +433,7 @@ width: auto;
       .content-inner {
         color: #000000;
         margin: 0 auto;
+		position: relative;
         width: 650px;
         background: #c6c6c6;
         text-align: -webkit-center; text-align: center;
@@ -447,13 +453,14 @@ width: auto;
       .mobile .pagehead { font-size: 28px;}
       /* PB */
       .pagebody {
-        margin-top: -8px;
+		position: relative;
+		width: 650px;
         border-spacing: 0;
         font-family: Courier, Verdana, Arial, monospace;
       }
       .pagebody img { 
         border: 0;
-        margin: 18px 0 -4px 0;
+        margin: 10px 0 -4px 0;
       }
       .pagebody div { /* 內文 */
         vertical-align: middle;
@@ -464,13 +471,17 @@ width: auto;
       .mobile .pagebody div img { width: auto; max-width: 90vw; height: auto;}
       .mobile .pagebody div { padding: 15px;}
 	  /* Viz and Homestuck Active Contents */
-	  .pagebody embed,
-	  .pagebody iframe,
-      .pagebody object {
+	  .pagebody embed {
+		margin: 10px 0 -4px 0;
+		width: 650px;
+		height: 450px;
+      }
+	  .mobile .pagebody embed,
+	  .mobile .pagebody iframe,
+      .mobile .pagebody object {
 		padding: 0;
-		margin: 0;
         width: 100vw; max-width: 650px;
-        height: 70vw; max-height:450px;
+        height: 69vw; max-height:450px;
       }
 	  #content_container, #animation_container, #_preload_div_ {
 		padding: 0;
@@ -478,7 +489,7 @@ width: auto;
       }
       /* PF */
       .pagefoot {
-        padding: 20px;
+        padding: 10px 20px 20px 20px;
         text-align: left;
         font-size: 24px;
         font-family: Verdana, Arial, Helvetica, 微軟正黑體, &#39;Microsoft JhengHei&#39;, monospace;
@@ -538,6 +549,15 @@ width: auto;
       div.log-outer button {
         margin: 0 auto; 
       }
+      .pagebody div.log-inner {
+        width: 90%;
+        border: none;
+        text-align: left;
+        margin: auto; margin-bottom: 8px;
+        font-size: 1em;
+        font-family: Courier, Verdana, monospace;
+        line-height: 1.1;
+      }
       .pagebody div.log-inner img {
         margin-left: -56px; /* 使log內的圖片對齊外邊線 */
         border: 0;
@@ -546,13 +566,14 @@ width: auto;
         width: auto !important;
         margin: 0; /* 若要讓使log內的圖片變回正常則要把img包在span裡面 */
       }
-      .log-inner {
-        width: 90%;
-        border: none;
-        text-align: left;
-        margin: auto; margin-bottom: 5px;
-        font-size: 1em;
-        font-family: Courier, Verdana, monospace;
+	  .pagebody div.authorlog {
+		margin: 0 5px;
+        border: 3px solid #c6c6c6;
+        padding: 15px 5%;
+	    background-color: #ffffff;
+        box-sizing: border-box;
+		text-align: left;
+		font-family: Courier, Verdana, monospace;
         line-height: 1.1;
       }
       .mobile .log-outer,
@@ -562,6 +583,7 @@ width: auto;
         width: 100%; max-width: 600px;
         margin: 0 auto; padding: 0;
       }
+      /* scroll texts */
       .div-scroll {
         overflow-x: hidden;
         overflow-y: scroll;
@@ -638,7 +660,7 @@ width: auto;
       /* Bannerframe */
       .mspanav .footer-bannerframe { margin-top: 15px;}
       .footer-bannerframe {
-        background-image: url(&#39;https://1.bp.blogspot.com/-G58i227ayAU/WsUPDgc0l-I/AAAAAAAAAv0/oCvOVD1aHVc3-tG1hCjR4IVUK3WHhqMGQCLcBGAs/s1600/bannerframe.png&#39;);
+        background-image: url(&#39;https://zhhomestuck.github.io/images/bannerframe.png&#39;);
         height: 110px;
         vertical-align: bottom;
         font-family: Courier, Verdana, monospace;
@@ -696,6 +718,7 @@ width: auto;
 		z-index: 100;
 		position: relative;
 		top: -52px;
+		padding-bottom: 15px;
 		margin-bottom: -35px;
       }
 	  .index-page .pagebody img, .index-page .pagebody object {
@@ -706,6 +729,11 @@ width: auto;
       }
 	  .mobile .mobile-index-title {
 		width: 80%;
+		text-align: left;
+      }
+	  /* For spcial pages */
+	  #tooltipimg {
+		display: none;
 		text-align: left;
       }
     </style>
@@ -765,21 +793,21 @@ head.appendChild(script);
     <!-- begin nav -->
     <b:if cond='not data:blog.isMobile'>
       <div class='mspanav' id='mspanav'>
-        <a id='tooltipimg' rel='' style='display: none; text-align: left;' title=''>
+        <a id='tooltipimg' rel='' title=''>
           <div id='s_header'/>
         </a>
         <span class='mspanav'>
           <a href='http://zhhomestuck.blogspot.com/' style='color: #ffffff;'>Homestuck繁體中文翻譯站</a>
-          <img src='https://zhhomestuck.github.io/candycorn.gif'/>
+          <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
           <a href='http://zhhomestuck.blogspot.com/p/whatishomestuck.html' style='color: #29ff4a;'>Homestuck是什麼</a>
-          <img src='https://zhhomestuck.github.io/candycorn.gif'/>
+          <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
           <a href='http://zhhomestuck.blogspot.com/p/source.html' style='color:#39d5f6;'>資源</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/about.html' style='color:#39d5f6;'>關於</a>
-          <img src='https://zhhomestuck.github.io/candycorn.gif'/>
+          <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
           <a href='http://zhhomestuck.blogspot.tw/p/all-pages.html' style='color: #f7f72a;'>所有頁</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/map.html' style='color: #f7f72a;'>目錄</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/search.html' style='color: #f7f72a;'>搜尋</a>
-          <img src='https://zhhomestuck.github.io/candycorn.gif'/>
+          <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
           <a href='http://zhhomestuck.blogspot.tw/p/comment.html' style='color: #ffb529;'>留言</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/join.html' style='color: #ffb529;'>加入或幫助</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/translators.html' style='color: #ffb529;'>翻譯組</a>
@@ -1255,7 +1283,6 @@ head.appendChild(script);
                             </div>
                           </b:if>
                           <!-- posts -->
-                          <!-- Replace Older and Newer Post Link with Post Title Name -->
                           <div class='blog-posts hfeed'>
                             <b:include data='top' name='status-message'/>
                             <b:if cond='data:blog.pageType == &quot;index&quot;'>
@@ -1395,12 +1422,23 @@ head.appendChild(script);
                           <div class='clear'/>
                         </b:includable>
                         <b:includable id='post' var='post'>
+                          <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
+							<style>  
+                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ transform: matrix(1, -0.4, 0.4, 1, 0, -45);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-footer-url {display: none;}
+						    </style>
+						    <b:if cond='data:newerPageUrl'>
+                              <!-- -->
+							</b:if>
+                          </b:if>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
-                            <!-- check if this post is special page -->
+                            <!-- check if this post is s page -->
                             <style name='scratch' type='text/css'>
-                              #tooltip{position:absolute;z-index:2000;}#s_header{margin:0 5px;background-repeat:no-repeat !important;height:175px;}#s_header_src{display:none;}div#mspanav{height: auto;}div,h3,td,dd,span,p,b,#contribute,#news,#pff{color:#ffffff;}a:link,a:hover,a:visited,a:active{color:#2cff4b;}#jump-to-outter a {color:#2cff4b !important;}body,footer,.mspanav,.pagebody div.log-outer,.pagebody div.log-outer div,.pagebody div.log-inner,div.spoiler{background-color:#000000;}.mspanav{font-size: 14px;}.mspanav a{color:#ffffff !important;}.content,.footer-outer,.content-inner{background-color:#082a00;}.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.pagefooter-footer,.post-footer,.widget-content,#news{background-color:#0e4603;}.pagebody div{padding-top:0;}.footer-bannerframe {border-top:solid 20px #082a00;height:120px;background-image:url(&#39;https://zhhomestuck.github.io/v2_mspalogo_scratch.gif&#39;);background-repeat:no-repeat;background-color:#082a00;}.footer-bannerframe #contribute-img {visibility:hidden;}#latest-update{border-right:solid 11px #082a00;}.latest-update-inner,#news{border:none; background-color:#0e4603;}#latest-update img,#news img,.footer-pay,.mspanav-foot {display:none;}#news div div div div div {margin-top: 20px;}.mspanav .footer-bannerframe{background:#0e4603;}</style>
+                              #latest-update img,#news img,#s_header_src,.footer-pay,.mspanav-foot{display:none}#s_header{margin:0 5px;background-repeat:no-repeat!important;height:175px}div#mspanav{height:auto}#contribute,#news,#pff,b,dd,div,h3,p,span,td{color:#fff}a:active,a:hover,a:link,a:visited{color:#2cff4b}#jump-to-outter a{color:#2cff4b!important}.mspanav,.pagebody div.log-inner,.pagebody div.log-outer,.pagebody div.log-outer div,body,div.spoiler,footer{background-color:#000}.mspanav{font-size:14px}.mspanav a{color:#fff!important}.content,.content-inner,.footer-outer{background-color:#082a00}#news,.mspacontent,.pagebody,.pagebody div,.pagefoot,.pagefooter-footer,.pagehead,.post-footer,.widget-content{background-color:#0e4603}.pagebody div{padding-top:0}.footer-bannerframe{border-top:solid 20px #082a00;height:120px;background-image:url(&#39;https://zhhomestuck.github.io/images/v2_mspalogo_scratch.gif&#39;);background-repeat:no-repeat;background-color:#082a00}.footer-bannerframe #contribute-img{visibility:hidden}#latest-update{border-right:solid 11px #082a00}#news,.latest-update-inner{border:none;background-color:#0e4603}#news div div div div div{margin-top:20px}.mspanav .footer-bannerframe{background:#0e4603}</style>
 						  </b:if>
                           <meta expr:content='data:post.timestamp' itemprop='datePublished'/>
+					      <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
+                            <table id='x2combo-table'><tr><td class='x2combo-td' id='x2combo1'/><td class='x2combo-td' id='x2combo2'/></tr></table>
+						  </b:if>
                           <div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
                             <b:if cond='data:post.firstImageUrl'>
                               <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
@@ -1415,9 +1453,8 @@ head.appendChild(script);
                               </div>
                             </b:if>
                             <b:if cond='data:blog.metaDescription == &quot;&quot;'>
-                              <!-- Then use the post body as the schema.org description,
-for good G+/FB snippeting. -->
-                              <div class='post-body entry-content pagebody' expr:id='&quot;post-body-&quot; + data:post.id + &quot; pagebody&quot;' itemprop='description articleBody'>
+                              <!-- Then use the post body as the schema.org description, for good G+/FB snippeting. -->
+                              <div class='post-body entry-content pagebody' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
                                 <data:post.body/>
                                 <div style='clear: both;'/>
                                 <!-- clear for photos floats -->
@@ -1447,19 +1484,16 @@ for good G+/FB snippeting. -->
                                   <!-- Null -->
                                   <span id='pagefooter-footer-url'>
                                     <b:if cond='data:olderPageUrl'>
-                                      <a href='#' id='mspa-link' onmouseover='this.href =  &quot;http://www.mspaintadventures.com/?s=6&amp;p=&quot; + this.parentNode.innerText.substr(this.parentNode.innerText.search(&quot;00&quot;),6);' target='_blank'> 官方原文</a></b:if>
+                                      <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
                                     <br/>
                                     <data:post.url/>
                                   </span>
                                 </div>
                               </div>
                               <b:else/>
-                              <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
-                                <center>
-                                  <div class='pagebody' id='pagebody'>
-                                    <data:post.body/>
-                                  </div>
-                                </center>
+                              <div class='post-body entry-content pagebody' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+								<div id='o_no-flash' style='display: none;'/>
+                                <data:post.body/>
                                 <div style='clear: both;'/>
                                 <!-- clear for photos floats -->
                               </div>
@@ -1480,7 +1514,7 @@ for good G+/FB snippeting. -->
                                   <span id='jump-to-outter'>
                                     <a onclick='if(document.getElementById(&quot;jump-to-form&quot;).style.display==&quot;none&quot;){document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;block&quot;;}else{document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;none&quot;;}' style='cursor: pointer; color: blue; text-decoration: underline;'>
                                       跳轉到 </a>
-                                    <form action='https ://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
+                                    <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                       <input maxlength='7' name='p' style='max-width: 100px;' type='text' value=''/>
                                       &#160;
                                       <input type='submit' value='JumpTo'/>
@@ -1598,16 +1632,33 @@ for good G+/FB snippeting. -->
                                 </div>
 						    </b:if>
                             </div>
+                          </div>
                             <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
 							  <!-- check if this post is a scratch page -->
-                              <script>
-                                document.getElementById(&quot;mspanav&quot;).innerHTML = document.getElementById(&quot;mspanav&quot;).innerHTML.replace(/n.gif/g, &quot;n_scratch.png&quot;);
-                                document.getElementById(&quot;tooltipimg&quot;).style.display = &quot;block&quot;
-                                document.getElementById(&quot;s_header&quot;).style.background = &quot;url(&#39;&quot; + document.getElementById(&quot;s_header_src&quot;).src + &quot;&#39;)&quot;;
+                              <script type='text/javascript'>
+                              document.getElementById(&quot;mspanav&quot;).innerHTML = document.getElementById(&quot;mspanav&quot;).innerHTML.replace(/n.gif/g, &quot;n_scratch.png&quot;);
+                              document.getElementById(&quot;tooltipimg&quot;).style.display = &quot;block&quot;
+                              document.getElementById(&quot;s_header&quot;).style.background = &quot;url(&#39;&quot; + document.getElementById(&quot;s_header_src&quot;).src + &quot;&#39;)&quot;;
                               </script>
                             </b:if>
-
-                          </div>
+							<b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
+							  <!-- check if this post is a x2combo page -->
+							  <b:if cond='data:newerPageUrl'>
+                                <script type='text/javascript'>
+								if (document.URL.indexOf(&quot;x2combo=1&quot;)&lt;0) { // if is not inside x2ifame
+                                  var x2combo1 = document.getElementById(&quot;x2combo1&quot;);
+                                  var x2combo2 = document.getElementById(&quot;x2combo2&quot;);
+                                  var post1 = document.getElementsByClassName(&quot;post&quot;)[0];
+								  x2combo2.style.display = &quot;none&quot;;
+                                  x2combo1.appendChild(post1);
+                                  var x2newerLink = $(&quot;a.blog-pager-newer-link&quot;).attr(&quot;href&quot;);
+                                  $(&quot;#x2combo2&quot;).load(x2newerLink+&quot;?x2combo=1 .pagehead, .pagebody, .pagefoot&quot;, function() {});
+                                }
+								x2combo2.style.display = &quot;table-cell&quot;;
+                                document.getElementById(&quot;blog-pager-newer-link-wrapper-id&quot;).innerHTML = &quot;<a href='#x2combo2'>==&gt; <span id='x2np'>==&gt;</span></a>&quot;;
+                                </script>
+							  </b:if>
+                            </b:if>
                         </b:includable>
                         <b:includable id='postQuickEdit' var='post'>
                           <b:if cond='data:post.editUrl'>
@@ -1911,7 +1962,7 @@ for good G+/FB snippeting. -->
                         </b:includable>
                       </b:widget>
                     </b:section> 
-                    <script>
+                    <script type='text/javascript'>
 					  // Make PesterLog
                       var replaceSpoiler = document.getElementById(&quot;log-outer-outer&quot;);
                       if(replaceSpoiler) {
@@ -1919,18 +1970,14 @@ for good G+/FB snippeting. -->
                       }
                       // Warning for HTTPS connection
 					  var this_p_url = document.getElementById(&quot;pagefooter-footer-url&quot;);
-                      if(this_p_url){if(/https/.test(this_p_url.innerText) &amp;&amp; (document.getElementsByTagName(&quot;embed&quot;).length != 0 || document.getElementsByTagName(&quot;iframe&quot;).length != 0)) this_p_url.innerHTML += (&quot;<br/>你使用了https連線  這會導致部分檔案可能無法顯示  建議使用未加密的<a href='&quot; + this_p_url.innerText.replace(/[^a-zA-z0-9:\/.]+/g, &quot;&quot;).replace(/https/, &quot;http&quot;) + &quot;'>http連線</a>&quot;);}
-                    </script>
-                    <!-- Replace Older and Newer Post Link with Post Title Name -->
-                    <script async='async' id='new-page-title-script'>
-                      //<![CDATA[
-                      $(document).ready(function(){ 
-                        var newerLink = $("a.blog-pager-newer-link").attr("href"); 
-                        $("a.blog-pager-newer-link").load(newerLink+"?m=1 .pagehead:first", function() { 
-                          var newerLinkTitle = $("a.blog-pager-newer-link").text();
-                          $("a.blog-pager-newer-link").text(" " + newerLinkTitle); 
-                        });  
-                      }); //]]>
+					  var has_interact_elemment = document.getElementsByTagName(&quot;embed&quot;).length != 0 || document.getElementsByTagName(&quot;object&quot;).length != 0;
+					  if(this_p_url){
+					    if(/https/.test(this_p_url.innerText) &amp;&amp; has_interact_elemment){
+					      var warning_text = &quot;<br/>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.innerText.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, &quot;&quot;).replace(/https/, &quot;http&quot;) + &quot;'>http連線</a>&quot;;
+					      var warning_node = document.createElement(&quot;div&quot;);
+						  warning_node.innerHTML = warning_text;
+						  warning_node.style.fontSize = &quot;13px&quot;;
+					      document.getElementById(&quot;pagehead&quot;).appendChild(warning_node);}}
                     </script>
                   </div>
                 </div>
@@ -1983,7 +2030,7 @@ for good G+/FB snippeting. -->
       <div class='footer-outer'>
         <div class='footer-bannerframe'>
           <a href='http://zhhomestuck.blogspot.com/p/copyright.html'>
-            <img alt='contribute_image' id='contribute-img' src='https://zhhomestuck.github.io/v2_copyright.gif'/>
+            <img alt='contribute_image' id='contribute-img' src='https://zhhomestuck.github.io/images/v2_copyright.gif'/>
           </a>
         </div>
         <div class='footer-inner'>
@@ -2003,7 +2050,18 @@ for good G+/FB snippeting. -->
         document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
                                                                   }, 10);
     </script>
-    <div class='mspanav' id='mspanav'>
+	<!-- Replace Older and Newer Post Link with Post Title Name -->
+    <script id='new-page-title-script' type='text/javascript'>
+      //<![CDATA[
+      $(document).ready(function(){ 
+        var newerLink = $("a.blog-pager-newer-link").attr("href"); 
+        $("a.blog-pager-newer-link").load(newerLink+"?m=1 .pagehead:first", function() { 
+          var newerLinkTitle = $("a.blog-pager-newer-link").text();
+          $("a.blog-pager-newer-link").text(" " + newerLinkTitle); 
+        });  
+      }); //]]>
+    </script>
+    <div class='mspanav' id='mspanav-footer'>
       <div style='background: #cdcdcd;'>
         <div class='footer-bannerframe'>
           <div>
@@ -2071,7 +2129,7 @@ for good G+/FB snippeting. -->
 <b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'>
   <b:widget id='HTML2' locked='false' mobile='yes' title='' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;div class=&quot;latest-update-inner&quot;&gt;&lt;img src=&quot;https://1.bp.blogspot.com/-0tHgx8va8f8/WR73F9o-rxI/AAAAAAAAAaU/CEpWZ11gqRUtEvhIFHyfuZ6o9Lqe0GwHwCLcB/s1600/latestpages.png&quot; style=&quot;margin: 15px auto; position: absolute; left: 0; right: 0;&quot; /&gt;&lt;br /&gt;&lt;div style=&quot;text-align:left;margin-top:45px;&quot;&gt;最近更新&#65306;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+      <b:widget-setting name='content'>&lt;div class=&quot;latest-update-inner&quot;&gt;&lt;img src=&quot;https://zhhomestuck.github.io/images/latestpages.png&quot; style=&quot;margin: 15px auto; position: absolute; left: 0; right: 0;&quot; /&gt;&lt;br /&gt;&lt;div style=&quot;text-align:left;margin-top:45px;&quot;&gt;最近更新&#65306;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
 var postTitle = new Array(), 
     postUrl = new Array(),
     postYear = new Array(),
@@ -2119,7 +2177,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://4.bp.blogspot.com/-5c5ovWifJT4/WR73F1HAx5I/AAAAAAAAAaY/QBqRKmFPUjoQ0VoAyHmakZzr6GMPpHbNwCLcB/s1600/news.png" style="margin: 10px auto 0 auto;" / /><br /><span style="font-weight: bold;font-size:10px;">進度：已完成約 61%</span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2018/4/3 - RM</span><br />針對www.homestuck.com取代MSPA的，有幾項事情要說：<br /><br />翻譯站的外觀不會變，之後的頁面主題外觀(Trickser, X2COMBO, Caliborn)仍會依舊站的樣式為準。<br /><br />Viz Media已將部分Flash檔案轉成現在更相容的HTML5檔案以及Youtube影片，並且有些會有官方的純文字替代網頁。今後的Flash檔案翻譯，如果在時能取得官方的純文字、或<span style="text-decoration: line-through;">HTML5檔案</span>nope，將以其為優先。但若新站的動畫檔案與舊站有異，我們仍要使用舊站的版本。<br /><br />由於Homestuck的經營權已交給Viz，網站中「支持原作」以及一些指向官方首頁的連接拿掉了，日後並會不時備份，以防萬一。<br /><br /><span style="font-weight: bold;">FAQ</span> - <span style="font-style: italic;">Last Update: 2018-04-05</span><br /><br />問：新網站的Homestuck頁數不再從1901開始，而是從1起算了。<br />答：<span style="font-weight: bold;">去他的</span>。<br /><br />問：雖然Flash將來不再支援，但要把官網上的HTML5動畫檔案搬來這裡是不可能的。唯一一個可行的搬檔案的辦法是拋棄Blogger，改以Github為主要更新/維護地點。但這他媽有夠麻煩。這三年來我都在這裡用習慣了，算了吧。<br />答：...這不是一個問題。<br /><br /></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span style="font-weight: bold;font-size:10px;">進度：已完成約 66%</span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2018/4/3 - RM</span><br />針對www.homestuck.com取代MSPA，應對政策如下：<br /><br />翻譯站的外觀不會變，之後的頁面主題外觀(Trickster, X2COMBO, Caliborn)仍會依舊站的樣式為準。<br /><br />新站開始將Flash檔案轉成現在更相容的HTML5以及Youtube影片，並且有些會有官方的純文字替代網頁。今後的Flash檔案翻譯，如果在時能取得官方的純文字或動畫檔案，將以其為優先。但若新站的動畫檔案與舊站有異，會使用舊站的版本。<br /><br />這裡的內容會不定期備份至<a href="https://zhhomestuck.github.io/">Github備份站</a><br /><br /></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
