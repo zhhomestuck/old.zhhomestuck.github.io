@@ -16,9 +16,9 @@
       </style>
   </head>
   <body>
-    <div class='header'>
+    <div id='header'>
 
-      <span class="mspanav" style="background-color: #000;">
+      <span id="mspanav" style="background-color: #000;">
         <a id="tooltipimg" rel="" title="" style="display: block;">
           <div id="s_header">
           </div>
@@ -31,23 +31,23 @@
         <a href="../translators.html">翻譯組</a>
       </span>
     </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="page">
-          <div class="pagehead">
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead">
             [o] 竊賊很有可能會擲她的骰子。
           </div>
-          <div class="pagebody" markdown="0">
+          <div id="pagebody" markdown="0">
            <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03818.gif" /><!-- 圖 --><div><!--內文開始--><br />且同樣可能的是，藉由她靠著偷竊所儲藏的可觀幸運，她有百分之百的機會擲出最有利的結果。<br /><br />一般來說，這個結果是根本不可能骰出來的。它的機率算出來的話會是16,777,216分之1。<br /><br />若不要把分母算得那麼精確的話，那會是…<br /><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room26.gif" /></p>
 
           </div>
-          <div class="pagefoot">
+          <div id="pagefoot">
             
-              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005722.html"> [o] 8^y</a>
+              <span style="float: left;">>&nbsp;</span><a id="blog-pager-newer-link" href="./005722.html"> [o] 8^y</a>
             
-            <div class="pagefooter-footer">
+            <div id="pagefooter-footer">
               
-                <a class="blog-pager-older-link" href="./005720.html">上一頁</a>
+                <a id="blog-pager-older-link" href="./005720.html">上一頁</a>
               
             </div>
             <br/>
@@ -61,7 +61,7 @@
           網站由<a href='https://github.com/zhhomestuck'>Github</a>技術提供
         </div>
       </div>
-      <div class="footer-bannerframe">
+      <div id="footer-bannerframe">
         <div>
           HOMESTUCK TRADITIONAL CHINESE TRANSLATION
         </div>
@@ -77,8 +77,8 @@
       var this_p_url = window.location.href;
       var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, "").replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
           var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
           warning_node.style.fontSize = "13px";

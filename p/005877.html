@@ -16,9 +16,9 @@
       </style>
   </head>
   <body>
-    <div class='header'>
+    <div id='header'>
 
-      <span class="mspanav" style="background-color: #000;">
+      <span id="mspanav" style="background-color: #000;">
         <a id="tooltipimg" rel="" title="" style="display: block;">
           <div id="s_header">
           </div>
@@ -31,23 +31,23 @@
         <a href="../translators.html">翻譯組</a>
       </span>
     </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="page">
-          <div class="pagehead">
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead">
             [o] ==>
           </div>
-          <div class="pagebody" markdown="0">
+          <div id="pagebody" markdown="0">
            <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03974.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><br /><span style="color: #008141;">FGA: 我建議她回去找她的永往者尋求忠告</span><br /><br /><span style="color: #626262;">PCG: 關於什麼</span><br /><br /><span style="color: #008141;">FGA: 關於為完成基因序列所需的最終青蛙的位置</span><br /><br /><span style="color: #008141;">FGA: 其所唱之歌將必除去總波型中的最後一絲失諧之處</span><br /><br /><span style="color: #008141;">FGA: 生物是相當難以捉摸的記得嗎 </span><br /><br /><span style="color: #626262;">PCG: 喔對</span><br /><br /><span style="color: #626262;">PCG: 你當時找了一整個星期 </span><br /><br /><span style="color: #008141;">FGA: 是 </span><br /><br /><span style="color: #626262;">PCG: 但你終究沒找到</span><br /><br /><span style="color: #008141;">FGA: 我有很好的進展</span><br /><br /><span style="color: #008141;">FGA: 但你認為我們沒有時間煩惱這事了</span><br /><br /><span style="color: #626262;">PCG: 總結算開始了。 </span><br /><br /><span style="color: #626262;">PCG: 我們必須殺掉國王。</span><br /><br /><span style="color: #008141;">FGA: 我了解但是那件事才是當時真正需要你的注意的事情</span><br /><br /><span style="color: #626262;">PCG: 對我知道，但一直在青蛙群裡混合那些黏液與其他狗屎然後在他們荒腔走調的呱呱聲中亂混一通已經讓我厭煩得要死了。 </span><br /><br /><span style="color: #626262;">PCG: 不管這遊戲讓我不小心做出多少個最後會成為我們自己的蛆仔，我都不是個外胚科學家。 </span><br /><br /><span style="color: #4ac925;">?GG: 但你會寫程式不是嗎? 那至少有一點像科學家, 對科技的東西有點悟性… </span><br /><br /><span style="color: #626262;">PCG: 我是個狗屎程式設計師。而且除此之外我只會寫病毒。</span><br /><br /><span style="color: #626262;">PCG: 狗屎病毒。</span><br /><br /><span style="color: #626262;">PCG: 我不應該是個黏液科技學者或是青蛙養殖者或是什麼神秘幹你媽嘓嘓叫解碼者。我是個戰士、一個領導，和一個冷血殺手。</span><br /><br /><span style="color: #4ac925;">?GG: 我們都知道! 你很明顯在那些事情上都做得很好</span><br /><br /><span style="color: #4ac925;">?GG: 但我們需要你來幫忙青蛙科學.你可以幫我們嗎?</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room80.gif" /></p>
 
           </div>
-          <div class="pagefoot">
+          <div id="pagefoot">
             
-              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005878.html"> [o] ==></a>
+              <span style="float: left;">>&nbsp;</span><a id="blog-pager-newer-link" href="./005878.html"> [o] ==></a>
             
-            <div class="pagefooter-footer">
+            <div id="pagefooter-footer">
               
-                <a class="blog-pager-older-link" href="./005876.html">上一頁</a>
+                <a id="blog-pager-older-link" href="./005876.html">上一頁</a>
               
             </div>
             <br/>
@@ -61,7 +61,7 @@
           網站由<a href='https://github.com/zhhomestuck'>Github</a>技術提供
         </div>
       </div>
-      <div class="footer-bannerframe">
+      <div id="footer-bannerframe">
         <div>
           HOMESTUCK TRADITIONAL CHINESE TRANSLATION
         </div>
@@ -77,8 +77,8 @@
       var this_p_url = window.location.href;
       var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, "").replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
           var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
           warning_node.style.fontSize = "13px";

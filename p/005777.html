@@ -16,9 +16,9 @@
       </style>
   </head>
   <body>
-    <div class='header'>
+    <div id='header'>
 
-      <span class="mspanav" style="background-color: #000;">
+      <span id="mspanav" style="background-color: #000;">
         <a id="tooltipimg" rel="" title="" style="display: block;">
           <div id="s_header">
           </div>
@@ -31,23 +31,23 @@
         <a href="../translators.html">翻譯組</a>
       </span>
     </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="page">
-          <div class="pagehead">
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead">
             [o] ==>
           </div>
-          <div class="pagebody" markdown="0">
+          <div id="pagebody" markdown="0">
            <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03874.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><br /><span style="color: #e00707;">TG: 我要說的東西可是超級巨大的獵奇</span><span style="color: #ffffff;" id="note">※</span><br /><br /><span id="note" style="color: #ffffff;">※譯注: 原文”whopper”的意思為「特大的、非常不正常的東西」，同時也是漢堡王的一款漢堡名稱。</span><br /><br /><span style="color: #b536da;">TT: 你是指香料多得荒謬的鴨肉？</span><br /><br /><span style="color: #e00707;">TG: 什​​麼</span><br /><br /><span style="color: #b536da;">TT: 還是你的決心終於被那些火焰烤牛肉的海妖之歌夷平了？</span><br /><br /><span style="color: #e00707;">TG: 不不</span><br /><br /><span style="color: #e00707;">TG: ok首先你它媽的住在樹林裡耶 那裡會有漢堡王嗎</span><br /><br /><span style="color: #e00707;">TG: 你為什麼要引用絕對不會出現在樹林裡的東西啊像是糟糕的漢堡之類的</span><br /><br /><span style="color: #b536da;">TT: 我從現在開始會限制我對木材廠和糖果屋的引用。</span><br /><br /><span style="color: #b536da;">TT: 此外，真的有一個漢堡王離我家不到四十分鐘。不過我不會讓件事在這個新政策上做任何阻擋。</span><br /><br /><span style="color: #e00707;">TG: 真的有喔</span><br /><br /><span style="color: #e00707;">TG: 好隨便啦</span><br /><br /><span style="color: #e00707;">TG: 我只是在說我做的一個夢</span><br /><br /><span style="color: #e00707;">TG: 我的意思是它很異乎尋常 心理上來說</span><br /><br /><span style="color: #e00707;">TG: 異乎尋常這個詞比起獵奇來說沒那麼蠢</span><br /><br /><span style="color: #b536da;">TT: 但絕對比較不美味。</span><br /><br /><span style="color: #e00707;">TG: 它一定是下了荒謬的重手啊我的潛意識真的很揮霍</span><br /><br /><span style="color: #e00707;">TG: 像某種國王會對著他特價肉餅噴出的撲鼻怪臭污泥</span><br /><br /><span style="color: #e00707;">TG: 可能是我把它夢得很諷刺吧我不知道</span><br /><br /><span style="color: #e00707;">TG: 我想你會有興趣聽一下這半磅肥厚多汁火熱的A級高等好料這太蠢了我們要讓漢堡滾出這段對話</span><br /><br /><span style="color: #e00707;">TG: 你在忙嗎</span><br /><br /><span style="color: #b536da;">TT: 是的。</span><br /><br /><span style="color: #e00707;">TG: 不錯 聽著</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room80.gif" /></p>
 
           </div>
-          <div class="pagefoot">
+          <div id="pagefoot">
             
-              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005778.html"> [o] ==></a>
+              <span style="float: left;">>&nbsp;</span><a id="blog-pager-newer-link" href="./005778.html"> [o] ==></a>
             
-            <div class="pagefooter-footer">
+            <div id="pagefooter-footer">
               
-                <a class="blog-pager-older-link" href="./005776.html">上一頁</a>
+                <a id="blog-pager-older-link" href="./005776.html">上一頁</a>
               
             </div>
             <br/>
@@ -61,7 +61,7 @@
           網站由<a href='https://github.com/zhhomestuck'>Github</a>技術提供
         </div>
       </div>
-      <div class="footer-bannerframe">
+      <div id="footer-bannerframe">
         <div>
           HOMESTUCK TRADITIONAL CHINESE TRANSLATION
         </div>
@@ -77,8 +77,8 @@
       var this_p_url = window.location.href;
       var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, "").replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
           var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
           warning_node.style.fontSize = "13px";

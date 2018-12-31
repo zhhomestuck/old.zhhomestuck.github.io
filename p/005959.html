@@ -16,9 +16,9 @@
       </style>
   </head>
   <body>
-    <div class='header'>
+    <div id='header'>
 
-      <span class="mspanav" style="background-color: #000;">
+      <span id="mspanav" style="background-color: #000;">
         <a id="tooltipimg" rel="" title="" style="display: block;">
           <div id="s_header">
           </div>
@@ -31,23 +31,23 @@
         <a href="../translators.html">翻譯組</a>
       </span>
     </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="page">
-          <div class="pagehead">
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead">
             [o] ==>
           </div>
-          <div class="pagebody" markdown="0">
+          <div id="pagebody" markdown="0">
            <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04056.gif" /><!-- 圖 --><br /><div><!--內文開始--><br />使徒本將與受難者一起被殺害。但在最後一刻，%行%刑者(E%ecutor)莫名其妙地對她心生憐憫，讓她逃脫了。她帶著底褲潛逃，這是他的神聖受難留下的唯一物證。她躲進洞穴裡許多周，在牆上用被殺的動物的血從記憶裡抄錄下他所有的經文，在蠻荒寺院中度過她的餘生。她的奉獻對他的信息的存續將是至關重要的。<br /><br />多勒羅沙則沒那麼幸運地被轉賣為奴，她的餘生都成為惡毒海洋居民的財產。至於靈能者，他被徵召入伍。他過得差多了，即使那是更負聲望的勤務。<br /><!--內文結束--> </div><img src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room95.gif" id="s_header_src" /><script>document.getElementById("tooltipimg").title = "他把小女孩鎖在一個怪胎房間裡, 還滔滔不絕的在講troll祖先的故事, 我就知道."</script></p>
 
           </div>
-          <div class="pagefoot">
+          <div id="pagefoot">
             
-              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005960.html"> [o] ==></a>
+              <span style="float: left;">>&nbsp;</span><a id="blog-pager-newer-link" href="./005960.html"> [o] ==></a>
             
-            <div class="pagefooter-footer">
+            <div id="pagefooter-footer">
               
-                <a class="blog-pager-older-link" href="./005958.html">上一頁</a>
+                <a id="blog-pager-older-link" href="./005958.html">上一頁</a>
               
             </div>
             <br/>
@@ -61,7 +61,7 @@
           網站由<a href='https://github.com/zhhomestuck'>Github</a>技術提供
         </div>
       </div>
-      <div class="footer-bannerframe">
+      <div id="footer-bannerframe">
         <div>
           HOMESTUCK TRADITIONAL CHINESE TRANSLATION
         </div>
@@ -77,8 +77,8 @@
       var this_p_url = window.location.href;
       var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, "").replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
           var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
           warning_node.style.fontSize = "13px";

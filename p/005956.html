@@ -16,9 +16,9 @@
       </style>
   </head>
   <body>
-    <div class='header'>
+    <div id='header'>
 
-      <span class="mspanav" style="background-color: #000;">
+      <span id="mspanav" style="background-color: #000;">
         <a id="tooltipimg" rel="" title="" style="display: block;">
           <div id="s_header">
           </div>
@@ -31,23 +31,23 @@
         <a href="../translators.html">翻譯組</a>
       </span>
     </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="page">
-          <div class="pagehead">
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead">
             [o] ==>
           </div>
-          <div class="pagebody" markdown="0">
+          <div id="pagebody" markdown="0">
            <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04053_1.gif" /><br /><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/04053_2.gif" /><!-- 圖 --><div><!--內文開始--><br />他的教導也將通過倖存的弟子持續存在，但是以寂靜的聲調。他的信眾將日益衰減，成為世紀以來面對迫害的不起眼邪教。在他處決後，屍體被燒毀，只留下烙鐵，它們冷卻在灰燼中，彷彿他的憤怒平息。不顧至高血的壓迫，他的追隨者應用其形狀。這符號就此成了無符號的符號，總示以無色似寒鐵，以蔽其色調之辱名。這在盡可能提醒他的追隨者，仍要隱藏，因為它代表著受難者的犧牲。他的憤怒就像隱藏在熱鐵中，有天會被他的血統中的另一個重新點燃。<br /><br />受難者宣講說他去世之後，另一個無符號將要到來，這當是他們星球的生命結束之預兆，而第二個無符號將繼續他的工作，並帶領他的子民通往這世界外的輝煌。他的教導在追隨者們的維持下存活了許多年，即使運動周圍的沸沸揚揚已然平息。到了近代，受難者的經文只不比古代迷信被淡忘得多，更別提那上古的咒詛。但追隨者們早已在暗處準備了，當第二個無符號終於來臨時，他將有一個養育他的守護獸和一個予以他名字的符號。<br /><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room92.gif" /><script>document.getElementById("tooltipimg").innerHTML += "(說明文字！)";document.getElementById('tooltipimg').title = "啵讚啦";</script></p>
 
           </div>
-          <div class="pagefoot">
+          <div id="pagefoot">
             
-              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005957.html"> [o] ==></a>
+              <span style="float: left;">>&nbsp;</span><a id="blog-pager-newer-link" href="./005957.html"> [o] ==></a>
             
-            <div class="pagefooter-footer">
+            <div id="pagefooter-footer">
               
-                <a class="blog-pager-older-link" href="./005955.html">上一頁</a>
+                <a id="blog-pager-older-link" href="./005955.html">上一頁</a>
               
             </div>
             <br/>
@@ -61,7 +61,7 @@
           網站由<a href='https://github.com/zhhomestuck'>Github</a>技術提供
         </div>
       </div>
-      <div class="footer-bannerframe">
+      <div id="footer-bannerframe">
         <div>
           HOMESTUCK TRADITIONAL CHINESE TRANSLATION
         </div>
@@ -77,8 +77,8 @@
       var this_p_url = window.location.href;
       var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, "").replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
           var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
           warning_node.style.fontSize = "13px";

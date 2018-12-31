@@ -6,7 +6,7 @@ body {
   padding: 0 10px;
   background-color: #535353;
 }
-div, .pagebody div img, table, td, p {
+div, #pagebody div img, table, td, p {
   margin: 0; padding: 0;
   border: none;
   border-spacing: 0;
@@ -14,35 +14,35 @@ div, .pagebody div img, table, td, p {
 }
 b {font-weight:bold;}
 /* nav */
-.header {
+#header {
   width: 950px;
   margin: 0 auto;
   background-color: #5a5a5a;
 }
-.mspanav {
+#mspanav {
   font-family: Arial, Helvetica, Microsoft JhengHei, sans-serif;
   font-weight: bold;
   color: #ffffff;
   font-size: 13px;
   height: 18px;
 }
-.mspanav a {
+#mspanav a {
   color: inherit;
   margin: 0 3px;
 }
-.mspanav img {
+#mspanav img {
   vertical-align: middle;
   border: 0;
 }
 /* mspa content */
-.content {
+#content {
   width: 950px;
   padding: 0;
   margin: 0 auto;
   background: #c6c6c6;
   height: auto;
 }
-.content-inner {
+#content-inner {
   color: #000000;
   margin: 0 auto;
   padding-top: 7px;
@@ -51,7 +51,7 @@ b {font-weight:bold;}
   text-align: -webkit-center; text-align: center;
 }
 /* PH */
-.pagehead {
+#pagehead {
   padding: 15px 0px;
   font-weight: bold;
   font-size: 32px;
@@ -59,25 +59,25 @@ b {font-weight:bold;}
   background-color: #eeeeee;
 }
 /* PB */
-.pagebody {
+#pagebody {
   margin-top: -8px;
   border-spacing: 0;
   font-family: Courier, Verdana, Arial, monospace;
   background-color: #eeeeee;
 }
-.pagebody img, .pagebody embed, .pagebody object {
+#pagebody img, #pagebody embed, #pagebody object {
   margin-bottom: 15px;
 }
-.pagebody div {
+#pagebody div {
   vertical-align: middle;
   padding: 15px 25px 0 25px;
 }
-.pagebody div.log-inner {
+#pagebody div.log-inner {
   text-align: left;
   width: 90%;
   margin: 5px auto;
 }
-.pagebody div.authorlog {
+#pagebody div.authorlog {
   margin: 0 5px;
   border: 3px solid #c6c6c6;
   padding: 15px 5%;
@@ -88,20 +88,20 @@ b {font-weight:bold;}
   line-height: 1.1;
 }
 /* PF */
-.pagefoot {
+#pagefoot {
   padding: 20px 20px 15px 25px;
   text-align: left;
   font-size: 24px;
   font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
   background-color: #eeeeee;
 }
-.pagefooter-footer {
+#pagefooter-footer {
   text-align: left;
   font-weight: bold;
   font-size: 13px;
   padding-top: 35px;
 }
-.pagefoot a.newer-page-link, html a.blog-pager-newer-link {
+#pagefoot a#newer-page-link, html a#blog-pager-newer-link {
   line-height: 30px !important;
 }
 #contribute, #contribute a {
@@ -111,7 +111,7 @@ b {font-weight:bold;}
   width: 100vw; max-width: 650px;
 }
 /* PFF */
-.pagefooter-footer {
+#pagefooter-footer {
   text-align: left;
   font-weight: bold;
   font-size: 13px;
@@ -150,11 +150,11 @@ div.log-outer div {
 div.log-outer button {
   margin: 0 auto; 
 }
-.pagebody div.log-inner img {
+#pagebody div.log-inner img {
   margin-left: -56px;
   border: 0;
 }
-.pagebody div.log-inner span img {
+#pagebody div.log-inner span img {
   width: auto !important;
   margin: 0;
 }
@@ -188,7 +188,7 @@ div.log-outer button {
   width: 100vw; max-width: 650px;
 }
 /* Bannerframe */
-.footer-bannerframe {
+#footer-bannerframe {
   background-color: #535353;
   margin: 0; 
   height: 110px;
@@ -197,7 +197,7 @@ div.log-outer button {
   font-weight: bold;
   color: #000000;
 }
-.footer-bannerframe div {
+#footer-bannerframe div {
   padding-top: 10px;
   font-size: 36px;
 }

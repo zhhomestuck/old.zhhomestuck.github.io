@@ -16,9 +16,9 @@
       </style>
   </head>
   <body>
-    <div class='header'>
+    <div id='header'>
 
-      <span class="mspanav" style="background-color: #000;">
+      <span id="mspanav" style="background-color: #000;">
         <a id="tooltipimg" rel="" title="" style="display: block;">
           <div id="s_header">
           </div>
@@ -31,23 +31,23 @@
         <a href="../translators.html">翻譯組</a>
       </span>
     </div>
-    <div class="content">
-      <div class="content-inner">
-        <div class="page">
-          <div class="pagehead">
+    <div id="content">
+      <div id="content-inner">
+        <div id="page">
+          <div id="pagehead">
             [o] ==>
           </div>
-          <div class="pagebody" markdown="0">
+          <div id="pagebody" markdown="0">
            <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03875.gif" /><!-- 圖 --><div><!--內文開始--><br /><div id="log-outer-outer"><!-- LOG COMMENCE --><br /><br /><span style="color: #b536da;">TT: 我以為你不想要我再分析你的夢了。</span><br /><br /><span style="color: #e00707;">TG: 沒有 但是這個夢太讚了我不得不把它送進你那少年老成的心理分析娛樂節目裡面好好地對它用顯微鏡剖析一番然後找出哪些可笑的象徵可以指出我的所有心理問題如果我還真的有的話</span><br /><br /><span style="color: #e00707;">TG: 它真是華誕詭怪地意義深遠</span><br /><br /><span style="color: #e00707;">TG: 全都蘊涵著至少八個黏糊八胞胎在注滿著腦漿的腹部裡翻騰起伏</span><br /><br /><span style="color: #b536da;">TT: 也許我們可以從評估此令人不安的比喻開始。</span><br /><br /><span style="color: #e00707;">TG: 不 聽好</span><br /><br /><span style="color: #e00707;">TG: 我只是想知道從你的專業來看我的夢裡有多少東西象徵了老二</span><br /><br /><span style="color: #b536da;">TT: 我們已經公認了你所有的夢都是個包裝著同性戀的象徵，這足以將佛洛伊德的理論自不受認可之灰燼中提升了。</span><br /><br /><span style="color: #e00707;">TG: 對對那是一定的但是我這次沒有夢到扑偶仔</span><br /><br /><span style="color: #b536da;">TT: 你是認真的？</span><br /><br /><span style="color: #b536da;">TT: 我要清空我的時間表。這是一個重大突破。</span><br /><br /><span style="color: #e00707;">TG: 我知道</span><br /><br /><span style="color: #e00707;">TG: 那是個更令人輕鬆愉快的夢</span><br /><br /><span style="color: #e00707;">TG: 關於我不斷地死掉</span><br /><!-- LOG END --><br /></div><!--內文結束--> </div><img id="s_header_src" src="http://www.mspaintadventures.com/storyfiles/hs2/scratch/room80.gif" /></p>
 
           </div>
-          <div class="pagefoot">
+          <div id="pagefoot">
             
-              <span style="float: left;">>&nbsp;</span><a class="blog-pager-newer-link" href="./005779.html"> [o] ==></a>
+              <span style="float: left;">>&nbsp;</span><a id="blog-pager-newer-link" href="./005779.html"> [o] ==></a>
             
-            <div class="pagefooter-footer">
+            <div id="pagefooter-footer">
               
-                <a class="blog-pager-older-link" href="./005777.html">上一頁</a>
+                <a id="blog-pager-older-link" href="./005777.html">上一頁</a>
               
             </div>
             <br/>
@@ -61,7 +61,7 @@
           網站由<a href='https://github.com/zhhomestuck'>Github</a>技術提供
         </div>
       </div>
-      <div class="footer-bannerframe">
+      <div id="footer-bannerframe">
         <div>
           HOMESTUCK TRADITIONAL CHINESE TRANSLATION
         </div>
@@ -77,8 +77,8 @@
       var this_p_url = window.location.href;
       var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, "").replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
           var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
           warning_node.style.fontSize = "13px";
