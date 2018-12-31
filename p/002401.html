@@ -55,12 +55,22 @@
         </div>
       </div>
     </div>
-    <!-- Make log -->
     <script type="text/javascript">
+      // Make log
       var replaceSpoiler = document.getElementById("log-outer-outer");
       if(replaceSpoiler) {
         replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
       }
+      // Warning for HTTPS connection
+      var this_p_url = window.location.href;
+      var has_interact_elemment = document.getElementsByTagName(&quot;embed&quot;).length != 0 || document.getElementsByTagName(&quot;object&quot;).length != 0;
+      if(this_p_url){
+        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
+          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, &quot;&quot;).replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\&quot;none\&quot;;' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
+          var warning_node = document.createElement(&quot;div&quot;);
+          warning_node.innerHTML = warning_text;
+          warning_node.style.fontSize = &quot;13px&quot;;
+          document.getElementById(&quot;pagehead&quot;).appendChild(warning_node);}}
     </script>
   </body>
 </html>
