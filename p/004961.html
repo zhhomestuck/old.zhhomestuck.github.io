@@ -62,14 +62,14 @@
       }
       // Warning for HTTPS connection
       var this_p_url = window.location.href;
-      var has_interact_elemment = document.getElementsByTagName(&quot;embed&quot;).length != 0 || document.getElementsByTagName(&quot;object&quot;).length != 0;
+      var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
       if(this_p_url){
-        if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
-          var warning_text = &quot;<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, &quot;&quot;).replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\&quot;none\&quot;;' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
-          var warning_node = document.createElement(&quot;div&quot;);
+        if(/https/.test(this_p_url) && has_interact_elemment){
+          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='" + this_p_url.replace(/[^a-zA-z0-9:\/?=&.]+/g, "").replace(/https/, "http") + "'>http連線</a> [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
+          var warning_node = document.createElement("div");
           warning_node.innerHTML = warning_text;
-          warning_node.style.fontSize = &quot;13px&quot;;
-          document.getElementById(&quot;pagehead&quot;).appendChild(warning_node);}}
+          warning_node.style.fontSize = "13px";
+          document.getElementById("pagehead").appendChild(warning_node);}}
     </script>
   </body>
 </html>
