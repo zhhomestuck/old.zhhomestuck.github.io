@@ -14,35 +14,35 @@ div, .pagebody div img, table, td, p {
 }
 b {font-weight:bold;}
 /* nav */
-#header {
+.header {
   width: 950px;
   margin: 0 auto;
   background-color: #5a5a5a;
 }
-#mspanav {
+.mspanav {
   font-family: Arial, Helvetica, Microsoft JhengHei, sans-serif;
   font-weight: bold;
   color: #ffffff;
   font-size: 13px;
   height: 18px;
 }
-#mspanav a {
+.mspanav a {
   color: inherit;
   margin: 0 3px;
 }
-#mspanav img {
+.mspanav img {
   vertical-align: middle;
   border: 0;
 }
 /* mspa content */
-#content {
+.content {
   width: 950px;
   padding: 0;
   margin: 0 auto;
   background: #c6c6c6;
   height: auto;
 }
-#content-inner {
+.content-inner {
   color: #000000;
   margin: 0 auto;
   padding-top: 7px;
@@ -182,7 +182,7 @@ div.log-outer button {
   width: 100vw; max-width: 650px;
 }
 /* Bannerframe */
-#footer-bannerframe {
+.footer-bannerframe {
   background-color: #535353;
   margin: 0; 
   height: 110px;
@@ -191,7 +191,7 @@ div.log-outer button {
   font-weight: bold;
   color: #000000;
 }
-#footer-bannerframe div {
+.footer-bannerframe div {
   padding-top: 10px;
   font-size: 36px;
 }
