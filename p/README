@@ -1,0 +1,42 @@
+**Step 1**  
+To import your posts from your [Blogger](https://www.blogger.com/),
+  
+you first have to [export the blog][export-blogger-xml]
+to a XML file (`blog-MM-DD-YYYY.xml`), and run:  
+$ ruby -rubygems -e 'require "jekyll-import";
+JekyllImport::Importers::Blogger.run({
+"source"=>"/path/to/blog-MM-DD-YYYY.xml",})'
+
+The only required field is `source`.
+  
+The other fields default to their above values.
+
+  
+"Labels" will be included in export as "Tags".
+
+  
+
+注意:
+1. ">"符號在Windows的cmd中要用^跳脫字符  
+2. 必須載有Ruby環境，然後有它的bundler套件  
+3. /_posts/裡的.md檔必須是Unix格式的換行(不得有\r)  
+4. 中文編碼必須是UTF-8  
+
+**Step 2**  
+give_layout_to_tags.py:
+將有特殊tag的post給予特殊layout
+
+**Step 3**  
+在主目錄裡輸入指令:
+> jekyll build
+
+**Step 4**  
+p_tag_remover:  
+在build完之後，從/zhhomstuck.github.io/p/中的html files中清除掉所有unintented tag  
+
+**Step 5**  
+將/page/裡的頁面放回/zhhomstuck.github.io/p/
+
+**Step 6**  
+make_raw_blog.py:  
+將blog備份檔從很大的xml檔轉換成純文字的blog-raw.txt  
