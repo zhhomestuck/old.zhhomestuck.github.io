@@ -68,9 +68,9 @@ async function generate()
   
   var output_sentence = [SEED_INDEX[Math.floor(Math.random() * seedSize)]];
   var next_word = "", last_word = "";
-  for (var i = 0; i < 80; i++) {
+  for (var i = 0; i < 60; i++) {
     tf.tidy(() => {
-        var y_data = Array.from(model.predict(tf.tensor(sentence2vecs(output_sentence))).slice([0, y.shape[1] - 1, 0], [1, 1, vocabSize - 1]).dataSync());
+        var y_data = Array.from(model.predict(tf.tensor(sentence2vecs(output_sentence))).slice([0, output_sentence.length - 1, 0], [1, 1, vocabSize - 1]).dataSync());
         next_word = WORD_INDEX[sample(y_data, 0.75)];
         y_data = [];
     });
