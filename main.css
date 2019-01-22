@@ -200,7 +200,7 @@ div.log-outer button {
 SCRATCH PAGES
 *************/
 
-.scratch a:active, a:hover, a:link, a:visited {
+.scratch a:active, .scratch a:hover, .scratch a:link, .scratch a:visited {
     color: #2cff4b;
 }
 
