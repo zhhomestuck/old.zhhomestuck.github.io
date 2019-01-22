@@ -65,8 +65,12 @@ b {font-weight:bold;}
   font-family: Courier, Verdana, Arial, monospace;
   background-color: #eeeeee;
 }
-.pagebody img, .pagebody embed, .pagebody object {
+.pagebody img {
+    margin-bottom: 15px;
+}
+.pagebody embed, .pagebody object {
   margin-bottom: 15px;
+  width: 650px; /* default width */
 }
 .pagebody div {
   vertical-align: middle;
