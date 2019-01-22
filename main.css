@@ -70,7 +70,7 @@ b {font-weight:bold;}
 }
 .pagebody embed, .pagebody object {
   margin-bottom: 15px;
-  width: 650px; /* default width */
+  width: 650px; height: 450px; /* default width & height*/
 }
 .pagebody div {
   vertical-align: middle;
@@ -199,15 +199,12 @@ div.log-outer button {
   padding-top: 10px;
   font-size: 36px;
 }
-
 /************
 SCRATCH PAGES
 *************/
-
 .scratch a:active, .scratch a:hover, .scratch a:link, .scratch a:visited {
     color: #2cff4b;
 }
-
 .scratch,
 .scratch .header,
 .scratch .mspanav a,
@@ -215,7 +212,6 @@ SCRATCH PAGES
     background-color: #000;
     color: #fff;
 }
-
 .scratch .content-inner,
 .scratch .page,
 .scratch .pagehead,
@@ -225,14 +221,12 @@ SCRATCH PAGES
     background-color: #0e4603;
     color: #fff
 }
-
 .scratch .content,
 .scratch #contribute,
 .scratch .footer-bannerframe {
     background-color: #082a00;
     color: #fff
 }
-
 #s_header_src {
     display: none;
 }
