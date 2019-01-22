@@ -3,9 +3,10 @@
     <meta http-equiv="Content-Type" content="text/html">
       <title>Homestuck繁體中文翻譯 - 備份站</title>
       <!-- imports -->
-      <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-      <link rel="stylesheet" href="../main.css">
+      <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+      <link rel="stylesheet" href="/main.css">
       <script scr="/Viz_AC_RunActiveContent.js"></script>
+      <script scr="/main.js"></script>
   </head>
   <body>
     <div id="header" class="header">
@@ -25,7 +26,7 @@
             John：讀紙條。
           </div>
           <div id="pagebody" class="pagebody" markdown="0">
-           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03672.gif" /><!-- 圖 --><div><!--內文開始--><br /><span style="color: #1f9400;">John！！！還有件事…<br /><br />我相信你已經注意到了這隻兔子全身上下都縫滿了武器！他帶著我提過的四樣有趣迷你武器通通都超機巴致命，但絕不表示這些就是泰瑞奇瑟先生所有的爪牙喔。(這是我給他取的名字) 幹可真不只啊。<br /><br />你可以看到我給泰瑞加上了些你會覺得很實用的小家私：一個窮微器，我就是用它來把那些武器轉小的；還有一個魔巨器，讓你想揮舞它們時再放大就好！他體內的料子保證夠把們它放成巨無霸但這其實挺蠢的，你是能拿一根摩天樓大小的魔法縫衣針衝啥？搞笑喔！<br /><br />這項技術是我從我奶奶那邊借來的一種操縱空間的能力。傳說她是那玩意兒之女巫來的！她曾經是和你我一樣勇敢的英雄，其它星星都在她的大鍋中閃閃發光。我真的很想告訴你我的奶奶是誰我真的想但是我不行。我想我不是很會保守秘密，我想要誠實像你一樣但是有這麼多要保密的讓我感覺自己都凍未條<span id="note">※</span>了。嘿嘿。<br /><br />綠色表示增大紅色表示縮小！再會囉夥伴。<br /><br />J.</span><br /><!--內文結束--> </div><div id="note">※原文為jaded。</div></p>
+           <p><img src="http://cdn.mspaintadventures.com/storyfiles/hs2/03672.gif" /><!-- 圖 --><div><!--內文開始--><br /><span style="color: #1f9400;">John！！！還有件事…<br /><br />我相信你已經注意到了這隻兔子全身上下都縫滿了武器！他帶著我提過的四樣有趣迷你武器通通都超機巴致命，但絕不表示這些就是泰瑞奇瑟先生所有的爪牙喔。(這是我給他取的名字) 幹可真不只啊。<br /><br />你可以看到我給泰瑞加上了些你會覺得很實用的小家私：一個窮微器，我就是用它來把那些武器轉小的；還有一個龐巨器，讓你想揮舞它們時再放大就好！他體內的料子保證夠把們它放成巨無霸但這其實挺蠢的，你是能拿一根摩天樓大小的魔法縫衣針衝啥？搞笑喔！<br /><br />這項技術是我從我奶奶那邊借來的一種操縱空間的能力。傳說她是那玩意兒之女巫來的！她曾經是和你我一樣勇敢的英雄，繁星都在她的大鍋中閃閃發光。我真的很想告訴你我的奶奶是誰我真的想但是我不行。我想我不是很會保守秘密，我想要誠實像你一樣但是有這麼多要保密的讓我感覺自己都凍未條<span id="note">※</span>了。嘿嘿。<br /><br />綠色表示增大紅色表示縮小！再會囉夥伴。<br /><br />J.</span><br /><!--內文結束--> </div><div id="note">※原文為jaded。</div></p>
 
           </div>
           <div id="pagefoot" class="pagefoot">
@@ -55,21 +56,8 @@
       </div>
     </div>
     <script type="text/javascript">
-      // Make log
-      var replaceSpoiler = document.getElementById("log-outer-outer");
-      if(replaceSpoiler) {
-        replaceSpoiler.innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show Pesterlog</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide Pesterlog</button></div><div class=\"log-inner\">" + replaceSpoiler.innerHTML + "</div></div></div><!-- LOG END -->";
-      }
-      // Warning for HTTPS connection
-      var this_p_url = window.location.href;
-      var has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
-      if(this_p_url){
-        if(/https/.test(this_p_url) && has_interact_elemment){
-          var warning_text = "<br/><span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;'>隱藏此訊息</a>]</span>";
-          var warning_node = document.createElement("div");
-          warning_node.innerHTML = warning_text;
-          warning_node.style.fontSize = "13px";
-          document.getElementById("pagehead").appendChild(warning_node);}}
+      makeSpoilerLog();
+      checkHTTPSWarning();
     </script>
   </body>
 </html>

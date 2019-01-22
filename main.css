@@ -195,3 +195,40 @@ div.log-outer button {
   padding-top: 10px;
   font-size: 36px;
 }
+
+/************
+SCRATCH PAGES
+*************/
+
+.scratch a:active, a:hover, a:link, a:visited {
+    color: #2cff4b;
+}
+
+.scratch,
+.scratch .header,
+.scratch .mspanav a,
+.scratch .pagebody div.log-outer {
+    background-color: #000;
+    color: #fff;
+}
+
+.scratch .content-inner,
+.scratch .page,
+.scratch .pagehead,
+.scratch .pagebody,
+.scratch .pagefoot,
+.scratch .pagefooter-footer {
+    background-color: #0e4603;
+    color: #fff
+}
+
+.scratch .content,
+.scratch #contribute,
+.scratch .footer-bannerframe {
+    background-color: #082a00;
+    color: #fff
+}
+
+#s_header_src {
+    display: none;
+}
