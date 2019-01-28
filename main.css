@@ -61,11 +61,13 @@ b {font-weight:bold;}
   padding: 15px 0px;
   font-weight: bold;
   font-size: 32px;
+  font-family: Courier, Verdana, monospace;
 }
 /* PB */
 .pagebody {
   margin-top: -8px;
   border-spacing: 0;
+  font-family: Courier, Verdana, monospace;
 }
 .pagebody img {
   width: 100%;
@@ -151,9 +153,11 @@ div.log-inner span img {
   font-size: 24px;
   font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
 }
+/*
 .pagefoot::before {
   content: ">";
 }
+*/
 .pagefoot a.newer-page-link {
   line-height: 30px !important;
 }
