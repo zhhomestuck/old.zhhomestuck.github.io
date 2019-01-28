@@ -3,7 +3,7 @@ body {
   font-size: 15px;
   color: #000000;
   margin: 0px;
-  padding: 0 10px;
+  padding: 0 5px;
   background-color: #535353;
 }
 div, .pagebody div img, table, td, p {
@@ -53,28 +53,28 @@ b {font-weight:bold;}
   background: #c6c6c6;
   text-align: -webkit-center; text-align: center;
 }
+.pagehead, .pagebody, .pagefoot {
+  background-color: #eeeeee;
+}
 /* PH */
 .pagehead {
   padding: 15px 0px;
   font-weight: bold;
   font-size: 32px;
-  font-family: Courier, Verdana, Arial, monospace;
-  background-color: #eeeeee;
 }
 /* PB */
 .pagebody {
   margin-top: -8px;
   border-spacing: 0;
-  font-family: Courier, Verdana, Arial, monospace;
-  background-color: #eeeeee;
 }
 .pagebody img {
-    width: 100%;
-    margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 .pagebody embed, .pagebody object {
   margin-bottom: 15px;
-  height: 69.2307%; /* default width & height*/
+  height: 69vw;
+  max-height: 450px;
 }
 .pagebody div {
   vertical-align: middle;
@@ -95,7 +95,6 @@ span#note {
   text-align: left;
 }
 div.log-outer {
-  width: 92.30769%;
   border: 1px dashed gray;
   padding: 1px 0;
   box-sizing: border-box;
@@ -110,12 +109,16 @@ div.log-outer div {
 div.log-outer button {
   margin: 0 auto; 
 }
-.pagebody div.log-inner {
-  text-align: left;
+div.log-inner {
   width: 90%;
-  margin: 5px auto;
+  border: none;
+  text-align: left;
+  margin: auto; margin-bottom: 5px;
+  font-size: 1em;
+  font-family: Courier, Verdana, monospace;
+  line-height: 1.1;
 }
-.pagebody div.authorlog {
+div.authorlog {
   margin: 0 5px;
   border: 3px solid #c6c6c6;
   padding: 15px 5%;
@@ -125,22 +128,13 @@ div.log-outer button {
   font-family: Courier, Verdana, monospace;
   line-height: 1.1;
 }
-.pagebody div.log-inner img {
+div.log-inner img {
   margin-left: -56px;
   border: 0;
 }
-.pagebody div.log-inner span img {
+div.log-inner span img {
   width: auto !important;
   margin: 0;
-}
-.log-inner {
-  width: 90%;
-  border: none;
-  text-align: left;
-  margin: auto; margin-bottom: 5px;
-  font-size: 1em;
-  font-family: Courier, Verdana, monospace;
-  line-height: 1.1;
 }
 .div-scroll {
   overflow-x: hidden;
@@ -156,9 +150,11 @@ div.log-outer button {
   text-align: left;
   font-size: 24px;
   font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
-  background-color: #eeeeee;
 }
-.pagefoot a.newer-page-link, html a.blog-pager-newer-link {
+.pagefoot::before {
+  content: ">";
+}
+.pagefoot a.newer-page-link {
   line-height: 30px !important;
 }
 /* PFF */
@@ -198,15 +194,15 @@ div.log-outer button {
   font-size: 36px;
 }
 /* On screens that are 650px or less, set the smaller font sizes */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 675px) {
+  body {
+    padding: 0;
+  }
   .pagehead  {
-    font-size: 28px;
+    font-size: 30px;
   }
   .footer-bannerframe div  {
     font-size: 24px;
-  }
-  .pagefoot {
-    font-size: 20px;
   }
 }
 
