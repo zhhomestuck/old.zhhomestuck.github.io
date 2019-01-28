@@ -15,7 +15,8 @@ div, .pagebody div img, table, td, p {
 b {font-weight:bold;}
 /* nav */
 .header {
-  width: 950px;
+  width: 100wv;
+  max-width: 950px;
   margin: 0 auto;
   background-color: #5a5a5a;
 }
@@ -36,17 +37,19 @@ b {font-weight:bold;}
 }
 /* mspa content */
 .content {
-  width: 950px;
+  width: 100wv;
+  max-width: 950px;
   padding: 0;
   margin: 0 auto;
   background: #c6c6c6;
   height: auto;
 }
 .content-inner {
+  max-width: 650px;
+  width: 100wv;
   color: #000000;
   margin: 0 auto;
   padding-top: 7px;
-  width: 650px;
   background: #c6c6c6;
   text-align: -webkit-center; text-align: center;
 }
@@ -66,11 +69,12 @@ b {font-weight:bold;}
   background-color: #eeeeee;
 }
 .pagebody img {
+    width: 100%;
     margin-bottom: 15px;
 }
 .pagebody embed, .pagebody object {
   margin-bottom: 15px;
-  width: 650px; height: 450px; /* default width & height*/
+  /*width: 650px; height: 450px; /* default width & height*/
 }
 .pagebody div {
   vertical-align: middle;
@@ -133,7 +137,7 @@ span#note {
   text-align: left;
 }
 div.log-outer {
-  width: 600px;
+  width: 92.30769%;
   border: 1px dashed gray;
   padding: 1px 0;
   box-sizing: border-box;
