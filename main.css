@@ -74,47 +74,11 @@ b {font-weight:bold;}
 }
 .pagebody embed, .pagebody object {
   margin-bottom: 15px;
-  /*width: 650px; height: 450px; /* default width & height*/
+  height: 69.2307%; /* default width & height*/
 }
 .pagebody div {
   vertical-align: middle;
   padding: 15px 25px 0 25px;
-}
-.pagebody div.log-inner {
-  text-align: left;
-  width: 90%;
-  margin: 5px auto;
-}
-.pagebody div.authorlog {
-  margin: 0 5px;
-  border: 3px solid #c6c6c6;
-  padding: 15px 5%;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  text-align: left;
-  font-family: Courier, Verdana, monospace;
-  line-height: 1.1;
-}
-/* PF */
-.pagefoot {
-  padding: 20px 20px 15px 25px;
-  text-align: left;
-  font-size: 24px;
-  font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
-  background-color: #eeeeee;
-}
-.pagefoot a.newer-page-link, html a.blog-pager-newer-link {
-  line-height: 30px !important;
-}
-/* PFF */
-.pagefooter-footer {
-  text-align: left;
-  font-weight: bold;
-  font-size: 13px;
-  padding-top: 35px;
-}
-#pagefooter-footer-url {
-  font-size: 12px;
 }
 /* note and log */
 div#note {
@@ -146,6 +110,21 @@ div.log-outer div {
 div.log-outer button {
   margin: 0 auto; 
 }
+.pagebody div.log-inner {
+  text-align: left;
+  width: 90%;
+  margin: 5px auto;
+}
+.pagebody div.authorlog {
+  margin: 0 5px;
+  border: 3px solid #c6c6c6;
+  padding: 15px 5%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: Courier, Verdana, monospace;
+  line-height: 1.1;
+}
 .pagebody div.log-inner img {
   margin-left: -56px;
   border: 0;
@@ -170,6 +149,27 @@ div.log-outer button {
   height: 150px;
   border: dashed 1px gray;
   text-align: -webkit-center; text-align: center;
+}
+/* PF */
+.pagefoot {
+  padding: 20px 20px 15px 25px;
+  text-align: left;
+  font-size: 24px;
+  font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
+  background-color: #eeeeee;
+}
+.pagefoot a.newer-page-link, html a.blog-pager-newer-link {
+  line-height: 30px !important;
+}
+/* PFF */
+.pagefooter-footer {
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 35px;
+}
+#pagefooter-footer-url {
+  font-size: 12px;
 }
 /* Gamzees Quirk */
 #gamzee b {
@@ -197,6 +197,19 @@ div.log-outer button {
   padding-top: 10px;
   font-size: 36px;
 }
+/* On screens that are 650px or less, set the smaller font sizes */
+@media screen and (max-width: 650px) {
+  .pagehead  {
+    font-size: 28px;
+  }
+  .footer-bannerframe div  {
+    font-size: 24px;
+  }
+  .pagefoot {
+    font-size: 20px;
+  }
+}
+
 /************
 SCRATCH PAGES
 *************/
