@@ -106,12 +106,6 @@ b {font-weight:bold;}
 .pagefoot a.newer-page-link, html a.blog-pager-newer-link {
   line-height: 30px !important;
 }
-#contribute, #contribute a {
-  text-align: -webkit-center; text-align: center;
-  text-decoration: none;
-  padding-top: 15px;
-  width: 100vw; max-width: 650px;
-}
 /* PFF */
 .pagefooter-footer {
   text-align: left;
@@ -187,7 +181,7 @@ div.log-outer button {
 #contribute, #contribute a {
   text-align: -webkit-center; text-align: center;
   text-decoration: none;
-  width: 100vw; max-width: 650px;
+  width: 100%;
 }
 /* Bannerframe */
 .footer-bannerframe {
