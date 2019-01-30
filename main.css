@@ -220,8 +220,8 @@ SCRATCH PAGES
 .scratch .header,
 .scratch .mspanav a,
 .scratch .pagebody div.log-outer {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 .scratch .content-inner,
 .scratch .page,
@@ -229,15 +229,21 @@ SCRATCH PAGES
 .scratch .pagebody,
 .scratch .pagefoot,
 .scratch .pagefooter-footer {
-    background-color: #0e4603;
-    color: #fff
+  background-color: #0e4603;
+  color: #fff
 }
 .scratch .content,
 .scratch #contribute,
 .scratch .footer-bannerframe {
-    background-color: #082a00;
-    color: #fff
+  background-color: #082a00;
+  color: #fff
+}
+#s_header {
+    max-height: 175px;
+    height: 19vw; /* 175/940 */
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
 }
 #s_header_src {
-    display: none;
+  display: none;
 }
