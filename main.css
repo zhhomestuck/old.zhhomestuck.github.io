@@ -53,7 +53,7 @@ b {font-weight:bold;}
   background: #c6c6c6;
   text-align: -webkit-center; text-align: center;
 }
-.pagehead, .pagebody, .pagefoot {
+.page {
   background-color: #eeeeee;
 }
 /* PH */
@@ -73,6 +73,10 @@ b {font-weight:bold;}
   width: 100%;
   margin-bottom: 15px;
 }
+.pagebody span img {
+  width: auto;
+  margin: 0;
+}
 .pagebody embed, .pagebody object {
   margin-bottom: 15px;
   width: 100vw;
@@ -82,7 +86,7 @@ b {font-weight:bold;}
 }
 .pagebody div {
   vertical-align: middle;
-  padding: 15px 25px 0 25px;
+  padding: 15px 20px 0 20px;
 }
 /* note and log */
 div#note {
@@ -117,7 +121,7 @@ div.log-inner {
   width: 90%;
   border: none;
   text-align: left;
-  margin: auto; margin-bottom: 5px;
+  margin: 5px auto;
   font-size: 1em;
   font-family: Courier, Verdana, monospace;
   line-height: 1.1;
@@ -150,7 +154,7 @@ div.log-inner span img {
 }
 /* PF */
 .pagefoot {
-  padding: 20px 20px 15px 25px;
+  padding: 20px 20px 10px 20px;
   text-align: left;
   font-size: 24px;
   font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
@@ -206,6 +210,9 @@ div.log-inner span img {
   }
   .pagehead  {
     font-size: 28px;
+  }
+  div.log-inner {
+    width: 98%;
   }
   .footer-bannerframe div  {
     font-size: 24px;
