@@ -4,15 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homestuck繁體中文翻譯 - 備份站</title>
     <!-- imports -->
-    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="../main.css" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/main.css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../Viz_AC_RunActiveContent.js"></script>
-    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="/Viz_AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
   </head>
-  <body>
+  <body class="scratch">
     <div id="header" class="header">
-      <span id="mspanav" class="mspanav">
+      <span id="mspanav" class="mspanav" style="background-color: #000;">
+        <a id="tooltipimg" rel="" title="" style="display: block;">
+          <div id="s_header">
+          </div>
+        </a>
         <a href="http://zhhomestuck.github.io" style="color: #ffffff;">備份站首頁</a> |
         <a href="http://zhhomestuck.github.io/p/page_list.html" style="color: #ffffff;">備份站目錄</a> |
         <a href="http://zhhomestuck.blogspot.com" style="color: #ffffff;">Blogger主站</a> |
@@ -60,6 +64,8 @@
     <script type="text/javascript">
       makeSpoilerLog();
       checkHTTPSWarning();
+      /* Make scratch head banner */
+      document.getElementById("s_header").style.background = "url('" + document.getElementById('s_header_src').src + "')";
     </script>
   </body>
 </html>
