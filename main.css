@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, Arial, Helvetica, Microsoft JhengHei;
+  font-family: Verdana, Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei';
   font-size: 15px;
   color: #000000;
   margin: 0px;
@@ -21,7 +21,7 @@ b {font-weight:bold;}
   background-color: #5a5a5a;
 }
 .mspanav {
-  font-family: Arial, Helvetica, Microsoft JhengHei, sans-serif;
+  font-family: Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   color: #ffffff;
   font-size: 13px;
@@ -123,7 +123,6 @@ div.log-inner {
   text-align: left;
   margin: 5px auto;
   font-size: 1em;
-  font-family: Courier, Verdana, monospace;
   line-height: 1.1;
 }
 div.authorlog {
@@ -133,7 +132,6 @@ div.authorlog {
   background-color: #ffffff;
   box-sizing: border-box;
   text-align: left;
-  font-family: Courier, Verdana, monospace;
   line-height: 1.1;
 }
 div.log-inner img {
@@ -157,7 +155,7 @@ div.log-inner span img {
   padding: 20px 20px 10px 20px;
   text-align: left;
   font-size: 24px;
-  font-family: Verdana, Arial, Helvetica, Microsoft JhengHei, monospace;
+  font-family: Verdana, Arial, Helvetica, 'Microsoft JhengHei',  'Microsoft YaHei', monospace;
 }
 /*
 .pagefoot::before {
