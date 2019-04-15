@@ -2,6 +2,10 @@
   font-family: 'Homestuck-Regular';
   src: url(../assets/Homestuck-Regular.woff2);
 }
+.wf-loading .page {
+  display: none;
+}
+
 body {
   font-family: Verdana, Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei';
   font-size: 15px;
@@ -83,7 +87,7 @@ b {font-weight:bold;}
   margin-top: -8px;
   padding: 15px 30px 0 30px;
   font-size: 16px;
-  font-family: adobe-garamond-pro, Garamond, 'DFKai-SB', 'SimKai', serif;
+  font-family: adobe-garamond-pro, source-han-serif-tc, serif;
   line-height: 1.35;
   text-align: left;
   vertical-align: middle;
