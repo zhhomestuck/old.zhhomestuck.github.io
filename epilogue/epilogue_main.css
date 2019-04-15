@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'Homestuck-Regular';
+  src: url(../assets/Homestuck-Regular.woff2);
+}
+body {
+  font-family: Verdana, Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei';
+  font-size: 15px;
+  color: #000000;
+  margin: 0px;
+  background-color: #535353;
+}
+div, .pagebody img, table, td {
+  margin: 0; padding: 0;
+  border: none;
+  border-spacing: 0;
+  text-align: -webkit-center; text-align: center;
+}
+
+b {font-weight:bold;}
+/* nav */
+.header {
+  width: 100wv;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 8px 0;
+  background-color: #535353;
+}
+.mspanav {
+  font-family: Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 13px;
+  height: 18px;
+}
+.mspanav a {
+  color: inherit;
+  margin: 0 3px;
+}
+.mspanav img {
+  vertical-align: middle;
+  border: 0;
+}
+/* mspa content */
+.content {
+  box-sizing: border-box;
+  max-width: 1015px;
+  width: 100wv;
+  padding: 0 2%;
+  margin: 0 auto;
+  background: #c6c6c6;
+  height: auto;
+}
+.content-inner {
+  max-width: 650px;
+  color: #000000;
+  margin: 0 auto;
+  padding: 14px 0;
+  background: #c6c6c6;
+  text-align: -webkit-center; text-align: center;
+}
+.page {
+  background-color: #ffffff;
+  overflow-wrap: break-word;
+  box-sizing: inherit;
+}
+/* PH */
+.pagehead {
+  padding-top: 20px;
+  font-size: 56px;
+  font-family: 'Homestuck-Regular', Courier;
+  font-weight: normal;
+  line-height: 1.35;
+}
+.pagehead-translation {
+  font-size: 38px;
+  font-weight: bold;
+}
+.pagehead-subhead  {
+  font-size: 38px;
+}
+/* PB */
+.pagebody {
+  margin-top: -8px;
+  padding: 15px 30px 0 30px;
+  font-size: 16px;
+  font-family: adobe-garamond-pro, Garamond, 'DFKai-SB', 'SimKai', serif;
+  line-height: 1.35;
+  text-align: left;
+  vertical-align: middle;
+}
+.pagebody img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.pagebody span img {
+  width: auto;
+  margin: 0;
+}
+.pagebody embed, .pagebody object {
+  margin-bottom: 15px;
+  width: 100vw;
+  max-width: 650px;
+  height: 69vw;
+  max-height: 450px;
+}
+.pagebody div {
+  text-align: left;
+}
+/* note and log */
+div#note {
+  padding-top: 50px;
+  text-align: left;
+  font-size: 0.75em;
+}
+span#note {
+  color: inherit;
+  font-size: 0.7em;
+  vertical-align: text-top;
+  position: relative;
+  top: -2px;
+  text-align: left;
+}
+div.log-outer {
+  border: 1px dashed gray;
+  padding: 1px 0;
+  box-sizing: border-box;
+}
+div#log-outer-outer {
+  padding: 0;
+  text-align: left;
+}
+div.log-outer div {
+  padding: 0;
+}
+div.log-outer button {
+  margin: 0 auto; 
+}
+div.log-inner {
+  width: 90%;
+  border: none;
+  text-align: left;
+  margin: 5px auto;
+  font-size: 1em;
+  line-height: 1.1;
+}
+div.authorlog {
+  margin: 0 5px;
+  border: 3px solid #c6c6c6;
+  padding: 15px 5%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.1;
+}
+div.log-inner img {
+  margin-left: -56px;
+  border: 0;
+}
+div.log-inner span img {
+  width: auto !important;
+  margin: 0;
+}
+.div-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0; padding: 0;
+  height: 150px;
+  border: dashed 1px gray;
+  text-align: -webkit-center; text-align: center;
+}
+/* PF */
+.pagefoot {
+  padding: 20px 30px 30px 30px;
+  text-align: left;
+  font-size: 24px;
+}
+/*
+.pagefoot::before {
+  content: ">";
+}
+*/
+.pagefoot a.newer-page-link {
+  line-height: 30px !important;
+}
+/* PFF */
+.pagefooter-footer {
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 35px;
+}
+#pagefooter-footer-url {
+  font-size: 12px;
+}
+/* Gamzees Quirk */
+#gamzee b {
+  font-weight: normal;
+  font-size: 66%;
+  vertical-align: -2px;
+}
+/* footer */
+#contribute, #contribute a {
+  text-align: -webkit-center; text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+/* Bannerframe */
+.footer-bannerframe {
+  background-color: #535353;
+  margin: 0; 
+  height: 110px;
+  vertical-align: bottom;
+  font-family: Courier, Verdana, monospace;
+  font-weight: bold;
+  color: #000000;
+}
+.footer-bannerframe div {
+  padding-top: 10px;
+  font-size: 36px;
+}
+/* On screens that are 680px or less, set the smaller font sizes */
+@media screen and (max-width: 675px) {
+  body, .content{
+    padding: 0;
+  }
+  .content-inner {
+    padding: 0 auto;
+  }
+  div.log-inner {
+    width: 98%;
+  }
+  .footer-bannerframe div  {
+    font-size: 24px;
+  }
+}

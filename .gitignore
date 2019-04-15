@@ -6,4 +6,3 @@ Gemfile
 Gemfile.lock
 *.md
 *.cpp
-*.exe
