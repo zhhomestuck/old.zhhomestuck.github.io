@@ -5,6 +5,9 @@
 .wf-loading .page {
   display: none;
 }
+.wf-loading .content-inner::before {
+  content: "loading";
+}
 
 body {
   font-family: Verdana, Arial, 'Microsoft JhengHei', 'Microsoft YaHei';
