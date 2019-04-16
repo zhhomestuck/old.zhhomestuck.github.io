@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Homestuck-Regular';
-  src: url(../assets/Homestuck-Regular.woff2);
+  src: url('../assets/Homestuck-Regular.woff2');
 }
 .wf-loading .page {
   display: none;
 }
 
 body {
-  font-family: Verdana, Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei';
+  font-family: Verdana, Arial, 'Microsoft JhengHei', 'Microsoft YaHei';
   font-size: 15px;
   color: #000000;
   margin: 0px;
@@ -30,7 +30,7 @@ b {font-weight:bold;}
   background-color: #535353;
 }
 .mspanav {
-  font-family: Arial, Helvetica, 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+  font-family: Arial, 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   color: #ffffff;
   font-size: 13px;
