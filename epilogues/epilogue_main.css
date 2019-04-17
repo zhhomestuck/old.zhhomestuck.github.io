@@ -5,7 +5,12 @@
 .wf-loading .page {
   display: none;
 }
-.wf-loading .content-inner::before {
+.wf-loading #contribute
+{
+  padding-top: 10px;
+}
+.wf-loading .content-inner::before
+{
   content: "loading";
 }
 
@@ -79,16 +84,16 @@ b {font-weight:bold;}
   line-height: 1.35;
 }
 .pagehead-translation {
-  font-size: 38px;
+  font-size: 39px;
   font-weight: bold;
 }
 .pagehead-subhead  {
-  font-size: 38px;
+  font-size: 39px;
 }
 /* PB */
 .pagebody {
   margin-top: -8px;
-  padding: 15px 30px 0 30px;
+  padding: 20px 30px 0 30px;
   font-size: 16px;
   font-family: adobe-garamond-pro, source-han-serif-tc, serif;
   line-height: 1.35;

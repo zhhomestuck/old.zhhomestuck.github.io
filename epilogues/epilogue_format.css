@@ -78,7 +78,7 @@
 }
 
 span.opener {
-  margin-top: 0px;
+  margin-top: -2px;
   line-height: 1;
   float: left;
   font-family: 'Homestuck-Regular', monospace;
