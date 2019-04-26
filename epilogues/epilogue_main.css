@@ -2,6 +2,7 @@
   font-family: 'Homestuck-Regular';
   src: url('../assets/Homestuck-Regular.woff2');
 }
+/*
 .wf-loading .page {
   display: none;
 }
@@ -12,7 +13,7 @@
 .wf-loading .content-inner::before
 {
   content: "loading";
-}
+}*/
 
 body {
   font-family: Verdana, Arial, 'Microsoft JhengHei', 'Microsoft YaHei';
