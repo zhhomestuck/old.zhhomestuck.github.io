@@ -371,7 +371,7 @@ width: auto;
     </b:template-skin>
     <style id='zhhomestuck-style' type='text/css'>
       body {
-        font-family: Verdana, Arial, Helvetica, &#39;微軟正黑體&#39;, &#39;Microsoft JhengHei&#39;;
+        font-family: Verdana, Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;;
         font-size: 15px;
         color: #000000;
         margin: 0px;
@@ -415,7 +415,7 @@ width: auto;
         margin: 0 -2px;
       }
       .mspanav {
-        font-family: Arial, Helvetica, 微軟正黑體;, &#39;Microsoft JhengHei&#39;, sans-serif;
+        font-family: Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;, sans-serif;
         font-weight: bold;
         color: #ffffff;
         font-size: 13px;
@@ -448,7 +448,7 @@ width: auto;
         padding-top: 14px;
         font-weight: bold;
         font-size: 32px;
-        font-family: Courier, Verdana, Arial, monospace;
+        font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
       }
       .mobile .pagehead { font-size: 28px;}
       /* PB */
@@ -456,7 +456,7 @@ width: auto;
 		position: relative;
 		width: 650px;
         border-spacing: 0;
-        font-family: Courier, Verdana, Arial, monospace;
+        font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
       }
       .pagebody img { 
         border: 0;
@@ -492,7 +492,7 @@ width: auto;
         padding: 10px 20px 20px 20px;
         text-align: left;
         font-size: 24px;
-        font-family: Verdana, Arial, Helvetica, 微軟正黑體, &#39;Microsoft JhengHei&#39;, monospace;
+        font-family: Verdana, Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;, monospace;
       }
       .mobile .pagefoot {
         padding: 20px 10px;
@@ -555,7 +555,6 @@ width: auto;
         text-align: left;
         margin: auto; margin-bottom: 8px;
         font-size: 1em;
-        font-family: Courier, Verdana, monospace;
         line-height: 1.1;
       }
       .pagebody div.log-inner img {
@@ -573,7 +572,6 @@ width: auto;
 	    background-color: #ffffff;
         box-sizing: border-box;
 		text-align: left;
-		font-family: Courier, Verdana, monospace;
         line-height: 1.1;
       }
       .mobile .log-outer,
@@ -799,7 +797,7 @@ head.appendChild(script);
         <span class='mspanav'>
           <a href='http://zhhomestuck.blogspot.com/' style='color: #ffffff;'>Homestuck繁體中文翻譯站</a>
           <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
-          <a href='http://zhhomestuck.blogspot.com/p/whatishomestuck.html' style='color: #29ff4a;'>Homestuck是什麼</a>
+          <a href='http://zhhomestuck.blogspot.com/p/info.html' style='color: #29ff4a;'>Homestuck是什麼</a>
           <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
           <a href='http://zhhomestuck.blogspot.com/p/source.html' style='color:#39d5f6;'>資源</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/about.html' style='color:#39d5f6;'>關於</a>
@@ -846,6 +844,7 @@ head.appendChild(script);
                           <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                           <b:widget-setting name='style.urlcolor'>#bbbbbb</b:widget-setting>
                           <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                          <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                           <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                           <b:widget-setting name='style.bgcolor'>#535353</b:widget-setting>
@@ -1484,7 +1483,7 @@ head.appendChild(script);
                                   <!-- Null -->
                                   <span id='pagefooter-footer-url'>
                                     <b:if cond='data:olderPageUrl'>
-                                      <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
+                                      <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
                                     <br/>
                                     <data:post.url/>
                                   </span>
@@ -1965,18 +1964,21 @@ head.appendChild(script);
                     <script type='text/javascript'>
 					  // Make PesterLog
                       var replaceSpoiler = document.getElementById(&quot;log-outer-outer&quot;);
+                      var replaceSpoilerName = &quot;Pesterlog&quot;;
                       if(replaceSpoiler) {
-                        replaceSpoiler.innerHTML = &quot;&lt;div class=\&quot;log-outer\&quot;&gt;&lt;div&gt;&lt;button type=\&quot;button\&quot; onmouseover=\&quot;this.sv=this.style.backgroundColor;this.style.backgroundColor=\&#39;#777777\&#39;;\&quot; onmouseout=\&quot;if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\&#39;\&#39;;\&quot; onclick=\&quot;this.parentNode.parentNode.childNodes[1].style.display=\&#39;block\&#39;;this.parentNode.style.display=\&#39;none\&#39;;return false;\&quot; title=\&quot;點擊以顯示\&quot;&gt;Show Pesterlog&lt;/button&gt;&lt;/div&gt;&lt;div class=\&quot;spoiler\&quot; style=\&quot;display:none;\&quot;&gt;&lt;div&gt;&lt;button type=\&quot;button\&quot; onclick=\&quot;this.parentNode.parentNode.parentNode.childNodes[0].style.display=\&#39;block\&#39;;this.parentNode.parentNode.style.display=\&#39;none\&#39;;return false;\&quot; title=\&quot;點擊以隱藏\&quot;&gt;Hide Pesterlog&lt;/button&gt;&lt;/div&gt;&lt;div class=\&quot;log-inner\&quot;&gt;&quot; + replaceSpoiler.innerHTML + &quot;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- LOG END --&gt;&quot;;
+                        if (&quot;name&quot; in replaceSpoiler.attributes) replaceSpoilerName = replaceSpoiler.getAttribute(&quot;name&quot;);
+                        replaceSpoiler.innerHTML = &quot;&lt;div class=\&quot;log-outer\&quot;&gt;&lt;div&gt;&lt;button type=\&quot;button\&quot; onmouseover=\&quot;this.sv=this.style.backgroundColor;this.style.backgroundColor=\&#39;#777777\&#39;;\&quot; onmouseout=\&quot;if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\&#39;\&#39;;\&quot; onclick=\&quot;this.parentNode.parentNode.childNodes[1].style.display=\&#39;block\&#39;;this.parentNode.style.display=\&#39;none\&#39;;return false;\&quot; title=\&quot;點擊以顯示\&quot;&gt;Show &quot; + replaceSpoilerName + &quot;&lt;/button&gt;&lt;/div&gt;&lt;div class=\&quot;spoiler\&quot; style=\&quot;display:none;\&quot;&gt;&lt;div&gt;&lt;button type=\&quot;button\&quot; onclick=\&quot;this.parentNode.parentNode.parentNode.childNodes[0].style.display=\&#39;block\&#39;;this.parentNode.parentNode.style.display=\&#39;none\&#39;;return false;\&quot; title=\&quot;點擊以隱藏\&quot;&gt;Hide &quot; + replaceSpoilerName + &quot;&lt;/button&gt;&lt;/div&gt;&lt;div class=\&quot;log-inner\&quot;&gt;&quot; + replaceSpoiler.innerHTML + &quot;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- LOG END --&gt;&quot;;
                       }
                       // Warning for HTTPS connection
-					  var this_p_url = document.getElementById(&quot;pagefooter-footer-url&quot;);
+					  var this_p_url = window.location.href;
 					  var has_interact_elemment = document.getElementsByTagName(&quot;embed&quot;).length != 0 || document.getElementsByTagName(&quot;object&quot;).length != 0;
 					  if(this_p_url){
-					    if(/https/.test(this_p_url.innerText) &amp;&amp; has_interact_elemment){
-					      var warning_text = &quot;<br/>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.innerText.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, &quot;&quot;).replace(/https/, &quot;http&quot;) + &quot;'>http連線</a>&quot;;
+					    if(/https/.test(this_p_url) &amp;&amp; has_interact_elemment){
+					      var warning_text = &quot;<span>你使用了https連線 這可能會導致部分動畫檔案無法顯示 請使用未加密的<a href='&quot; + this_p_url.replace(/[^a-zA-z0-9:\/?=&amp;.]+/g, &quot;&quot;).replace(/https/, &quot;http&quot;) + &quot;'>http連線</a> [<a onclick='this.parentNode.style.display=\&quot;none\&quot;;' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
 					      var warning_node = document.createElement(&quot;div&quot;);
 						  warning_node.innerHTML = warning_text;
 						  warning_node.style.fontSize = &quot;13px&quot;;
+						  warning_node.style.lineHeight = &quot;13px&quot;;
 					      document.getElementById(&quot;pagehead&quot;).appendChild(warning_node);}}
                     </script>
                   </div>
@@ -2072,9 +2074,6 @@ head.appendChild(script);
             Power By Blogger
           </span>
           <br/>
-          <a href='https://zhhomestuck.tumblr.com/' style='color: #000000;'>
-            Tumblr Archive
-          </a>
           <a href='https://zhhomestuck.github.io/' style='color: #000000;'>
             Github Archive
           </a>
@@ -2177,7 +2176,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span style="font-weight: bold;font-size:10px;">進度：已完成約 66%</span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2018/4/3 - RM</span><br />針對www.homestuck.com取代MSPA，應對政策如下：<br /><br />翻譯站的外觀不會變，之後的頁面主題外觀(Trickster, X2COMBO, Caliborn)仍會依舊站的樣式為準。<br /><br />新站開始將Flash檔案轉成現在更相容的HTML5以及Youtube影片，並且有些會有官方的純文字替代網頁。今後的Flash檔案翻譯，如果在時能取得官方的純文字或動畫檔案，將以其為優先。但若新站的動畫檔案與舊站有異，會使用舊站的版本。<br /><br />這裡的內容會不定期備份至<a href="https://zhhomestuck.github.io/">Github備份站</a><br /><br /></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span class="progress-bar" style="font-size:10px;"><b>進度：已完成約 72%</b></span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2018/4/3 - RM</span><br />針對www.homestuck.com取代MSPA，應對政策如下：<br /><br />翻譯站的外觀不會變，之後的頁面主題外觀(Trickster, X2COMBO, Caliborn)仍會依照MSPA的最後版本為準。<br /><br />新站開始將Flash檔案轉成現在更相容的HTML5以及Youtube影片，並且有些會有官方的純文字替代網頁。今後的Flash檔案翻譯，如果在時能取得官方的純文字或動畫檔案，將以其為優先。但若新站的動畫檔案與舊站有異，會使用舊站的版本。<br /><br />這裡的內容會不定期備份至<a href="https://zhhomestuck.github.io/">Github備份站</a><br /><br /></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
