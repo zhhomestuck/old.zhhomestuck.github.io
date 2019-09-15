@@ -44,7 +44,7 @@
                 <a id="blog-pager-older-link" class="blog-pager-older-link" href="./005877.html">上一頁</a>
               
                 |
-                <a id="official-link" href="" onload="this.href='https://www.homestuck.com/story/'+(parseInt(document.URL.substr(document.URL.search('00')+2,4))-1900).toString();">官方原文</a>
+                <a id="official-link" href="#">官方原文</a>
             </div>
           </div>
         </div>
@@ -65,6 +65,7 @@
     <script type="text/javascript">
       makeSpoilerLog();
       checkHTTPSWarning();
+      linkOfficial();
       /* Make scratch head banner */
       document.getElementById("s_header").style.background = "url('" + document.getElementById('s_header_src').src + "')";
     </script>

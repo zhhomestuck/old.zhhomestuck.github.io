@@ -24,3 +24,7 @@ var checkHTTPSWarning = function() {
         }
     }
 }
+
+var linkOfficial = function() {
+    document.getElementById("official-link").href = "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.search('00')+2,4))-1900).toString();
+}
