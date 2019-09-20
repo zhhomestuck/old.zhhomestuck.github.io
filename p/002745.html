@@ -2,23 +2,23 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homestuck繁體中文翻譯 - 備份站</title>
+    <title>Homestuck繁體中文翻譯</title>
     <!-- imports -->
-    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="../main.css" />
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/main.css" />
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../Viz_AC_RunActiveContent.js"></script>
-    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="/Viz_AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
   </head>
   <body>
     <div id="header" class="header">
       <span id="mspanav" class="mspanav">
-        <a href="http://zhhomestuck.github.io" style="color: #ffffff;">備份站首頁</a> |
-        <a href="http://zhhomestuck.github.io/p/page_list.html" style="color: #ffffff;">備份站目錄</a> |
-        <a href="http://zhhomestuck.blogspot.com" style="color: #ffffff;">Blogger主站</a> |
+        <a href="/">Github站首頁</a> |
+        <a href="/p/page_list.html">頁面清單</a> |
+        <a href="http://zhhomestuck.blogspot.com">Blogger站</a> |
         <a href="http://www.homestuck.com/">官方首頁</a> |
-        <a href="../whatishomestuck.html">Homestuck是什麼</a> |
-        <a href="../translators.html">翻譯組</a>
+        <a href="/whatishomestuck.html">Homestuck是什麼</a> |
+        <a href="/translators.html">翻譯組</a>
       </span>
     </div>
     <div id="content" class="content">
@@ -28,7 +28,7 @@
             ==>
           </div>
           <div id="pagebody" class="pagebody" markdown="0">
-           <p><img src="https://www.homestuck.com/images/storyfiles/hs2/00845_1.gif" /><br /><img src="https://www.homestuck.com/images/storyfiles/hs2/00845_2.gif" /><!-- 圖 --><div><!--內文開始--><br />(圖片翻譯和文字下收)<br /><!-- LOG COMMENCE --><div class="log-outer"><div><button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示">Show Image</button></div><div class="spoiler" style="display: none;"><div><button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏">Hide Image</button></div><div class="log-inner"><!-- LOG COMMENCE --><br /><img src="https://zhhomestuck.github.io/images/00845_2_ct.gif" /><br /><br />==========================================================<br />[z001] 一些關於驗證碼與打孔煉金的事<br />==========================================================<br /><br />真的有任何人會看這種東西嗎？？或者是他們都死了。我不知道除了我們以外是否還有人活著而且在玩這個遊戲或是關心我要說的話！<br /><br />rose說如果我發生了什麼事就必須在這個問答裡加一些東西，所以我猜就來做吧。我也覺得最起碼這對我們來說是個很好的參考。但dave八成什麼也不會看因為他不屑這些愚蠢馬屁，管他的。<br /><br />我終於搞懂那些索引卡背面的鬼驗證碼是用來做什麼的了。雖然可能不是它們一直以來的用途，但的確是一種可以在遊戲中使用的方式。每種被驗證的物品在卡背都有一組特殊代碼，而在sburb中被稱為打孔設計器的工具可以針對這些這些物品的代碼在卡上打出相對應的孔來。打孔卡可以被用在另一些工具中來複製並且/或者和其他物品合體。<br /><br />我開始思考並且藉由我神鬼級的駭客技巧注意到了一種規律。打孔的模式建立在一個簡單的規則上，把驗證碼換成二進制然後以之打孔。也就是1打孔，然後0不打。<br /><br />所以，嗯...這裡是用來說明的表。<br /><br />0->0, 1->1, 2->2, 3->3, 4->4, 5->5, 6->6, 7->7, 8->8, 9->9<br /><br />A->10, B->11, C->12, D->13, E->14, F->15, G->16, H->17, I->18, J->19,<br />K->20, L->21, M->22, N->23, O->24, P->25, Q->26, R->27, S->28, T->29,<br />U->30, V->31, W->32, X->33, Y->34, Z->35<br /><br />a->36, b->37, c->38, d->39, e->40, f->41, g->42, h->43, i->44, j->45,<br />k->46, l->47, m->48, n->49, o->50, p->51, q->52, r->53, s->54, t->55,<br />u->56, v->57, w->58, x->59, y->60, z->61<br /><br />?->62, !->63<br /><br />其中有些奇怪的符號像！和？接在最後所以數量增加到六十三（0到63總共有64個數字，也就是六位元），因而驗證碼的每個字元都可由六個位數的二進制表示，範圍就是0-63。<br /><br />所以，舉例來說錘子的驗證碼是”Nz7Un68I”。首先查一下第一位”n”，合對照表是49，49的二進制是110001。照這樣繼續把全部做完你會得到：<br /><br />n=110001 Z=100011 7=000111 U=011110<br />n=110001 6=000110 B=001011 I=010010<br /><br />好...那就是這組代碼會打在卡上的孔，但是...<br /><br />位數排列是從上至下，從左至右，分四欄位，像這樣：<br /><br />1 0 1 0<br />1 0 1 0<br />0 0 0 1<br />0 1 0 0<br />0 1 0 1<br />1 1 1 1<br />1 0 0 0<br />0 1 0 1<br />0 1 0 0<br />0 1 1 0<br />1 1 1 1<br />1 0 0 0<br /><br />或者是打孔在卡上，像這樣：<br /><br />(打孔卡的ASCII圖)<br /><br />哇好的看起來就像這團狗屎，但你懂意思了。<br /><br />所以想要結合兩種物品你就要重疊兩張打孔卡，只有兩張卡都同時有的孔會顯示，這樣一來就像是對兩張卡作交集運算。這個新的打孔組合讓你能編碼出一個新物品。<br /><br />舉例來說結合一個錘子(Nz7Un68I)和pogo搖搖馬(DQMmJLeK)我得到了一個孔明顯少很多的代碼，它轉換出126GH48G。這些孔產生了一個搖搖錘，真是你想不到的酷炫。我也想過可以用另外一種方式來結合兩種物品，像是用聯集運算，意思是用得到更多孔的方式結合兩張卡，換句話說，新孔的樣式含有兩張卡上所有的孔。這種樣式可以藉由把一張卡打孔兩次實現！！就像，兩份代碼一張卡，我得找個時間來試試。<br /><br />但這邊還有一些不解的事情。首先算上所有打孔位置總共有48個，也就是說有超過三千億種可能的代碼，聽起來超多，但是當你考慮到所有可能的組合時，包括那些神經病的組合，突然間又不是真的那麼多了！<br /><br />這使我相信不是每種物品的組合都是可行的，但這其實滿明顯的，因為有很多組合方式會產生要不就是全打滿孔的卡（用聯集方式），要不就是沒有孔的白卡（用交集方式）。所以有多無效組合在內，同時痕多組合也只會的到一樣的結果。例如說結合一把槍和一個核子炸彈大概能作出某種終極破壞死光，但是用個鞋拔子和一個盆栽也可能的到完全一樣的東西！！！！！真詭異。<br /><br />此外，似乎結合的物品不是比「一般」物品多很多孔就是少很多孔，這些在所有可能的組合方式中間幾乎佔據到快滿出來。結果越複雜的物品反倒有著更簡化的代碼這相當奇怪而且反直覺但嘿，情況就是這樣。<br /><br />但這所有的一切使我想到這個系統可以被某種方法破解，像是如果你有一個複雜的物品然號你想要從中拉一個元素來，或許就用推算法可以導出你想要的結果，或者至少縮小了可能範圍。另外也或許有辦法藉由繪製出位元數極多或極少的簡單圖案來做出甚至更酷的東西。誰知道呢。<br /><br />我想要問問jade關於這些的事因為她不知怎麼地雖沒有像我一樣的屌炸駭客可靠度卻非常擅長這類的事。可惜她總是讓自己神出鬼沒的。jade如果你有機會看到這些讓我知道你怎麼想吧！<br /><br />(John的搖搖馬logo的ASCII圖)<br /><!-- LOG END --> <br /></div></div></div><!-- LOG END --><br /><a href="http://www.mspaintadventures.com/scraps2/captchas.swf ">打孔卡計算器</a><br />[由Gankro製作]<br /><!--內文結束--> </div></p>
+           <img src="https://www.homestuck.com/images/storyfiles/hs2/00845_1.gif" /><br /><img src="https://www.homestuck.com/images/storyfiles/hs2/00845_2.gif" /><!-- 圖 --><div><!--內文開始--><br />(圖片翻譯和文字下收)<br /><!-- LOG COMMENCE --><div class="log-outer"><div><button type="button" class="button" onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#777777';" onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';" onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;" title="點擊以顯示">Show Image</button></div><div class="spoiler" style="display: none;"><div><button type="button" class="button" onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;" title="點擊以隱藏">Hide Image</button></div><div class="log-inner"><!-- LOG COMMENCE --><br /><img src="https://zhhomestuck.github.io/images/00845_2_ct.gif" /><br /><br />==========================================================<br />[z001] 一些關於驗證碼與打孔煉金的事<br />==========================================================<br /><br />真的有任何人會看這種東西嗎？？或者是他們都死了。我不知道除了我們以外是否還有人活著而且在玩這個遊戲或是關心我要說的話！<br /><br />rose說如果我發生了什麼事就必須在這個問答裡加一些東西，所以我猜就來做吧。我也覺得最起碼這對我們來說是個很好的參考。但dave八成什麼也不會看因為他不屑這些愚蠢馬屁，管他的。<br /><br />我終於搞懂那些索引卡背面的鬼驗證碼是用來做什麼的了。雖然可能不是它們一直以來的用途，但的確是一種可以在遊戲中使用的方式。每種被驗證的物品在卡背都有一組特殊代碼，而在sburb中被稱為打孔設計器的工具可以針對這些這些物品的代碼在卡上打出相對應的孔來。打孔卡可以被用在另一些工具中來複製並且/或者和其他物品合體。<br /><br />我開始思考並且藉由我神鬼級的駭客技巧注意到了一種規律。打孔的模式建立在一個簡單的規則上，把驗證碼換成二進制然後以之打孔。也就是1打孔，然後0不打。<br /><br />所以，嗯...這裡是用來說明的表。<br /><br />0->0, 1->1, 2->2, 3->3, 4->4, 5->5, 6->6, 7->7, 8->8, 9->9<br /><br />A->10, B->11, C->12, D->13, E->14, F->15, G->16, H->17, I->18, J->19,<br />K->20, L->21, M->22, N->23, O->24, P->25, Q->26, R->27, S->28, T->29,<br />U->30, V->31, W->32, X->33, Y->34, Z->35<br /><br />a->36, b->37, c->38, d->39, e->40, f->41, g->42, h->43, i->44, j->45,<br />k->46, l->47, m->48, n->49, o->50, p->51, q->52, r->53, s->54, t->55,<br />u->56, v->57, w->58, x->59, y->60, z->61<br /><br />?->62, !->63<br /><br />其中有些奇怪的符號像！和？接在最後所以數量增加到六十三（0到63總共有64個數字，也就是六位元），因而驗證碼的每個字元都可由六個位數的二進制表示，範圍就是0-63。<br /><br />所以，舉例來說錘子的驗證碼是”Nz7Un68I”。首先查一下第一位”n”，合對照表是49，49的二進制是110001。照這樣繼續把全部做完你會得到：<br /><br />n=110001 Z=100011 7=000111 U=011110<br />n=110001 6=000110 B=001011 I=010010<br /><br />好...那就是這組代碼會打在卡上的孔，但是...<br /><br />位數排列是從上至下，從左至右，分四欄位，像這樣：<br /><br />1 0 1 0<br />1 0 1 0<br />0 0 0 1<br />0 1 0 0<br />0 1 0 1<br />1 1 1 1<br />1 0 0 0<br />0 1 0 1<br />0 1 0 0<br />0 1 1 0<br />1 1 1 1<br />1 0 0 0<br /><br />或者是打孔在卡上，像這樣：<br /><br />(打孔卡的ASCII圖)<br /><br />哇好的看起來就像這團狗屎，但你懂意思了。<br /><br />所以想要結合兩種物品你就要重疊兩張打孔卡，只有兩張卡都同時有的孔會顯示，這樣一來就像是對兩張卡作交集運算。這個新的打孔組合讓你能編碼出一個新物品。<br /><br />舉例來說結合一個錘子(Nz7Un68I)和pogo搖搖馬(DQMmJLeK)我得到了一個孔明顯少很多的代碼，它轉換出126GH48G。這些孔產生了一個搖搖錘，真是你想不到的酷炫。我也想過可以用另外一種方式來結合兩種物品，像是用聯集運算，意思是用得到更多孔的方式結合兩張卡，換句話說，新孔的樣式含有兩張卡上所有的孔。這種樣式可以藉由把一張卡打孔兩次實現！！就像，兩份代碼一張卡，我得找個時間來試試。<br /><br />但這邊還有一些不解的事情。首先算上所有打孔位置總共有48個，也就是說有超過三千億種可能的代碼，聽起來超多，但是當你考慮到所有可能的組合時，包括那些神經病的組合，突然間又不是真的那麼多了！<br /><br />這使我相信不是每種物品的組合都是可行的，但這其實滿明顯的，因為有很多組合方式會產生要不就是全打滿孔的卡（用聯集方式），要不就是沒有孔的白卡（用交集方式）。所以有多無效組合在內，同時痕多組合也只會的到一樣的結果。例如說結合一把槍和一個核子炸彈大概能作出某種終極破壞死光，但是用個鞋拔子和一個盆栽也可能的到完全一樣的東西！！！！！真詭異。<br /><br />此外，似乎結合的物品不是比「一般」物品多很多孔就是少很多孔，這些在所有可能的組合方式中間幾乎佔據到快滿出來。結果越複雜的物品反倒有著更簡化的代碼這相當奇怪而且反直覺但嘿，情況就是這樣。<br /><br />但這所有的一切使我想到這個系統可以被某種方法破解，像是如果你有一個複雜的物品然號你想要從中拉一個元素來，或許就用推算法可以導出你想要的結果，或者至少縮小了可能範圍。另外也或許有辦法藉由繪製出位元數極多或極少的簡單圖案來做出甚至更酷的東西。誰知道呢。<br /><br />我想要問問jade關於這些的事因為她不知怎麼地雖沒有像我一樣的屌炸駭客可靠度卻非常擅長這類的事。可惜她總是讓自己神出鬼沒的。jade如果你有機會看到這些讓我知道你怎麼想吧！<br /><br />(John的搖搖馬logo的ASCII圖)<br /><!-- LOG END --> <br /></div></div></div><!-- LOG END --><br /><a href="http://www.mspaintadventures.com/scraps2/captchas.swf ">打孔卡計算器</a><br />[由Gankro製作]<br /><!--內文結束--> </div>
 
           </div>
           <div id="pagefoot" class="pagefoot">
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div id='contribute' style='font: 11px Arial;'>
-          <a href='http://www.mspaintadventures.com/?s=6'>Homestuck</a>的<a href="../copyright.html">
+          <a href='http://www.homestuck.com/'>Homestuck</a>的<a href="/copyright.html">
             著作權
           </a>屬於Andrew Hussie&#12290;
           這是由讀者所製作的非官方非營利目的翻譯版本&#12290;

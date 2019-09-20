@@ -19,7 +19,7 @@ var checkHTTPSWarning = function() {
             var warning_text = "<span>由於Flash已不再支援 部分動畫檔案可能無法顯示 請到官方網站觀看更新的版本 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;cursor:pointer;'>隱藏此訊息</a>]</span>";
             var warning_node = document.createElement("div");
             warning_node.innerHTML = warning_text;
-            warning_node.style.fontSize = "13px";
+            warning_node.style.fontSize = "12px";
             document.getElementById("pagehead").appendChild(warning_node);
         }
     }
