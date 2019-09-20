@@ -18,6 +18,7 @@ b {font-weight:bold;}
   width: 100wv;
   max-width: 950px;
   margin: 0 auto;
+  padding: 2px 0;
   background-color: #5a5a5a;
 }
 .mspanav {
@@ -25,7 +26,6 @@ b {font-weight:bold;}
   font-weight: bold;
   color: #ffffff;
   font-size: 13px;
-  height: 18px;
 }
 .mspanav a {
   color: inherit;
