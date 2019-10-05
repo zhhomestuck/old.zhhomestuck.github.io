@@ -46355,6 +46355,7 @@ ACT 6 INTERMISSION 2結束
 
 "[S] ACT 6 ACT 3 "
 攻略/純文字版本
+官方Youtube影片
 >  ==>
 
 "--"
@@ -46543,6 +46544,7 @@ GG: 好的！謝謝！
 [關閉頁面且返回原本遊戲頁面。]
 
 "[S] Jane：小心翼翼地靠近。"
+'); } 
 
 "==>"
 夠了，你到底是能拿這堆蠢藥水來幹什麼鬼？這購物狂的悔恨感。你已經受夠庸俗小丑和他藥水推銷了。
@@ -50088,7 +50090,7 @@ uu: 「王G7。」
 天王星闇影uranianUmbra [UU] 開始激勵 不死之怒undyingUmbrage [uu]
 UU: 后e5。
 UU: 將軍。
-天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu]
+天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu] 
 不死之怒undyingUmbrage [uu] 開始譏笑 天王星闇影uranianUmbra [UU]
 uu: 「王G6。」
 不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU]
@@ -50096,17 +50098,17 @@ uu: 「王G6。」
 UU: 城堡g4。
 UU: 將軍。
 UU: 剩一步囉，親愛的。
-天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu]
+天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu] 
 不死之怒undyingUmbrage [uu] 開始譏笑 天王星闇影uranianUmbra [UU]
 uu: 哼嗯。現在除了禮貌地承認我的失敗以外。
 uu: 還能做什麼了呢。
 uu: 「王H7。」
-不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU]
+不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU] 
 天王星闇影uranianUmbra [UU] 開始激勵 不死之怒undyingUmbrage [uu]
 UU: 這是不錯的態度。你可能終於在運動家精神的領域裡U點進步了吧？
 UU: 后g7。
 UU: 將死。
-天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu]
+天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu] 
 不死之怒undyingUmbrage [uu] 開始譏笑 天王星闇影uranianUmbra [UU]
 uu: 不。沒u。
 不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU]
@@ -50119,7 +50121,7 @@ UU: U戲結束了，下次好運喔，「兄弟。」 ^u^
 uu: 它沒u結束。「姐妹」。
 uu: 靠近點看棋盤。
 uu: 我沒u被將死。
-不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU]
+不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU] 
 天王星闇影uranianUmbra [UU] 開始激勵 不死之怒undyingUmbrage [uu]
 UU: 你在嚷嚷著什麼呢，我不懂。聽來感覺像絕望呢。
 UU: 我在看那些棋子了。你的王沒辦法走在任何不會被將軍的地方。
@@ -50132,7 +50134,7 @@ UU: 你的施法失敗了。
 uu: 那不是我的國王。
 不死之怒undyingUmbrage [uu] 停止譏笑 天王星闇影uranianUmbra [UU]
 天王星闇影uranianUmbra [UU] 開始激勵 不死之怒undyingUmbrage [uu]
-UU: 開始蠢了
+UU: 這開始蠢了。
 UU: 除非你還U什麼與遊戲相關的U道理的話好說，我玩完了。
 UU: 我還有更重要的事要做。
 天王星闇影uranianUmbra [UU] 停止激勵 不死之怒undyingUmbrage [uu]
@@ -51998,7 +52000,7 @@ DIRK: 那冷血女他媽根本不在意。
 DIRK: 所以，對。
 
 "==>"
-DIRK: 晚點見。
+DIRK: 晚點見。 
 
 "==>"
 
@@ -53926,7 +53928,8 @@ ROSE: 你尼....
 你花了超過90秒盯著這張他媽的GIF圖片，才意識到真正的Flash動畫根本就在下一頁。
 
 "[S][A6I3] 迷你決鬥！！！"
-(純文字版本) 
+(純文字版本)
+(官方Youtube影片) 
 
 "[A6I3] ==>"
 (大家住手！)
@@ -57862,6 +57865,33 @@ GT: 你等一下我想想。
 "==>"
 你關上聊天視窗，一句話也沒回。你無法相信那個人。他想要把那個混帳中的混帳送給他的禮物轉送給你？！你一點都不想要那個變態手中的任何一件東西，你也不在乎它多麼有魔法。他拿他的笨juju去塞他的屁股還比較好。
 抱歉，托比亞斯，但Jane決定拿你當作Jake的代表物來抒發她爆炸的怒火。
+
+"==>"
+噢不。
+噢不這個對話會讓你更悲傷對不對。
+
+Jane：...回答，你猜吧。
+天王星闇影uranianUmbra [UU] 開始激勵 勇氣探長gutsyGumshoe [GG]
+UU: 生日快樂，jane！ ^u^
+請原諒我發送這封信之後就馬上登出，但我現在正打破我們線性對話的常規，而我寧可不讓我們承受交換劇透情報的誘惑。我希望給你一個禮物。資訊來源告訴我你現在很需要一些可以讓你打起精神的東西。 :u
+我要送你我的jUjU的代碼。這對人類來說可能不是那麼好理解，但是jUjU對我們的種族而言有著非常特別的意義。因此，jane，我送你這件禮物代表著我們的友情對我而言也是非常意義重大的。它擁有一些魔法性質，但它自己不會做出什麼多花俏的事，話雖如此我還是希望它能為你的臉上帶來笑容。如果你想知道真相的話，它和我兄弟的jUjU合併之後將變得有用極多。或許當我們開始遊戲之後，我便能說服他也交出他的。總有一天他會了解與他人合作是達成任何事情的必要過程。
+我非常期待我的進程追上你們現在的那一天！我現在只能幻想你們都經歷過了什麼樣的冒險。我無論如何都覺得我們從你進入遊戲開始一定已經在進行各自的任務期間狂熱地交換記錄與想法了！你可能現在還厭煩我了呢！u_u 在此對我說話說到你的人類耳朵都要掉了的事情事先並追溯道歉。不過我相信我到時真的會沒法忍住我的興奮之情！
+說了這麼多，我的jUjU的代碼是：「UrobUros」
+再會！
+天王星闇影uranianUmbra [UU] 停止激勵 勇氣探長gutsyGumshoe [GG]
+
+"==>"
+你猜對了。
+這個對話讓你非常、非常悲傷。
+太悲傷了
+
+"==>"
+
+"==>"
+(女)(孩)
+(就是你 女)(孩)
+
+"==>"
 
 Homestuck是什麼？(舊版)
 「一個男孩和他的朋友一起玩遊戲的故事。」
