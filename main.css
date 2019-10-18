@@ -275,6 +275,7 @@ body.trickster {
 }
 .trickster a {color: red;}
 .trickster .content {
+    padding-bottom: 30px;
     background-image: url('/images/trickster_theme_bluetiles.gif');
 }
 .trickster div.header {
@@ -285,9 +286,6 @@ body.trickster {
 }
 .trickster  span.mspanav {
     visibility: hidden;
-}
-.trickster .content {
-    padding-bottom: 30px;
 }
 .trickster .content-inner,
 .trickster .page,
