@@ -286,6 +286,9 @@ body.trickster {
 .trickster  span.mspanav {
     visibility: hidden;
 }
+.trickster .content-inner {
+    margin-bottom: 30px;
+}
 .trickster .content-inner,
 .trickster .page,
 .trickster .pagehead,
