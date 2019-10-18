@@ -270,13 +270,11 @@ TRICKSTER PAGES
 *************/
 
 a {color: red;}
-body .trickster {
+body.trickster {
+    background-color: #5a5a5a;
     background-image: url('/images/trickster_theme_bg.gif');
 }
-.trickster,
-.trickster .content,
-.trickster .mspanavMobile,
-.trickster #latest-update {
+.trickster .content {
     background-image: url('/images/trickster_theme_bluetiles.gif');
 }
 .trickster div.header {
@@ -289,19 +287,23 @@ body .trickster {
     visibility: hidden;
 }
 .trickster .content-inner,
-.trickster .mspacontent,
+.trickster .page,
 .trickster .pagehead,
 .trickster .pagebody,
 .trickster .pagefoot,
-.trickster .post-footer,
-.trickster .widget-content {
+.trickster .post-footer {
     background-color: #ff73fd;
     color: #f9fd6b;
 }
 .trickster .pagefoot {
     margin-bottom: 0px;
 }
-.trickster  footer, .footer-outer, .mspanav {
+.trickster .trickster-text {
+    -webkit-animation: trickster-glow 0.25s linear infinite;
+    animation: trickster-glow 0.25s linear infinite;
+}
+.trickster  footer,
+.trickster .footer-bannerframe {
     background-color: transparent;
 }
 .trickster #trickster-banner-head-left {
@@ -312,6 +314,8 @@ body .trickster {
     float: right;
     background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
 }
+
+@-webkit-keyframes trickster-glow{0%{color: #fff6d1;}33%{color: #f0d1ff;}100%{color: #d1ffe3;}}
+@keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}
 @-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
 @keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
-
