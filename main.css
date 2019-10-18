@@ -286,7 +286,7 @@ body.trickster {
 .trickster  span.mspanav {
     visibility: hidden;
 }
-.trickster .content-inner {
+.trickster .content {
     padding-bottom: 30px;
 }
 .trickster .content-inner,
@@ -299,7 +299,7 @@ body.trickster {
     color: #f9fd6b;
 }
 .trickster .pagefoot {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .trickster .trickster-text {
     -webkit-animation: trickster-glow 0.25s linear infinite;
