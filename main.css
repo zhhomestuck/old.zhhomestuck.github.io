@@ -264,3 +264,54 @@ SCRATCH PAGES
 #s_header_src {
   display: none;
 }
+
+/************
+TRICKSTER PAGES
+*************/
+
+a {color: red;}
+body .trickster {
+    background-image: url('/images/trickster_theme_bg.gif');
+}
+.trickster,
+.trickster .content,
+.trickster .mspanavMobile,
+.trickster #latest-update {
+    background-image: url('/images/trickster_theme_bluetiles.gif');
+}
+.trickster div.header {
+    height: 24px;
+    background-image: url('/images/trickster_theme_headercandy.gif');
+    animation: trickster-scroll 20s linear infinite;
+    -webkit-animation: trickster-scroll 20s linear infinite;
+}
+.trickster  span.mspanav {
+    visibility: hidden;
+}
+.trickster .content-inner,
+.trickster .mspacontent,
+.trickster .pagehead,
+.trickster .pagebody,
+.trickster .pagefoot,
+.trickster .post-footer,
+.trickster .widget-content {
+    background-color: #ff73fd;
+    color: #f9fd6b;
+}
+.trickster .pagefoot {
+    margin-bottom: 0px;
+}
+.trickster  footer, .footer-outer, .mspanav {
+    background-color: transparent;
+}
+.trickster #trickster-banner-head-left {
+    float: left;
+    background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
+}
+.trickster #trickster-banner-head-left {
+    float: right;
+    background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
+}
+@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+
