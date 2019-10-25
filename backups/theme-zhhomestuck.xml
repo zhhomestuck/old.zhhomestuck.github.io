@@ -561,8 +561,7 @@ width: auto;
         margin-left: -56px; /* 使log內的圖片對齊外邊線 */
         border: 0;
       }
-      div.log-inner span img,
-	  .mobile div.log-inner span img {
+      div.log-inner span img {
         width: auto;
         margin: 0; /* 若要讓使log內的圖片變回正常則要把img包在span裡面 */
       }
@@ -578,9 +577,12 @@ width: auto;
       .mobile .log-outer,
       .mobile div.log-inner img,
       .mobile div.log-outer,
-      .mobile div.log-outer div {
-        width: 100%; max-width: 600px;
-        margin: 0 auto; padding: 0;
+      .mobile div.log-outer div,
+      .mobile div.log-inner span img {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
       }
       /* scroll texts */
       .div-scroll {
@@ -1404,7 +1406,7 @@ head.appendChild(script);
                           </div>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;trickster&quot;)'>
                             <style name='trikcster_mobile' type='text/css'>
-                              .mobile .widget {background-color: transparent; }a {color: red;}body, body.mobile {background-size: auto; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bg.gif&#39;); background-repeat: repeat;}.content,.mspanavMobile, #latest-update {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bluetiles.gif&#39;);}div#mspanav {height: 24px; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_headercandy.gif&#39;); animation: trickster-scroll 20s linear infinite; -webkit-animation: trickster-scroll 20s linear infinite;}.content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner {background-color: #ff73fd; color:#f9fd6b}.pagefoot {padding-bottom: 0px;}.footer-bannerframe, .mspanav .footer-bannerframe {margin-top:20px; height:120px; background: transparent url(&#39;http://zhhomestuck.github.io/images/trickster_theme_facefooter.gif&#39;) no-repeat; color: #f9fd6b;}span.mspanav, .footer-bannerframe #contribute-img {visibility: hidden;}footer, .footer-outer, .mspanav {background-color: transparent;}#latest-update {border-right:solid 11px #3fe000;}.latest-update-inner, #news {border:none;}@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}</style>
+                              .mobile .widget {background-color: transparent; }a {color: red;}body, body.mobile {background-size: auto; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bg.gif&#39;); background-repeat: repeat;}.content,.mspanavMobile, #latest-update {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bluetiles.gif&#39;);}div#mspanav {height: 24px; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_headercandy.gif&#39;); animation: trickster-scroll 20s linear infinite; -webkit-animation: trickster-scroll 20s linear infinite;}.content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner {background-color: #ff73fd; color:#f9fd6b}.pagefoot {padding-bottom: 0px;}.footer-bannerframe, .mspanav .footer-bannerframe {margin-top:20px; height:120px; background: transparent url(&#39;http://zhhomestuck.github.io/images/trickster_theme_facefooter.gif&#39;) no-repeat; color: #f9fd6b;}span.mspanav, .footer-bannerframe #contribute-img {visibility: hidden;}footer, .footer-outer, .mspanav {background-color: transparent;}#latest-update {border-right:solid 11px #3fe000;}.latest-update-inner, #news {border:none;}.trickster-text {-webkit-animation: trickster-glow 0.25s linear infinite; animation: trickster-glow 0.25s linear infinite;}@-webkit-keyframes trickster-glow{0%{color: #fff6d1;}33%{color: #f0d1ff;}100%{color: #d1ffe3;}}@keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}</style>
                             <script>
                               document.getElementById(&quot;blog-pager-newer-link-id&quot;).innerHTML = &quot;&lt;img src=\&quot;http://zhhomestuck.github.io/images/trickster_theme_sucker.gif\&quot;/&gt;&quot;;
                             </script>
@@ -1454,7 +1456,7 @@ head.appendChild(script);
                           </b:if>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;trickster&quot;)'>
                             <style name='trickster' type='text/css'>
-										    a:visited {color: red;}body {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bg.gif&#39;);}.content,.mspanavMobile, #latest-update {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bluetiles.gif&#39;);}div#mspanav {height: 24px; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_headercandy.gif&#39;); animation: trickster-scroll 20s linear infinite; -webkit-animation: trickster-scroll 20s linear infinite;}.content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner {background-color: #ff73fd; color:#f9fd6b}.pagefoot {padding-bottom: 0px;}.footer-bannerframe, .mspanav .footer-bannerframe {margin-top:20px; height:120px; background: transparent url(&#39;http://zhhomestuck.github.io/images/trickster_theme_facefooter.gif&#39;) no-repeat; color: #f9fd6b;}span.mspanav, .footer-bannerframe #contribute-img {visibility: hidden;}footer, .footer-outer, .mspanav {background-color: transparent;}#latest-update {border-right:solid 11px #3fe000;}.latest-update-inner, #news {border:none;}@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+										    a {color: red;}body {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bg.gif&#39;);}.content,.mspanavMobile, #latest-update {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bluetiles.gif&#39;);}div#mspanav {height: 24px; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_headercandy.gif&#39;); animation: trickster-scroll 20s linear infinite; -webkit-animation: trickster-scroll 20s linear infinite;}.content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner {background-color: #ff73fd; color:#f9fd6b}.pagefoot {padding-bottom: 0px;}.footer-bannerframe, .mspanav .footer-bannerframe {margin-top:20px; height:120px; background: transparent url(&#39;http://zhhomestuck.github.io/images/trickster_theme_facefooter.gif&#39;) no-repeat; color: #f9fd6b;}span.mspanav, .footer-bannerframe #contribute-img {visibility: hidden;}footer, .footer-outer, .mspanav {background-color: transparent;}#latest-update {border-right:solid 11px #3fe000;}.latest-update-inner, #news {border:none;}.trickster-text {-webkit-animation: trickster-glow 0.25s linear infinite; animation: trickster-glow 0.25s linear infinite;}@-webkit-keyframes trickster-glow{0%{color: #fff6d1;}33%{color: #f0d1ff;}100%{color: #d1ffe3;}}@keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
 									    </style>
                             <div id='is-trickster-page'/>
                           </b:if>
