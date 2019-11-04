@@ -182,13 +182,13 @@ div.log-inner span img {
   vertical-align: -2px;
 }
 #arquius span img#shades {
-background: #eeeeee url(&quot;/images/arquius_shades.png&quot;) no-repeat;
+background: #eeeeee url("/images/arquius_shades.png") no-repeat;
 margin: 0;
 padding: 8px 19px;
 border: 0;
 }
 #arquius span span#glitch {
-background: url(&quot;/images/arspritetxt_glitch.gif&quot;) repeat-x left center;
+background: url("/images/arspritetxt_glitch.gif") repeat-x left center;
 display: inline-block;
 }
 /* footer */
