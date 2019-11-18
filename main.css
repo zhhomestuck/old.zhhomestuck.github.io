@@ -181,13 +181,13 @@ div.log-inner span img {
   font-size: 66%;
   vertical-align: -2px;
 }
-#arquius span img#shades {
-background: #eeeeee url("/images/arquius_shades.png") no-repeat;
+#arquius span img.shades {
+background: url("/images/arquius_shades.png") no-repeat;
 margin: 0;
 padding: 8px 19px;
 border: 0;
 }
-#arquius span span#glitch {
+#arquius span span.glitch {
 background: url("/images/arspritetxt_glitch.gif") repeat-x left center;
 display: inline-block;
 }

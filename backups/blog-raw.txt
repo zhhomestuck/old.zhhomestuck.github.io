@@ -44772,7 +44772,7 @@ DAVE: 懂了
 DAVE: 所以你們在這幹嘛
 DAVE: 還拿了這麼多書
 ROSE: 研究。
-ROSE: 我們正在嘗試把謎圍的所有線索拼湊起來。
+ROSE: 我們正在嘗試將謎圑的所有線索拼湊起來。
 ROSE: 你應該知道這整顆小行星上散布著很多隱藏房間，包括圖書館，對吧？
 DAVE: 廢話
 DAVE: 我們還為罐頭鎮計畫搬空了一間勒
@@ -58264,6 +58264,208 @@ ROXY: (我完了)
 點擊，然後
 左右交替！ ← → 
 啟動惡作劇模式 
+
+"==>"
+
+"==>"
+(嚴正的父親式不認可)
+
+"==>"
+ROXY: JAKE謝謝你用那個南瓜砸我我之前實在是太頑固了!
+JAKE: 我的榮幸ROXY！
+ROXY: 感覺真是太好了哈哈哈所有事都超嗨的啦
+JANE: 嗨！嗨！萬歲！
+ROXY: JANE你說的沒錯 親你絕對會超暢快的而且可以彌補我過去所有失誤+自責
+ROXY: 解決個人問題最棒了!!!!!!!!!!
+JAKE: ROXY、JANE再也沒有事能比我們像這樣一起開心重要了！
+JANE: 我太同意了JAKE！
+JANE: 但沒有DIRK，快樂就稱不上完整！
+JAKE: 天哪太對了！我們快去見他吧！
+ROXY: 嘿大夥們等一下!
+ROXY: 在我們去見DIRK或結三重婚加生小孩或隨便什麼之前我想要加一個小小的停靠站!
+JANE: 什麼停靠站ROXY？
+ROXY: 我們得讓FEFETA也加入這場派對!
+ROXY: 沒有人考慮過可憐的親愛甜甜甜甜甜甜甜甜甜甜甜心FEFETA!
+JAKE: 哦不！沒錯ROXY我們快去找到FEFETA讓這個派對變得更甜蜜！
+ROXY: 這才對
+ROXY: 嘿!!!!!!!!!!!
+ROXY: 誰想嗨起來!
+JANE: 噢噢！我！我！
+JAKE: 我想！我想！
+ROXY: 耶耶耶耶耶耶耶耶耶耶耶!
+ROXY: 我
+JANE: 我們都會犯錯的ROXY！
+JAKE: 沒錯重要的是我們從中學會了更多得以勇敢面對我們的煩惱並克服它們！
+ROXY: 哈哈哈對
+ERISOLSPRITE: 拜託託~你們可以放我我~一個稜去死嗎.
+JAKE: 沒門！聰明人。你可是派對的靈魂！
+ERISOLSPRITE: 仄就就~四了.
+ERISOLSPRITE: 仄就就~四對我我~森前做的所有有~壞寺的層罰.
+ERISOLSPRITE: 我猜仄四我我~應得的但四...
+ERISPLSPRITE: 沒有有~稜應該被仄樣擇磨磨~.
+ERISOLSPRITE: 沒有有~稜.
+JAKE: 哈哈哈哈哈哈哈哈哈哈哈！
+JANE: 哈哈哈哈哈哈哈哈哈哈哈！
+ROXY: 哈哈哈哈哈哈哈哈哈哈哈!
+
+"==>"
+
+"==>"
+
+"==>"
+ERISOLSPRITE: 所以呃..
+ERISOLSPRITE: 嘿nepeta和feferii的亂七八糟的結合體.
+ERISOLSPRITE: 你最近過得怎樣?
+ERISOLSPRITE: 哦哦~抱歉那似個村問題.
+ERISOLSPRITE: 仄兂的很尷尬對吧.
+FEFETASPRITE: 3833 
+ERISOLSPRITE: 你縮縮~森麼麼~?
+ERISOLSPRITE: 操那些糟糕的糖果村貨貨~鬧得我我~森麼麼~都都~聽不不~到.
+ERISOLSPRITE: 在仄些蔥滿粉紅色的恐怖怖~尖叫中我我~森自聽不不~到自己縮縮~的話.
+ERISOLSPRITE: 別問我我~為森麼麼~覺得它聽起來像粉色的它就似像好嗎?
+FEFETASPRITE: 38?? 
+ERISOLSPRITE: 總二言茲我我~想我我~一資在等待仄一天.
+ERISOLSPRITE: 一部部~分的我我~想為撒了一部部~分的你道歉.
+ERISOLSPRITE: 我我~仔的不不~四當過過~你戀侶的那部部~分因為很明顯那部部~分的我我~不不~需需~要對那個下流的鬧劇負負~責.
+ERISOLSPRITE: 二四當過你的一部部~分的盟伴的那部部~分的我我~.
+ERISOLSPRITE: 仄樣看來nepeta就就~子四在仄團亂的無關的旁觀者了?
+ERISOLSPRITE: 所以我我~猜全部部~的我我~都都~要因為把她牽側進仄個狗狗~死爛蛋三角戀二向她道歉.
+ERISOLSPRITE: 呃啊嘖絕對似我我~能想到的最爛的道歉情景了.
+ERISOLSPRITE: 我我~森自連一點合理的懊悔都都~無無~法從胸口口~裡表達粗來因為仄個胸口口~蔥滿了兩個稜矛盾的感情 二且接叟叟~道歉的稜還四一個由由~被害稜和完全不不~瞭解仄些狗狗~死玩意的稜的結合體.
+ERISOLSPRITE: 別放在心上仄個和解已經變層了冊頭頭~冊尾的災難.
+ERISOLSPRITE: 我我~們自掃可以達層名為"操你gamzee"的友友~好協議嗎?
+ERISOLSPRITE: 因為我我~要縮縮~的基本喪.
+ERISOLSPRITE: 就就~四.
+ERISOLSPRITE: 操那個混蛋.
+FEFETASPRITE: 38)) 
+
+"==>"
+
+"==>"
+JANE: DIRK！
+JAKE: DIRK！
+ROXY: DIRK!
+
+"==>"
+JANE: DIRRRRRRRRRRRK！
+JAKE: DIRRRRRRRRRRRK！
+ROXY: DIRRRRRRRRRRRK!
+
+"==>"
+JANE: DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK！
+JAKE: DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK！
+ROXY: DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK!
+DIRK: 狗娘養的。
+
+"==>"
+ROXY: 注意到我們身上的不同了嗎DIRG？
+DIRK: 確實看見了。
+DIRK: 你們是決定這輩子把尊嚴有關的概念全部拋棄並一併放棄此生能再次做出任何有建設性的行為的希望了嗎？
+ROXY: 才不是呢你個小傻瓜
+ROXY: 不同之處是...........
+ROXY: 我們解決了我們所有的個人文體!!!!!111111
+DIRK: Roxy，你醉了嗎？
+DIRK: 我是指，除了因為某種東西嗨起來而且發了魔法瘋之外。
+
+"==>"
+ROXY: 我唯一沉醉的東西
+ROXY: 就是不再逃跑勇敢面對我的問題的幸福感
+ROXY: 以及還有
+ROXY: 也許一點點點點點點酒精
+ROXY: 但就這些了!!!!!! 嗝!!!!!
+DIRK: 解決所有個人問題？
+DIRK: 是啦。你們看起來像是狀態很好。
+ROXY: 太對惹
+ROXY: 你應該試試
+DIRK: 試什麼？
+ROXY: 解決你的問題題
+ROXY: 這是窩現在說問題的方式
+DIRK: 滾。我沒什麼問題。
+ROXY: 看我來師範
+ROXY: DIRK泥造嗎
+ROXY: 我對你有炒雞狂熱的愛意？
+DIRK: 知道。
+ROXY: 哦天啊啊啊傾訴出這份敢情真是太幫了！
+ROXY: 我們應該立刻結婚DORK你想和窩結婚嗎？
+DIRK: 噢。不？
+ROXY: 但是窩們都要結婚了每個人都在結婚
+ROXY: JANEJAKE我是彼此的未婚夫妻了
+ROXY: 更不要說在那過程中會有小孩;)
+ROXY: (暗示著做愛愛愛！)
+DIRK: Roxy，即使不經大腦地說出什麼胡亂告白真的可以「解決個人問題」，這件事從來就不是個秘密。
+DIRK: 我一直都知道你喜歡我。你他媽幾乎每天都在向我表白。
+
+"==>"
+ROXY: 好吧沒錯!
+ROXY: 對得不能再對
+ROXY: 但我還沒說過讓我們來結婚&&生小孩對吧?
+DIRK: 不，實際上你也如此提議過。很多次。
+ROXY: 喔
+ROXY: 我說過?
+ROXY: FFFFFFFFFFF
+ROXY: 好吧
+ROXY: 這一次
+ROXY: 我帶來了...........
+ROXY: 一個結婚戒指!!!!!!!!!!
+ROXY: 過來STRIDE
+ROXY: 把這鬼玩意戴上
+DIRK: 不！
+
+"==>"
+ROXY: 來嘛DRIK!
+ROXY: 戴上它
+ROXY: 你就能幫我解決一個我的個人問題!
+DIRK: 住手。
+ROXY: 和一個你的!
+ROXY: 你不想解決你的蠢煩惱嗎
+DIRK: 這不會解決任何問題，你們這群傻逼!
+
+"==>"
+ROXY: 不DIRT你沒看到嗎？我們現在超開心!
+ROXY: 再見艱難的交互式個人煩惱再也不見!
+DIRK: 你並不開心！你是發瘋了！而且像這樣變得糖裡糖氣把幾個月的冷靜與節制扔進廁所沖走究竟要怎樣幫你解決任何問題？ ？ ？
+ROXY: 因為嗯
+ROXY: 嗯
+ROXY: 別改變話題STRIDERK
+ROXY: 你不得不在我死的時候親了我
+ROXY: 這不公平！
+ROXY: 幫我解決我的這個問題
+ROXY: 我沒有任何關於我們甜蜜親吻的回憶;D
+DIRK: 不可能！
+ROXY: DIRCH
+ROXY: 戴上它
+ROXY: BRINK MAKEOUTS
+DIRK: 離我遠點！
+DIRK: 我有劍！ ！ ！ 
+
+"==>"
+ROXY: 去你的盪漫劍...........
+ROXY: 和我結婚生小孩!!!!!!!!!!!
+DIRK: 我會用它的，我發誓！
+DIRK: 它很鋒利！
+DIRK: 而且它很厲害！
+DIRK: 而且...
+DIRK: 它是把劍！ ！ ！
+ROXY: 閉嘴來和你未來的妻子親熱!
+DIRK: 我太酷了做不到這件事！ ！ ！ ！ ！
+
+"==>"
+ARQUIUSPRITE: %兄弟%先生，請聽我一言
+ARQUIUSPRITE: 我認為你應該做出嘗試
+ARQUIUSPRITE: 這建議不止來自你的神秘導航靈，也不止來自另一個%形態的你自己，而是來自一個有著賊他媽壯觀身體的伙計
+ARQUIUSPRITE: 我們都認為你在一般情況下不可能感到開%心
+ARQUIUSPRITE: 你實在沒有正確的思考煲去承擔那種情感
+ARQUIUSPRITE: 看看我。我%需要和一位%喜歡馬的愛出汗的傢伙融合才能感到開%心
+ARQUIUSPRITE: 天啊去他的馬啊Dirk
+ARQUIUSPRITE: 我收縮肌肉時一直%想著它們，那讓我不禁露出微%笑
+ARQUIUSPRITE: 看來你也%需要%相似的極端手段
+DIRK: 喔隨便吧。
+
+"==>"
+ROXY: 唔嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯!
+DIRK: 唔嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯！
+ARQUIUSPRITE: 那邊的。戴著雨傘的%小隨從
+ARQUIUSPRITE: 快拿個毛巾給我
 
 Homestuck是什麼？(舊版)
 「一個男孩和他的朋友一起玩遊戲的故事。」
