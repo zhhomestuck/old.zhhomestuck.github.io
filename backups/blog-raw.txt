@@ -58159,11 +58159,11 @@ JANE: 我期待著！
 JAKE: 我們應該盡快為此準備！
 JAKE: 但要等到我們的冒險後！
 JANE: 你要一起來嗎ERISOL先生？
-ERISOLSPRITE: 操他媽的不.
+ERISOLSPRITE: 操他媽的不不.
 
 "==>"
 JAKE: 太棒了你要來！快上來伙計！
-EROSALSPRITE: 操你媽, 操我的稜森, 操他媽的一切, 操操操.
+ERISOLSPRITE: 操你媽, 操我的稜森, 操他媽的一切, 操操操.
 JANE: 哈哈哈哈哈哈哈哈哈哈哈！
 JAKE: 哈哈哈哈哈哈哈哈哈哈哈！
 
@@ -58297,13 +58297,13 @@ ROXY: 我
 JANE: 我們都會犯錯的ROXY！
 JAKE: 沒錯重要的是我們從中學會了更多得以勇敢面對我們的煩惱並克服它們！
 ROXY: 哈哈哈對
-ERISOLSPRITE: 拜託託~你們可以放我我~一個稜去死嗎.
+ERISOLSPRITE: 拜託託你們可以放我我一個稜去死嗎.
 JAKE: 沒門！聰明人。你可是派對的靈魂！
-ERISOLSPRITE: 仄就就~四了.
-ERISOLSPRITE: 仄就就~四對我我~森前做的所有有~壞寺的層罰.
-ERISOLSPRITE: 我猜仄四我我~應得的但四...
-ERISPLSPRITE: 沒有有~稜應該被仄樣擇磨磨~.
-ERISOLSPRITE: 沒有有~稜.
+ERISOLSPRITE: 仄就就四了.
+ERISOLSPRITE: 仄就就四對我我森前做的所有有壞寺的層罰.
+ERISOLSPRITE: 我猜仄四我我應得的但四...
+ERISPLSPRITE: 沒有有稜應該被仄樣擇磨磨.
+ERISOLSPRITE: 沒有有稜.
 JAKE: 哈哈哈哈哈哈哈哈哈哈哈！
 JANE: 哈哈哈哈哈哈哈哈哈哈哈！
 ROXY: 哈哈哈哈哈哈哈哈哈哈哈!
@@ -58313,29 +58313,29 @@ ROXY: 哈哈哈哈哈哈哈哈哈哈哈!
 "==>"
 
 "==>"
-ERISOLSPRITE: 所以呃..
+ERISOLSPRITE: 所所~以呃...
 ERISOLSPRITE: 嘿nepeta和feferii的亂七八糟的結合體.
-ERISOLSPRITE: 你最近過得怎樣?
-ERISOLSPRITE: 哦哦~抱歉那似個村問題.
+ERISOLSPRITE: 你最近過過得怎樣?
+ERISOLSPRITE: 哦哦抱歉那四個村問題.
 ERISOLSPRITE: 仄兂的很尷尬對吧.
 FEFETASPRITE: 3833 
-ERISOLSPRITE: 你縮縮~森麼麼~?
-ERISOLSPRITE: 操那些糟糕的糖果村貨貨~鬧得我我~森麼麼~都都~聽不不~到.
-ERISOLSPRITE: 在仄些蔥滿粉紅色的恐怖怖~尖叫中我我~森自聽不不~到自己縮縮~的話.
-ERISOLSPRITE: 別問我我~為森麼麼~覺得它聽起來像粉色的它就似像好嗎?
+ERISOLSPRITE: 你縮縮森麼麼?
+ERISOLSPRITE: 操那些糟糕的糖果村貨貨鬧得我我森麼麼都都聽不不到.
+ERISOLSPRITE: 在仄些蔥滿粉紅色的恐怖怖尖叫中我我森自聽不不到自己縮縮的話.
+ERISOLSPRITE: 別問我我為森麼麼覺得它聽起來像粉色的它就似像好嗎?
 FEFETASPRITE: 38?? 
-ERISOLSPRITE: 總二言茲我我~想我我~一資在等待仄一天.
-ERISOLSPRITE: 一部部~分的我我~想為撒了一部部~分的你道歉.
-ERISOLSPRITE: 我我~仔的不不~四當過過~你戀侶的那部部~分因為很明顯那部部~分的我我~不不~需需~要對那個下流的鬧劇負負~責.
-ERISOLSPRITE: 二四當過你的一部部~分的盟伴的那部部~分的我我~.
-ERISOLSPRITE: 仄樣看來nepeta就就~子四在仄團亂的無關的旁觀者了?
-ERISOLSPRITE: 所以我我~猜全部部~的我我~都都~要因為把她牽側進仄個狗狗~死爛蛋三角戀二向她道歉.
+ERISOLSPRITE: 總二言茲我我想我我一資在等待仄一天.
+ERISOLSPRITE: 一部部分的我我想為撒了一部部分的你道歉.
+ERISOLSPRITE: 我我仔的不不四當過過你戀侶的那部部分因為很明顯那部部分的我我不不需要對那個下流的鬧劇負負責.
+ERISOLSPRITE: 二四當過你的一部部分的盟伴的那部部分的我我.
+ERISOLSPRITE: 仄樣看來nepeta就就子四仄團亂的無關的旁觀者了?
+ERISOLSPRITE: 所以我我猜全部部的我我都都要因為把她牽側進仄個狗狗死爛蛋三角戀二向她道歉.
 ERISOLSPRITE: 呃啊嘖絕對似我我~能想到的最爛的道歉情景了.
-ERISOLSPRITE: 我我~森自連一點合理的懊悔都都~無無~法從胸口口~裡表達粗來因為仄個胸口口~蔥滿了兩個稜矛盾的感情 二且接叟叟~道歉的稜還四一個由由~被害稜和完全不不~瞭解仄些狗狗~死玩意的稜的結合體.
-ERISOLSPRITE: 別放在心上仄個和解已經變層了冊頭頭~冊尾的災難.
-ERISOLSPRITE: 我我~們自掃可以達層名為"操你gamzee"的友友~好協議嗎?
-ERISOLSPRITE: 因為我我~要縮縮~的基本喪.
-ERISOLSPRITE: 就就~四.
+ERISOLSPRITE: 我我森自連一點合理的懊悔都都無無法從胸口口裡表達粗來因為仄個胸口口蔥滿了兩個稜矛盾的感情 二且接叟叟道歉的稜還四一個由由被害稜和完全不不瞭解仄些狗狗死玩意的稜的結合體.
+ERISOLSPRITE: 別放在心上仄個和解已經變層了冊頭頭冊尾的災難.
+ERISOLSPRITE: 我我們自掃可以達層名為"操你gamzee"的友友好協議嗎?
+ERISOLSPRITE: 因為我我要縮縮的基本喪.
+ERISOLSPRITE: 就就四.
 ERISOLSPRITE: 操那個混蛋.
 FEFETASPRITE: 38)) 
 
@@ -58466,6 +58466,163 @@ ROXY: 唔嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯!
 DIRK: 唔嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯！
 ARQUIUSPRITE: 那邊的。戴著雨傘的%小隨從
 ARQUIUSPRITE: 快拿個毛巾給我
+
+"[S] ==>"
+JANE: 哇啊啊啊啊啊啊啊啊啊啊啊！ 
+JAKE: 呀呼呼呼呼呼呼呼呼呼呼呼！ 
+ROXY: 哦耶耶耶耶耶耶耶耶耶耶耶! 
+DIRK: 呃。 
+ROXY: 來嘛DIRK!一起跳舞! 
+JAKE: 對呀DERK快跳舞吧！ 
+DIRK: 不。 
+JANE: DIRP，別假正經了。 
+JANE: 別再當個榆木腦袋了來跳舞！ 
+ROXY: 對啊DIRK! 
+ROXY: 跳個機械舞! 
+DIRK: 不。 
+JAKE: 快DIRK！ 
+JAKE: 讓我們看看你的機器舞和鎖舞！ 
+DIRK: 不！ 
+ROXY: DIRK!DIRK!跳一個 
+ROXY: 跳一個馬鈴薯泥 
+JANE: 沒錯！我想看捲心菜舞！ 
+JANE: 跳一個捲心菜泥DIRK！！！！！！！！！！ 
+DIRK: 絕不。 
+ARQUIUSPRITE: 哈哈哈！伙計，這真是太荒謬了 
+ARQUIUSPRITE: 你的大腦太頑固了，甚至連這個操蛋的糖果魔法都沒辦法讓你輕鬆 
+ARQUIUSPRITE: 這真是太馬戲的有趣了 
+DIRK: 閉嘴！ 
+ROXY: 不DIRK他是對的! 
+ROXY: 接受輕鬆扔掉煩惱 
+ARQUIUSPRITE: 恐怕他做不到，超級糖果Roxy 
+ARQUIUSPRITE: 我的肌肉有多強壯他就有多固執 
+ARQUIUSPRITE: 順便一問，你願意來感受我的肌肉嗎，Roxy？ 
+ROXY: 哦哦哦當然了;D 
+DIRK: 去他的。為什麼我要聽你的？ 
+DIRK: 完全沒變！你或許和一個愛流汗的馬男融合了，但你依然不放過任何妨礙我的機會。 
+DIRK: 更糟的是你依然堅信你在幫我。真是一堆屁話。 
+ROXY: 噢別對他這麼刻薄DIRK你的肌肉精靈又酷又有趣 
+ROXY: 天啊 
+ROXY: 你應該來摸他的肌肉DIRK這些肌肉太棒了！ 
+ROXY: LE SWOOOOOOOOOOON 
+ARQUIUSPRITE: 你聽到那個女人的話了，Dirk 
+ARQUIUSPRITE: 停止你的拖延，快馬加鞭過來摸我馬力全開的肌肉 
+DIRK: 最後一次，我不會摸你的蠢肌肉！ 
+DIRK: 順帶一提Roxy，你要是和我的混蛋精靈勾搭上了，我會被氣死。 
+ROXY: 天這些肌肉就像石頭一樣堅硬 
+ROXY: JANE你要加入嗎 
+JANE: 我當然想！ 
+JANE: 哦哦哦這些肌肉真是太棒了！ 
+JANE: JAKE你真的必須要摸一摸這些肌肉。 
+JAKE: 好呀！ 
+JAKE: 夭壽你的大波波也太有線條了吧！ 
+JAKE: 他實在是男人中的男人！ 
+ARQUIUSPRITE: Dirk，看來我的肌肉火了 
+ARQUIUSPRITE: 你真的確定你不願意用你的雙手%享用這份A級牛肉？ 
+DIRK: 拜託了。誰都行。 
+DIRK: 快來停下這一切。 
+ROXY: 嘿我想到了 
+ROXY: 如果DIRK想要繼續掃興也許墨鏡肌肉精靈可以代替他和我們四重婚？ 
+JANE: 好主意！ 
+JAKE: 咳女士們請別這麼輕率地把DIRK排除在我們的幸福婚禮計劃外。 
+JAKE: DIRK我想說在解決煩惱前我對有關你的事都感覺糟透了。 
+JAKE: 但現在我開心起來了我瞭如何讓所人都開心的答案！ 
+JAKE: 你我ROXY當然還有和你一樣喜歡我的JANE！ 
+JAKE: 我終於發現解決所有戀愛衝突的最佳方案是所有人和彼此結婚！ 
+JAKE: 你覺得怎麼樣伙計想和我結婚嗎？ :D 
+DIRK: Jake，我不和垃圾結婚。 
+DIRK: 說實話，在你像那樣扔下我並且無視我的所有短信後。 
+DIRK: 你還有膽帶著吃屎般的笑容和頭上的小南瓜浮在那兒瞎說些結婚的事情？ 
+DIRK: 你猜怎樣，如果你不再喜歡我不想再和我約會了，沒問題，我能接受。 
+DIRK: 但直接把我拒之門外，彷彿我甚至沒有資格得到一句解釋，那只是懦夫的行為。為什麼你甚至做不到像個男人一樣和我談談？ 
+DIRK: 你表現得像是我沒有任何感情，像是我只是某種機器人。你錯了，我有感情。 
+DIRK: 而我正在用那些感情來開始感覺到你實際上是一個混蛋。 
+DIRK: 所以無論你在磕糖磕嗨前不敢告訴我的是什麼話，你都不用再擔心了，我會幫你解決這個煩惱。 
+DIRK: 我們結束了，JAKE。 
+ARQUIUSPRITE: 不好意思，那邊的你 
+ARQUIUSPRITE: 貴族與平民令人生厭的結合體 
+ARQUIUSPRITE: 過來觸摸我碩大的二頭肌 
+ERISOLSPRITE: 一滴點可能都都沒有有 
+ARQUIUSPRITE: 來摸 
+ERISOLSPRITE: euqiiu2為森麼麼你表現得像個嗅腫骨骨的智障組合包一樣你發僧了森麼鬼 
+ERISOLSPRITE: 以及為森麼你戴嘖那傢伙的破破墨墨鏡. 摘下來你都都比那個東西有有格調。 
+ARQUIUSPRITE: 好的，我知道這裡沒有接受者了。只有一對荒誕的俗人用同樣粗俗愚昧的通道咆%哮。 
+ARQUIUSPRITE: 你呢，令人生厭的由Feferi和 
+ARQUIUSPRITE: 和 
+ARQUIUSPRITE: 噢 
+ARQUIUSPRITE: 噢不 
+ERISOLSPRITE: 怎麼麼 
+FEFETASPRITE: 3833 
+ARQUIUSPRITE: Dirk 
+ARQUIUSPRITE: Dirk，幫我，我有一個問題 
+DIRK: 什麼？？ 
+ARQUIUSPRITE: 一部分的我正在產生一種我不%喜歡的強烈情感波動 
+ARQUIUSPRITE: 這一部分自我使我感到%羞愧 
+DIRK: 哪一部分。 
+ARQUIUSPRITE: troll的部分。它曾經做過可恥的事 
+ARQUIUSPRITE: 我並不認為這種情感應當成為我%新的存在方式的特徵之一 
+ARQUIUSPRITE: 我應該怎樣才能讓這種感覺%消失 
+ARQUIUSPRITE: Dirk，我命令你指導我如何%消除這些感情 
+DIRK: 幫不了你兄弟！ 
+DIRK: 這是你要求的。你說過你害怕不再存在。 
+DIRK: 很好，這就是繼續存在的時候會發生的事。你最好找到解決方案！ 
+ARQUIUSPRITE: 不。這太糟糕了 
+ARQUIUSPRITE: 我不知道該做什麼 
+ARQUIUSPRITE: 我的肉體和智慧都強大到匪夷所思，我怎麼可能被這樣困擾？ 
+ARQUIUSPRITE: 死亡也好過帶著這諷刺性地從死亡中產生的%羞愧活下去 
+ERISOLSPRITE: euqiiu2你他媽的在說說什麼麼. 
+ARQUIUSPRITE: 你，黃血海洋居民 
+ARQUIUSPRITE: 一半的我命令你賤民的那一半解決我的情感動亂，同時謙卑地請求你貴族的那一半做同樣的事 
+ARQUIUSPRITE: 另一半的我一點都不在乎你們愚蠢的等級制度狗屁，並且正因這份動亂經歷著%些微的不安 
+ERISOLSPRITE: 哈哈哈哇哦zahhak或許你兂的比我我還混亂呢, 真是厲害. 
+ERISOLSPRITE: 不不過好啊如如果果你有有想要和解的意圖圖, 講出來總四會有有用的. 思際喪早些斯候候我我和仄個令稜僧厭的結合體的feferii部部分有有過過一次友友好的談話, 算四吧. 
+ERISOLSPRITE: 縮縮出出你必須縮縮的話, 子不不過過別浪feferii部部分太混亂好嗎伙計? 她對我我來嗦非常重要, 對我我的兩個部部分來縮縮都都四, 懂嗎? 
+ARQUIUSPRITE: 你說得對，我必%須和她談談 
+ARQUIUSPRITE: Nepeta，我發誓過我會保護你，但我失敗了 
+ARQUIUSPRITE: 在落於下風的那一刻我對高血的尊敬支配了我，我沒有起身為你戰鬥，而是選擇了屈從於一個他媽的雜耍小丑之類的？什麼？ 
+ARQUIUSPRITE: 等等，我真的做了？我到底是哪根馬筋不對？ 
+FEFETASPRITE：38(( 
+ARQUIUSPRITE: 我並不完美，Nepeta。或者用你的話來說，「完喵」。那是什麼鬼？貓咪雙關？伙計讓我們一起言歸正傳，這種情感狀態真是糟到發瘋 
+ARQUIUSPRITE: 但無論如何，我%希望你能從你友善的橄欖色血泵瓣膜中找到一絲...寬恕... 
+ARQUIUSPRITE: 不！ 
+ARQUIUSPRITE: 見鬼！我不值得被原諒，我在說什麼！我讓你遭受的那些狗屎太叉勁了...我甚至不能... 
+ERISOLSPRITE: 嘿你能不不能快點結素素仄個精神病的道歉你個可憐的怪胎. 哇你竟藍浪我我看起來像一個心理健康的模模範了. 
+ERISOLSPRITE: 總茲你贈在用你的情感負負擔浪她feferii的部部分感到困惑惑. 
+ARQUIUSPRITE: 請允%許我說完，先生/小人 
+ERISOLSPRITE: feferii別去聽他縮縮的愣何話 
+ERISOLSPRITE: 你已經經歷過足足夠夠的悲桑了, 不不要再被捲進nepeta和仄個馬控肌陋混蛋的糾葛關係裡. 
+ARQUIUSPRITE: Nepeta，無視所有和Feferi說的話，只%需要在意我試圖說出口的懺悔 
+ERISOLSPRITE: 你仄傢伙伙有有森麼麼權利命令nepeta做做愣何寺, 更別縮縮去聽你充滿矛盾的訴苦苦了? 
+ERISOLSPRITE: 呵呵呵, fef你敢信?? 
+ARQUIUSPRITE: 不要在我和Nepeta說話時和Feferi說話 
+ARQUIUSPRITE: 這會讓Nepeta困惑。她是赦免我內疚感的關鍵，雖然我似乎並沒有那個資格？ 
+ERISOLSPRITE: 去你的色免我我要搜搜回我我的建議. 
+ERISOLSPRITE: 別再和nepeta縮縮話了離feferii愈遠愈好. 
+ARQUIUSPRITE: 不要 
+ERISOLSPRITE: 要。 
+ARQUIUSPRITE: 不要 
+ERISOLSPRITE: 要。 
+ARQUIUSPRITE: 不要 
+ERISOLSPRITE: 呃啊我我才不不會接下去你那村爆了的要/不不要對話!! 
+ARQUIUSPRITE: 那就讓我們獨自%相處，我和我的盟伴有%許多話說 
+ERISOLSPRITE: 不不去你媽的不不, 仄個對話結素素了. 
+ARQUIUSPRITE: 我會繼%續 
+ERISOLSPRITE: 不不. 
+ARQUIUSPRITE: 會 
+ERISOLSPRITE: 不不. 
+ARQUIUSPRITE: 會 
+ERISOLSPRITE: 不不. 
+ARQUIUSPRITE: 會 
+ERISOLSPRITE: 不不仄必須要停下!! 你難道看不不出出來我我們贈在浪FEFETA分裂嗎?? 
+
+"==>"
+
+"==>"
+親愛的、甜蜜的、珍貴的
+FEFETA
+爆炸！
+
+"==>"
 
 Homestuck是什麼？(舊版)
 「一個男孩和他的朋友一起玩遊戲的故事。」
