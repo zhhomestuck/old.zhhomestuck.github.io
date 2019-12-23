@@ -279,7 +279,7 @@ body.trickster {
     background-image: url('/images/trickster_theme_bluetiles.gif');
 }
 .trickster div.header {
-    height: 24px;
+    height: 23px;
     background-image: url('/images/trickster_theme_headercandy.gif');
     animation: trickster-scroll 20s linear infinite;
     -webkit-animation: trickster-scroll 20s linear infinite;
