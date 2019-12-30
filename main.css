@@ -298,7 +298,7 @@ body.trickster {
     color: #f9fd6b;
 }
 .trickster .pagefoot {
-    padding-bottom: 0px;
+    padding-bottom: 5px;
 }
 .trickster .trickster-text {
     -webkit-animation: trickster-glow 0.25s linear infinite;
@@ -340,17 +340,14 @@ X2COMBO PAGES
     width: 100vw;
     max-width: 1630px;
 }
-
 .x2combo .content-inner {
     max-width: 1330px;
 } 
-
 .x2combo  #x2combo-header{
     height: 44px;
     margin: 0px auto;
     background: #232323 url(./images/act6act5act1x2combo.gif) no-repeat center top;
 }
-
 /* special effect of "next page" link text */
 .x2combo  #x2np{
     display: block;

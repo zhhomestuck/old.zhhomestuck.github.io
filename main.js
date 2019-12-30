@@ -1,6 +1,6 @@
 // Make log
 var makeSpoilerLog = function() {
-    let spoilerDOMs = [].slice.call(document.getElementsByClassName(&quot;log-outer-outer&quot;));
+    let spoilerDOMs = [].slice.call(document.getElementsByClassName("log-outer-outer"));
     let spoilerDOMThatUseIdAttr = document.getElementById("log-outer-outer"); // beccause I fucked up
     if (spoilerDOMThatUseIdAttr !== null) {
         spoilerDOMs.push(spoilerDOMThatUseIdAttr)
