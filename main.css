@@ -107,7 +107,8 @@ div.log-outer {
   padding: 1px 0;
   box-sizing: border-box;
 }
-div#log-outer-outer {
+div#log-outer-outer, /* It shouldn't be as id but this is an year-old mistake */
+div.log-outer-outer {
   padding: 0;
   text-align: left;
 }
@@ -328,3 +329,33 @@ body.trickster {
 @keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}
 @-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
 @keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+
+/************
+X2COMBO PAGES
+*************/
+
+.x2combo  .header,
+.x2combo .content,
+.x2combo  .footer-bannerframe {
+    width: 100vw;
+    max-width: 1630px;
+}
+
+.x2combo .content-inner {
+    max-width: 1330px;
+} 
+
+.x2combo  #x2combo-header{
+    height: 44px;
+    margin: 0px auto;
+    background: #232323 url(./images/act6act5act1x2combo.gif) no-repeat center top;
+}
+
+/* special effect of "next page" link text */
+.x2combo  #x2np{
+    display: block;
+    margin-left: 100px;
+    width: 60px;
+    -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ 
+    transform: matrix(1, -0.4, 0.4, 1, 0, -45);
+}
