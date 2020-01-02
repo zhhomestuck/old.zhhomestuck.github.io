@@ -331,16 +331,23 @@ body.trickster {
 X2COMBO PAGES
 *************/
 
-.x2combo  .header,
+.x2combo .header,
 .x2combo .content,
-.x2combo  .footer-bannerframe {
+.x2combo .footer-bannerframe {
     width: 100vw;
-    max-width: 1630px;
-    min-width: 710px;
+    max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
+    min-width: 720px; /* 350 + 20 + 350 */
 }
 .x2combo .content-inner {
-    max-width: 1330px;
-} 
+    max-width: 1320px; /* 650 + 20 + 650 */
+}
+.x2combo .x2combo-td {
+    max-width: 650px;
+    min-width: 350px;
+}
+.x2combo .x2combo-middle-padding {
+    padding: 0 10px;
+}
 .x2combo  #x2combo-header{
     height: 44px;
     margin: 0px auto;
@@ -349,8 +356,6 @@ X2COMBO PAGES
 /* special effect of "next page" link text */
 .x2combo  #x2np{
     display: block;
-    margin-left: 95px;
-    width: 50px;
-    -ms-transform: matrix(1, -0.5, 0.5, 1, 0, -45); /* IE 9 */ 
-    transform: matrix(1, -0.5, 0.5, 1, 0, -45);
+    -ms-transform: matrix(1, -0.5236, 0.5236, 1, 100, -115) /* IE 9 */ 
+    transform: matrix(1, -0.5236, 0.5236, 1, 100, -115)
 }
