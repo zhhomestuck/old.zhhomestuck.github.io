@@ -297,9 +297,6 @@ body.trickster {
     background-color: #ff73fd;
     color: #f9fd6b;
 }
-.trickster .pagefoot {
-    padding-bottom: 5px;
-}
 .trickster .trickster-text {
     -webkit-animation: trickster-glow 0.25s linear infinite;
     animation: trickster-glow 0.25s linear infinite;
@@ -339,6 +336,7 @@ X2COMBO PAGES
 .x2combo  .footer-bannerframe {
     width: 100vw;
     max-width: 1630px;
+    min-width: 710px;
 }
 .x2combo .content-inner {
     max-width: 1330px;
@@ -351,8 +349,8 @@ X2COMBO PAGES
 /* special effect of "next page" link text */
 .x2combo  #x2np{
     display: block;
-    margin-left: 100px;
-    width: 60px;
-    -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ 
-    transform: matrix(1, -0.4, 0.4, 1, 0, -45);
+    margin-left: 95px;
+    width: 50px;
+    -ms-transform: matrix(1, -0.5, 0.5, 1, 0, -45); /* IE 9 */ 
+    transform: matrix(1, -0.5, 0.5, 1, 0, -45);
 }
