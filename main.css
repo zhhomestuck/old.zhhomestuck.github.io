@@ -331,6 +331,11 @@ body.trickster {
 X2COMBO PAGES
 *************/
 
+.x2combo  #x2combo-header{
+    height: 44px;
+    margin: 0px auto;
+    background: #232323 url(./images/act6act5act1x2combo.gif) no-repeat center top;
+}
 .x2combo .header,
 .x2combo .content,
 .x2combo .footer-bannerframe {
@@ -342,16 +347,15 @@ X2COMBO PAGES
     max-width: 1320px; /* 650 + 20 + 650 */
 }
 .x2combo .x2combo-td {
+    display: block;
     max-width: 650px;
     min-width: 350px;
 }
 .x2combo .x2combo-middle-padding {
     padding: 0 10px;
 }
-.x2combo  #x2combo-header{
-    height: 44px;
-    margin: 0px auto;
-    background: #232323 url(./images/act6act5act1x2combo.gif) no-repeat center top;
+.x2combo .x2combo-td .pagefoot {
+    min-height: 30px;
 }
 /* special effect of "next page" link text */
 .x2combo  #x2np{
