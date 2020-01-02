@@ -356,6 +356,7 @@ X2COMBO PAGES
 /* special effect of "next page" link text */
 .x2combo  #x2np{
     display: block;
-    -ms-transform: matrix(1, -0.5236, 0.5236, 1, 100, -115) /* IE 9 */ 
-    transform: matrix(1, -0.5236, 0.5236, 1, 100, -115)
+    -ms-transform: matrix(1, -0.5236, 0.5236, 1, 100, -115); /* IE 9 */ 
+    transform: matrix(1, -0.5236, 0.5236, 1, 100, -115);
+    transform: matrix(1, -0.5236, 0.5236, 1, 100, -115);
 }
