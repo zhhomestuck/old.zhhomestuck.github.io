@@ -89,12 +89,12 @@ b {font-weight:bold;}
   padding: 15px 20px 0 20px;
 }
 /* note and log */
-div#note {
+div#note, div.note {
   padding-top: 50px;
   text-align: left;
   font-size: 0.75em;
 }
-span#note {
+span#note, span.note {
   color: inherit;
   font-size: 0.7em;
   vertical-align: text-top;
@@ -355,7 +355,9 @@ X2COMBO PAGES
     padding: 0 10px;
 }
 .x2combo .x2combo-td .pagefoot {
-    min-height: 30px;
+    margin-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
 /* special effect of "next page" link text */
 .x2combo  #x2np{
