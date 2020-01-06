@@ -348,6 +348,7 @@ X2COMBO PAGES
 }
 .x2combo .x2combo-td {
     display: block;
+    font-size: 15px; /* somehow table tag changes font size */
     max-width: 650px;
     min-width: 350px;
 }
