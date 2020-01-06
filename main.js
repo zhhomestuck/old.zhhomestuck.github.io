@@ -4,8 +4,11 @@ var makeSpoilerLog = function(parentNode) {
         parentNode = document;
     }
     let spoilerDOMs = [].slice.call(parentNode.getElementsByClassName("log-outer-outer"));
-    let spoilerDOMThatUseIdAttr = parentNode.getElementById("log-outer-outer"); // beccause I fucked up
-    if (spoilerDOMThatUseIdAttr !== null) {
+    let spoilerDOMThatUseIdAttr = undefined;
+    if (parentNode === undefined) {
+        spoilerDOMThatUseIdAttr = parentNode.getElementById("log-outer-outer"); // beccause I fucked up
+    }
+    if (spoilerDOMThatUseIdAttr !== undefined) {
         spoilerDOMs.push(spoilerDOMThatUseIdAttr)
     }
     for (let i in spoilerDOMs) {
