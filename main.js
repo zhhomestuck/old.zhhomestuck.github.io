@@ -1,7 +1,10 @@
 // Make log
-var makeSpoilerLog = function() {
-    let spoilerDOMs = [].slice.call(document.getElementsByClassName("log-outer-outer"));
-    let spoilerDOMThatUseIdAttr = document.getElementById("log-outer-outer"); // beccause I fucked up
+var makeSpoilerLog = function(parentNode) {
+    if (parentNode === "undefined") {
+        parentNode = document;
+    }
+    let spoilerDOMs = [].slice.call(parentNode.getElementsByClassName("log-outer-outer"));
+    let spoilerDOMThatUseIdAttr = parentNode.getElementById("log-outer-outer"); // beccause I fucked up
     if (spoilerDOMThatUseIdAttr !== null) {
         spoilerDOMs.push(spoilerDOMThatUseIdAttr)
     }
@@ -24,6 +27,7 @@ var checkHTTPSWarning = function() {
             let warning_node = document.createElement("div");
             warning_node.innerHTML = warning_text;
             warning_node.style.fontSize = "12px";
+            warning_node.style.lineHeight = "12px";
             document.getElementById("pagehead").appendChild(warning_node);
         }
     }

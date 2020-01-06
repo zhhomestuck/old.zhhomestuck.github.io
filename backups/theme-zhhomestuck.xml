@@ -23,6 +23,7 @@
 	  //]]>
 	</script>
 	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/><!-- code edited to link as absolute url to homestuck.com -->
+    <script src='https://zhhomestuck.github.io/main.js'/> <!-- define makeSpoilerLog and checkHTTPSWarning -->
     <b:skin><![CDATA[
       
 /*
@@ -138,40 +139,19 @@ a:hover {
 text-decoration:underline;
 cursor: pointer;
 }
-.content {
-width: 950px;
-padding: 0;
-margin: 0 auto;
-background: #c6c6c6;
-height: auto;
-}
-.mobile .content {
-width: 100vw; max-width: 650px;
-margin: auto;
-border: none;
-}
-.content-outer {
-width: 650px;
-margin: 0 auto;
-padding: 0;
-}
-.content-inner {
-background-position: left -0;
-background-color: transparent;
-padding: 6px 0 0 0;
-}
-.mobile .content-inner, .mobile .content-outer {
-padding: 0;
-width: 100vw; max-width: 650px;
-}
-.main-inner .date-outer {
-margin-bottom: 0em;
-}
+.content {}
+.mobile .content {}
+.content-outer {}
+.content-inner {}
+.mobile .content-inner, .mobile .content-outer {}
+.main-inner .date-outer {}
 /* Header
 ----------------------------------------------- */
 /* Headings
 ----------------------------------------------- */
-body .navbar {display: none;}
+body .navbar {
+display: none;
+}
 h2 {
 font:20px &#39;Microsoft JhengHei&#39; #000000;
 }
@@ -179,11 +159,7 @@ font:20px &#39;Microsoft JhengHei&#39; #000000;
 font: $(date.font);
 color: $(date.text.color);
 }
-.footer-inner {
-margin: 0 auto;
-padding: 0;
-width: 950px;
-}
+.footer-inner {}
 .mobile .footer-inner {
 width: auto;
 }
@@ -212,31 +188,14 @@ width: 100vw; max-width: 650px;
 
 /* Posts
 ----------------------------------------------- */
-h3.post-title {
-margin: 0; padding: 0;
-}
-.main-inner .column-center-outer {
-margin: 0px; padding: 0px;
-}
-.mobile .column-center-outer {
-width: 100vw; max-width: 650px;
-}
-.post-body {
-margin: 0; padding: 0;
-background: #c6c6c6;
-}
-.post-header {
-margin: 0; line-height: 1.4;
-}
-.post-footer {
-margin: 0; line-height: 1;
-background-color: #c6c6c6;
-}
-.post-footer-line-1, .post-footer-line-2, .post-footer-line-3 {
-}
-.post-footer .item-control {
-/* display: inline; */
-}
+h3.post-title {}
+.main-inner .column-center-outer {}
+.mobile .column-center-outer {}
+.post-body {}
+.post-header {}
+.post-footer {}
+.post-footer-line-1, .post-footer-line-2, .post-footer-line-3 {}
+.post-footer .item-control {}
 #blog-pager {
 font-size: 140%;
 }
@@ -370,386 +329,427 @@ width: auto;
 ]]>
     </b:template-skin>
     <style id='zhhomestuck-style' type='text/css'>
-      body {
-        font-family: Verdana, Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;;
-        font-size: 15px;
-        color: #000000;
-        margin: 0px;
-        padding: 0px;
-        background-color: #535353;
-      }
-      body.mobile {
-        width: auto; min-width: 300px;
-        font-size: 1.05em;
-      }
-      /* FOR MOBILE WIDTH SETTING */
-      .mobile .mspanav, .mobile .widget,
-      .mobile .pagehead,
-      .mobile .pagebody, .mobile .pagebody img, .mobile .pagebody div img,
-      .mobile .pagefoot,
-      #contribute, #contribute a {
-        width: 100vw; max-width: 650px;
-      }
-      div, .pagebody div img, table, td {
-        margin: 0; padding: 0;
-        border: none;
-        border-spacing: 0;
-        text-align: -webkit-center; text-align: center;
-      }
-      b {font-weight:bold;}
-      /* nav */
-      .mspanav {
-        width: 950px;
-        margin: 0 auto;
-        background-color: #5a5a5a; 
-      }
-      .mspanavMobile {
-        padding: 5px 0;
-        margin: -10px auto 15px auto;
-        background: #535353;
-        font-size: 14px;
-      }
-      .mspanavMobile a {
-        color: #ffffff;
-        padding: 4px 2%;
-        margin: 0 -2px;
-      }
-      .mspanav {
-        font-family: Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;, sans-serif;
-        font-weight: bold;
-        color: #ffffff;
-        font-size: 13px;
-        height: 20px;
-      }
-      .mspanav a {
-        color: inherit;
-        margin: 0 3px;
-      }
-      .mspanav img {
-        vertical-align: middle;
-        border: 0;
-      }
-      /* mspa content */
-      .content-inner {
-        color: #000000;
-        margin: 0 auto;
-		position: relative;
-        width: 650px;
-        background: #c6c6c6;
-        text-align: -webkit-center; text-align: center;
-      }
-      .mobile .content-inner {/* already set in template skin*/}
-      /* for all PH, PB and PF */
-      .pagehead, .pagebody, .pagefoot {
-        background-color: #eeeeee;
-      }
-      /* PH */
-      .pagehead {
-        padding-top: 14px;
-        font-weight: bold;
-        font-size: 32px;
-        font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
-      }
-      .mobile .pagehead { font-size: 28px;}
-      /* PB */
-      .pagebody {
-		position: relative;
-		width: 650px;
-        border-spacing: 0;
-        font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
-      }
-      .pagebody img { 
-        border: 0;
-        margin: 10px 0 -4px 0;
-      }
-      .pagebody div { /* 內文 */
-        vertical-align: middle;
-        padding: 15px 25px 0 25px;
-        background-color: #eeeeee;
-      }
-      .mobile .pagebody img { height: auto;}
-      .mobile .pagebody div img { width: auto; max-width: 90vw; height: auto;}
-      .mobile .pagebody div { padding: 15px;}
-	  /* Viz and Homestuck Active Contents */
-	  .pagebody embed {
-		margin: 10px 0 -4px 0;
-		width: 650px;
-		height: 450px;
-      }
-	  .mobile .pagebody embed,
-	  .mobile .pagebody iframe,
-      .mobile .pagebody object {
-		padding: 0;
-        width: 100vw; max-width: 650px;
-        height: 69vw; max-height:450px;
-      }
-	  #content_container, #animation_container, #_preload_div_ {
-		padding: 0;
-		margin: 0 auto;
-      }
-      /* PF */
-      .pagefoot {
-        padding: 10px 20px 20px 20px;
-        text-align: left;
-        font-size: 24px;
-        font-family: Verdana, Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;, monospace;
-      }
-      .mobile .pagefoot {
-        padding: 20px 10px;
-        box-sizing: border-box;
-      }
-      a.blog-pager-newer-link {
-        line-height: 30px !important;
-      }
-      .mobile a.blog-pager-newer-link {
-		width: auto;
-		height: auto;
-        font-size: 1em;
-		margin: -30px 10px 0 20px;
-      }
-	  #blog-pager-newer-link-wrapper-id::before {
-		content: &quot;&gt; &quot;
-      }
-      /* PFF */
-      .pagefooter-footer {
-        text-align: left;
-        font-weight: bold;
-        font-size: 13px;
-        padding-top: 35px;
-      }
-	  .mobile .pagefooter-footer {
-		font-size: 12px;
-		padding-top: 15px;
-      }
-      #pagefooter-footer-url {
-        font-size: 12px;
-      }
-      /* note and log */
-      div#note {
-        padding-top: 30px;
-        margin-bottom: -5px;
-      }
-      #note {
-        color: #000000;
-        font-size: 0.7em;
-        vertical-align: text-top;
-        position: relative;
-        top: -2px;
-        text-align: left;
-      }
-      div.log-outer {
-        width: 600px;
-        border: 1px dashed gray;
-        padding: 1px 0;
-        box-sizing: border-box;
-      }
-      div#log-outer-outer, div.log-outer div {
-        padding: 0;
-      }
-      div.log-outer button {
-        margin: 0 auto; 
-      }
-      div.log-inner {
-        width: 90%;
-        border: none;
-        text-align: left;
-        margin: auto; margin-bottom: 8px;
-        font-size: 1em;
-        line-height: 1.1;
-      }
-      div.log-inner img {
-        margin-left: -56px; /* 使log內的圖片對齊外邊線 */
-        border: 0;
-      }
-      div.log-inner span img {
-        width: auto;
-        margin: 0; /* 若要讓使log內的圖片變回正常則要把img包在span裡面 */
-      }
-	  div.authorlog {
-		margin: 0 5px;
-        border: 3px solid #c6c6c6;
-        padding: 15px 5%;
-	    background-color: #ffffff;
-        box-sizing: border-box;
-		text-align: left;
-        line-height: 1.1;
-      }
-      .mobile .log-outer,
-      .mobile div.log-inner img,
-      .mobile div.log-outer,
-      .mobile div.log-outer div,
-      .mobile div.log-inner span img {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 0;
-      }
-      /* scroll texts */
-      .div-scroll {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        margin: 0; padding: 0;
-        height: 150px;
-        border: dashed 1px gray;
-        text-align: -webkit-center; text-align: center;
-      }
-      /* Quirks */
-      #gamzee b {
-        font-weight: normal;
-        font-size: 66%;
-        vertical-align: -2px;
-      }
-	   #arquius span img.shades {
-		background: url(&quot;https://zhhomestuck.github.io/images/arquius_shades.png&quot;) no-repeat;
-		margin: 0;
-    	padding: 8px 19px;
-		border: 0;
-      }
-	   #arquius span span.glitch {
-		background: url(&quot;https://zhhomestuck.github.io/images/arspritetxt_glitch.gif&quot;) repeat-x left center;
-		display: inline-block;
-      }
-      /* footer */
-      #contribute, #contribute a {
-        text-align: -webkit-center; text-align: center;
-        text-decoration: none;
-        width: 100vw; max-width: 650px;
-      }
-      footer {
-        background-color: #535353;
-        margin: 0; 
-      }
-      .footer-outer {
-        width: 950px;
-        margin: 0 auto;
-      }
-      .mobile .footer-outer { width: auto;}
-      /* widget (NEWS and LATEST UPDATE) */
-      .columns-cell {
-        vertical-align: middle;
-        width: 255px;
-        background: #efefef;
-        font-family: Courier;
-      }
-      .widget { margin: 0;}
-      #latest-update {
-        width: 280px;
-        margin-right: -300px;
-        border-right: solid 11px #535353;
-      }
-      #news {
-        min-height: 550px; width: 650px;
-        border: solid #c6c6c6;
-        border-width: 7px 0 0 7px;
-      }
-      .latest-update-inner {
-        min-height: 550px;
-		background-color: #c6c6c6;
-        font-size: 13px;
-        line-height: 1.4;
-        text-align: left;
-		padding-left: 4px;
-        border: solid #eeeeee;
-        border-width: 7px 7px 0 0;
-      }
-      .mobile .widget {
-        background-color: #c6c6c6;
-        margin: 0 auto;
-      }
-      .mobile .widget-content { margin: 15px 0;}
-      .mobile #latest-update,
-      .mobile #news {
-        width: 100vw; max-width: 650px;
-        min-height: 550px;
-        padding: 0px;
-        text-align: center; text-align: -webkit-center;
-      }
-      .mobile .latest-update-inner {
-        font-size: 15px;
-        border: none;
-      }
-      /* Bannerframe */
-      .mspanav .footer-bannerframe { margin-top: 15px; background: #cdcdcd}
-      .footer-bannerframe {
-        background-image: url(&#39;https://zhhomestuck.github.io/images/bannerframe.png&#39;);
-        height: 110px;
-        vertical-align: bottom;
-        font-family: Courier, Verdana, monospace;
-        font-weight: bold;
-        color: #000000;
-      }
-      .footer-bannerframe div {
-        padding-top: 10px;
-        font-size: 36px;
-      }
-      .mobile footer div.footer-bannerframe { background-image: none !important;}
-      .mobile .footer-bannerframe div { font-size: 20px;}
-      .mobile .footer-bannerframe {
-        background-repeat: no-repeat;
-        height: auto;
-        padding-bottom: 7px;
-      }
-      .footer-pay {
-        margin: 15px auto;
-		padding: 4px 0;
-        border: #c6c6c6 7px solid;
-        font-size: 13px;
-        max-width: 950px;
-        background-color: #eeeeee;
-		box-sizing: border-box;
-      }
-	  /* INDEX PAGES */
-	  .index-page {
-		text-align: left;
-		margin-bottom: 15px;
-      }
-	  .index-page .pagehead {
-		text-align: left;
-		width: 650px;
-		font-size: 20px;
-		padding: 10px 0;
-      }
-	  .index-page .index-footer {
-        font-weight: bold;
-        font-size: 12px;
-        padding-top: 35px;
-      }
-	  .index-page a.index-footer {
-		font-weight: bold;
-		float: right;
-		position: relative;
-		top: -55px;
-      }
-	  .index-page .pagebody {
-		display: none;
-		max-height: 650px;
-		width: 650px;
-		overflow-x: hidden;
-		overflow-y: auto;
-		z-index: 100;
-		position: relative;
-		top: -52px;
-		padding-bottom: 15px;
-		margin-bottom: -35px;
-      }
-	  .index-page .pagebody img,
-	  .index-page .pagebody object,
-	  .index-page .pagebody embed,
-	  .index-page .pagebody iframe {
-		display: none;
-      }
-	  .index-page .pagebody img:after {
-		content: &quot;[images are hidden]&quot;;
-      }
-	  .mobile .mobile-index-title {
-		width: 80%;
-		text-align: left;
-      }
-	  /* For spcial pages */
-	  #tooltipimg {
-		display: none;
-		text-align: left;
-      }
+  /* CONTENT */
+  body {
+    font-family: Verdana, Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;;
+    font-size: 15px;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    background-color: #535353;
+  }
+  body.mobile {
+    width: auto; min-width: 300px;
+    font-size: 1.05em;
+  }
+  .content {
+    width: 950px;
+    padding: 0;
+    margin: 0 auto;
+    background: #c6c6c6;
+    height: auto;
+  }
+  .mobile .content {
+    width: 100vw; max-width: 650px;
+    margin: auto;
+    border: none;
+  }
+  .content-outer {
+    width: 650px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .content-inner {
+    background-position: left -0;
+    background-color: transparent;
+    padding: 6px 0 0 0;
+  }
+  .mobile .content-inner, .mobile .content-outer {
+    padding: 0;
+    width: 100vw; max-width: 650px;
+  }
+  .main-inner .date-outer {
+    margin-bottom: 0em;
+  }
+  .mobile .main-inner,
+    .mobile .column-center-inner {
+    width: 100vw; max-width: 650px;
+  }
+  .footer-inner {
+    margin: 0 auto;
+    padding: 0;
+    width: 950px;
+  }
+  /* FOR MOBILE WIDTH SETTING */
+  .mobile .mspanav, .mobile .widget,
+  .mobile .pagehead,
+  .mobile .pagebody, .mobile .pagebody img, .mobile .pagebody div img,
+  .mobile .pagefoot,
+  #contribute, #contribute a {
+    width: 100vw; max-width: 650px;
+  }
+  div, .pagebody div img, table, td {
+    margin: 0; padding: 0;
+    border: none;
+    border-spacing: 0;
+    text-align: -webkit-center; text-align: center;
+  }
+  b {font-weight:bold;}
+  /* nav */
+  .mspanav {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #5a5a5a; 
+  }
+  .mspanavMobile {
+    padding: 5px 0;
+    margin: -10px auto 15px auto;
+    background: #535353;
+    font-size: 14px;
+  }
+  .mspanavMobile a {
+    color: #ffffff;
+    padding: 4px 2%;
+    margin: 0 -2px;
+  }
+  .mspanav {
+    font-family: Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 13px;
+    height: 20px;
+  }
+  .mspanav a {
+    color: inherit;
+    margin: 0 3px;
+  }
+  .mspanav img {
+    vertical-align: middle;
+    border: 0;
+  }
+  /* mspa content */
+  .content-inner {
+    color: #000000;
+    margin: 0 auto;
+    width: 650px;
+    background: #c6c6c6;
+    text-align: -webkit-center; text-align: center;
+  }
+  .mobile .content-inner {/* already set in template skin*/}
+  /* for all PH, PB and PF */
+  .pagehead, .pagebody, .pagefoot {
+    background-color: #eeeeee;
+  }
+  /* PH */
+  .pagehead {
+    padding-top: 14px;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
+  }
+  .mobile .pagehead { font-size: 28px;}
+  /* PB */
+  .pagebody {
+    position: relative;
+    width: 650px;
+    border-spacing: 0;
+    font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
+  }
+  .pagebody img { 
+    border: 0;
+    margin: 10px 0 -4px 0;
+  }
+  .pagebody div { /* 內文 */
+    vertical-align: middle;
+    padding: 15px 25px 0 25px;
+    background-color: #eeeeee;
+  }
+  .mobile .pagebody img { height: auto;}
+  .mobile .pagebody div img { width: auto; max-width: 90vw; height: auto;}
+  .mobile .pagebody div { padding: 15px;}
+  /* Viz and Homestuck Active Contents */
+  .pagebody embed {
+    margin: 10px 0 -4px 0;
+    width: 650px;
+    height: 450px;
+  }
+  .mobile .pagebody embed,
+  .mobile .pagebody iframe,
+  .mobile .pagebody object {
+    padding: 0;
+    width: 100vw; max-width: 650px;
+    height: 69vw; max-height:450px;
+  }
+  #content_container, #animation_container, #_preload_div_ {
+    padding: 0;
+    margin: 0 auto;
+  }
+  /* PF */
+  .pagefoot {
+    padding: 10px 20px 20px 20px;
+    text-align: left;
+    font-size: 24px;
+    font-family: Verdana, Arial, Helvetica, &#39;Microsoft JhengHei&#39;, &#39;Microsoft YaHei&#39;, monospace;
+  }
+  .mobile .pagefoot {
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+  a.blog-pager-newer-link {
+    line-height: 30px !important;
+  }
+  .mobile a.blog-pager-newer-link {
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    margin: -30px 10px 0 20px;
+  }
+  #blog-pager-newer-link-wrapper-id::before {
+    content: &quot;&gt; &quot;
+  }
+  /* PFF */
+  .pagefooter-footer {
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 35px;
+  }
+  .mobile .pagefooter-footer {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+  #pagefooter-footer-url {
+    font-size: 12px;
+  }
+  /* note and log */
+  div#note {
+    padding-top: 30px;
+    margin-bottom: -5px;
+  }
+  #note {
+    color: #000000;
+    font-size: 0.7em;
+    vertical-align: text-top;
+    position: relative;
+    top: -2px;
+    text-align: left;
+  }
+  div.log-outer {
+    width: 600px;
+    border: 1px dashed gray;
+    padding: 1px 0;
+    box-sizing: border-box;
+  }
+  div#log-outer-outer,
+  div.log-outer-outer,
+  div.log-outer div {
+    padding: 0;
+  }
+  div.log-outer button {
+    margin: 0 auto; 
+  }
+  div.log-inner {
+    width: 90%;
+    border: none;
+    text-align: left;
+    margin: auto; margin-bottom: 8px;
+    font-size: 1em;
+    line-height: 1.1;
+  }
+  div.log-inner img {
+    margin-left: -56px; /* 使log內的圖片對齊外邊線 */
+    border: 0;
+  }
+  div.log-inner span img {
+    width: auto;
+    margin: 0; /* 若要讓使log內的圖片變回正常則要把img包在span裡面 */
+  }
+  div.authorlog {
+    margin: 0 5px;
+    border: 3px solid #c6c6c6;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .mobile .log-outer,
+  .mobile div.log-inner img,
+  .mobile div.log-outer,
+  .mobile div.log-outer div,
+  .mobile div.log-inner span img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* scroll texts */
+  .div-scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0; padding: 0;
+    height: 150px;
+    border: dashed 1px gray;
+    text-align: -webkit-center; text-align: center;
+  }
+  /* Quirks */
+  #gamzee b {
+    font-weight: normal;
+    font-size: 66%;
+    vertical-align: -2px;
+  }
+   #arquius span img.shades {
+    background: url(&quot;https://zhhomestuck.github.io/images/arquius_shades.png&quot;) no-repeat;
+    margin: 0;
+    padding: 8px 19px;
+    border: 0;
+  }
+   #arquius span span.glitch {
+    background: url(&quot;https://zhhomestuck.github.io/images/arspritetxt_glitch.gif&quot;) repeat-x left center;
+    display: inline-block;
+  }
+  /* footer */
+  #contribute, #contribute a {
+    text-align: -webkit-center; text-align: center;
+    text-decoration: none;
+    width: 100vw; max-width: 650px;
+    margin: 0 auto;
+  }
+  footer {
+    background-color: #535353;
+    margin: 0; 
+  }
+  .footer-outer {
+    width: 950px;
+    margin: 0 auto;
+  }
+  .mobile .footer-outer { width: auto;}
+  /* widget (NEWS and LATEST UPDATE) */
+  .columns-cell {
+    vertical-align: middle;
+    width: 255px;
+    background: #efefef;
+    font-family: Courier;
+  }
+  .widget { margin: 0;}
+  #latest-update {
+    width: 280px;
+    margin-right: -300px;
+    border-right: solid 11px #535353;
+  }
+  #news {
+    min-height: 550px; width: 650px;
+    border: solid #c6c6c6;
+    border-width: 7px 0 0 7px;
+  }
+  .latest-update-inner {
+    min-height: 550px;
+    background-color: #c6c6c6;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 4px;
+    border: solid #eeeeee;
+    border-width: 7px 7px 0 0;
+  }
+  .mobile .widget {
+    background-color: #c6c6c6;
+    margin: 0 auto;
+  }
+  .mobile .widget-content { margin: 15px 0;}
+  .mobile #latest-update,
+  .mobile #news {
+    width: 100vw; max-width: 650px;
+    min-height: 550px;
+    padding: 0px;
+    text-align: center; text-align: -webkit-center;
+  }
+  .mobile .latest-update-inner {
+    font-size: 15px;
+    border: none;
+  }
+  /* Bannerframe */
+  .mspanav .footer-bannerframe { margin-top: 15px; background: #cdcdcd}
+  .footer-bannerframe {
+    background-image: url(&#39;https://zhhomestuck.github.io/images/bannerframe.png&#39;);
+    height: 110px;
+    vertical-align: bottom;
+    font-family: Courier, Verdana, monospace;
+    font-weight: bold;
+    color: #000000;
+  }
+  .footer-bannerframe div {
+    padding-top: 10px;
+    font-size: 36px;
+  }
+  .mobile footer div.footer-bannerframe { background-image: none !important;}
+  .mobile .footer-bannerframe div { font-size: 20px;}
+  .mobile .footer-bannerframe {
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 7px;
+  }
+  .footer-pay {
+    margin: 15px auto;
+    padding: 4px 0;
+    border: #c6c6c6 7px solid;
+    font-size: 13px;
+    max-width: 950px;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+  }
+  /* INDEX PAGES */
+  .index-page {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .index-page .pagehead {
+    text-align: left;
+    width: 650px;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .index-page .index-footer {
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 35px;
+  }
+  .index-page a.index-footer {
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: -55px;
+  }
+  .index-page .pagebody {
+    display: none;
+    max-height: 650px;
+    width: 650px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    position: relative;
+    top: -52px;
+    padding-bottom: 15px;
+    margin-bottom: -35px;
+  }
+  .index-page .pagebody img,
+  .index-page .pagebody object,
+  .index-page .pagebody embed,
+  .index-page .pagebody iframe {
+    display: none;
+  }
+  .index-page .pagebody img:after {
+    content: &quot;[images are hidden]&quot;;
+  }
+  .mobile .mobile-index-title {
+    width: 80%;
+    text-align: left;
+  }
+  /* For spcial pages */
+  #tooltipimg {
+    display: none;
+    text-align: left;
+  }
     </style>
     <b:if cond='data:blog.isMobile'>
       <style>
@@ -1447,16 +1447,14 @@ head.appendChild(script);
                         </b:includable>
                         <b:includable id='post' var='post'>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
-									    <style>  
-                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ transform: matrix(1, -0.4, 0.4, 1, 0, -45);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-footer-url {display: none;}
-						    			 </style>
-						    			 <b:if cond='data:newerPageUrl'>
-                              <!-- -->
-									    </b:if>
+							<style name='x2combo' type='text/css'>  
+                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 .pagefooter-footer {float: left; margin-top: 24px; padding: 15px 0; background-color: #c6c6c6;} #x2combo2 .pagefoot {height: 66px;} #x2combo2 .pagefooter-footer {display: none;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ transform: matrix(1, -0.4, 0.4, 1, 0, -45);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-footer-url {display: none;}
+						    </style>
+                            <div id='is-x2combo-page'/>
                           </b:if>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;trickster&quot;)'>
                             <style name='trickster' type='text/css'>
-										    a {color: red;}body {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bg.gif&#39;);}.content,.mspanavMobile, #latest-update {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bluetiles.gif&#39;);}div#mspanav {height: 24px; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_headercandy.gif&#39;); animation: trickster-scroll 20s linear infinite; -webkit-animation: trickster-scroll 20s linear infinite;}.content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner {background-color: #ff73fd; color:#f9fd6b}.pagefoot {padding-bottom: 0px;}.footer-bannerframe, .mspanav .footer-bannerframe {margin-top:20px; height:120px; background: transparent url(&#39;http://zhhomestuck.github.io/images/trickster_theme_facefooter.gif&#39;) no-repeat; color: #f9fd6b;}span.mspanav, .footer-bannerframe #contribute-img {visibility: hidden;}footer, .footer-outer, .mspanav {background-color: transparent;}#latest-update {border-right:solid 11px #3fe000;}.latest-update-inner, #news {border:none;}.trickster-text {-webkit-animation: trickster-glow 0.25s linear infinite; animation: trickster-glow 0.25s step(4,end) infinite;}@-webkit-keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}@keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
+							  a {color: red;}body {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bg.gif&#39;);}.content,.mspanavMobile, #latest-update {background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_bluetiles.gif&#39;);}div#mspanav {height: 24px; background-image: url(&#39;http://zhhomestuck.github.io/images/trickster_theme_headercandy.gif&#39;); animation: trickster-scroll 20s linear infinite; -webkit-animation: trickster-scroll 20s linear infinite;}.content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner {background-color: #ff73fd; color:#f9fd6b}.pagefoot {padding-bottom: 0px;}.footer-bannerframe, .mspanav .footer-bannerframe {margin-top:20px; height:120px; background: transparent url(&#39;http://zhhomestuck.github.io/images/trickster_theme_facefooter.gif&#39;) no-repeat; color: #f9fd6b;}span.mspanav, .footer-bannerframe #contribute-img {visibility: hidden;}footer, .footer-outer, .mspanav {background-color: transparent;}#latest-update {border-right:solid 11px #3fe000;}.latest-update-inner, #news {border:none;}.trickster-text {-webkit-animation: trickster-glow 0.25s linear infinite; animation: trickster-glow 0.25s step(4,end) infinite;}@-webkit-keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}@keyframes trickster-glow{0%{color: #fff6d1;}50%{color: #f0d1ff;}100%{color: #d1ffe3;}}@-webkit-keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}@keyframes trickster-scroll{from{background-position:609px 0}to{background-position:0 0}}
 									    </style>
                             <div id='is-trickster-page'/>
                           </b:if>
@@ -1680,20 +1678,27 @@ head.appendChild(script);
                               <!-- check if this post is a x2combo page -->
                               <b:if cond='data:newerPageUrl'>
                                 <script type='text/javascript'>
-                                  if (document.URL.indexOf(&quot;x2combo=1&quot;)&lt;0) { // if is not inside x2ifame
-                                    var x2combo1 = document.getElementById(&quot;x2combo1&quot;);
-                                    var x2combo2 = document.getElementById(&quot;x2combo2&quot;);
-                                    var post1 = document.getElementsByClassName(&quot;post&quot;)[0];
-                                    x2combo2.style.display = &quot;none&quot;;
-                                    x2combo1.appendChild(post1);
-                                    var x2newerLink = $(&quot;a.blog-pager-newer-link&quot;).attr(&quot;href&quot;);
-                                    $(&quot;#x2combo2&quot;).load(x2newerLink+&quot;?x2combo=1 .pagehead, .pagebody, .pagefoot&quot;, function() {});
-                                  }
-                                  x2combo2.style.display = &quot;table-cell&quot;;
-                                  document.getElementById(&quot;blog-pager-newer-link-wrapper-id&quot;).innerHTML = &quot;<a href='#x2combo2'>==&gt; <span id='x2np'>==&gt;</span></a>&quot;;
+                                  // <![CDATA[
+                                  let x2combo1 = document.getElementById("x2combo1");
+                                  let x2combo2 = document.getElementById("x2combo2");
+                                  x2combo2.style.display = "none";
+                                  x2combo1.appendChild(document.getElementsByClassName("post")[0]);
+                                  let x2newerLink = $("a.blog-pager-newer-link").attr("href");
+                                  $("#x2combo2").load(x2newerLink+" .pagehead, .pagebody, .pagefoot", function() {
+                                    $("#x2combo2 a.blog-pager-newer-link").text("==> ==>");
+                                    $("#x2combo2 #pff").remove();
+                                    makeSpoilerLog(x2combo2);
+                                    x2combo2.style.display = "table-cell";
+                                  });
+                                  $("#x2combo1 #blog-pager-newer-link-wrapper-id").html("<a href='#x2combo2'>==&gt; <span id='x2np'>==&gt;</span></a>");
+                                  // ]]>
                                 </script>
                               </b:if>
                             </b:if>
+                            <script type='text/javascript'>
+                              makeSpoilerLog();
+                              checkHTTPSWarning();
+                            </script>
                         </b:includable>
                         <b:includable id='postQuickEdit' var='post'>
                           <b:if cond='data:post.editUrl'>
@@ -1997,24 +2002,6 @@ head.appendChild(script);
                         </b:includable>
                       </b:widget>
                     </b:section> 
-                    <script type='text/javascript'>
-					  // Make PesterLog
-                      var replaceSpoiler = document.getElementById(&quot;log-outer-outer&quot;);
-                      var replaceSpoilerName = &quot;Pesterlog&quot;;
-                      if(replaceSpoiler) {
-                        if (&quot;name&quot; in replaceSpoiler.attributes) replaceSpoilerName = replaceSpoiler.getAttribute(&quot;name&quot;);
-                        replaceSpoiler.innerHTML = &quot;&lt;div class=\&quot;log-outer\&quot;&gt;&lt;div&gt;&lt;button type=\&quot;button\&quot; onmouseover=\&quot;this.sv=this.style.backgroundColor;this.style.backgroundColor=\&#39;#777777\&#39;;\&quot; onmouseout=\&quot;if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\&#39;\&#39;;\&quot; onclick=\&quot;this.parentNode.parentNode.childNodes[1].style.display=\&#39;block\&#39;;this.parentNode.style.display=\&#39;none\&#39;;return false;\&quot; title=\&quot;點擊以顯示\&quot;&gt;Show &quot; + replaceSpoilerName + &quot;&lt;/button&gt;&lt;/div&gt;&lt;div class=\&quot;spoiler\&quot; style=\&quot;display:none;\&quot;&gt;&lt;div&gt;&lt;button type=\&quot;button\&quot; onclick=\&quot;this.parentNode.parentNode.parentNode.childNodes[0].style.display=\&#39;block\&#39;;this.parentNode.parentNode.style.display=\&#39;none\&#39;;return false;\&quot; title=\&quot;點擊以隱藏\&quot;&gt;Hide &quot; + replaceSpoilerName + &quot;&lt;/button&gt;&lt;/div&gt;&lt;div class=\&quot;log-inner\&quot;&gt;&quot; + replaceSpoiler.innerHTML + &quot;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- LOG END --&gt;&quot;;
-                      }
-                      // Warning for HTTPS connection
-					  var has_interact_elemment = document.getElementsByTagName(&quot;embed&quot;).length != 0 || document.getElementsByTagName(&quot;object&quot;).length != 0;
-					  if(has_interact_elemment){
-					    var warning_text = &quot;<span>由於某些系統已停止支援Flash 部分互動頁面可能無法顯示 請到官方網站觀看更新的版本 [<a onclick='this.parentNode.style.display=\&quot;none\&quot;;' style='color:#0000ff;'>隱藏此訊息</a>]</span>&quot;;
-					    var warning_node = document.createElement(&quot;div&quot;);
-						warning_node.innerHTML = warning_text;
-						warning_node.style.fontSize = &quot;12px&quot;;
-						warning_node.style.lineHeight = &quot;12px&quot;;
-					    document.getElementById(&quot;pagehead&quot;).appendChild(warning_node);}
-                    </script>
                   </div>
                 </div>
                 <div class='column-left-outer'>
@@ -2090,9 +2077,9 @@ head.appendChild(script);
     <script id='new-page-title-script' type='text/javascript'>
       //<![CDATA[
       $(document).ready(function(){
-        if ($("div#is-trickster-page").length == 0){
+        if ($("div#is-trickster-page").length == 0 && $("div#is-x2combo-page").length == 0){
           var newerLink = $("a.blog-pager-newer-link").attr("href"); 
-          $("a.blog-pager-newer-link").load(newerLink+"?m=1 .pagehead:first", function() { 
+          $("a.blog-pager-newer-link").load(newerLink+"?m=1 .pagehead:first-child", function() { 
             var newerLinkTitle = $("a.blog-pager-newer-link").text();
             $("a.blog-pager-newer-link").text(" " + newerLinkTitle);
 
@@ -2166,38 +2153,30 @@ head.appendChild(script);
   <b:widget id='HTML2' locked='false' mobile='yes' title='' type='HTML' version='1'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;div class=&quot;latest-update-inner&quot;&gt;&lt;img src=&quot;https://zhhomestuck.github.io/images/latestpages.png&quot; style=&quot;margin: 15px auto; position: absolute; left: 0; right: 0;&quot; /&gt;&lt;br /&gt;&lt;div style=&quot;text-align:left;margin-top:45px;&quot;&gt;最近更新&#65306;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-var postTitle = new Array(), 
-    postUrl = new Array(),
-    postYear = new Array(),
-    postMonthDate = new Array();
+let latest_postTitle = new Array(), latest_postUrl = new Array(), latest_postYearMonthDate = new Array();
 function loadarchive(a) {
-    if (&quot;entry&quot; in a.feed) {
-        var d = a.feed.entry.length;
-        for (var h = 0; h &lt; d; h++) {
-             var m = a.feed.entry[h],
-                 n = m.published.$t.substring(5, 7) + &quot;/&quot; + m.published.$t.substring(8, 10), j;
-             for (var f = 0; f &lt; m.link.length; f++) {
-                 if (m.link[f].rel == &quot;alternate&quot;) {
-                     j = m.link[f].href;
-                     break
-                 }
-             }
-             postTitle.push(m.title.$t);
-             postUrl.push(j);
-             postMonthDate.push(n);
-             postYear.push(m.published.$t.substring(2, 4));
-         }
-     }
-     var a = 0,
-         b = 0;
-     do {
-        document.write(postMonthDate[a] + &quot;/&quot; + postYear[a] +  &#39; - &lt;a href=&quot;&#39; + postUrl[a] + &#39;&quot;&gt;&quot;&#39; +postTitle[a] + &#39;&quot;&lt;/a&gt;&#39;);
-        document.write(&#39;&lt;br&#39; + &#39;/&gt;&#39;);
-        b = (++a);
-     } while (b &lt; postTitle.length);
+  if (&quot;entry&quot; in a.feed) {
+    let d = a.feed.entry.length;
+    for (let h = 0; h &lt; d; h++) {
+      let j = &quot;&quot;, m = a.feed.entry[h], n = m.published.$t;
+      if (n) {n = n.substring(2, 4)+&quot;/&quot;+n.substring(5, 7)+&quot;/&quot;+n.substring(8, 10);}
+      for (var f = 0; f &lt; m.link.length; f++) {
+        if (m.link[f].rel == &quot;alternate&quot;) {
+           j = m.link[f].href;
+           break;
+        }
+      }
+      latest_postTitle.push(m.title.$t);
+      latest_postUrl.push(j);
+      latest_postYearMonthDate.push(n);
+    }
+  }
+  for(let a = 0; a &lt; latest_postTitle.length; ++a) {
+    document.write(latest_postYearMonthDate[a]+&#39; - &lt;a href=&quot;&#39;+latest_postUrl[a]+&#39;&quot;&gt;&quot;&#39;+latest_postTitle[a]+&#39;&quot;&lt;/a&gt;&#39;);
+    document.write(&#39;&lt;br&#39; + &#39;/&gt;&#39;);
+  }
 }
-
-&lt;/script&gt;&lt;script src=&quot;http://zhhomestuck.blogspot.com/feeds/posts/summary/?alt=json-in-script&amp;amp;callback=loadarchive&amp;amp;max-results=36&quot;&gt;&lt;/script&gt;&lt;/div&gt;</b:widget-setting>
+&lt;/script&gt;&lt;script src=&quot;http://zhhomestuck.blogspot.com/feeds/posts/summary/?alt=json-in-script&amp;amp;callback=loadarchive&amp;amp;max-results=30&quot;&gt;&lt;/script&gt;&lt;/div&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
@@ -2213,7 +2192,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 73%</b></span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />這個週末沒有更新，因為我要對Eridan的語癖做以下修改<br /><b>1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現</b><br /><b>2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。</b><br /><br />移除第一點的語癖是因為在長達四年的翻譯過程中，這個語癖完全沒有一致地讓「哪個字一定會轉換成哪個字」，同時它在原文中的對應語癖，現在事後看來太過小題大作、不成比例。<br /><br />題外話，雖然Sollux的語癖也有這樣的情況，但要刪掉重寫這麼多東西已經太困難，而且捲舌/不捲音的字的在建立對應規則上相對比較容易。以下是我在寫Sollux的對話時常用的規則<span style="text-decoration: line-through;">，如果你們不知道，現在你們知道了</span>：<br /><br />字的替代，宜以<b>同聲調、為常用字、詞性相似、結構相似</b>的優先順序考慮。<br />例如：「找」替代為「澡」而非「早」(結構相似)。「一隻狗」的「隻」為量詞，替代為代名詞的「茲」(同聲調、常用字)，而非「資」。<br />如果在同聲調裡找不到非捲舌音的字，則一聲和二聲優先相找替代、三聲和四聲優先相找替代、輕聲找一聲與三聲替代。例如：「什」二聲找一聲的「森」、「整」三聲找四聲的「贈」、「暢」四聲找無三聲而用「滄」(詞性相似、結構相似)<br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或</span>還是會維護並更新網站外觀和代碼。外觀仍會依照MSPA的最後版本為準。<br /><br />我最近會慢慢將一些以前的Flash動畫頁加上官方的替代圖片或Youtube影片，未來如果找到方法，可能也會加上官方的HTML5動畫。可能不時會有頁面或連結壞掉的情況。<hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br /><b>1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現</b><br /><b>2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。</b><br /><br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或</span>還是會維護並更新網站外觀和代碼。外觀仍會依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是較優先的事項。還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。<hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
