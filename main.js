@@ -1,6 +1,6 @@
 // Make log
 var makeSpoilerLog = function(parentNode) {
-    if (parentNode === "undefined") {
+    if (parentNode === undefined) {
         parentNode = document;
     }
     let spoilerDOMs = [].slice.call(parentNode.getElementsByClassName("log-outer-outer"));
