@@ -522,11 +522,11 @@ width: auto;
     font-size: 12px;
   }
   /* note and log */
-  div#note {
+  div#note, .div.note {
     padding-top: 30px;
     margin-bottom: -5px;
   }
-  #note {
+  #note, .note {
     color: #000000;
     font-size: 0.7em;
     vertical-align: text-top;
@@ -574,14 +574,16 @@ width: auto;
     line-height: 1.1;
   }
   .mobile .log-outer,
-  .mobile div.log-inner img,
   .mobile div.log-outer,
-  .mobile div.log-outer div,
-  .mobile div.log-inner span img {
+  .mobile div.log-inner img,
+  .mobile div.log-outer div {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding: 0;
+  }
+  .mobile div.log-inner span img {
+    width: auto;
   }
   /* scroll texts */
   .div-scroll {
@@ -950,6 +952,10 @@ head.appendChild(script);
                           <b:if cond='data:top.showDummy'>
                             <data:top.dummyBootstrap/>
                           </b:if>
+                          <script type='text/javascript'>
+                              makeSpoilerLog();
+                              checkHTTPSWarning();
+                            </script>
                         </b:includable>
                         <b:includable id='backlinkDeleteIcon' var='backlink'>
                           <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
@@ -1448,7 +1454,7 @@ head.appendChild(script);
                         <b:includable id='post' var='post'>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
 							<style name='x2combo' type='text/css'>  
-                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 .pagefooter-footer {float: left; margin-top: 24px; padding: 15px 0; background-color: #c6c6c6;} #x2combo2 .pagefoot {height: 66px;} #x2combo2 .pagefooter-footer {display: none;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(0.99, -0.5, 0.5, 0.99, 0, -16); /* IE 9 */ transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-footer-url {display: none;}
+                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 .pagefooter-footer {float: left; margin-top: 24px; padding: 15px 0; background-color: #c6c6c6;} #x2combo2 .pagefoot {height: 66px;} #x2combo2 .pagefooter-footer {display: none;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ transform: matrix(1, -0.4, 0.4, 1, 0, -45);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-footer-url {display: none;}
 						    </style>
                             <div id='is-x2combo-page'/>
                           </b:if>
@@ -1695,10 +1701,6 @@ head.appendChild(script);
                                 </script>
                               </b:if>
                             </b:if>
-                            <script type='text/javascript'>
-                              makeSpoilerLog();
-                              checkHTTPSWarning();
-                            </script>
                         </b:includable>
                         <b:includable id='postQuickEdit' var='post'>
                           <b:if cond='data:post.editUrl'>
@@ -2074,15 +2076,13 @@ head.appendChild(script);
                                                                   }, 10);
     </script>
 	<!-- Replace Older and Newer Post Link with Post Title Name -->
-    <script id='new-page-title-script' type='text/javascript'>
+    <script type='text/javascript'>
       //<![CDATA[
       $(document).ready(function(){
         if ($("div#is-trickster-page").length == 0 && $("div#is-x2combo-page").length == 0){
-          var newerLink = $("a.blog-pager-newer-link").attr("href"); 
-          $("a.blog-pager-newer-link").load(newerLink+"?m=1 .pagehead:first-child", function() { 
-            var newerLinkTitle = $("a.blog-pager-newer-link").text();
-            $("a.blog-pager-newer-link").text(" " + newerLinkTitle);
-
+          $("a#blog-pager-newer-link-id").load($("a#blog-pager-newer-link-id").attr("href")+" #pagehead", function() { 
+            var newerLinkTitle = $("a#blog-pager-newer-link-id").text();
+            $("a#blog-pager-newer-link-id").text(" " + newerLinkTitle);
           });
         }  
       }); //]]>
@@ -2099,8 +2099,9 @@ head.appendChild(script);
           </span>
           <br/>
           <a href='https://zhhomestuck.github.io/' style='color: #000000;'>
-            Github Archive
-          </a>
+            Github Pages</a> |
+          <a href='?m=1' id='to-mobile-url' style='color: #000000;'>
+            行動版網頁</a>
         </div>
       </div>
     </div>
@@ -2192,7 +2193,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br /><b>1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現</b><br /><b>2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。</b><br /><br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或</span>還是會維護並更新網站外觀和代碼。外觀仍會依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是較優先的事項。還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。<hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 76%</b></span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2020/3/18 - RM</span><br /><br /><b>因個人因素，03/22起將長時間停止更新。</b><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或更新網站外觀和代碼</span>(還是會有低程度的維護)。外觀仍會依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是較優先的事項。還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。</div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
