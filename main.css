@@ -285,7 +285,7 @@ body.sbahj, .sbahj footer {
 .sbahj .content-inner, .sbahj .page {
     background-color:#14ff23;
 }
-.footer-bannerframe {
+.sbahj .footer-bannerframe {
     margin-top: 20px;
     height: 120px;
     background-image: url('/images/mspalogo_sbahj.jpg');
