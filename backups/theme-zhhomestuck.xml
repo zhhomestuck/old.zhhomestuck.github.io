@@ -1418,14 +1418,18 @@ head.appendChild(script);
                             </script>
                             <div id='is-trickster-page'/>
                           </b:if>
+                          <b:if cond='data:post.labels any (l =&gt; l.name == &quot;sbahj&quot;)'>
+                            <!-- check if this post is sbahj page -->
+                            <style name='sbahj' type='text/css'>
+                              div,h3,td,dd,span,p,a,b,#contribute,#news,#pff {font-family:&#39;Comic Sans MS&#39;,&#39;華康海報體W12&#39;,&#39;標楷體&#39;;} body,footer,.mobile .widget{background-color:#0707ec;} .content,.footer-outer,.mspanavMobile{background-color:#fa00ec;} .mspanav,.mspanav-outer{background-color:#000000;font-size:14px;} .content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner{background-color:#14ff23;} .footer-bannerframe {margin-top:20px;height:120px;background-image:url(&#39;http://zhhomestuck.github.io/images/mspalogo_sbahj.jpg&#39;);background-repeat:no-repeat;} #latest-update{border-right:solid 11px #fa00ec;} .latest-update-inner, #news{border:none;} #news img{width:550px;height:30px;} .footer-bannerframe #contribute-img {float: right;}
+                             </style>
+                          </b:if>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
                             <style name='scratch_mobile' type='text/css'>
                               #s_header{max-height:120px;height:20vw;background-size:100% auto !important;background-repeat:no-repeat !important;}#s_header_src{display:none;}div#mspanavMobile{height: auto;}div,h3,td,dd,span,p,b,#contribute,#news,#pff{color:#ffffff;}a:link,a:hover,a:visited,a:active{color:#2cff4b;}#jump-to-outter a {color:#2cff4b !important;}body,footer,.mspanavMobile,.pagebody div.log-outer,.pagebody div.log-outer div,.pagebody div.log-inner,div.spoiler{background-color:#000000;}.mspanavMobile{font-size:14px;}.mspanavMobile a{color:#ffffff !important;}.mobile .content,.mobile .content-inner,.mobile .widget{background-color:#082a00;}.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,.latest-update-inner,.pagefooter-footer{background-color:#0e4603;}.pagefoot{padding-top:0;}.widget-content img,footer-bannerframe,.footer-bannerframe #contribute-img,.footer-pay {display:none;}.mspanav .footer-bannerframe{background:#0e4603;}</style>
                             <script>
                               document.getElementById(&quot;s_header&quot;).style.background = &quot;url(&#39;&quot; + document.getElementById(&quot;s_header_src&quot;).src + &quot;&#39;)&quot;;
                             </script>
-                          </b:if>
-                          <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
                           </b:if>
                         </b:includable>
                         <b:includable id='nextprev'>
@@ -1464,11 +1468,17 @@ head.appendChild(script);
 									    </style>
                             <div id='is-trickster-page'/>
                           </b:if>
+                          <b:if cond='data:post.labels any (l =&gt; l.name == &quot;sbahj&quot;)'>
+                            <!-- check if this post is sbahj page -->
+                            <style name='sbahj' type='text/css'>
+                              div,h3,td,dd,span,p,a,b,#contribute,#news,#pff {font-family:&#39;Comic Sans MS&#39;,&#39;華康海報體W12&#39;,&#39;標楷體&#39;;} body,footer,.mobile .widget{background-color:#0707ec;} .content,.footer-outer,.mspanavMobile{background-color:#fa00ec;} .mspanav,.mspanav-outer{background-color:#000000;font-size:14px;} .content-inner,.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,#news,.latest-update-inner{background-color:#14ff23;} .footer-bannerframe {margin-top:20px;height:120px;background-image:url(&#39;http://zhhomestuck.github.io/images/mspalogo_sbahj.jpg&#39;);background-repeat:no-repeat;} #latest-update{border-right:solid 11px #fa00ec;} .latest-update-inner, #news{border:none;} #news img{width:550px;height:30px;} .footer-bannerframe #contribute-img {float: right;}
+                             </style>
+                          </b:if>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
                             <!-- check if this post is s page -->
                             <style name='scratch' type='text/css'>
                               #latest-update img,#news img,#s_header_src,.footer-pay,.mspanav-foot{display:none}#s_header{margin:0 5px;background-repeat:no-repeat!important;height:175px}div#mspanav{height:auto}#contribute,#news,#pff,b,dd,div,h3,p,span,td{color:#fff}a:active,a:hover,a:link,a:visited{color:#2cff4b}#jump-to-outter a{color:#2cff4b!important}.mspanav,.pagebody div.log-inner,.pagebody div.log-outer,.pagebody div.log-outer div,body,div.spoiler,footer{background-color:#000}.mspanav{font-size:14px}.mspanav a{color:#fff!important}.content,.content-inner,.footer-outer{background-color:#082a00}#news,.mspacontent,.pagebody,.pagebody div,.pagefoot,.pagefooter-footer,.pagehead,.post-footer,.widget-content{background-color:#0e4603}.pagebody div{padding-top:0}.footer-bannerframe{border-top:solid 20px #082a00;height:120px;background-image:url(&#39;https://zhhomestuck.github.io/images/v2_mspalogo_scratch.gif&#39;);background-repeat:no-repeat;background-color:#082a00}.footer-bannerframe #contribute-img{visibility:hidden}#latest-update{border-right:solid 11px #082a00}#news,.latest-update-inner{border:none;background-color:#0e4603}#news div div div div div{margin-top:20px}.mspanav .footer-bannerframe{background:#0e4603}</style>
-						  </b:if>
+						  			  </b:if>
                           <meta expr:content='data:post.timestamp' itemprop='datePublished'/>
 					      <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
                             <table id='x2combo-table'><tr><td class='x2combo-td' id='x2combo1'/><td class='x2combo-td' id='x2combo2'/></tr></table>
@@ -2193,7 +2203,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 76%</b></span><br /><a href="?m=1" id="to-mobile-url">行動版網頁</a><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2020/3/18 - RM</span><br /><br /><b>因個人因素，03/22起將長時間停止更新。</b><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或更新網站外觀和代碼</span>(還是會有低程度的維護)。外觀仍會依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是較優先的事項。還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。</div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 76%</b></span><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2020/3/18 - RM</span><br /><br /><b>因個人因素，03/22起將長時間停止更新。</b><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或更新網站外觀和代碼</span>(還是會有低程度的維護)。外觀仍會依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是較優先的事項。還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。</div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->

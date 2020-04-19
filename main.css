@@ -267,6 +267,32 @@ SCRATCH PAGES
 }
 
 /************
+SBAHJ PAGES
+*************/
+body.sbahj {
+    font-family: 'Comic Sans MS', '華康海報體W12', '標楷體';
+}
+body.sbahj, .sbahj footer {
+    background-color:#0707ec;
+}
+.sbahj .content, .sbahj .footer-outer {
+    background-color:#fa00ec;
+}
+.sbahj .mspanav {
+    background-color:#000000;
+    font-size:14px;
+}
+.sbahj .content-inner, .sbahj .page {
+    background-color:#14ff23;
+}
+.footer-bannerframe {
+    margin-top: 20px;
+    height: 120px;
+    background-image: url('/imagess/mspalogo_sbahj.jpg');
+    background-repeat: no-repeat;
+}
+
+/************
 TRICKSTER PAGES
 *************/
 
