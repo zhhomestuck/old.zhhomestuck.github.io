@@ -288,7 +288,7 @@ body.sbahj, .sbahj footer {
 .footer-bannerframe {
     margin-top: 20px;
     height: 120px;
-    background-image: url('/imagess/mspalogo_sbahj.jpg');
+    background-image: url('/images/mspalogo_sbahj.jpg');
     background-repeat: no-repeat;
 }
 
@@ -360,7 +360,7 @@ X2COMBO PAGES
 .x2combo  #x2combo-header{
     height: 44px;
     margin: 0px auto;
-    background: #232323 url(./images/act6act5act1x2combo.gif);
+    background: #232323 url('/images/act6act5act1x2combo.gif');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
