@@ -58133,29 +58133,6 @@ JANE: 哈哈哈哈哈哈哈哈哈哈哈！
 JAKE: 哈哈哈哈哈哈哈哈哈哈哈！
 
 "==>"
-JANE: JAKE我覺得我知道問題在哪了！
-JAKE: 是什麼JANE！
-JANE: ROXY依然在為當時沒能親我而感覺尷尬！
-JAKE: 真的？ ？ ？ ？ ？ ？ ？ ？ ？ ？ ？
-JANE: ROXY你聽到我了嗎？
-JANE: 你以為我不知道那件事，但我實際上知道！
-JANE: 有一次DIRK告訴我了。這是一個秘密！
-JANE: 但沒關係！完全沒有不開心的必要！
-JANE: 現在我會讓你親我來挽回它！
-JANE: 這樣你就可以解決你的個人問題，然後一切都會好起來噠！
-JAKE: 是的！讓我們一起克服我們的個人問題成長為更好的人！
-JANE: 聽起來怎麼樣ROXY？
-JANE: 難道聽起來不棒嗎！快來和我來一個快樂的吻！
-JAKE: 天啊我已經迫不及待了！
-醺靈懷舊tipsyGnostalgic [TG] 開始打擾 傲虐至高無上的陛下)(er Imperious Condescension
-TG: 麵糊女巫拜託幫忙
-TG: 我朋友全瘋了
-TG: 你可以把我扔回監獄嗎:(
-)(IC: 你作繭自)(縛
-)(IC: 自己看著辦
-傲虐至高無上的陛下)(er Imperious Condescension 登他媽的出了
-
-"==>"
 
 "==>"
 JAKE: ROXY！
@@ -59939,7 +59916,7 @@ KARKAT: 既然我想不到更好的一般性的問題來緩解任何尷尬社交
 KARKAT: 你他媽的褲子呢？
 TEREZI: ZZZZZZZ
 
-A6I5] ==>
+"[A6I5] ==>"
 DAVE: 我的褲子
 DAVE: 你在說什麼
 DAVE: 穿在我腳上啊
