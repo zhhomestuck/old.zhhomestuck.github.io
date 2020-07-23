@@ -1294,11 +1294,11 @@ head.appendChild(script);
                             <div class='mspanavMobile' style='color:#ffffff;'>
                               <div id='s_header' style='background-size: 100% auto;'/>
                               <a href='http://zhhomestuck.blogspot.com/' style='line-height: 175%;'>Homestuck繁中翻譯</a> |
-                              <a href='https://zhhomestuck.github.io/' style='color: #29ff4a;'>Github站</a> |
+                              <a href='https://zhhomestuck.github.io/'>Github站</a> |
                               <a href='http://zhhomestuck.blogspot.tw/p/source.html'>資源</a> |
-                              <a href='http://zhhomestuck.blogspot.tw/p/about.html'>關於</a> |
-                              <a href='http://zhhomestuck.blogspot.tw/p/all-pages.html'>所有頁</a>
+                              <a href='http://zhhomestuck.blogspot.tw/p/about.html'>關於</a>
                               <br/>
+                              <a href='http://zhhomestuck.blogspot.tw/p/all-pages.html'>所有頁</a> |
                               <a href='http://zhhomestuck.blogspot.tw/p/search.html'>搜尋</a> |
                               <a href='http://zhhomestuck.blogspot.tw/p/comment.html'>留言</a> |
                               <a href='http://zhhomestuck.blogspot.tw/p/translators.html'>翻譯組</a> |
