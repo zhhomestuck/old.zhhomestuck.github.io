@@ -26,7 +26,7 @@ var checkHTTPSWarning = function() {
     let has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
     if(this_page_url){
         if(/https/.test(this_page_url) && has_interact_elemment){
-            let warning_text = "<span>由於某些瀏覽器不再支援Flash 部分動畫檔案可能無法顯示 請到官方網站觀看更新的版本 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;cursor:pointer;'>隱藏此訊息</a>]</span>";
+            let warning_text = "<span>由於Flash已終止支援 部分動畫檔案可能無法顯示 請到官方網站觀看更新的版本 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;cursor:pointer;'>隱藏此訊息</a>]</span>";
             let warning_node = document.createElement("div");
             warning_node.innerHTML = warning_text;
             warning_node.style.fontSize = "12px";
