@@ -7,7 +7,7 @@ function vizFlashContentWrapper(){
             arguments[i] = arguments[i].replace(/\/flash/,"https://www.homestuck.com/flash");
         }
     }
-    var e="1"==getUrlParameterByName("fl");
+    var e=("1"==getUrlParameterByName("fl"));
     if(DetectFlashVer(9,0,0)||e)
         AC_FL_RunContent.apply(null,arguments);
     else{
