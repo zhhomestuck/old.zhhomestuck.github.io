@@ -18,8 +18,8 @@ function vizFlashContentWrapper(){
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
-            //a.params.staticfb?window.location=window.location+"/1":t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>啟用Flash</nobr>的設備下觀看。";
-            t="此內容的呈現需要有Adobe Flash播放器。<br>請在<nobr>啟用Flash</nobr>的設備下觀看。";
+            //a.params.staticfb?window.location=window.location+"/1":t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>支援Flash</nobr>的設備下觀看。";
+            t="此內容的呈現需要有Adobe Flash播放器。<br>請在<nobr>支援Flash</nobr>的設備下觀看。";
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.id = "note";
