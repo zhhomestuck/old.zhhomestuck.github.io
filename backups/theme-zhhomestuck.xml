@@ -478,9 +478,15 @@ width: auto;
   .mobile .pagebody object {
     padding: 0;
     width: 100vw; max-width: 650px;
-    height: 69vw; max-height:450px;
+    /*height: 69vw; max-height:450px;*/
   }
-  #content_container, #animation_container, #_preload_div_ {
+  #o_flash-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 69.23076923076923% 0 0 0;
+  }
+  #conent_container, #animation_container, #_preload_div_ {
     padding: 0;
     margin: 0 auto;
   }
@@ -2106,8 +2112,8 @@ head.appendChild(script);
             HOMESTUCK TRADITIONAL CHINESE TRANSLATION
           </div>
           <span>
-            Power By Blogger<br/>
-            <a href='?m=1' id='to-mobile-url' style='color: #000000;'>
+            Power By Blogger<br/><br/>
+            <a href='?m=1' id='to-mobile-url' style='color: #000000; font-size: 1.5em;'>
               行動版網頁
             </a>
           </span>
@@ -2186,7 +2192,7 @@ function loadarchive(a) {
     document.write(&#39;&lt;br&#39; + &#39;/&gt;&#39;);
   }
 }
-&lt;/script&gt;&lt;script src=&quot;http://zhhomestuck.blogspot.com/feeds/posts/summary/?alt=json-in-script&amp;amp;callback=loadarchive&amp;amp;max-results=30&quot;&gt;&lt;/script&gt;&lt;/div&gt;</b:widget-setting>
+&lt;/script&gt;&lt;script src=&quot;http://zhhomestuck.blogspot.com/feeds/posts/summary/?alt=json-in-script&amp;amp;callback=loadarchive&amp;amp;max-results=32&quot;&gt;&lt;/script&gt;&lt;/div&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
@@ -2202,7 +2208,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 76%</b></span><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />我上傳了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>，將技術難度簡化，方便大家共同於雲端編輯。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀(Trickster, X2COMBO, Caliborn)將會優先在Github網站上設計，而Blogger這裡作為上傳頁面以及測試、修改的地方，<span style="text-decoration: line-through;">不再維護或更新網站外觀和代碼</span>(還是會有低程度的維護)。外觀仍會依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是較優先的事項。還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2020/8/21 - RM</span><br /><br />已將人物"Lord English"的中譯名稱從「英格蘭領主」改為「英格利希領主」。<hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />我上傳了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>，將技術難度簡化，方便大家共同於雲端編輯。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有應該要但沒有重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀將會優先在Github網站上設計，而Blogger這裡作為上傳、測試以及修改的地方。外觀仍依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是優先的事項。<br /><br />還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
