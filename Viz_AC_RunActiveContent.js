@@ -5,7 +5,7 @@ function vizFlashContentWrapper(){
     for (i = 0; i < arguments.length; i++){
         if(arguments[i].indexOf("http")==-1){
             arguments[i] = arguments[i].replace(/\/flash/,"https://www.homestuck.com/flash");
-            arguments[i] = arguments[i].replace(/http:\/\/cdn.mspaintadventures.com\/storyfiles\//,"https://www.homestuck.com/flash");
+            arguments[i] = arguments[i].replace(/http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
         }
     }
     var e=("1"==getUrlParameterByName("fl"));
