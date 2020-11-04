@@ -163,22 +163,17 @@ div.log-inner span img {
   font-size: 24px;
   font-family: Verdana, Arial, 'Microsoft JhengHei',  'Microsoft YaHei', monospace;
 }
-/*
-.pagefoot::before {
-  content: ">";
-}
-*/
-.pagefoot a.newer-page-link {
+.pagefoot a#newer-page-link {
   line-height: 30px !important;
 }
 /* PFF */
-.pagefooter-footer {
+#pagefooter-option {
   text-align: left;
   font-weight: bold;
   font-size: 13px;
   padding-top: 35px;
 }
-#pagefooter-footer-url {
+#pagefooter-url {
   font-size: 12px;
 }
 /* Quirk */
@@ -251,7 +246,7 @@ SCRATCH PAGES
 .scratch .pagehead,
 .scratch .pagebody,
 .scratch .pagefoot,
-.scratch .pagefooter-footer {
+.scratch .pagefooter-option {
   background-color: #0e4603;
   color: #fff
 }

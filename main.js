@@ -31,11 +31,11 @@ var checkHTTPSWarning = function() {
             warning_node.innerHTML = warning_text;
             warning_node.style.fontSize = "12px";
             warning_node.style.lineHeight = "12px";
-            document.getElementById("pagehead").appendChild(warning_node);
+            document.getElementByClassName("pagehead")[0].appendChild(warning_node);
         }
     }
 }
 
 var linkOfficial = function() {
-    document.getElementById("official-link").href = "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.search('00')+2,4))-1900).toString();
+    document.getElementById("official-link").href = "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900).toString();
 }
