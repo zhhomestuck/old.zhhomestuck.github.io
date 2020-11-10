@@ -134,6 +134,7 @@ div.authorlog {
   line-height: 1.1;
 }
 div.log-inner img {
+  max-width: 90vw;
   margin-left: -56px;
   border: 0;
 }
