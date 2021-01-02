@@ -3,8 +3,8 @@ function ControlVersion(){var e,a;try{e=(a=new ActiveXObject("ShockwaveFlash.Sho
 // Copyright 2018 Viz Media & Homestuck
 function vizFlashContentWrapper(){
     for (var i = 0; i < arguments.length; i++){
-        arguments[i] = arguments[i].replace(/\/flash/,"https://www.homestuck.com/flash");
-        arguments[i] = arguments[i].replace(/http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
+        arguments[i] = arguments[i].replace(/^\/flash/,"https://www.homestuck.com/flash");
+        arguments[i] = arguments[i].replace(/^http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
     }
     var e=("1"==getUrlParameterByName("fl"));
     if(DetectFlashVer(9,0,0)||e)
