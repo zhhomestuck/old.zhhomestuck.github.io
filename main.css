@@ -81,6 +81,14 @@ b {font-weight:bold;}
   margin-bottom: 15px;
   width: 100vw;
   max-width: 650px;
+  height: 69.23vw;
+  max-height: 450px;
+  /* 
+    This is standard panel size
+    If there are non-standard falsh panel size
+    put these in post:
+    .mobile .pagebody embed, .pagebody embed {height: (h/w ratio)vw; max-height: (actual height)px;} #o_flash-container {padding-top: (h/w ratio)%;} 
+  */
 }
 .pagebody div {
   vertical-align: middle;
