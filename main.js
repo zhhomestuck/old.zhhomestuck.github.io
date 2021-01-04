@@ -31,7 +31,7 @@ var flashWarning = function() {
             warning_node.innerHTML = warning_text;
             warning_node.style.fontSize = "12px";
             warning_node.style.lineHeight = "12px";
-            document.getElementByClassName("pagehead")[0].appendChild(warning_node);
+            document.getElementsByClassName("pagehead")[0].appendChild(warning_node);
         }
     }
 }
