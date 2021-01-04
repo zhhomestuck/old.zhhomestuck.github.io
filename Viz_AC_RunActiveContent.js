@@ -7,7 +7,8 @@ function vizFlashContentWrapper(){
         arguments[i] = arguments[i].replace(/^http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
     }
     var e=("1"==getUrlParameterByName("fl"));
-    if(DetectFlashVer(9,0,0)||e)
+    //if(DetectFlashVer(9,0,0)||e)
+    if(e)
         AC_FL_RunContent.apply(null,arguments);
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null),
@@ -17,8 +18,7 @@ function vizFlashContentWrapper(){
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
-            //a.params.staticfb?window.location=window.location+"/1":t="此內容的呈現需要有Adobe Flash播放器。<br><br>請在<nobr>支援Flash</nobr>的設備下觀看。";
-            t="此內容的呈現需要有Adobe Flash播放器。<br>請在<nobr>支援Flash</nobr>的設備下觀看。";
+            t="因為Adobe Flash播放器已於2021年起停止支援，此內容可能無法呈現，請到官方網頁察看更新的版本，或連繫通知管理員更新頁面。";
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.id = "note";

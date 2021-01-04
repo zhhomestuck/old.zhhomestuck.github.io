@@ -20,7 +20,7 @@ var makeSpoilerLog = function(parentNode) {
     }
 }
 
-// Warning for HTTPS connection
+// Warning for HTTPS connection on Blogger site
 var checkHTTPSWarning = function() {
     let this_page_url = window.location.href;
     let has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
