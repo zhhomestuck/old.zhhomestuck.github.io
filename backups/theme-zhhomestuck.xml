@@ -23,7 +23,7 @@
 	  //]]>
 	</script>
 	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/><!-- code edited to link as absolute url to homestuck.com -->
-    <script src='https://zhhomestuck.github.io/main.js'/> <!-- define makeSpoilerLog and checkHTTPSWarning -->
+    <script src='https://zhhomestuck.github.io/main.js'/> <!-- define makeSpoilerLog and flashWarning -->
     <b:skin><![CDATA[
       
 /*
@@ -513,18 +513,18 @@ width: auto;
   #blog-pager-newer-link-wrapper-id::before {
     content: &quot;&gt; &quot;
   }
-  /* PFF */
-  .pagefooter-footer {
+  /* PF OP and URL */
+  #pagefooter-option {
     text-align: left;
     font-weight: bold;
     font-size: 13px;
     padding-top: 35px;
   }
-  .mobile .pagefooter-footer {
+  .mobile #pagefooter-option {
     font-size: 12px;
     padding-top: 15px;
   }
-  #pagefooter-footer-url {
+  #pagefooter-url {
     font-size: 12px;
   }
   /* note and log */
@@ -961,7 +961,7 @@ head.appendChild(script);
                           </b:if>
                           <script type='text/javascript'>
                               makeSpoilerLog();
-                              checkHTTPSWarning();
+                              flashWarning();
                             </script>
                         </b:includable>
                         <b:includable id='backlinkDeleteIcon' var='backlink'>
@@ -1387,7 +1387,7 @@ head.appendChild(script);
                                     </a>
                                     </span><br/>
                                   </b:if>
-                                  <div class='pagefooter-footer' id='pff'>
+                                  <div id='pagefooter-option'>
                                       <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                         <input maxlength='8' name='p' style='max-width: 90px;' type='text'/>
                                         &#160;
@@ -1400,7 +1400,7 @@ head.appendChild(script);
                                     <span id='jump-to-outter'>
                                       <a onclick='if(document.getElementById(&quot;jump-to-form&quot;).style.display==&quot;none&quot;){document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;inline&quot;;}else{document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;none&quot;;}' style='cursor: pointer; color: blue; text-decoration: underline;'>
                                         跳轉到</a></span> |
-                                    <span id='pagefooter-footer-url'>
+                                    <span id='pagefooter-url'>
                                       <b:if cond='data:olderPageUrl'>
                                         <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
                                       <br/>
@@ -1434,7 +1434,7 @@ head.appendChild(script);
                           </b:if>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
                             <style name='scratch_mobile' type='text/css'>
-                              #s_header{max-height:120px;height:20vw;background-size:100% auto !important;background-repeat:no-repeat !important;}#s_header_src{display:none;}div#mspanavMobile{height: auto;}div,h3,td,dd,span,p,b,#contribute,#news,#pff{color:#ffffff;}a:link,a:hover,a:visited,a:active{color:#2cff4b;}#jump-to-outter a {color:#2cff4b !important;}body,footer,.mspanavMobile,.pagebody div.log-outer,.pagebody div.log-outer div,.pagebody div.log-inner,div.spoiler{background-color:#000000;}.mspanavMobile{font-size:14px;}.mspanavMobile a{color:#ffffff !important;}.mobile .content,.mobile .content-inner,.mobile .widget{background-color:#082a00;}.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,.latest-update-inner,.pagefooter-footer{background-color:#0e4603;}.pagefoot{padding-top:0;}.widget-content img,footer-bannerframe,.footer-bannerframe #contribute-img,.footer-pay {display:none;}.mspanav .footer-bannerframe{background:#0e4603;}</style>
+                              #s_header{max-height:120px;height:20vw;background-size:100% auto !important;background-repeat:no-repeat !important;}#s_header_src{display:none;}div#mspanavMobile{height: auto;}div,h3,td,dd,span,p,b,#contribute,#news,#pff{color:#ffffff;}a:link,a:hover,a:visited,a:active{color:#2cff4b;}#jump-to-outter a {color:#2cff4b !important;}body,footer,.mspanavMobile,.pagebody div.log-outer,.pagebody div.log-outer div,.pagebody div.log-inner,div.spoiler{background-color:#000000;}.mspanavMobile{font-size:14px;}.mspanavMobile a{color:#ffffff !important;}.mobile .content,.mobile .content-inner,.mobile .widget{background-color:#082a00;}.mspacontent,.pagehead,.pagebody,.pagebody div,.pagefoot,.post-footer,.widget-content,.latest-update-inner,#pagefooter-option{background-color:#0e4603;}.pagefoot{padding-top:0;}.widget-content img,footer-bannerframe,.footer-bannerframe #contribute-img,.footer-pay {display:none;}.mspanav .footer-bannerframe{background:#0e4603;}</style>
                             <script>
                               document.getElementById(&quot;s_header&quot;).style.background = &quot;url(&#39;&quot; + document.getElementById(&quot;s_header_src&quot;).src + &quot;&#39;)&quot;;
                             </script>
@@ -1466,7 +1466,7 @@ head.appendChild(script);
                         <b:includable id='post' var='post'>
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
 							<style name='x2combo' type='text/css'>  
-                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 .pagefooter-footer {float: left; margin-top: 24px; padding: 15px 0; background-color: #c6c6c6;} #x2combo2 .pagefoot {height: 66px;} #x2combo2 .pagefooter-footer {display: none;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ transform: matrix(1, -0.4, 0.4, 1, 0, -45);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-footer-url {display: none;}
+                              .x2combo-td {vertical-align: top;} .post-outer {margin-left: -15px;} #x2combo1 #pagefooter-option {float: left; margin-top: 24px; padding: 15px 0; background-color: #c6c6c6;} #x2combo2 .pagefoot {height: 66px;} #x2combo2 #pagefooter-option {display: none;} #x2combo1 .post {margin-right: 30px;} #x2np{display: block; margin-left: 100px; width: 60px; -ms-transform: matrix(1, -0.4, 0.4, 1, 0, -45); /* IE 9 */ transform: matrix(1, -0.4, 0.4, 1, 0, -45);} div#mspanav{height: auto; width: 1600px;} #tooltipimg{display: block; position: relative; margin: 0px auto; width: 1600px; background-color: #232323;} #s_header{margin: 0px; background-color: #232323; background-image: url(&#39;https://zhhomestuck.github.io/images/act6act5act1x2combo.gif&#39;); background-position: center; background-repeat: no-repeat !important; height: 44px;} .content {width: 1600px;} .content-outer, .content-inner {width: 1300px;} #x2combo1 #blog-pager-newer-link-id, #x2combo2 #pagefooter-url {display: none;}
 						    </style>
                             <div id='is-x2combo-page'/>
                           </b:if>
@@ -1485,7 +1485,7 @@ head.appendChild(script);
                           <b:if cond='data:post.labels any (l =&gt; l.name == &quot;s&quot;)'>
                             <!-- check if this post is s page -->
                             <style name='scratch' type='text/css'>
-                              #latest-update img,#news img,#s_header_src,.footer-pay,.mspanav-foot{display:none}#s_header{margin:0 5px;background-repeat:no-repeat!important;height:175px}div#mspanav{height:auto}#contribute,#news,#pff,b,dd,div,h3,p,span,td{color:#fff}a:active,a:hover,a:link,a:visited{color:#2cff4b}#jump-to-outter a{color:#2cff4b!important}.mspanav,.pagebody div.log-inner,.pagebody div.log-outer,.pagebody div.log-outer div,body,div.spoiler,footer{background-color:#000}.mspanav{font-size:14px}.mspanav a{color:#fff!important}.content,.content-inner,.footer-outer{background-color:#082a00}#news,.mspacontent,.pagebody,.pagebody div,.pagefoot,.pagefooter-footer,.pagehead,.post-footer,.widget-content{background-color:#0e4603}.pagebody div{padding-top:0}.footer-bannerframe{border-top:solid 20px #082a00;height:120px;background-image:url(&#39;https://zhhomestuck.github.io/images/v2_mspalogo_scratch.gif&#39;);background-repeat:no-repeat;background-color:#082a00}.footer-bannerframe #contribute-img{visibility:hidden}#latest-update{border-right:solid 11px #082a00}#news,.latest-update-inner{border:none;background-color:#0e4603}#news div div div div div{margin-top:20px}.mspanav .footer-bannerframe{background:#0e4603}</style>
+                              #latest-update img,#news img,#s_header_src,.footer-pay,.mspanav-foot{display:none}#s_header{margin:0 5px;background-repeat:no-repeat!important;height:175px}div#mspanav{height:auto}#contribute,#news,#pff,b,dd,div,h3,p,span,td{color:#fff}a:active,a:hover,a:link,a:visited{color:#2cff4b}#jump-to-outter a{color:#2cff4b!important}.mspanav,.pagebody div.log-inner,.pagebody div.log-outer,.pagebody div.log-outer div,body,div.spoiler,footer{background-color:#000}.mspanav{font-size:14px}.mspanav a{color:#fff!important}.content,.content-inner,.footer-outer{background-color:#082a00}#news,.mspacontent,.pagebody,.pagebody div,.pagefoot,#pagefooter-option,.pagehead,.post-footer,.widget-content{background-color:#0e4603}.pagebody div{padding-top:0}.footer-bannerframe{border-top:solid 20px #082a00;height:120px;background-image:url(&#39;https://zhhomestuck.github.io/images/v2_mspalogo_scratch.gif&#39;);background-repeat:no-repeat;background-color:#082a00}.footer-bannerframe #contribute-img{visibility:hidden}#latest-update{border-right:solid 11px #082a00}#news,.latest-update-inner{border:none;background-color:#0e4603}#news div div div div div{margin-top:20px}.mspanav .footer-bannerframe{background:#0e4603}</style>
 						  			  </b:if>
                           <meta expr:content='data:post.timestamp' itemprop='datePublished'/>
 					      <b:if cond='data:post.labels any (l =&gt; l.name == &quot;x2combo&quot;)'>
@@ -1519,7 +1519,7 @@ head.appendChild(script);
                                   </a>
                                   </span>
                                 </b:if>
-                                <div class='pagefooter-footer' id='pff'>
+                                <div id='pagefooter-option'>
                                   <a class='startover' expr:href='data:blog.homepageUrl'> 重頭開始</a> |
                                   <b:if cond='data:olderPageUrl'>
                                     <a class='blog-pager-older-link' expr:href='data:olderPageUrl' id='blog-pager-older-link' style='float: none;'> 上一頁</a> |
@@ -1534,7 +1534,7 @@ head.appendChild(script);
                                       <input type='submit' value='JumpTo'/></form>
                                   </span> |
                                   <!-- Null -->
-                                  <span id='pagefooter-footer-url'>
+                                  <span id='pagefooter-url'>
                                     <b:if cond='data:olderPageUrl'>
                                       <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(document.URL.substr(document.URL.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
                                     <br/>
@@ -1557,7 +1557,7 @@ head.appendChild(script);
                                   </a>
                                   </span>
                                 </b:if>
-                                <div class='pagefooter-footer' id='pff'>
+                                <div id='pagefooter-option'>
                                   <a class='startover' expr:href='data:blog.homepageUrl'> 重頭開始</a> |
                                   <b:if cond='data:olderPageUrl'>
                                     <a class='blog-pager-older-link-mspa' expr:href='data:olderPageUrl' id='blog-pager-older-link' style='float: none;'>
@@ -1574,7 +1574,7 @@ head.appendChild(script);
                                   </span> |
                                   <!-- Null -->
                                   &#160;
-                                  <span id='pagefooter-footer-url'>
+                                  <span id='pagefooter-url'>
                                     <data:post.url/>
                                   </span>
                                 </div>
@@ -2208,7 +2208,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 10px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><div style="font-size: 15px; font-weight: normal; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2020/8/21 - RM</span><br /><br />已將人物"Lord English"的中譯名稱從「英格蘭領主」改為「英格利希領主」。<hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />我上傳了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>，將技術難度簡化，方便大家共同於雲端編輯。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /><span style="font-style: italic;">2019/9/20 - RM</span><br /><br />從現在開始，我們的<a href="https://zhhomestuck.github.io/">Github Pages</a>成為「比較正式」的更新網站，之後更新的頁面主題外觀將會優先在Github網站上設計，而Blogger這裡作為上傳、測試以及修改的地方。外觀仍依照MSPA的最後版本為準。<br /><br />將Flash動畫頁轉換成官方的替代圖片或Youtube影片的工作已經大致完成，目前正在找方法以有效的導入官方的HTML5動畫，但這不會是優先的事項。<br /><br />還是有可能會有頁面或連結壞掉的情況，若有發現，可以在留言區回報。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 8px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><div style="font-size: 15px; font-weight: normal; line-height: 1.0; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/9/20 - RM (2021/01/04 Updated)</span><br /><br />目前還在找方法有效的導入官方的HTML5動畫，並把被本站翻譯過的Flash檔案也轉為HTML5動畫。<span style="font-weight: bold;">但這不會是優先的事項</span>。<br /><br /><a href="https://zhhomestuck.github.io/">Github Pages</a>是本計畫「比較正式」的更新網站，之後將會優先在Github網站上設計頁面主題和維護，而Blogger僅作為上傳、測試以及修改頁面的地方。外觀仍依照MSPA的最後版本為準。<br /><br />若有頁面或連結壞掉的情況，可以在留言區回報。<hr /><span style="font-style: italic;">2020/8/21 - RM</span><br /><br />已將人物"Lord English"的中譯名稱從「英格蘭領主」改為「英格利希領主」。<hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />製作了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
