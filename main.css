@@ -180,7 +180,8 @@ div.log-inner span img {
   text-align: left;
   font-weight: bold;
   font-size: 13px;
-  padding-top: 35px;
+  padding: 30px 0 10px 0;
+  visibility: visible !important;
 }
 #pagefooter-url {
   font-size: 12px;
