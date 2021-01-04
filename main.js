@@ -20,13 +20,13 @@ var makeSpoilerLog = function(parentNode) {
     }
 }
 
-// Warning for HTTPS connection on Blogger site
-var checkHTTPSWarning = function() {
+// Warning for Flash contents on Blogger site
+var flashWarning = function() {
     let this_page_url = window.location.href;
     let has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
     if(this_page_url){
-        if(/https/.test(this_page_url) && has_interact_elemment){
-            let warning_text = "<span>由於Flash已終止支援 部分動畫檔案可能無法顯示 請到官方網站觀看更新的版本 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;cursor:pointer;'>隱藏此訊息</a>]</span>";
+        if(has_interact_elemment){
+            let warning_text = "<span>由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看內容，或連繫通知管理員更新頁面。 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;cursor:pointer;'>隱藏此訊息</a>]</span>";
             let warning_node = document.createElement("div");
             warning_node.innerHTML = warning_text;
             warning_node.style.fontSize = "12px";

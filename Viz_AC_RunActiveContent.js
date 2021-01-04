@@ -18,7 +18,7 @@ function vizFlashContentWrapper(){
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
-            t="因為Adobe Flash播放器已於2021年起停止支援，此內容可能無法呈現，請到官方網頁察看更新的版本，或連繫通知管理員更新頁面。";
+            t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看內容，或連繫通知管理員更新頁面。";
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.id = "note";
