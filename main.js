@@ -46,6 +46,7 @@ var loadswf2js = function() {
     var flashElem;
     if (objArr.length == 1) {
         flashElem = objArr[0];
+    }
     else if (embArr.length == 1) {
         flashElem = embArr[0];
     }
