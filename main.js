@@ -48,8 +48,12 @@ var loadswf2js = function() {
             
             var option = {};
             option.tagId = "swf2js-container";
-            option.width = parseInt(objArr[0].style.width, 10);
-            option.height = parseInt(objArr[0].style.height, 10);
+            option.width = objArr[0].width;
+            option.height = objArr[0].height;
+            if (option.width == "") {
+                option.width = 650;
+                option.height = 450;
+            }
             option.callback = (function() {
                 document.getElementById("swf2js-preloader").remove();
             });
@@ -59,7 +63,7 @@ var loadswf2js = function() {
             
             var preloading_img = document.createElement("img");
             preloading_img.setAttribute("id", "swf2js-preloader");
-            preloading_img.setAttribute("src", "/assets/preloader.gif");
+            preloading_img.setAttribute("src", "https://zhhomestuck.github.io/assets/preloader.gif");
             document.getElementsByClassName("pagebody")[0].insertBefore(preloading_img, objArr[0]);
             
             var container = document.createElement("div");
