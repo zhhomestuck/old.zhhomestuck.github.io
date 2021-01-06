@@ -69,7 +69,7 @@ var loadswf2js = function() {
         });
         console.log(option);
         
-        var swfurl = flashElem.data;
+        var swfurl = flashElem.data || flashElem.src;
         
         var preloading_img = document.createElement("img");
         preloading_img.setAttribute("id", "swf2js-preloader");
