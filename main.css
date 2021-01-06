@@ -165,6 +165,17 @@ div.log-inner span img {
   height: 0;
   padding: 69.23076923076923% 0 0 0;
 }
+#swf2js-container, #swf2js-container div {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+#swf2js-preloader {
+  width: 100%;
+}
+#swf2js_0_loading {
+  display: none;
+}
 /* PF */
 .pagefoot {
   padding: 20px 20px 10px 20px;
