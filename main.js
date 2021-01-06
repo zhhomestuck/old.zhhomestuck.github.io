@@ -26,7 +26,7 @@ var flashWarning = function() {
     let has_interact_elemment = document.getElementsByTagName("embed").length != 0 || document.getElementsByTagName("object").length != 0;
     if(this_page_url){
         if(has_interact_elemment){
-            let warning_text = "<span>由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看內容，或連繫通知管理員更新頁面。 [<a onclick='this.parentNode.style.display=\"none\";' style='color:#0000ff;cursor:pointer;'>隱藏此訊息</a>] [<a onclick='loadswf2js();' style='color:#0000ff;cursor:pointer;'>測試swf2js導入</a>]</span>";
+            let warning_text = "<span>由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看內容，或連繫通知管理員更新頁面。 [<a href='/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1'>回到不使用Flash的頁面</a>] [<a onclick='this.style.display=\"none\";loadswf2js();' style='color:#0000ff;cursor:pointer;'>測試swf2js導入(無聲音)</a>]</span>";
             let warning_node = document.createElement("div");
             warning_node.innerHTML = warning_text;
             warning_node.style.fontSize = "12px";
