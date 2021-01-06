@@ -22,8 +22,10 @@
 	  AC_FL_RunContent = 0;
 	  //]]>
 	</script>
+    <script src='https://zhhomestuck.github.io/swf2js/swf2js.js'/> <!-- swf2js -->
 	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/><!-- code edited to link as absolute url to homestuck.com -->
-    <script src='https://zhhomestuck.github.io/main.js'/> <!-- define makeSpoilerLog and flashWarning -->
+    <script src='https://zhhomestuck.github.io/main.js'/> <!-- linkOfficial, makeSpoilerLog and flashWarning -->
+    
     <b:skin><![CDATA[
       
 /*
@@ -2208,7 +2210,7 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 8px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><div style="font-size: 15px; font-weight: normal; line-height: 1.0; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/9/20 - RM (2021/01/04 Updated)</span><br /><br />目前還在找方法有效的導入官方的HTML5動畫，並把被本站翻譯過的Flash檔案也轉為HTML5動畫。<span style="font-weight: bold;">但這不會是優先的事項</span>。<br /><br /><a href="https://zhhomestuck.github.io/">Github Pages</a>是本計畫「比較正式」的更新網站，之後將會優先在Github網站上設計頁面主題和維護，而Blogger僅作為上傳、測試以及修改頁面的地方。外觀仍依照MSPA的最後版本為準。<br /><br />若有頁面或連結壞掉的情況，可以在留言區回報。<hr /><span style="font-style: italic;">2020/8/21 - RM</span><br /><br />已將人物"Lord English"的中譯名稱從「英格蘭領主」改為「英格利希領主」。<hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />製作了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
+      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 8px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><div style="font-size: 15px; font-weight: normal; line-height: 1.1; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/9/20 - RM (Updated 2021/01/04)</span><br /><br />目前還在找方法有效的導入官方的HTML5動畫，並把被本站翻譯過的Flash檔案也轉為HTML5動畫。<span style="font-weight: bold;">但這不會是優先的事項</span>。<br /><br /><a href="https://zhhomestuck.github.io/">Github Pages</a>是本計畫「比較正式」的更新網站，之後將會優先在Github網站上設計頁面主題和維護，而Blogger僅作為上傳、測試以及修改頁面的地方。外觀仍依照MSPA的最後版本為準。<br /><br />若有頁面或連結壞掉的情況，可以在留言區回報。<hr /><span style="font-style: italic;">2020/8/21 - RM</span><br /><br />已將人物"Lord English"的中譯名稱從「英格蘭領主」改為「英格利希領主」。<hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />製作了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->
