@@ -22,7 +22,7 @@ function vizFlashContentWrapper(){
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.id = "note";
-        setTimeout(function(){$(".pagebody").prepend(o_no_flash)},500);
+        document.getElementsByClassName("pagehead")[0].appendChild(o_no_flash);
     }
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
