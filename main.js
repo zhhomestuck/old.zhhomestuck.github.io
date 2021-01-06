@@ -48,8 +48,8 @@ var loadswf2js = function() {
             
             var option = {};
             option.tagId = "swf2js-container";
-            option.width = objArr[0].width;
-            option.height = objArr[0].height;
+            option.width = parseInt(objArr[0].style.width, 10);
+            option.height = parseInt(objArr[0].style.height, 10);
             option.callback = (function() {
                 document.getElementById("swf2js-preloader").remove();
             });
