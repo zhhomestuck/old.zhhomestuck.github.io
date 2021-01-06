@@ -12,7 +12,7 @@ function vizFlashContentWrapper(){
         AC_FL_RunContent.apply(null,arguments);
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null),
-            t='若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
+            t='<br />若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
         if(a.params.youtubeid)
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         else if(a.params.altimgsrc){
@@ -21,7 +21,8 @@ function vizFlashContentWrapper(){
         //    t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
-        o_no_flash.id = "note";
+        o_no_flash.style.fontSize = "10px";
+        warning_node.style.lineHeight = "12px";
         document.getElementsByClassName("pagehead")[0].appendChild(o_no_flash);
     }
 }
