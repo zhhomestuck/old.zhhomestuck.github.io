@@ -42,36 +42,44 @@ var linkOfficial = function() {
 
 var loadswf2js = function() {
     var objArr = document.getElementsByTagName("object");
+    var embArr = document.getElementsByTagName("embed");
+    var flashElem;
     if (objArr.length == 1) {
-        if (objArr[0].type == "application/x-shockwave-flash") {
-            objArr[0].style.display = "none";
-            
-            var option = {};
-            option.tagId = "swf2js-container";
-            option.width = objArr[0].width;
-            option.height = objArr[0].height;
-            if (option.width == "") {
-                option.width = 650;
-                option.height = 450;
-            }
-            option.callback = (function() {
-                document.getElementById("swf2js-preloader").remove();
-            });
-            console.log(option);
-            
-            var swfurl = objArr[0].data;
-            
-            var preloading_img = document.createElement("img");
-            preloading_img.setAttribute("id", "swf2js-preloader");
-            preloading_img.setAttribute("src", "https://zhhomestuck.github.io/assets/preloader.gif");
-            document.getElementsByClassName("pagebody")[0].insertBefore(preloading_img, objArr[0]);
-            
-            var container = document.createElement("div");
-            container.setAttribute("id", "swf2js-container");
-            document.getElementsByClassName("pagebody")[0].insertBefore(container, objArr[0]);
-            
-            swf2js.load(swfurl, option);
-        }
+        flashElem = objArr[0];
+    else if (embArr.length == 1) {
+        flashElem = embArr[0];
     }
-    
+    else {
+        return;
+    }
+    if (flashElem.type == "application/x-shockwave-flash") {
+        flashElem.style.display = "none";
+        
+        var option = {};
+        option.tagId = "swf2js-container";
+        option.width = flashElem.width;
+        option.height = flashElem.height;
+        if (option.width == "") {
+            option.width = 650;
+            option.height = 450;
+        }
+        option.callback = (function() {
+            document.getElementById("swf2js-preloader").remove();
+        });
+        console.log(option);
+        
+        var swfurl = flashElem.data;
+        
+        var preloading_img = document.createElement("img");
+        preloading_img.setAttribute("id", "swf2js-preloader");
+        preloading_img.setAttribute("src", "https://zhhomestuck.github.io/assets/preloader.gif");
+        document.getElementsByClassName("pagebody")[0].insertBefore(preloading_img, flashElem);
+        
+        var container = document.createElement("div");
+        container.setAttribute("id", "swf2js-container");
+        document.getElementsByClassName("pagebody")[0].insertBefore(container, flashElem);
+        
+        flashElem.remove();
+        swf2js.load(swfurl, option);
+    }
 }
