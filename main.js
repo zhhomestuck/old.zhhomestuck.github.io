@@ -60,7 +60,7 @@ var loadswf2js = function() {
         option.tagId = "swf2js-container";
         option.width = flashElem.width;
         option.height = flashElem.height;
-        if (option.width == "") {
+        if (option.width == 1 || option.width == "") {
             option.width = 650;
             option.height = 450;
         }
