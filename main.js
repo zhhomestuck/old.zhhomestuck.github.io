@@ -33,7 +33,7 @@ var flashWarning = function() {
     if(flashElem){
         var flashUrl = flashElem.data || flashElem.src;
         console.log(flashUrl);
-        var warning_text = "<span>由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。<br/>[<a href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
+        var warning_text = "<span>由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。<br/>[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
         if (flashUrl.includes("zhhomestuck")) {
             warning_text += "[<a onclick='this.style.display=\"none\";loadswf2js();' style='color:#0000ff;cursor:pointer;'>可嘗試用swf2js播放(功能不完全)</a>]</span>";
         }
