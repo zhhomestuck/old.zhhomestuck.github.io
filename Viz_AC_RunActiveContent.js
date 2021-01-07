@@ -17,11 +17,12 @@ function vizFlashContentWrapper(){
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
-        //else 
-        //    t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
+        else 
+            t="<br />由由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.style.fontSize = "10px";
+        warning_node.style.marginTop  = "12px";
         o_no_flash.style.lineHeight = "12px";
         document.getElementsByClassName("pagehead")[0].appendChild(o_no_flash);
     }

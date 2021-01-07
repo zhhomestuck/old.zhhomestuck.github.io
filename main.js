@@ -24,22 +24,21 @@ var makeSpoilerLog = function(parentNode) {
 // Warning for Flash contents on Blogger site
 var flashWarning = function() {
     var flashElem;
+    /* if there is object tag that mean the flash file is linked to zhhomestuck.github.io */
+    /* so this is a translated flash file */
     if (document.getElementsByTagName("object").length == 1) {
         flashElem = document.getElementsByTagName("object")[0];
     }
-    else if (document.getElementsByTagName("embed").length == 1) {
-        flashElem = document.getElementsByTagName("embed")[0];
-    }
     if(flashElem){
         var flashUrl = flashElem.data || flashElem.src;
-        console.log(flashUrl);
-        var warning_text = "<span>由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。<br/>[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
+        var warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。<br />";
         if (flashUrl.includes("zhhomestuck")) {
-            warning_text += "[<a onclick='this.style.display=\"none\";loadswf2js();' style='color:#0000ff;cursor:pointer;'>可嘗試用swf2js播放(功能不完全)</a>]</span>";
+            warning_text += "<span>[<a onclick='this.parentElement.style.display=\"none\";loadswf2js();' style='color:#0000ff;cursor:pointer;'>可嘗試用swf2js播放(功能不完全)</a>]</span>";
         }
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "12px";
+        warning_node.style.marginTop  = "12px";
         warning_node.style.lineHeight = "12px";
         document.getElementsByClassName("pagehead")[0].appendChild(warning_node);
     }
@@ -51,14 +50,19 @@ var linkOfficial = function() {
 
 var loadswf2js = function() {
     var flashElem;
+    /* if there is object tag that mean the flash file is linked to zhhomestuck.github.io */
+    /* so this is a translated flash file */
     if (document.getElementsByTagName("object").length == 1) {
         flashElem = document.getElementsByTagName("object")[0];
     }
-    else if (document.getElementsByTagName("embed").length == 1) {
-        flashElem = document.getElementsByTagName("embed")[0];
-    }
     if (flashElem) {
         if (flashElem.type == "application/x-shockwave-flash") {
+            
+            var preloading_img = document.createElement("img");
+            preloading_img.setAttribute("id", "swf2js-preloader");
+            preloading_img.setAttribute("src", "https://zhhomestuck.github.io/assets/preloader.gif");
+            document.getElementsByClassName("pagebody")[0].insertBefore(preloading_img, flashElem);
+            
             var flashUrl = flashElem.data || flashElem.src;
             flashElem.style.display = "none";
             var option = {};
@@ -73,11 +77,6 @@ var loadswf2js = function() {
                 document.getElementById("swf2js-preloader").remove();
             });
             console.log(option);
-            
-            var preloading_img = document.createElement("img");
-            preloading_img.setAttribute("id", "swf2js-preloader");
-            preloading_img.setAttribute("src", "https://zhhomestuck.github.io/assets/preloader.gif");
-            document.getElementsByClassName("pagebody")[0].insertBefore(preloading_img, flashElem);
             
             var container = document.createElement("div");
             container.setAttribute("id", "swf2js-container");

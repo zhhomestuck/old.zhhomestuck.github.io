@@ -159,6 +159,7 @@ div.log-inner span img {
   text-align: -webkit-center; text-align: center;
 }
 /* Flashes & Videos */
+/* created by Viz_AC_RunActiveContent.js */
 #o_flash-container {
   position: relative;
   width: 100%;
@@ -170,11 +171,15 @@ div.log-inner span img {
   padding: 0;
   margin: 0 auto;
 }
-/* for swf2js */
-#swf2js-container, #swf2js-preloader, #swf2js-container div {
+/* create by swf2js on our translated flash */
+#swf2js-container {
   width: 100%;
   padding: 0;
   overflow: hidden;
+}
+#swf2js-preloader, #swf2js-container div {
+  padding: 0;
+  margin: 0 auto;
 }
 #swf2js_0_loading {
   display: none;
