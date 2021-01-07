@@ -22,7 +22,7 @@ function vizFlashContentWrapper(){
         o_no_flash = document.createElement("span");
         o_no_flash.innerHTML = t;
         o_no_flash.style.fontSize = "10px";
-        warning_node.style.marginTop  = "12px";
+        o_no_flash.style.marginTop  = "12px";
         o_no_flash.style.lineHeight = "12px";
         document.getElementsByClassName("pagehead")[0].appendChild(o_no_flash);
     }
