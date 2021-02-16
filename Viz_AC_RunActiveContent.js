@@ -8,8 +8,10 @@ function vizFlashContentWrapper(){
     }
     var e=("1"==getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
-    if(e)
+    if(e) {
         AC_FL_RunContent.apply(null,arguments);
+        t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";";
+    }
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null),
             t='若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
@@ -18,12 +20,13 @@ function vizFlashContentWrapper(){
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
-            t="由由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
+            t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";";
         o_no_flash = document.createElement("div");
         o_no_flash.innerHTML = t;
-        o_no_flash.style.fontSize = "10px";
+        o_no_flash.style.fontSize = "11px";
         o_no_flash.style.marginTop  = "12px";
         o_no_flash.style.lineHeight = "12px";
+        o_no_flash.style.display = "inline";
         document.getElementsByClassName("pagehead")[0].appendChild(o_no_flash);
     }
 }

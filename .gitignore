@@ -2,7 +2,4 @@ _site
 _newp
 .sass-cache
 .jekyll-metadata
-Gemfile
-Gemfile.lock
 *.md
-*.cpp

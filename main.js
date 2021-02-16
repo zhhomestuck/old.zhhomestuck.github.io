@@ -21,11 +21,11 @@ var makeSpoilerLog = function(parentNode) {
     }
 }
 
-// Warning for Flash contents on Blogger site
+// Warning for manual Flash object on Blogger site
 var flashWarning = function() {
     var flashElem;
-    /* if there is object tag that mean the flash file is linked to zhhomestuck.github.io */
-    /* so this is a translated flash file */
+    // if there is object tag that mean the flash file is linked to zhhomestuck.github.io
+    // so this is a translated flash file
     if (document.getElementsByTagName("object").length == 1) {
         flashElem = document.getElementsByTagName("object")[0];
     }
@@ -33,19 +33,26 @@ var flashWarning = function() {
         var flashUrl = flashElem.data || flashElem.src;
         var warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。<br />";
         if (flashUrl.includes("zhhomestuck")) {
-            warning_text += "<span>[<a onclick='this.parentElement.style.display=\"none\";loadswf2js();' style='color:#0000ff;cursor:pointer;'>可嘗試用swf2js播放(功能不完全)</a>]</span>";
+            warning_text += "<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";
         }
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
-        warning_node.style.fontSize = "12px";
+        warning_node.style.fontSize = "11px";
         warning_node.style.marginTop  = "12px";
         warning_node.style.lineHeight = "12px";
+        warning_node.style..display = "inline";
         document.getElementsByClassName("pagehead")[0].appendChild(warning_node);
     }
 }
 
 var linkOfficial = function() {
     document.getElementById("official-link").href = "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900).toString();
+}
+
+var importRuffleRS = function() {
+    var imported = document.createElement('script');
+    imported.src = '/ruffle/ruffle.js';
+    document.head.appendChild(imported);
 }
 
 var loadswf2js = function() {
