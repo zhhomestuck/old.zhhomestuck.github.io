@@ -26,7 +26,7 @@ function vizFlashContentWrapper(){
         o_no_flash.style.fontSize = "11px";
         o_no_flash.style.marginTop  = "12px";
         o_no_flash.style.lineHeight = "12px";
-        o_no_flash.style.display = "inline";
+        o_no_flash.style.display = "block";
         document.getElementsByClassName("pagehead")[0].appendChild(o_no_flash);
     }
 }
