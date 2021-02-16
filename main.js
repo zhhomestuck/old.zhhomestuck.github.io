@@ -60,8 +60,8 @@ var loadswf2js = function() {
     imported.src = 'https://zhhomestuck.github.io/swf2js/swf2js.js';
     document.head.appendChild(imported);
     var flashElem;
-    // if there is object tag that mean the flash file is linked to zhhomestuck.github.io */
-    // so this is a translated flash file */
+    // if there is object tag that mean the flash file is linked to zhhomestuck.github.io
+    // so this is a translated flash file
     if (document.getElementsByTagName("object").length == 1) {
         flashElem = document.getElementsByTagName("object")[0];
     }
