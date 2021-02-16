@@ -40,7 +40,7 @@ var flashWarning = function() {
         warning_node.style.fontSize = "11px";
         warning_node.style.marginTop  = "12px";
         warning_node.style.lineHeight = "12px";
-        warning_node.style..display = "inline";
+        warning_node.style.display = "inline";
         document.getElementsByClassName("pagehead")[0].appendChild(warning_node);
     }
 }
