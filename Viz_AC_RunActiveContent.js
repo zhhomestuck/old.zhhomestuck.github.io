@@ -10,7 +10,7 @@ function vizFlashContentWrapper(){
     //if(DetectFlashVer(9,0,0)||e)
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
-        t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";";
+        t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";
     }
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null),
@@ -20,7 +20,7 @@ function vizFlashContentWrapper(){
         else if(a.params.altimgsrc){
             var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)}
         else 
-            t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";";
+            t="由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放</a>]</span>";
         o_no_flash = document.createElement("div");
         o_no_flash.innerHTML = t;
         o_no_flash.style.fontSize = "11px";
