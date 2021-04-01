@@ -27,7 +27,7 @@ function vizFlashContentWrapper(){
             }
             
             for (var i in splited_src) {
-                var imgtag = '<img src="' + splited_src[i] + '">';
+                var n = '<img src="' + splited_src[i] + '">';
                 if (splited_href) n = '<a href="' + splited_href[i] + '">' + n + "</a>";
                 document.write(n);
             }
