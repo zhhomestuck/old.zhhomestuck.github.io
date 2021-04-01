@@ -21,9 +21,9 @@ function vizFlashContentWrapper(){
         }
         else if(a.params.altimgsrc){
              
-            if (a.param.altaudiosrc) {
+            if (a.params.altaudiosrc) {
                 var n = document.createElement("audio");
-                n.src = altaudiosrc;
+                n.src = a.param.altaudiosrc;
                 n.loop = "loop";
                 document.getElementsByClassName("pagebody")[0].appendChild(n);
             }
