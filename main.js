@@ -52,6 +52,5 @@ var linkOfficial = function() {
 var importRuffleRS = function() {
     var imported = document.createElement('script');
     imported.src = 'https://zhhomestuck.github.io/ruffle/ruffle.js';
-    imported.async = "false";
     document.head.appendChild(imported);
 }
