@@ -8,10 +8,10 @@ function vizFlashContentWrapper(){
     }
     var e=("1"==getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
-    var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+    var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
-        t=no_flash_warning_text;
+        no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
     }
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null),
@@ -40,12 +40,9 @@ function vizFlashContentWrapper(){
                 document.write(n);
             }
         }
-        else {
-            t=no_flash_warning_text;
-        }
     }
     var flash_warning = document.createElement("div");
-    flash_warning.innerHTML = t;
+    flash_warning.innerHTML = no_flash_warning_text + "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";;
     flash_warning.style.fontSize = "11px";
     flash_warning.style.marginTop  = "12px";
     flash_warning.style.lineHeight = "12px";
