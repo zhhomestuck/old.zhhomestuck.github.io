@@ -8,7 +8,7 @@ function vizFlashContentWrapper(){
     }
     var e=("1"==getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
-    var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+    var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
         t=no_flash_warning_text;
@@ -20,7 +20,18 @@ function vizFlashContentWrapper(){
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         }
         else if(a.params.altimgsrc){
-            var n='<img src="'+a.params.altimgsrc+'">';a.params.altimghref&&(n='<a href="'+a.params.altimghref+'">'+n+"</a>"),document.write(n)
+            var splited_src = a.params.altimgsrc.split("|");
+            var splited_href = undefined;
+            if (a.params.altimghref) {
+                var splited_href = a.params.altimghref.split("|");
+            }
+            
+            for (var i in splited_src) {
+                var imgtag = '<img src="' + splited_src[i] + '">';
+                if (splited_href) n = '<a href="' + splited_href[i] + '">' + n + "</a>";
+                document.write(n);
+            }
+            
         }
         else {
             t=no_flash_warning_text;
