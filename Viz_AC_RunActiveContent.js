@@ -25,6 +25,7 @@ function vizFlashContentWrapper(){
                 var n = document.createElement("audio");
                 n.src = a.params.altaudiosrc;
                 n.loop = "loop";
+                n.controls = "controls";
                 document.getElementsByClassName("pagebody")[0].appendChild(n);
             }
             
