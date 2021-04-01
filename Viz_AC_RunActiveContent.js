@@ -8,14 +8,15 @@ function vizFlashContentWrapper(){
     if (e) {
         no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
     }
-    
+    var can_use_ruffle = false;
     
     for (var i = 0; i < arguments.length; i++){
         arguments[i] = arguments[i].replace(/^\/flash/,"https://www.homestuck.com/flash");
         arguments[i] = arguments[i].replace(/^http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
-        if (arguments[i].includes("zhhomestuck.github.io")) { // because cross domain script loading is restricted
-            no_flash_warning_text += "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
-        }
+        can_use_ruffle = can_use_ruffle || arguments[i].includes("zhhomestuck.github.io");
+    }
+    if (can_use_ruffle) { // cross domain script loading is restricted
+        no_flash_warning_text += "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
     }
     
     var e=("1"==getUrlParameterByName("fl"));
