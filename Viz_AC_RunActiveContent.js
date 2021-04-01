@@ -11,9 +11,14 @@ function vizFlashContentWrapper(){
     
     var head_text = "";
     var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
+    if (e) {
+        no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
+    }
+    no_flash_warning_text += "<br /><span>[<a onclick='this.parentElement.style.display=\'none\';importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+    
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
-        head_text = no_flash_warning_text + "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
+        head_text = no_flash_warning_text;
     }
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null);
@@ -45,16 +50,16 @@ function vizFlashContentWrapper(){
             }
         }
         else {
-            head_text += "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+            head_text = no_flash_warning_text;
         }
     }
-    var flash_warning = document.createElement("div");
-    flash_warning.innerHTML = head_text;
-    flash_warning.style.fontSize = "11px";
-    flash_warning.style.marginTop  = "12px";
-    flash_warning.style.lineHeight = "12px";
-    flash_warning.style.display = "block";
-    document.getElementsByClassName("pagehead")[0].appendChild(flash_warning);
+    var head_text_node = document.createElement("div");
+    head_text_node.innerHTML = head_text;
+    head_text_node.style.fontSize = "11px";
+    head_text_node.style.marginTop  = "12px";
+    head_text_node.style.lineHeight = "12px";
+    head_text_node.style.display = "block";
+    document.getElementsByClassName("pagehead")[0].appendChild(head_text_node);
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
 $(document).ready(
