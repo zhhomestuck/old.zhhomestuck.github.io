@@ -8,14 +8,17 @@ function vizFlashContentWrapper(){
     }
     var e=("1"==getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
+    
+    var head_text = "";
     var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
-        no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
+        head_text = no_flash_warning_text + "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
     }
     else{
-        var a=AC_GetArgs(arguments,".swf","movie",null,null),
-            t='若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
+        var a=AC_GetArgs(arguments,".swf","movie",null,null);
+        head_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
+        
         if(a.params.youtubeid) {
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         }
@@ -41,9 +44,12 @@ function vizFlashContentWrapper(){
                 document.write(n);
             }
         }
+        else {
+            head_text += "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+        }
     }
     var flash_warning = document.createElement("div");
-    flash_warning.innerHTML = no_flash_warning_text + "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";;
+    flash_warning.innerHTML = head_text;
     flash_warning.style.fontSize = "11px";
     flash_warning.style.marginTop  = "12px";
     flash_warning.style.lineHeight = "12px";

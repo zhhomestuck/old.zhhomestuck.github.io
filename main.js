@@ -33,7 +33,7 @@ var flashWarning = function() {
         var flashUrl = flashElem.data || flashElem.src;
         var warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。<br />";
         if (flashUrl.includes("zhhomestuck")) {
-            warning_text += "<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' style='color:#0000ff;cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+            warning_text += "<span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
         }
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
