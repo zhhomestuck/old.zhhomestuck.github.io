@@ -23,7 +23,7 @@ function vizFlashContentWrapper(){
              
             if (a.params.altaudiosrc) {
                 var n = document.createElement("audio");
-                n.src = a.param.altaudiosrc;
+                n.src = a.params.altaudiosrc;
                 n.loop = "loop";
                 document.getElementsByClassName("pagebody")[0].appendChild(n);
             }

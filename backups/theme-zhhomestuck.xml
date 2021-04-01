@@ -22,8 +22,7 @@
 	  AC_FL_RunContent = 0;
 	  //]]>
 	</script>
-    <script src='https://zhhomestuck.github.io/swf2js/swf2js.js'/> <!-- swf2js -->
-	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/><!-- code edited to link as absolute url to homestuck.com -->
+	<script src='https://zhhomestuck.github.io/Viz_AC_RunActiveContent.js'/> <!-- handle medias & edited to link as absolute url to homestuck.com -->
     <script src='https://zhhomestuck.github.io/main.js'/> <!-- linkOfficial, makeSpoilerLog and flashWarning -->
     
     <b:skin><![CDATA[
@@ -488,7 +487,18 @@ width: auto;
     height: 0;
     padding: 69.23076923076923% 0 0 0;
   }
-  #conent_container, #animation_container, #_preload_div_ {
+  #swf2js-container, #swf2js-container div {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  #swf2js-preloader {
+    width: 100%;
+  }
+  #swf2js_0_loading {
+    display: none;
+  }
+  #cotent_container, #animation_container, #_preload_div_ {
     padding: 0;
     margin: 0 auto;
   }
@@ -605,7 +615,7 @@ width: auto;
   /* Quirks */
   #gamzee b {
     font-weight: normal;
-    font-size: 66%;
+    font-size: 75%;
     vertical-align: -2px;
   }
    #arquius span img.shades {
@@ -875,6 +885,7 @@ head.appendChild(script);
                           <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                           <b:widget-setting name='style.bgcolor'>#535353</b:widget-setting>
+                          <b:widget-setting name='reactionsLabel'/>
                           <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                           <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                           <b:widget-setting name='showLabels'>false</b:widget-setting>
