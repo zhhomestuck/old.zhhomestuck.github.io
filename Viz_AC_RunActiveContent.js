@@ -14,7 +14,7 @@ function vizFlashContentWrapper(){
     if (e) {
         no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
     }
-    no_flash_warning_text += "<br /><span>[<a onclick='this.parentElement.style.display=\'none\';importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
+    no_flash_warning_text += "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
     
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
