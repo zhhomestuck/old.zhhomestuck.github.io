@@ -20,6 +20,14 @@ function vizFlashContentWrapper(){
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         }
         else if(a.params.altimgsrc){
+             
+            if (a.param.altaudiosrc) {
+                var n = document.createElement("audio");
+                n.src = altaudiosrc;
+                n.loop = "loop";
+                document.getElementsByClassName("pagebody")[0].appendChild(n);
+            }
+            
             var splited_src = a.params.altimgsrc.split("|");
             var splited_href = undefined;
             if (a.params.altimghref) {
@@ -31,7 +39,6 @@ function vizFlashContentWrapper(){
                 if (splited_href) n = '<a href="' + splited_href[i] + '">' + n + "</a>";
                 document.write(n);
             }
-            
         }
         else {
             t=no_flash_warning_text;
