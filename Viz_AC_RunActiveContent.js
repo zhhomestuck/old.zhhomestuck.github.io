@@ -33,11 +33,7 @@ function vizFlashContentWrapper(){
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null);
         head_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
-        
-        if (a.params.movie.includes("zhhomestuck")) { // cross domain script loading is restricted
-            importRuffleRS(); // now auto import Ruffle because it works
-        }
-        
+
         if(a.params.youtubeid) {
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
         }
