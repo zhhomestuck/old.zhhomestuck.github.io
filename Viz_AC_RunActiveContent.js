@@ -34,7 +34,7 @@ function vizFlashContentWrapper(){
         var a=AC_GetArgs(arguments,".swf","movie",null,null);
         head_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
         
-        if (a.params.src.includes("zhhomestuck")) { // cross domain script loading is restricted
+        if (a.params.movie.includes("zhhomestuck")) { // cross domain script loading is restricted
             no_flash_warning_text += "<br /><span>[<a onclick='this.parentElement.style.display=\"none\";importRuffleRS();' href='#' style='cursor:pointer;'>可嘗試使用Ruffle播放(功能不完全)</a>]</span>";
         }
         
