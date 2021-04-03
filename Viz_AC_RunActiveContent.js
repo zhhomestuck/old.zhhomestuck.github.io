@@ -28,7 +28,7 @@ function vizFlashContentWrapper(){
     
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
-        head_text = no_flash_warning_text;
+        head_text = "";
     }
     else{
         var a=AC_GetArgs(arguments,".swf","movie",null,null);
@@ -65,16 +65,18 @@ function vizFlashContentWrapper(){
         }
         else {
             AC_FL_RunContent.apply(null,arguments);
-            head_text = no_flash_warning_text;
+            head_text = ""; // warning is handled by flashWarning()
         }
     }
-    var head_text_node = document.createElement("div");
-    head_text_node.innerHTML = head_text;
-    head_text_node.style.fontSize = "11px";
-    head_text_node.style.marginTop  = "12px";
-    head_text_node.style.lineHeight = "12px";
-    head_text_node.style.display = "block";
-    document.getElementsByClassName("pagehead")[0].appendChild(head_text_node);
+    if (head_text != "") {
+        var head_text_node = document.createElement("div");
+        head_text_node.innerHTML = head_text;
+        head_text_node.style.fontSize = "11px";
+        head_text_node.style.marginTop  = "12px";
+        head_text_node.style.lineHeight = "12px";
+        head_text_node.style.display = "block";
+        document.getElementsByClassName("pagehead")[0].appendChild(head_text_node);
+    }
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
 $(document).ready(
