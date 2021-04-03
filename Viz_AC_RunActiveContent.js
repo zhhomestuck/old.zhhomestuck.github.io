@@ -64,6 +64,7 @@ function vizFlashContentWrapper(){
             }
         }
         else {
+            AC_FL_RunContent.apply(null,arguments);
             head_text = no_flash_warning_text;
         }
     }
