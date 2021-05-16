@@ -172,20 +172,6 @@ div.log-inner span img {
   padding: 0;
   margin: 0 auto;
 }
-#swf2js-container {
-  /* canvas container create by swf2js */
-  /* it convert our translated flash that linked in the <object> tag to html5 canvas */
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
-}
-#swf2js-preloader, #swf2js-container div {
-  padding: 0;
-  margin: 0 auto;
-}
-#swf2js_0_loading {
-  display: none;
-}
 /* PF */
 .pagefoot {
   padding: 20px 20px 10px 20px;
@@ -226,6 +212,7 @@ display: inline-block;
 #contribute, #contribute a {
   text-align: -webkit-center; text-align: center;
   text-decoration: none;
+  font: 11px Arial;
   width: 100%;
 }
 /* Bannerframe */
