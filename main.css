@@ -13,7 +13,8 @@ div, .pagebody div img, table, td, p {
   text-align: -webkit-center; text-align: center;
 }
 b {font-weight:bold;}
-/* nav */
+
+/* Navigation Bar */
 .header {
   width: 100wv;
   max-width: 950px;
@@ -35,7 +36,8 @@ b {font-weight:bold;}
   vertical-align: middle;
   border: 0;
 }
-/* mspa content */
+
+/* Content Wrapper */
 .content {
   width: 100wv;
   max-width: 950px;
@@ -56,14 +58,16 @@ b {font-weight:bold;}
 .page {
   background-color: #eeeeee;
 }
-/* PH */
+
+/* Pagehead */
 .pagehead {
   padding: 15px 0px;
   font-weight: bold;
   font-size: 32px;
   font-family: Courier, Verdana, monospace;
 }
-/* PB */
+
+/* Pagebody */
 .pagebody {
   margin-top: -8px;
   border-spacing: 0;
@@ -77,24 +81,13 @@ b {font-weight:bold;}
   width: auto;
   margin: 0;
 }
-.pagebody embed, .pagebody object {
-  margin-bottom: 15px;
-  width: 100vw;
-  max-width: 650px;
-  height: 69.23vw;
-  max-height: 450px;
-  /* 
-    This is standard panel size
-    If there are non-standard falsh panel size
-    put these in post:
-    .mobile .pagebody embed, .pagebody embed {height: (h/w ratio)vw; max-height: (actual height)px;} #o_flash-container {padding-top: (h/w ratio)%;} 
-  */
-}
+
 .pagebody div {
   vertical-align: middle;
   padding: 15px 20px 0 20px;
 }
-/* note and log */
+
+/* Note */
 div#note, div.note {
   padding-top: 50px;
   text-align: left;
@@ -108,6 +101,8 @@ span#note, span.note {
   top: -2px;
   text-align: left;
 }
+
+/* Log */
 div.log-outer {
   border: 1px dashed gray;
   padding: 1px 0;
@@ -158,7 +153,21 @@ div.log-inner span img {
   border: dashed 1px gray;
   text-align: -webkit-center; text-align: center;
 }
+
 /* Flashes & Videos */
+.pagebody embed, .pagebody object {
+  margin-bottom: 15px;
+  width: 100vw;
+  max-width: 650px;
+  height: 69.23vw;
+  max-height: 450px;
+  /* 
+    This is standard panel size
+    If there are non-standard falsh panel size
+    put these in post:
+    .mobile .pagebody embed, .pagebody embed {height: (h/w ratio)vw; max-height: (actual height)px;} #o_flash-container {padding-top: (h/w ratio)%;} 
+  */
+}
 #o_flash-container {
   /* created by Viz_AC_RunActiveContent.js */
   /* the tag contained by this is a <embed> */
@@ -172,7 +181,8 @@ div.log-inner span img {
   padding: 0;
   margin: 0 auto;
 }
-/* PF */
+
+/* Pagefoot */
 .pagefoot {
   padding: 20px 20px 10px 20px;
   text-align: left;
@@ -182,6 +192,7 @@ div.log-inner span img {
 .pagefoot a#newer-page-link {
   line-height: 30px !important;
 }
+
 /* PFF */
 #pagefooter-option {
   text-align: left;
@@ -192,6 +203,7 @@ div.log-inner span img {
 #pagefooter-url {
   font-size: 12px;
 }
+
 /* Quirk */
 #gamzee b {
   font-weight: normal;
@@ -208,14 +220,14 @@ border: 0;
 background: url("/images/arspritetxt_glitch.gif") repeat-x left center;
 display: inline-block;
 }
-/* footer */
+
+/* Footer & Bannerframe */
 #contribute, #contribute a {
   text-align: -webkit-center; text-align: center;
   text-decoration: none;
   font: 11px Arial;
   width: 100%;
 }
-/* Bannerframe */
 .footer-bannerframe {
   background-color: #535353;
   margin: 0; 
@@ -229,6 +241,7 @@ display: inline-block;
   padding-top: 10px;
   font-size: 36px;
 }
+
 /* On screens that are 650px or less, set the smaller font sizes */
 @media screen and (max-width: 675px) {
   body {
@@ -248,6 +261,7 @@ display: inline-block;
 /************
 SCRATCH PAGES
 *************/
+
 .scratch a:active, .scratch a:hover, .scratch a:link, .scratch a:visited {
     color: #2cff4b;
 }
@@ -286,6 +300,7 @@ SCRATCH PAGES
 /************
 SBAHJ PAGES
 *************/
+
 body.sbahj {
     font-family: 'Comic Sans MS', '華康海報體W12', '標楷體';
 }
