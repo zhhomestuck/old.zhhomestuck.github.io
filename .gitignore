@@ -1,4 +1,5 @@
 _site
 _newp
+/p/tmp
 .sass-cache
 .jekyll-metadata
