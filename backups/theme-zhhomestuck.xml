@@ -2066,15 +2066,7 @@ head.appendChild(script);
               <!-- columns -->
             </div>
             <div id='contribute' style='font: 11px Arial;'>
-              Homestuck的
-              <a href='http://zhhomestuck.blogspot.tw/p/copyright.html'>
-                著作權
-              </a>
-              屬於Andrew Hussie&#12290;這是由讀者所製作的非官方非營利目的翻譯版本&#12290;網站由  
-              <a href='https://www.blogger.com/'>
-                Blogger 
-              </a>
-              技術提供
+              Homestuck的著作權屬於Andrew Hussie&#12290;這是由讀者所製作的非官方非營利目的翻譯版本&#12290;詳見<a href='http://zhhomestuck.blogspot.tw/p/copyright.html'>著作權聲明</a>&#12290;網站由Blogger技術提供&#12290;
             </div>
             <!-- main -->
           </div>
