@@ -32,7 +32,7 @@ var flashWarning = function() {
     }
     if(flashElem){
         var flashUrl = flashElem.data || flashElem.src;
-        var warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。\n[<a onclick="importRuffleRS()">使用ruffle播放]</a>";
+        var warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。\n[<a onclick=\"importRuffleRS()\">使用ruffle播放]</a>";
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
