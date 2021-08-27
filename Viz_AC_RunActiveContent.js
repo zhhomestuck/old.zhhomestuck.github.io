@@ -71,7 +71,7 @@ function vizFlashContentWrapper(){
         head_text_node.style.marginTop  = "12px";
         head_text_node.style.lineHeight = "12px";
         head_text_node.style.display = "block";
-        head_text_node.class = "head_warning_text"
+        head_text_node.className = "head_warning_text"
         let pb = document.getElementsByClassName("pagebody")[0];
         pb.parentNode.insertBefore(head_text_node, pb);
     }
