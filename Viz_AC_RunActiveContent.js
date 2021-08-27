@@ -17,22 +17,17 @@ function vizFlashContentWrapper(){
         arguments[i] = arguments[i].replace(/^http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
     }
     
-    let head_text = "";
-    let no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
-    if (e) {
-        no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
-    }
-    
     let e=("1"==getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
     
+    let warning_text = "";    
     if(e) {
         AC_FL_RunContent.apply(null,arguments);
-        head_text = "";
+        warning_text = "";
     }
     else{
-        var a=AC_GetArgs(arguments,".swf","movie",null,null);
-        head_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
+        let a = AC_GetArgs(arguments,".swf","movie",null,null);
+        warning_text = '若要查看原始的呈現內容，請在<nobr>啟用Flash</nobr>的設備下觀看。 (<a href="/'+window.location.pathname.replace(/^\/+/g,"")+'?fl=1">顯示看看</a>)';
 
         if(a.params.youtubeid) {
             document.write('<div id="o_flash-container"><iframe style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;" src="https://www.youtube.com/embed/'+a.params.youtubeid+'" frameborder="0" allowfullscreen></iframe></div>');
@@ -65,15 +60,15 @@ function vizFlashContentWrapper(){
         }
     }
     if (head_text != "") {
-        let head_text_node = document.createElement("div");
-        head_text_node.innerHTML = head_text;
-        head_text_node.style.fontSize = "11px";
-        head_text_node.style.marginTop  = "12px";
-        head_text_node.style.lineHeight = "12px";
-        head_text_node.style.display = "block";
-        head_text_node.className = "flash_warning_text"
+        let warning_node = document.createElement("div");
+        warning_node.innerHTML = warning_text;
+        warning_node.style.fontSize = "11px";
+        warning_node.style.marginTop  = "12px";
+        warning_node.style.lineHeight = "12px";
+        warning_node.style.display = "block";
+        warning_node.className = "flash_warning_text"
         let pb = document.getElementsByClassName("pagebody")[0];
-        pb.parentNode.insertBefore(head_text_node, pb);
+        pb.parentNode.insertBefore(warning_node, pb);
     }
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}

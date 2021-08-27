@@ -39,7 +39,9 @@ var flashWarning = function() {
         warning_node.style.marginTop  = "12px";
         warning_node.style.lineHeight = "12px";
         warning_node.style.display = "block";
-        document.getElementsByClassName("pagehead")[0].appendChild(warning_node);
+        warning_node.className = "flash_warning_text"
+        let pb = document.getElementsByClassName("pagebody")[0];
+        pb.parentNode.insertBefore(warning_node, pb);
     }
 }
 
