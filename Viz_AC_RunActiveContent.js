@@ -56,10 +56,10 @@ function vizFlashContentWrapper(){
         }
         else {
             AC_FL_RunContent.apply(null,arguments);
-            head_text = ""; // warning is handled by flashWarning()
+            warning_text = ""; // warning is handled by flashWarning()
         }
     }
-    if (head_text != "") {
+    if (warning_text != "") {
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
