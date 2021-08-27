@@ -12,18 +12,18 @@ function ControlVersion(){var e,a;try{e=(a=new ActiveXObject("ShockwaveFlash.Sho
 
 // Copyright 2018 Viz Media & Homestuck
 function vizFlashContentWrapper(){
-    for (var i = 0; i < arguments.length; i++){
+    for (let i = 0; i < arguments.length; i++){
         arguments[i] = arguments[i].replace(/^\/flash/,"https://www.homestuck.com/flash");
         arguments[i] = arguments[i].replace(/^http:\/\/cdn.mspaintadventures.com\/storyfiles/,"https://www.homestuck.com/flash");
     }
     
-    var head_text = "";
-    var no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
+    let head_text = "";
+    let no_flash_warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看。";
     if (e) {
         no_flash_warning_text += "[<a style=\"text-decoration:none;\" href=\"/" + window.location.pathname.replace(/^\/+/g,"") + "?fl=0\">回到不使用Flash的版本</a>]";
     }
     
-    var e=("1"==getUrlParameterByName("fl"));
+    let e=("1"==getUrlParameterByName("fl"));
     //if(DetectFlashVer(9,0,0)||e)
     
     if(e) {
@@ -40,21 +40,21 @@ function vizFlashContentWrapper(){
         else if(a.params.altimgsrc){
              
             if (a.params.altaudiosrc) {
-                var n = document.createElement("audio");
+                let n = document.createElement("audio");
                 n.src = a.params.altaudiosrc;
                 n.loop = "loop";
                 n.controls = "controls";
                 document.getElementsByClassName("pagebody")[0].appendChild(n);
             }
             
-            var splited_src = a.params.altimgsrc.split("|");
-            var splited_href = undefined;
+            let splited_src = a.params.altimgsrc.split("|");
+            let splited_href = undefined;
             if (a.params.altimghref) {
                 var splited_href = a.params.altimghref.split("|");
             }
             
             for (var i in splited_src) {
-                var n = '<img src="' + splited_src[i] + '">';
+                let n = '<img src="' + splited_src[i] + '">';
                 if (splited_href) n = '<a href="' + splited_href[i] + '">' + n + "</a>";
                 document.write(n);
             }
@@ -65,13 +65,15 @@ function vizFlashContentWrapper(){
         }
     }
     if (head_text != "") {
-        var head_text_node = document.createElement("div");
+        let head_text_node = document.createElement("div");
         head_text_node.innerHTML = head_text;
         head_text_node.style.fontSize = "11px";
         head_text_node.style.marginTop  = "12px";
         head_text_node.style.lineHeight = "12px";
         head_text_node.style.display = "block";
-        document.getElementsByClassName("pagehead")[0].appendChild(head_text_node);
+        head_text_node.class = "head_warning_text"
+        let pb = document.getElementsByClassName("pagebody")[0];
+        pb.parentNode.insertBefore(head_text_node, pb);
     }
 }
 function getUrlParameterByName(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");var a=new RegExp("[\\?&]"+e+"=([^&#]*)"),t=a.exec(location.search);return null===t?"":decodeURIComponent(t[1].replace(/\+/g," "))}
