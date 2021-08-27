@@ -211,14 +211,14 @@ div.log-inner span img {
   vertical-align: -2px;
 }
 #arquius span img.shades {
-background: url("/images/arquius_shades.png") no-repeat;
-margin: 0;
-padding: 8px 19px;
-border: 0;
+  background: url("/images/arquius_shades.png") no-repeat;
+  margin: 0;
+  padding: 8px 19px;
+  border: 0;
 }
 #arquius span span.glitch {
-background: url("/images/arspritetxt_glitch.gif") repeat-x left center;
-display: inline-block;
+  background: url("/images/arspritetxt_glitch.gif") repeat-x left center;
+  display: inline-block;
 }
 
 /* Footer & Bannerframe */
@@ -263,7 +263,7 @@ SCRATCH PAGES
 *************/
 
 .scratch a:active, .scratch a:hover, .scratch a:link, .scratch a:visited {
-    color: #2cff4b;
+  color: #2cff4b;
 }
 .scratch,
 .scratch .header,
@@ -288,10 +288,10 @@ SCRATCH PAGES
   color: #fff
 }
 #s_header {
-    max-height: 175px;
-    height: 19vw; /* 175/940 */
-    background-size: 100% auto !important;
-    background-repeat: no-repeat !important;
+  max-height: 175px;
+  height: 19vw; /* 175/940 */
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important;
 }
 #s_header_src {
   display: none;
@@ -302,26 +302,26 @@ SBAHJ PAGES
 *************/
 
 body.sbahj {
-    font-family: 'Comic Sans MS', '華康海報體W12', '標楷體';
+  font-family: 'Comic Sans MS', '華康海報體W12', '標楷體';
 }
 body.sbahj, .sbahj footer {
-    background-color:#0707ec;
+  background-color:#0707ec;
 }
 .sbahj .content, .sbahj .footer-outer {
-    background-color:#fa00ec;
+  background-color:#fa00ec;
 }
 .sbahj .mspanav {
-    background-color:#000000;
-    font-size:14px;
+  background-color:#000000;
+  font-size:14px;
 }
 .sbahj .content-inner, .sbahj .page {
-    background-color:#14ff23;
+  background-color:#14ff23;
 }
 .sbahj .footer-bannerframe {
-    margin-top: 20px;
-    height: 120px;
-    background-image: url('/images/mspalogo_sbahj.jpg');
-    background-repeat: no-repeat;
+  margin-top: 20px;
+  height: 120px;
+  background-image: url('/images/mspalogo_sbahj.jpg');
+  background-repeat: no-repeat;
 }
 
 /************
@@ -329,22 +329,22 @@ TRICKSTER PAGES
 *************/
 
 body.trickster {
-    background-color: #5a5a5a;
-    background-image: url('/images/trickster_theme_bg.gif');
+  background-color: #5a5a5a;
+  background-image: url('/images/trickster_theme_bg.gif');
 }
 .trickster a {color: red;}
 .trickster .content {
-    padding-bottom: 30px;
-    background-image: url('/images/trickster_theme_bluetiles.gif');
+  padding-bottom: 30px;
+  background-image: url('/images/trickster_theme_bluetiles.gif');
 }
 .trickster div.header {
-    height: 23px;
-    background-image: url('/images/trickster_theme_headercandy.gif');
-    animation: trickster-scroll 20s linear infinite;
-    -webkit-animation: trickster-scroll 20s linear infinite;
+  height: 23px;
+  background-image: url('/images/trickster_theme_headercandy.gif');
+  animation: trickster-scroll 20s linear infinite;
+  -webkit-animation: trickster-scroll 20s linear infinite;
 }
 .trickster  span.mspanav {
-    visibility: hidden;
+  visibility: hidden;
 }
 .trickster .content-inner,
 .trickster .page,
@@ -352,32 +352,32 @@ body.trickster {
 .trickster .pagebody,
 .trickster .pagefoot,
 .trickster .post-footer {
-    background-color: #ff73fd;
-    color: #f9fd6b;
+  background-color: #ff73fd;
+  color: #f9fd6b;
 }
 .trickster .trickster-text {
-    -webkit-animation: trickster-glow 0.25s linear infinite;
-    animation: trickster-glow 0.25s linear infinite;
+  -webkit-animation: trickster-glow 0.25s linear infinite;
+  animation: trickster-glow 0.25s linear infinite;
 }
 .trickster  footer,
 .trickster .footer-bannerframe {
-    background-color: transparent;
-    width: 100vw;
-    max-width: 950px;
-    margin: 0 auto;
-    color: #f9fd6b;
+  background-color: transparent;
+  width: 100vw;
+  max-width: 950px;
+  margin: 0 auto;
+  color: #f9fd6b;
 }
 .trickster #trickster-banner-head-left {
-    float: left;
-    width: 110px;
-    height: 102px;
-    background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
+  float: left;
+  width: 110px;
+  height: 102px;
+  background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
 }
 .trickster #trickster-banner-head-right {
-    float: right;
-    width: 110px;
-    height: 102px;
-    background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
+  float: right;
+  width: 110px;
+  height: 102px;
+  background: transparent url('/images/trickster_theme_facefooter.gif') no-repeat;
 }
 
 @-webkit-keyframes trickster-glow{0%{color: #fff6d1;}33%{color: #f0d1ff;}100%{color: #d1ffe3;}}
@@ -390,41 +390,41 @@ X2COMBO PAGES
 *************/
 
 .x2combo  #x2combo-header{
-    height: 44px;
-    margin: 0px auto;
-    background: #232323 url('/images/act6act5act1x2combo.gif');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
+  height: 44px;
+  margin: 0px auto;
+  background: #232323 url('/images/act6act5act1x2combo.gif');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
 }
 .x2combo .header,
 .x2combo .content,
 .x2combo .footer-bannerframe {
-    width: 100vw;
-    max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
-    min-width: 670px; /* 325 + 20 + 325 */
+  width: 100vw;
+  max-width: 1620px; /* 150 + 650 + 20 + 650 + 150 */
+  min-width: 670px; /* 325 + 20 + 325 */
 }
 .x2combo .content-inner {
-    max-width: 1320px; /* 650 + 20 + 650 */
+  max-width: 1320px; /* 650 + 20 + 650 */
 }
 .x2combo .x2combo-td {
-    display: block;
-    font-size: 15px; /* somehow table tag changes font size */
-    max-width: 650px;
-    min-width: 325px;
+  display: block;
+  font-size: 15px; /* somehow table tag changes font size */
+  max-width: 650px;
+  min-width: 325px;
 }
 .x2combo .x2combo-middle-padding {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 .x2combo .x2combo-td .pagefoot {
-    margin-top: 30px;
-    margin-top: 30px;
-    padding-bottom: 30px;
+  margin-top: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
 }
 /* special effect of "next page" link text */
 .x2combo  #x2np {
-    display: inline-block;
-    text-decoration: underline;
-    -ms-transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* IE 9 */
-    transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* 0.5=26.565deg --> sin(26.565deg)=0.894  */
+  display: inline-block;
+  text-decoration: underline;
+  -ms-transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* IE 9 */
+  transform: matrix(0.894, -0.5, 0.5, 0.894, 0, -16); /* 0.5=26.565deg --> sin(26.565deg)=0.894  */
 }
