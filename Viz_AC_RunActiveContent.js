@@ -60,7 +60,7 @@ function vizFlashContentWrapper(){
         }
     }
     if (warning_text != "") {
-        let warning_node = document.createElement("span");
+        let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
