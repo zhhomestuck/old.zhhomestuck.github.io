@@ -65,7 +65,7 @@ function vizFlashContentWrapper(){
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
         warning_node.style.background = "#eeeeee";
-        warning_node.className = "flash_warning_text"
+        warning_node.className = "flash_warning viz_flash_warning"
         let pb = document.getElementsByClassName("pagebody")[0];
         pb.parentNode.insertBefore(warning_node, pb);
     }

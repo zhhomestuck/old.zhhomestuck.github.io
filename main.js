@@ -1,6 +1,6 @@
 
 // Make log
-var makeSpoilerLog = function(parentNode) {
+function makeSpoilerLog(parentNode) {
     if (parentNode === undefined) {
         parentNode = document;
     }
@@ -22,8 +22,8 @@ var makeSpoilerLog = function(parentNode) {
 }
 
 // Warning for manual Flash object on Blogger site
-var flashWarning = function() {
-    var flashElem;
+function flashWarning() {
+    let flashElem;
     if (document.getElementsByTagName("object").length == 1) {
         flashElem = document.getElementsByTagName("object")[0];
     }
@@ -31,25 +31,25 @@ var flashWarning = function() {
         flashElem = document.getElementsByTagName("embed")[0];
     }
     if(flashElem){
-        var flashUrl = flashElem.data || flashElem.src;
-        var warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
+        let flashUrl = flashElem.data || flashElem.src;
+        let warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
         warning_node.style.background = "#eeeeee";
-        warning_node.className = "flash_warning_text"
+        warning_node.className = "flash_warning translated_flash_warning"
         let pb = document.getElementsByClassName("pagebody")[0];
         pb.parentNode.insertBefore(warning_node, pb);
     }
 }
 
-var linkOfficial = function() {
+function linkOfficial() {
     document.getElementById("official-link").href = "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900).toString();
 }
 
-var importRuffleRS = function() {
-    var imported = document.createElement('script');
+function importRuffleRS() {
+    let imported = document.createElement('script');
     imported.src = 'https://zhhomestuck.github.io/ruffle/ruffle.js';
     document.head.appendChild(imported);
 }
