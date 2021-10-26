@@ -162,7 +162,7 @@ div.log-inner span img {
   max-height: 450px;
   /* 
     This is standard panel size
-    If there are non-standard falsh panel size
+    If there are non-standard flash panel size
     put these in post:
     .mobile .pagebody embed, .pagebody embed {height: (h/w ratio)vw; max-height: (actual height)px;} #o_flash-container {padding-top: (h/w ratio)%;} 
   */
@@ -190,10 +190,6 @@ div.log-inner span img {
 }
 .pagefoot a#newer-page-link {
   line-height: 30px !important;
-}
-.pagefoot .to-jz {
-  font-size: 18px;
-  font-style: italic;
 }
 
 /* PFF */
