@@ -1,4 +1,10 @@
 
+function main() {
+    dynamicLinks();
+    makeSpoilerLog();
+    flashWarning();
+}
+
 // Make log
 function makeSpoilerLog(parentNode) {
     if (parentNode === undefined) {
@@ -17,7 +23,13 @@ function makeSpoilerLog(parentNode) {
         if ("name" in spoilerDOMs[i].attributes) {
             spoilerName = spoilerDOMs[i].getAttribute("name");
         }
-        spoilerDOMs[i].innerHTML = "<div class=\"log-outer\"><div><button type=\"button\" onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\" onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\" title=\"點擊以顯示\">Show " + spoilerName + "</button></div><div class=\"spoiler\" style=\"display:none;\"><div><button type=\"button\" onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\" title=\"點擊以隱藏\">Hide " + spoilerName + "</button></div><div class=\"log-inner\">" + spoilerDOMs[i].innerHTML + "</div></div></div><!-- LOG END -->";
+        spoilerDOMs[i].innerHTML = "<div class=\"log-outer\"><div><button type=\"button\"\
+            onmouseover=\"this.sv=this.style.backgroundColor;this.style.backgroundColor=\'#777777\';\" \
+            onmouseout=\"if(this.sv)this.style.backgroundColor=this.sv;else this.style.backgroundColor=\'\';\"\
+            onclick=\"this.parentNode.parentNode.childNodes[1].style.display=\'block\';this.parentNode.style.display=\'none\';return false;\"\
+            title=\"點擊以顯示\">Show " + spoilerName + "</button></div><div class=\"spoiler\" style=\"display:none;\">\<div><button type=\"button\"\
+            onclick=\"this.parentNode.parentNode.parentNode.childNodes[0].style.display=\'block\';this.parentNode.parentNode.style.display=\'none\';return false;\"\
+            title=\"點擊以隱藏\">Hide " + spoilerName + "</button></div><div class=\"log-inner\">" + spoilerDOMs[i].innerHTML + "</div></div></div><!-- LOG END -->";
     }
 }
 
@@ -44,8 +56,16 @@ function flashWarning() {
     }
 }
 
-function linkOfficial() {
-    document.getElementById("official-link").href = "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900).toString();
+function dynamicLinks() {
+    // link to offical page
+    document.getElementById("official-link").href =
+        "https://www.homestuck.com/story/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900).toString();
+    // link to homestuckjz
+    var isLastPage = document.getElementById("newer-page-link").className == "to-jz";
+    if (isLastPage) {
+        document.getElementById("newer-page-link").href =
+            "https://linzhiyi622.github.io/homestuckjz.GitHub.io/" + (parseInt(document.URL.substr(document.URL.indexOf('00')+2,4))-1900+1).toString() + ".html";
+    }
 }
 
 function importRuffleRS() {

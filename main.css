@@ -61,7 +61,7 @@ b {font-weight:bold;}
 
 /* Pagehead */
 .pagehead {
-  padding: 15px 0px;
+  padding: 15px 0 10px 0;
   font-weight: bold;
   font-size: 32px;
   font-family: Courier, Verdana, monospace;
@@ -69,7 +69,6 @@ b {font-weight:bold;}
 
 /* Pagebody */
 .pagebody {
-  margin-top: -8px;
   border-spacing: 0;
   font-family: Courier, Verdana, monospace;
 }
@@ -191,6 +190,10 @@ div.log-inner span img {
 }
 .pagefoot a#newer-page-link {
   line-height: 30px !important;
+}
+.pagefoot .to-jz {
+  font-size: 18px;
+  font-style: italic;
 }
 
 /* PFF */
