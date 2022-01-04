@@ -844,7 +844,6 @@ head.appendChild(script);
           <a href='http://zhhomestuck.blogspot.tw/p/search.html' style='color: #f7f72a;'>搜尋</a>
           <img src='https://zhhomestuck.github.io/images/candycorn.gif'/>
           <a href='http://zhhomestuck.blogspot.tw/p/comment.html' style='color: #ffb529;'>留言</a> |
-          <a href='http://zhhomestuck.blogspot.tw/p/contribution.html' style='color: #ffb529;'>貢獻與幫助</a> |
           <a href='http://zhhomestuck.blogspot.tw/p/translators.html' style='color: #ffb529;'>翻譯貢獻人員</a>
         </span>
       </div>
@@ -1399,7 +1398,15 @@ head.appendChild(script);
                                       <data:/>
                                     </a>
                                     </span><br/>
-                                  </b:if>
+                                    <b:else/>
+                                      <b:if cond='data:olderPageUrl'>
+                                      <span class='blog-pager-newer-link-wrapper' id='blog-pager-newer-link-wrapper-id' style='font-size: 0.75em; font-style: italic;'>
+                                      <a class='blog-pager-newer-link' href='#' id='blog-pager-tojz-link-id' onmouseover='this.href=&quot;https://linzhiyi622.github.io/homestuckjz.GitHub.io/&quot; + (parseInt(document.URL.substr(document.URL.indexOf(&quot;00&quot;)+2,4))-1900+1).toString() + &quot;.html&quot;;'>
+                                        ...在簡中翻譯站繼續
+                                      </a>
+                                      </span>
+                                      </b:if>
+                                    </b:if>
                                   <div id='pagefooter-option'>
                                       <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                         <input maxlength='8' name='p' style='max-width: 90px;' type='text'/>
@@ -1413,7 +1420,7 @@ head.appendChild(script);
                                     <span id='jump-to-outter'>
                                       <a onclick='if(document.getElementById(&quot;jump-to-form&quot;).style.display==&quot;none&quot;){document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;inline&quot;;}else{document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;none&quot;;}' style='cursor: pointer; color: blue; text-decoration: underline;'>
                                         跳轉到</a></span> |
-                                    <span id='pagefooter-url'>
+                                    <span id='pagefooter-official'>
                                       <b:if cond='data:olderPageUrl'>
                                         <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
                                       <br/>
@@ -1531,6 +1538,14 @@ head.appendChild(script);
                                     <data:/>
                                   </a>
                                   </span>
+                                <b:else/>
+                                  <b:if cond='data:olderPageUrl'>
+                                    <span class='blog-pager-newer-link-wrapper' id='blog-pager-newer-link-wrapper-id' style='font-size: 0.75em; font-style: italic;'>
+                                    <a class='blog-pager-newer-link' href='#' id='blog-pager-tojz-link-id' onmouseover='this.href=&quot;https://linzhiyi622.github.io/homestuckjz.GitHub.io/&quot; + (parseInt(document.URL.substr(document.URL.indexOf(&quot;00&quot;)+2,4))-1900+1).toString() + &quot;.html&quot;;'>
+                                      ...在簡中翻譯站繼續
+                                    </a>
+                                    </span>
+                                  </b:if>
                                 </b:if>
                                 <div id='pagefooter-option'>
                                   <a class='startover' expr:href='data:blog.homepageUrl'> 重頭開始</a> |
@@ -1547,7 +1562,7 @@ head.appendChild(script);
                                       <input type='submit' value='JumpTo'/></form>
                                   </span> |
                                   <!-- Null -->
-                                  <span id='pagefooter-url'>
+                                  <span id='pagefooter-official'>
                                     <b:if cond='data:olderPageUrl'>
                                       <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(document.URL.substr(document.URL.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
                                     <br/>
@@ -1569,6 +1584,14 @@ head.appendChild(script);
                                     <data:/>
                                   </a>
                                   </span>
+                                <b:else/>
+                                  <b:if cond='data:olderPageUrl'>
+                                    <span class='blog-pager-newer-link-wrapper' id='blog-pager-newer-link-wrapper-id' style='font-size: 0.75em; font-style: italic;'>
+                                    <a class='blog-pager-newer-link' href='#' id='blog-pager-tojz-link-id' onmouseover='this.href=&quot;https://linzhiyi622.github.io/homestuckjz.GitHub.io/&quot; + (parseInt(document.URL.substr(document.URL.indexOf(&quot;00&quot;)+2,4))-1900+1).toString() + &quot;.html&quot;;'>
+                                      ...在簡中翻譯站繼續
+                                    </a>
+                                    </span>
+                                  </b:if>
                                 </b:if>
                                 <div id='pagefooter-option'>
                                   <a class='startover' expr:href='data:blog.homepageUrl'> 重頭開始</a> |
@@ -2066,7 +2089,7 @@ head.appendChild(script);
               <!-- columns -->
             </div>
             <div id='contribute' style='font: 11px Arial;'>
-              Homestuck的著作權屬於Andrew Hussie&#12290;這是由讀者所製作的非官方非營利目的翻譯版本&#12290;詳見<a href='http://zhhomestuck.blogspot.tw/p/copyright.html'>著作權聲明</a>&#12290;網站由Blogger技術提供&#12290;
+              Homestuck的著作權屬於Andrew Hussie&#12290;這是讀者製作的非官方非營利目的翻譯版本&#12290;詳見<a href='http://zhhomestuck.blogspot.tw/p/copyright.html'>著作權聲明</a>&#12290;網站由Blogger技術提供&#12290;
             </div>
             <!-- main -->
           </div>
@@ -2104,8 +2127,7 @@ head.appendChild(script);
       $(document).ready(function(){
         if ($("div#is-trickster-page").length == 0 && $("div#is-x2combo-page").length == 0){
           $("a#blog-pager-newer-link-id").load($("a#blog-pager-newer-link-id").attr("href")+" #pagehead", function() { 
-            var newerLinkTitle = $("a#blog-pager-newer-link-id").text();
-            $("a#blog-pager-newer-link-id").text(" " + newerLinkTitle);
+            $("a#blog-pager-newer-link-id").text(" " + $("a#blog-pager-newer-link-id").text());
           });
         }  
       }); //]]>
@@ -2213,7 +2235,32 @@ function loadarchive(a) {
 </b:section-contents><b:section-contents id='news-column'>
   <b:widget id='Text1' locked='false' mobile='yes' title='新消息' type='Text' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<div id="new-inner"><img id="news-pic" src="https://zhhomestuck.github.io/images/news.png" style="margin: 8px auto 0 auto;" / /><br /><span ="" class="progress-bar"  style="font-size:10px;"><b>進度：已完成約 75%</b></span><br /><div style="font-size: 15px; font-weight: normal; line-height: 1.1; margin: 0 50px; text-align: left;"><hr /><span style="font-style: italic;">2019/9/20 - RM (Updated 2021/01/04)</span><br /><br />目前還在找方法有效的導入官方的HTML5動畫，並把被本站翻譯過的Flash檔案也轉為HTML5動畫。<span style="font-weight: bold;">但這不會是優先的事項</span>。<br /><br /><a href="https://zhhomestuck.github.io/">Github Pages</a>是本計畫「比較正式」的更新網站，之後將會優先在Github網站上設計頁面主題和維護，而Blogger僅作為上傳、測試以及修改頁面的地方。外觀仍依照MSPA的最後版本為準。<br /><br />若有頁面或連結壞掉的情況，可以在留言區回報。<hr /><span style="font-style: italic;">2020/8/21 - RM</span><br /><br />已將人物"Lord English"的中譯名稱從「英格蘭領主」改為「英格利希領主」。<hr /><span style="font-style: italic;">2020/7/19 - RM </span><br /><br />製作了<a href="https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n">Homestuck遊戲翻譯工具</a>。<br /><hr /><span style="font-style: italic;">2019/11/10 - RM</span><br /><br />已對Eridan的語癖做以下修改<br />1. 移除所有「ㄤ(ang)韻替換為ㄢ(an)韻」以及「ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻」的出現<br />2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)、ㄛ(o)、ㄡ(ou)結尾的字。<br /><hr /></div></div><style>.mobile #news-pic {width: 100vw; max-width: 336px;}</style><div id="gtx-trans" style="left: 28px; position: absolute; top: 187px;"><div class="gtx-trans-icon"></div></div>]]></b:widget-setting>
+      <b:widget-setting name='content'>&lt;div id=&quot;new-inner&quot;&gt;&lt;img id=&quot;news-pic&quot; src=&quot;https://zhhomestuck.github.io/images/news.png&quot; style=&quot;margin: 8px auto 0 auto;&quot; /&gt;&lt;br /&gt;
+&lt;span class=&quot;progress-bar&quot; style=&quot;font-size:10px;&quot;&gt;&lt;b&gt;進度&#65306;已完成約 75%&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;div style=&quot;font-size: 15px; font-weight: normal; line-height: 1.1; margin: 0 50px; text-align: left;&quot;&gt;
+&lt;hr /&gt;
+&lt;span style=&quot;font-style: italic;&quot;&gt;2019/9/20 - RM (Updated 2021/01/04)&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+目前還在找方法有效的導入官方的HTML5動畫&#65292;並把被本站翻譯過的Flash檔案也轉為HTML5動畫&#12290;但這不會是優先的事項&#12290;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github Pages&lt;/a&gt;是本計畫&#12300;比較正式&#12301;的更新網站&#65292;之後將會優先在Github網站上設計頁面主題和維護&#65292;而Blogger僅作為上傳&#12289;測試以及修改頁面的地方&#12290;外觀仍依照MSPA的最後版本為準&#12290;&lt;br /&gt;
+&lt;br /&gt;
+若有頁面或連結壞掉的情況&#65292;可以在留言區回報&#12290;
+&lt;hr /&gt;
+&lt;span style=&quot;font-style: italic;&quot;&gt;2020/8/21 - RM&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+已將人物&quot;Lord English&quot;的中譯名稱從&#12300;英格蘭領主&#12301;改為&#12300;英格利希領主&#12301;&#12290;
+&lt;hr /&gt;
+&lt;span style=&quot;font-style: italic;&quot;&gt;2020/7/19 - RM &lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+製作了&lt;a href=&quot;https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n&quot;&gt;Homestuck遊戲翻譯工具&lt;/a&gt;&#65292;歡迎利用&#12290;
+&lt;hr /&gt;
+&lt;span style=&quot;font-style: italic;&quot;&gt;2019/11/10 - RM&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+已對Eridan的語癖做以下修改&lt;br /&gt;1. 移除所有&#12300;ㄤ(ang)韻替換為ㄢ(an)韻&#12301;以及&#12300;ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻&#12301;的出現&lt;br /&gt;2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)&#12289;ㄛ(o)&#12289;ㄡ(ou)結尾的字&#12290;&lt;br /&gt;
+&lt;hr /&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;style&gt;.mobile #news-pic {width: 100vw; max-width: 336px;}&lt;/style&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
         <!-- only display title if it's non-empty -->

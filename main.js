@@ -44,14 +44,14 @@ function flashWarning() {
     }
     if(flashElem){
         let flashUrl = flashElem.data || flashElem.src;
+        let pb = document.getElementsByClassName("pagebody")[0];
         let warning_text = "由於Adobe Flash播放器已於2021年起停止支援，若此內容無法呈現，請到官方網頁觀看，或是<a href=\"#\" onclick=\"importRuffleRS()\">嘗試使用ruffle播放</a>";
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
-        warning_node.style.background = "#eeeeee";
+        warning_node.style.background = pb.backgroundColor;
         warning_node.className = "flash_warning translated_flash_warning"
-        let pb = document.getElementsByClassName("pagebody")[0];
         pb.parentNode.insertBefore(warning_node, pb);
     }
 }
