@@ -50,7 +50,7 @@ function flashWarning() {
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
-        warning_node.style.background = pb.backgroundColor;
+        warning_node.style.background = pb.style.backgroundColor;
         warning_node.className = "flash_warning translated_flash_warning"
         pb.parentNode.insertBefore(warning_node, pb);
     }
