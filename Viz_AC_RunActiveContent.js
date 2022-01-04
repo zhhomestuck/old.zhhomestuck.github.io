@@ -60,13 +60,13 @@ function vizFlashContentWrapper(){
         }
     }
     if (warning_text != "") {
+        let pb = document.getElementsByClassName("pagebody")[0];
         let warning_node = document.createElement("div");
         warning_node.innerHTML = warning_text;
         warning_node.style.fontSize = "11px";
         warning_node.style.padding = "2px";
-        warning_node.style.background = "#eeeeee";
+        warning_node.style.background = window.getComputedStyle(pb ,null).getPropertyValue('background-color');
         warning_node.className = "flash_warning viz_flash_warning"
-        let pb = document.getElementsByClassName("pagebody")[0];
         pb.parentNode.insertBefore(warning_node, pb);
     }
 }
