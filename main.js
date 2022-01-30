@@ -69,11 +69,6 @@ function dynamicLinks() {
 }
 
 function importRuffleRS() {
-    let scriptTags = document.getElementsByTagName('script')
-    for (let i in scriptTags) {
-        let content = scriptTags[i].innerHTML;
-        content.replace('http://cdn.mspaintadventures.com/storyfiles/hs2/')
-    }
     let imported = document.createElement('script');
     imported.src = 'https://zhhomestuck.github.io/ruffle/ruffle.js';
     document.head.appendChild(imported);
