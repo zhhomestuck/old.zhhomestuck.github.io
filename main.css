@@ -58,6 +58,11 @@ b {font-weight:bold;}
 .page {
   background-color: #eeeeee;
 }
+#no-markdown {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* Pagehead */
 .pagehead {
@@ -184,6 +189,13 @@ div.log-inner span img {
 .ytp-cued-thumbnail-overlay-image {
   background-color: #eee !important;
   background-image: none !important;
+}
+
+/* for HTML5 animation */
+.pagebody iframe {
+  border: none;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 /* Pagefoot */

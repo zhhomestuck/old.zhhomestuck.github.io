@@ -456,27 +456,35 @@ width: auto;
     border-spacing: 0;
     font-family: Courier, Verdana, Arial, PMingLiU, SimSun, monospace;
   }
-  .pagebody img { 
+  .pagebody img,
+  .pagebody embed,
+  .pagebody object {
+    margin: 10px 0 -4px 0;
+  }
+  .pagebody iframe {
     border: 0;
     margin: 10px 0 -4px 0;
+    overflow: hidden;
   }
   .pagebody div { /* 內文 */
     vertical-align: middle;
     padding: 15px 25px 0 25px;
     background-color: #eeeeee;
   }
-  .mobile .pagebody img { height: auto;}
-  .mobile .pagebody div img { width: auto; max-width: 90vw; height: auto;}
-  .mobile .pagebody div { padding: 15px;}
-  /* Viz and Homestuck Active Contents */
-  .pagebody embed {
-    margin: 10px 0 -4px 0;
-    width: 650px;
-    height: 450px;
+  .mobile .pagebody img {
+    height: auto;
+  }
+  .mobile .pagebody div img {
+    width: auto;
+    max-width: 90vw;
+    height: auto;
+  }
+  .mobile .pagebody div {
+    padding: 15px;
   }
   .mobile .pagebody embed,
-  .mobile .pagebody iframe,
-  .mobile .pagebody object {
+  .mobile .pagebody object,
+  .mobile .pagebody iframe {
     padding: 0;
     width: 100vw; max-width: 650px;
     /*height: 69vw; max-height:450px;*/
@@ -1418,8 +1426,7 @@ head.appendChild(script);
                                       <a class='blog-pager-older-link-mobile' expr:href='data:olderPageUrl'><!-- change class name because css problem --> 上一頁</a> |
                                     </b:if>
                                     <span id='jump-to-outter'>
-                                      <a onclick='if(document.getElementById(&quot;jump-to-form&quot;).style.display==&quot;none&quot;){document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;inline&quot;;}else{document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;none&quot;;}' style='cursor: pointer; color: blue; text-decoration: underline;'>
-                                        跳轉到</a></span> |
+                                        跳轉到</span> |
                                     <span id='pagefooter-official'>
                                       <b:if cond='data:olderPageUrl'>
                                         <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
@@ -1553,9 +1560,8 @@ head.appendChild(script);
                                     <a class='blog-pager-older-link' expr:href='data:olderPageUrl' id='blog-pager-older-link' style='float: none;'> 上一頁</a> |
                                   </b:if>
                                   <span id='jump-to-outter'>
-                                    <a onclick='if(document.getElementById(&quot;jump-to-form&quot;).style.display==&quot;none&quot;){document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;block&quot;;}else{document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;none&quot;;}' style='cursor: pointer; color: blue; text-decoration: underline;'>
-                                      跳轉到
-                                    </a>
+                                     <a href='#' onclick='let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
+                                      跳轉到</a>
                                     <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                       <input maxlength='7' name='p' style='max-width: 100px;' type='text' value=''/>
                                       &#160;
@@ -1600,8 +1606,8 @@ head.appendChild(script);
                                       上一頁 </a> |
                                   </b:if>
                                   <span id='jump-to-outter'>
-                                    <a onclick='if(document.getElementById(&quot;jump-to-form&quot;).style.display==&quot;none&quot;){document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;block&quot;;}else{document.getElementById(&quot;jump-to-form&quot;).style.display=&quot;none&quot;;}' style='cursor: pointer; color: blue; text-decoration: underline;'>
-                                      跳轉到 </a>
+                                    <a href='#' onclick='let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
+                                      跳轉到</a>
                                     <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                       <input maxlength='7' name='p' style='max-width: 100px;' type='text' value=''/>
                                       &#160;
@@ -2239,11 +2245,21 @@ function loadarchive(a) {
 &lt;span class=&quot;progress-bar&quot; style=&quot;font-size:10px;&quot;&gt;&lt;b&gt;進度&#65306;已完成約 75%&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
 &lt;div style=&quot;font-size: 15px; font-weight: normal; line-height: 1.1; margin: 0 50px; text-align: left;&quot;&gt;
 &lt;hr /&gt;
-&lt;span style=&quot;font-style: italic;&quot;&gt;2019/9/20 - RM (Updated 2021/01/04)&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-style: italic;&quot;&gt;2022/01/22 - RM &lt;/span&gt;&lt;br /&gt;
 &lt;br /&gt;
-目前還在找方法有效的導入官方的HTML5動畫&#65292;並把被本站翻譯過的Flash檔案也轉為HTML5動畫&#12290;但這不會是優先的事項&#12290;&lt;br /&gt;
+網站更新:&lt;br /&gt;
+- 修改Act1部份誤譯語句&lt;br /&gt;
+- p=001977與p=001982的動畫改為官方提供的HTML5檔案&lt;br /&gt;
+- 所有圖片改成了&lt;span style=&quot;background: black;&quot;&gt;post-retcon版本&lt;/span&gt;&lt;br /&gt;
+- 加入了&lt;span style=&quot;background: black;&quot;&gt;Terezi password連結&#65292;會跳到簡中翻譯站的密碼頁&lt;/span&gt;
+&lt;br /&gt;&lt;br /&gt;
+由於Blogger的文章排序以發佈日期為primal key&#12289;最後更新日期為secondary key&#65292;更新後頁面順序亂掉的情況嚴重&#65292;我一時改不完&#12290;而在Github站不會有這問題&#12290;建議讀者移至Github站閱讀&#12290;
+&lt;hr /&gt;
+&lt;span style=&quot;font-style: italic;&quot;&gt;2019/9/20 - RM (Updated 2022/01/22)&lt;/span&gt;&lt;br /&gt;
 &lt;br /&gt;
-&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github Pages&lt;/a&gt;是本計畫&#12300;比較正式&#12301;的更新網站&#65292;之後將會優先在Github網站上設計頁面主題和維護&#65292;而Blogger僅作為上傳&#12289;測試以及修改頁面的地方&#12290;外觀仍依照MSPA的最後版本為準&#12290;&lt;br /&gt;
+本計畫的&#12300;&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github站&lt;/a&gt;&#12301;算是&#12300;發佈版&#12301;網站&#65292;之後將會優先在Github網站上設計頁面主題和維護&#65292;而Blogger僅作為測試以及修改內容的地方&#12290;外觀仍依照MSPA的最後版本為準&#12290;&lt;br /&gt;
+&lt;br /&gt;
+翻譯站上的動畫連結將會慢慢的手動替換成官方的HTML5動畫&#12290;而將本站翻譯過的Flash檔案轉為HTML5動畫的工作近期已被擱置&#12290;&lt;br /&gt;
 &lt;br /&gt;
 若有頁面或連結壞掉的情況&#65292;可以在留言區回報&#12290;
 &lt;hr /&gt;
@@ -2254,10 +2270,6 @@ function loadarchive(a) {
 &lt;span style=&quot;font-style: italic;&quot;&gt;2020/7/19 - RM &lt;/span&gt;&lt;br /&gt;
 &lt;br /&gt;
 製作了&lt;a href=&quot;https://drive.google.com/folderview?id=182qdOkUeX5NRfeT7pbw1mwLZI1M0n84n&quot;&gt;Homestuck遊戲翻譯工具&lt;/a&gt;&#65292;歡迎利用&#12290;
-&lt;hr /&gt;
-&lt;span style=&quot;font-style: italic;&quot;&gt;2019/11/10 - RM&lt;/span&gt;&lt;br /&gt;
-&lt;br /&gt;
-已對Eridan的語癖做以下修改&lt;br /&gt;1. 移除所有&#12300;ㄤ(ang)韻替換為ㄢ(an)韻&#12301;以及&#12300;ㄧㄤ(iang)韻替換為ㄧㄢ(ian)韻&#12301;的出現&lt;br /&gt;2. 修正所有要重複並加上波浪狀破折號的字 a.k.a. ㄨ(u)&#12289;ㄛ(o)&#12289;ㄡ(ou)結尾的字&#12290;&lt;br /&gt;
 &lt;hr /&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;style&gt;.mobile #news-pic {width: 100vw; max-width: 336px;}&lt;/style&gt;</b:widget-setting>
