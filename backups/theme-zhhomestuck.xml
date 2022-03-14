@@ -1421,15 +1421,17 @@ head.appendChild(script);
                                         &#160;
                                         <input type='submit' value='JumpTo'/>
                                       </form>
-                                    <a class='startover' expr:href='data:blog.homepageUrl'> 重頭開始</a> |
+                                    <a expr:href='data:blog.homepageUrl' id='startover'> 重頭開始</a> |
                                     <b:if cond='data:olderPageUrl'>
-                                      <a class='blog-pager-older-link-mobile' expr:href='data:olderPageUrl'><!-- change class name because css problem --> 上一頁</a> |
+                                      <a expr:href='data:olderPageUrl' id='blog-pager-older-link-mobile'><!-- change class name because css problem --> 上一頁</a> |
                                     </b:if>
                                     <span id='jump-to-outter'>
-                                        跳轉到</span> |
+                                      跳轉到</span> |
                                     <span id='pagefooter-official'>
                                       <b:if cond='data:olderPageUrl'>
-                                        <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
+                                        <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a> |
+                                        <a href='#' id='to-github-site' onmouseover='this.href = &quot;https://zhhomestuck.github.io/p/&quot; + this.parentElement.innerText.substr(this.parentNode.innerText.search(&quot;00&quot;), 6);' target='_blank'> Github站</a>
+                                      </b:if>
                                       <br/>
                                       <data:post.url/>
                                     </span>
@@ -1555,12 +1557,12 @@ head.appendChild(script);
                                   </b:if>
                                 </b:if>
                                 <div id='pagefooter-option'>
-                                  <a class='startover' expr:href='data:blog.homepageUrl'> 重頭開始</a> |
+                                  <a expr:href='data:blog.homepageUrl' id='startover'> 重頭開始</a> |
                                   <b:if cond='data:olderPageUrl'>
-                                    <a class='blog-pager-older-link' expr:href='data:olderPageUrl' id='blog-pager-older-link' style='float: none;'> 上一頁</a> |
+                                    <a expr:href='data:olderPageUrl' id='blog-pager-older-link' style='float: none;'> 上一頁</a> |
                                   </b:if>
                                   <span id='jump-to-outter'>
-                                     <a href='#' onclick='let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
+                                     <a href='#' onclick='event.preventDefault();let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
                                       跳轉到</a>
                                     <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                       <input maxlength='7' name='p' style='max-width: 100px;' type='text' value=''/>
@@ -1570,7 +1572,9 @@ head.appendChild(script);
                                   <!-- Null -->
                                   <span id='pagefooter-official'>
                                     <b:if cond='data:olderPageUrl'>
-                                      <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(document.URL.substr(document.URL.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a></b:if>
+                                      <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(document.URL.substr(document.URL.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a> |
+                                      <a href='#' id='to-github-site' onmouseover='this.href = &quot;https://zhhomestuck.github.io/p/&quot; + this.parentElement.innerText.substr(this.parentNode.innerText.search(&quot;00&quot;), 6);' target='_blank'> Github站</a>
+                                    </b:if>
                                     <br/>
                                     <data:post.url/>
                                   </span>
@@ -1606,14 +1610,14 @@ head.appendChild(script);
                                       上一頁 </a> |
                                   </b:if>
                                   <span id='jump-to-outter'>
-                                    <a href='#' onclick='let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
+                                    <a href='#' onclick='event.preventDefault();let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
                                       跳轉到</a>
                                     <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                       <input maxlength='7' name='p' style='max-width: 100px;' type='text' value=''/>
                                       &#160;
                                       <input type='submit' value='JumpTo'/>
                                     </form>
-                                  </span> |
+                                  </span>
                                   <!-- Null -->
                                   &#160;
                                   <span id='pagefooter-url'>
