@@ -21,8 +21,9 @@ b {
   width: 100vw;
   max-width: 950px;
   margin: 0 auto;
-  padding: 4px 0 3px 0;
+  padding: 3px 3px;
   background-color: #5a5a5a;
+  box-sizing: border-box;
 }
 .mspanav {
   font-family: Arial, 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
