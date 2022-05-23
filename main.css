@@ -12,11 +12,13 @@ div, .pagebody div img, table, td, p {
   border-spacing: 0;
   text-align: -webkit-center; text-align: center;
 }
-b {font-weight:bold;}
+b {
+  font-weight:bold;
+}
 
 /* Navigation Bar */
 .header {
-  width: 100wv;
+  width: 100vw;
   max-width: 950px;
   margin: 0 auto;
   padding: 4px 0 3px 0;
@@ -30,16 +32,17 @@ b {font-weight:bold;}
 }
 .mspanav a {
   color: inherit;
-  margin: 0 3px;
+  margin: 3px;
 }
 .mspanav img {
   vertical-align: middle;
   border: 0;
+  padding-bottom: 3px;
 }
 
 /* Content Wrapper */
 .content {
-  width: 100wv;
+  width: 100vw;
   max-width: 950px;
   padding: 0;
   margin: 0 auto;
@@ -48,7 +51,7 @@ b {font-weight:bold;}
 }
 .content-inner {
   max-width: 650px;
-  width: 100wv;
+  width: 100vw;
   color: #000000;
   margin: 0 auto;
   padding-top: 7px;
@@ -78,7 +81,8 @@ b {font-weight:bold;}
   font-family: Courier, Verdana, monospace;
 }
 .pagebody img {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   margin-bottom: 15px;
 }
 .pagebody span img, .pagebody div img {
