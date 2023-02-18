@@ -62,11 +62,11 @@ b {
 .page {
   background-color: #eeeeee;
 }
-#no-markdown {
+/* .no-markdown {
   border: none;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Pagehead */
 .pagehead {
@@ -174,7 +174,12 @@ div.log-inner span img {
     This is standard panel size
     If there are non-standard flash panel size
     put these in post:
-    .mobile .pagebody embed, .pagebody embed {height: (h/w ratio)vw; max-height: (actual height)px;} #o_flash-container {padding-top: (h/w ratio)%;} 
+      .mobile .pagebody embed, .pagebody embed {
+        height: (h/w ratio)vw; max-height: (actual height)px;
+      }
+      #o_flash-container {
+        padding-top: (h/w ratio)%;
+      } 
   */
 }
 #o_flash-container {
@@ -228,8 +233,8 @@ div.log-inner span img {
 /* Quirk */
 #gamzee b {
   font-weight: normal;
-  font-size: 66%;
-  vertical-align: -2px;
+  font-size: 75%;
+  vertical-align: -1px;
 }
 #arquius span img.shades {
   background: url("/images/arquius_shades.png") no-repeat;
