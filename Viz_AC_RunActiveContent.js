@@ -34,7 +34,7 @@ function vizFlashContentWrapper(){
                 '<div id="o_flash-container"><iframe class="youtube-flash-iframe" name="unloaded" '
                 + 'style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;"'
                 + 'src="https://www.youtube.com/embed/"'
-                + 'onclick="if(this.name!=\'\'){this.src=\'https://www.youtube.com/embed/+a.params.youtubeid'+a.params.youtubeid+';this.name=\'\';}\'"'
+                + 'onclick="if(this.name!=\'\'){this.src=\'https://www.youtube.com/embed/'+a.params.youtubeid+'\';this.name=\'\';}\'"'
                 + 'frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>');
         }
         else if(a.params.altimgsrc){
