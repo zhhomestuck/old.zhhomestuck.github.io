@@ -31,11 +31,13 @@ function vizFlashContentWrapper(){
 
         if(a.params.youtubeid) {
             document.write(
-                '<div id="o_flash-container" onclick="if(document.getElementById(\'youtube-no-preview-iframe\').style.display==\'block\'"){\
-                    document.getElementById(\'youtube-block-preview-iframe\').style.display==\'none\';\
-                    document.getElementById(\'youtube-flash-iframe\').style.display==\'block\';\
-                }>\
-                    <iframe id="youtube-no-preview-iframe" style="display:block;" src="https://www.youtube.com/embed/ frameborder="0"></iframe>\
+                '<div id="o_flash-container" onclick="if(document.getElementById(\'youtube-no-preview-iframe\').style.display==\'block\'){\
+                    document.getElementById(\'youtube-block-preview-iframe\').style.display=\'none\';\
+                    document.getElementById(\'youtube-block-preview-iframe\').style.height=0;\
+                    document.getElementById(\'youtube-block-preview-iframe\').style.width=0;\
+                    document.getElementById(\'youtube-flash-iframe\').style.display=\'block\';\
+                }">\
+                    <iframe id="youtube-no-preview-iframe" style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;display:block;" src="https://www.youtube.com/embed/ frameborder="0"></iframe>\
                     <iframe id="youtube-flash-iframe" style="position:absolute;left:0;right:0;top:0;bottom:0;height:100%;width:100%;display:none;"\
                         src="https://www.youtube.com/embed/'+a.params.youtubeid+'"\
                         frameborder="0" allowfullscreen="allowfullscreen"></iframe>\
