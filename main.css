@@ -195,11 +195,6 @@ div.log-inner span img {
   padding: 0;
   margin: 0 auto;
 }
-/* To forcely hide Youtube preview/thumbnail image to prevent spoiler */
-.ytp-cued-thumbnail-overlay-image {
-  background-color: #eee !important;
-  background-image: none !important;
-}
 
 /* for HTML5 animation */
 .pagebody iframe {
