@@ -468,7 +468,7 @@ width: auto;
   }
   .pagebody div { /* 內文 */
     vertical-align: middle;
-    padding: 15px 25px 0 25px;
+    padding: 15px 20px 0 20px;
     background-color: #eeeeee;
   }
   .mobile .pagebody img {
@@ -800,7 +800,7 @@ width: auto;
     }
   &lt;/script&gt;
 &lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
@@ -883,15 +883,14 @@ head.appendChild(script);
                         <b:widget-settings>
                           <b:widget-setting name='showDateHeader'>false</b:widget-setting>
                           <b:widget-setting name='commentLabel'>留言</b:widget-setting>
-                          <b:widget-setting name='style.textcolor'>#bbbbbb</b:widget-setting>
+                          <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='showShareButtons'>false</b:widget-setting>
                           <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                          <b:widget-setting name='style.urlcolor'>#bbbbbb</b:widget-setting>
+                          <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='showAuthor'>false</b:widget-setting>
-                          <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                           <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                          <b:widget-setting name='style.bgcolor'>#535353</b:widget-setting>
+                          <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='reactionsLabel'/>
                           <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                           <b:widget-setting name='style.layout'>1x1</b:widget-setting>
@@ -900,7 +899,7 @@ head.appendChild(script);
                           <b:widget-setting name='showTimestamp'>false</b:widget-setting>
                           <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                           <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                          <b:widget-setting name='style.bordercolor'>#535353</b:widget-setting>
+                          <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
                           <b:widget-setting name='showInlineAds'>false</b:widget-setting>
                           <b:widget-setting name='showReactions'>false</b:widget-setting>
                         </b:widget-settings>
@@ -1416,7 +1415,7 @@ head.appendChild(script);
                                       </b:if>
                                     </b:if>
                                   <div id='pagefooter-option'>
-                                      <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
+                                      <form action='https://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                         <input maxlength='8' name='p' style='max-width: 90px;' type='text'/>
                                         &#160;
                                         <input type='submit' value='JumpTo'/>
@@ -1426,7 +1425,8 @@ head.appendChild(script);
                                       <a expr:href='data:olderPageUrl' id='blog-pager-older-link-mobile'><!-- change class name because css problem --> 上一頁</a> |
                                     </b:if>
                                     <span id='jump-to-outter'>
-                                      跳轉到</span> |
+                                      <a href='#' onclick='event.preventDefault();let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
+                                      跳轉到</a></span> |
                                     <span id='pagefooter-official'>
                                       <b:if cond='data:olderPageUrl'>
                                         <a href='#' id='mspa-link' onmouseover='this.href = &quot;https://www.homestuck.com/story/&quot; + (parseInt(this.parentElement.innerText.substr( this.parentNode.innerText.search(&quot;00&quot;)+2,4))-1900).toString();' target='_blank'> 官方原文</a> |
@@ -1564,7 +1564,7 @@ head.appendChild(script);
                                   <span id='jump-to-outter'>
                                      <a href='#' onclick='event.preventDefault();let jump_to_form = document.getElementById(&quot;jump-to-form&quot;);if(jump_to_form.style.display==&quot;none&quot;){jump_to_form.style.display=&quot;inline&quot;;}else{jump_to_form.style.display=&quot;none&quot;;}'>
                                       跳轉到</a>
-                                    <form action='http://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
+                                    <form action='https://zhhomestuck.blogspot.tw/p/jumpto.html' id='jump-to-form' method='get' style='display: none; float: right;'>
                                       <input maxlength='7' name='p' style='max-width: 100px;' type='text' value=''/>
                                       &#160;
                                       <input type='submit' value='JumpTo'/></form>
@@ -2253,17 +2253,19 @@ function loadarchive(a) {
 &lt;br /&gt;
 網站更新:&lt;br /&gt;
 - 修改Act1部份誤譯語句&lt;br /&gt;
-- p=001977與p=001982的動畫改為官方提供的HTML5檔案&lt;br /&gt;
+- 多個動畫改為官方提供的HTML5檔案 (最後更新2022/04/13) &lt;br /&gt; 
 - 所有圖片改成了&lt;span style=&quot;background: black;&quot;&gt;post-retcon版本&lt;/span&gt;&lt;br /&gt;
 - 加入了&lt;span style=&quot;background: black;&quot;&gt;Terezi password連結&#65292;會跳到簡中翻譯站的密碼頁&lt;/span&gt;
 &lt;br /&gt;&lt;br /&gt;
-由於Blogger的文章排序以發佈日期為primal key&#12289;最後更新日期為secondary key&#65292;更新後頁面順序亂掉的情況嚴重&#65292;我一時改不完&#12290;而在Github站不會有這問題&#12290;建議讀者移至Github站閱讀&#12290;
+由於Blogger的文章是以發佈日期與最後更新日期遞增排序的&#65292;更新後頁面順序亂掉的情況嚴重&#65292;我一時改不完&#12290;而在Github站不會有這問題&#12290;再次建議讀者移至&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github站&lt;/a&gt;閱讀&#12290;
 &lt;hr /&gt;
 &lt;span style=&quot;font-style: italic;&quot;&gt;2019/9/20 - RM (Updated 2022/01/22)&lt;/span&gt;&lt;br /&gt;
 &lt;br /&gt;
-本計畫的&#12300;&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github站&lt;/a&gt;&#12301;算是&#12300;發佈版&#12301;網站&#65292;之後將會優先在Github網站上設計頁面主題和維護&#65292;而Blogger僅作為測試以及修改內容的地方&#12290;外觀仍依照MSPA的最後版本為準&#12290;&lt;br /&gt;
+本計畫的&#12300;&lt;a href=&quot;https://zhhomestuck.github.io/&quot;&gt;Github站&lt;/a&gt;&#12301;將是&#12300;發佈版&#12301;網站&#65292;之後將會優先在Github網站上設計頁面主題和維護&#65292;而Blogger僅作為測試以及修改內容的地方&#12290;不建議讀者在Blogger這裡閱讀&#65292;並應移至Github站以有最佳的體驗&#12290;&lt;br /&gt;
 &lt;br /&gt;
-翻譯站上的動畫連結將會慢慢的手動替換成官方的HTML5動畫&#12290;而將本站翻譯過的Flash檔案轉為HTML5動畫的工作近期已被擱置&#12290;&lt;br /&gt;
+兩邊網站的外觀設計仍依照MSPA的最後版本為準&#12290;&lt;br /&gt;
+&lt;br /&gt;
+翻譯站上的動畫連結將會慢慢的手動替換成官方的HTML5動畫&#12290;而將本站翻譯過的Flash檔案轉為HTML5動畫的工作已被擱置&#12290;&lt;br /&gt;
 &lt;br /&gt;
 若有頁面或連結壞掉的情況&#65292;可以在留言區回報&#12290;
 &lt;hr /&gt;
